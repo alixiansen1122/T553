@@ -1,0 +1,39 @@
+config GNSS_DEV_NUM
+    int "GNSS device number."
+    range 1 2
+    default 1
+
+choice
+    prompt "Wakeup Type."
+    default GNSS_WAKEUP_TYPE_UART
+    config GNSS_WAKEUP_TYPE_UART
+        bool "UART"
+        select PM_WAKEUP_BY_UART
+    config GNSS_WAKEUP_TYPE_GPIO
+        bool "GPIO"
+endchoice
+
+choice
+    prompt "TCXO frequency select."
+    default GNSS_TCXO_FREQ_26M
+    config GNSS_TCXO_FREQ_26M
+        bool "26M"
+    config GNSS_TCXO_FREQ_38P4M
+        bool "38.4M"
+endchoice
+
+config GNSS_UART_BAUDRATE
+    int "UART communication baudrate."
+    range 115200 2000000
+    default 115200
+
+config GNSS_UART_WITH_FLOWCTRL
+    bool "UART with hardware flow control(CTS&RTS)."
+    default n
+
+if !BOARD_DYNAMIC_ALLOC
+config GNSS_PACKET_BUFF_MAX
+    int "Static buffer size."
+    range 9300 15000
+    default 10000
+endif

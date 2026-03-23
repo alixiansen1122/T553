@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="Failed to create the child control. The control of this [%d] cannot be copied. @ui_transform_group.cpp(42),WARNING" ID="0xcb780153" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add failed, the view type %d is not support @ui_transform_group.cpp(59),ERROR" ID="0xcb7801da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add failed, the view type %d is not support @ui_transform_group.cpp(80),ERROR" ID="0xcb780282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Cannot find target child! @ui_transform_group.cpp(127),ERROR" ID="0xcb7803fa" />
+			</MSG_LOG>

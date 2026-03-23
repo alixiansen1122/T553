@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="rootContainer_ already exist @View.cpp(17),ERROR" ID="0xb80e008a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create root container failed @View.cpp(22),ERROR" ID="0xb80e00b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="backDragListener_ already exist @View.cpp(33),ERROR" ID="0xb80e010a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create backDragListener failed @View.cpp(38),ERROR" ID="0xb80e0132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rootContainer_ was not initialized @View.cpp(52),ERROR" ID="0xb80e01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="rootContainer_ is nullptr @View.cpp(68),ERROR" ID="0xb80e0222" />
+			</MSG_LOG>

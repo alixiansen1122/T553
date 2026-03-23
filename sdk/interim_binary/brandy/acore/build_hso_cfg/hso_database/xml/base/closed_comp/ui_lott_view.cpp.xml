@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="LottParser parse failed! @ui_lott_view.cpp(65),ERROR" ID="0xcbba020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lottComp_ is null or Anim state is not Animator::STOP! @ui_lott_view.cpp(126),ERROR" ID="0xcbba03f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lottComp_ is null or Anim state is not Animator::START! @ui_lott_view.cpp(135),ERROR" ID="0xcbba043a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lottComp_ is null or Anim state is not Animator::PAUSE! @ui_lott_view.cpp(144),ERROR" ID="0xcbba0482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="lottComp_ is null or Anim state is not Animator::START! @ui_lott_view.cpp(153),ERROR" ID="0xcbba04ca" />
+			</MSG_LOG>

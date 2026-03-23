@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="SendStateInfo failed! Invalid param! @websocket_module_callback.cpp(28),ERROR" ID="0xe04a00e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SendMessage failed! Invalid param! @websocket_module_callback.cpp(65),ERROR" ID="0xe04a020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateArrayBuffer failed! @websocket_module_callback.cpp(89),ERROR" ID="0xe04a02ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for result Failed! @websocket_module_callback.cpp(115),ERROR" ID="0xe04a039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for reason Failed! @websocket_module_callback.cpp(123),ERROR" ID="0xe04a03da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to dispatch async work @websocket_module_callback.cpp(136),ERROR" ID="0xe04a0442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for result Failed! @websocket_module_callback.cpp(146),ERROR" ID="0xe04a0492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for data Failed! @websocket_module_callback.cpp(152),ERROR" ID="0xe04a04c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DispatchAsyncWork retryTimes:%d @websocket_module_callback.cpp(171),WARNING" ID="0xe04a055b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to dispatch async work @websocket_module_callback.cpp(175),ERROR" ID="0xe04a057a" />
+			</MSG_LOG>

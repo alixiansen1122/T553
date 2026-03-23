@@ -1,0 +1,55 @@
+<language
+    id="language"
+    languageinfo="en"
+    fontName="DroidSansFallback.ttf"
+    direct="ltf"
+    >
+    <lanstr
+        id="STR_IMAGE"
+        value="Image"
+        size = "21"
+        direct="rtl"
+        />
+
+    <lanstr
+        id="STR_PROGRESSBAR"
+        value="ProgressBar"
+        direct="mixed"
+        />
+
+    <lanstr
+        id="STR_SLIDEUNLOCK"
+        value="SlideUnlock"
+        />
+
+    <lanstr
+        id="STR_LISTBOX"
+        value="ListBox"
+        />
+
+    <lanstr
+        id="STR_BUTTON"
+        value="Button"
+        />
+
+    <lanstr
+        id="STR_SCROLLVIEW"
+        value="ScrollView"
+        />
+
+    <lanstr
+        id="STR_SCROLLGRID"
+        value="ScrollGrid"
+        />
+
+    <lanstr
+        id="STR_CLOCK"
+        value="Clock"
+        />
+    <lanstr
+        size = "21"
+        direct="ltr"
+        id="STR_11"
+        value="Clock1"
+        />
+</language>

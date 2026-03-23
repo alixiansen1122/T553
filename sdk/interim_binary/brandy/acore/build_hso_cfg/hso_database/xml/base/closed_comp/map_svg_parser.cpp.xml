@@ -1,0 +1,79 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="set svg faild, path len is 0 @map_svg_parser.cpp(55),ERROR" ID="0xcb5e01ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid file path. @map_svg_parser.cpp(68),ERROR" ID="0xcb5e0222" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="File(%s) can not open. errno: %d @map_svg_parser.cpp(74),ERROR" ID="0xcb5e0252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map header faild @map_svg_parser.cpp(79),ERROR" ID="0xcb5e027a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="parser map success @map_svg_parser.cpp(98),DBG" ID="0xcb5e0316" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="parser map failed @map_svg_parser.cpp(105),DBG" ID="0xcb5e034e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map header faild @map_svg_parser.cpp(114),ERROR" ID="0xcb5e0392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The remaining data is insufficient. The read ends. @map_svg_parser.cpp(119),WARNING" ID="0xcb5e03bb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="parser map success @map_svg_parser.cpp(154),DBG" ID="0xcb5e04d6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(161),ERROR" ID="0xcb5e050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map node array faild! @map_svg_parser.cpp(168),ERROR" ID="0xcb5e0542" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="read map node array faild, readLen:%d, realReadLen:%d @map_svg_parser.cpp(175),ERROR" ID="0xcb5e057a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(188),ERROR" ID="0xcb5e05e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map node faild.The data length is less than the read length! @map_svg_parser.cpp(194),ERROR" ID="0xcb5e0612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map node array faild! @map_svg_parser.cpp(199),ERROR" ID="0xcb5e063a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="memcpy_s map node array faild, nodeLen: 0x%x @map_svg_parser.cpp(206),ERROR" ID="0xcb5e0672" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(216),ERROR" ID="0xcb5e06c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc path style array faild! @map_svg_parser.cpp(223),ERROR" ID="0xcb5e06fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s path style array faild @map_svg_parser.cpp(230),ERROR" ID="0xcb5e0732" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(243),ERROR" ID="0xcb5e079a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read path style faild.The data length is less than the read length! @map_svg_parser.cpp(249),ERROR" ID="0xcb5e07ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc path style array faild! @map_svg_parser.cpp(255),ERROR" ID="0xcb5e07fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s path style array faild @map_svg_parser.cpp(262),ERROR" ID="0xcb5e0832" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for buffer failed. @map_svg_parser.cpp(272),ERROR" ID="0xcb5e0882" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for buffer failed. @map_svg_parser.cpp(279),ERROR" ID="0xcb5e08ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(289),ERROR" ID="0xcb5e090a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(296),ERROR" ID="0xcb5e0942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map path array faild @map_svg_parser.cpp(306),ERROR" ID="0xcb5e0992" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="alloc path faild @map_svg_parser.cpp(314),ERROR" ID="0xcb5e09d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read path cmd faild @map_svg_parser.cpp(320),ERROR" ID="0xcb5e0a02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read path data faild @map_svg_parser.cpp(326),ERROR" ID="0xcb5e0a32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(337),ERROR" ID="0xcb5e0a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(344),ERROR" ID="0xcb5e0ac2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map path array faild @map_svg_parser.cpp(353),ERROR" ID="0xcb5e0b0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="alloc path faild @map_svg_parser.cpp(363),ERROR" ID="0xcb5e0b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s path cmd faild @map_svg_parser.cpp(368),ERROR" ID="0xcb5e0b82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s path data faild @map_svg_parser.cpp(375),ERROR" ID="0xcb5e0bba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(410),ERROR" ID="0xcb5e0cd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(417),ERROR" ID="0xcb5e0d0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map text array faild @map_svg_parser.cpp(427),ERROR" ID="0xcb5e0d5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path cmd faild @map_svg_parser.cpp(434),ERROR" ID="0xcb5e0d92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read text faild @map_svg_parser.cpp(440),ERROR" ID="0xcb5e0dc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc text offset faild @map_svg_parser.cpp(448),ERROR" ID="0xcb5e0e02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read text offset faild @map_svg_parser.cpp(454),ERROR" ID="0xcb5e0e32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(465),ERROR" ID="0xcb5e0e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(472),ERROR" ID="0xcb5e0ec2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map text array faild @map_svg_parser.cpp(481),ERROR" ID="0xcb5e0f0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path cmd faild @map_svg_parser.cpp(490),ERROR" ID="0xcb5e0f52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s text faild @map_svg_parser.cpp(494),ERROR" ID="0xcb5e0f72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc text offset faild @map_svg_parser.cpp(504),ERROR" ID="0xcb5e0fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s text offset faild @map_svg_parser.cpp(509),ERROR" ID="0xcb5e0fea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(543),ERROR" ID="0xcb5e10fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(550),ERROR" ID="0xcb5e1132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map image array faild @map_svg_parser.cpp(555),ERROR" ID="0xcb5e115a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(562),ERROR" ID="0xcb5e1192" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to load all img! @map_svg_parser.cpp(569),ERROR" ID="0xcb5e11ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to load img! @map_svg_parser.cpp(583),ERROR" ID="0xcb5e123a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(598),ERROR" ID="0xcb5e12b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(605),ERROR" ID="0xcb5e12ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map text array faild @map_svg_parser.cpp(610),ERROR" ID="0xcb5e1312" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(617),ERROR" ID="0xcb5e134a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to load all img! @map_svg_parser.cpp(624),ERROR" ID="0xcb5e1382" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed to load img! @map_svg_parser.cpp(633),ERROR" ID="0xcb5e13ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(656),ERROR" ID="0xcb5e1482" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(663),ERROR" ID="0xcb5e14ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map road array faild @map_svg_parser.cpp(668),ERROR" ID="0xcb5e14e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(678),ERROR" ID="0xcb5e1532" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(685),ERROR" ID="0xcb5e156a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map text array faild @map_svg_parser.cpp(690),ERROR" ID="0xcb5e1592" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(709),ERROR" ID="0xcb5e162a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(716),ERROR" ID="0xcb5e1662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="read map poi array faild @map_svg_parser.cpp(721),ERROR" ID="0xcb5e168a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%s] param error! @map_svg_parser.cpp(731),ERROR" ID="0xcb5e16da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc map path array faild! @map_svg_parser.cpp(738),ERROR" ID="0xcb5e1712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s map text array faild @map_svg_parser.cpp(743),ERROR" ID="0xcb5e173a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="out of range: style index %u, style count %u @map_svg_parser.cpp(796),ERROR" ID="0xcb5e18e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="out of range: txt index %u, textCount %u @map_svg_parser.cpp(809),ERROR" ID="0xcb5e194a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="out of range: img index %u, imgageCount %u @map_svg_parser.cpp(822),ERROR" ID="0xcb5e19b2" />
+			</MSG_LOG>

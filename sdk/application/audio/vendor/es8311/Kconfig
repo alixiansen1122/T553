@@ -1,0 +1,27 @@
+menu "es8311 Driver"
+
+config SAP_VENDOR_DRIVER_ES8311_SUPPORT
+    bool "es8311 support"
+    default n
+
+if SAP_VENDOR_DRIVER_ES8311_SUPPORT
+
+config SAP_CONTROL_ES8311_IN_ACORE
+    bool "control es8311 via A core"
+    default y
+
+config SAP_CONTROL_ES8311_IN_DSP
+    bool "control es8311 via DSP"
+    default n
+
+config SAP_ES8311_I2C_BUS_ID
+    int "es8311 i2c bus id"
+    default 0
+
+config SAP_ES8311_I2C_ADDR
+    hex "es8311 i2c address"
+    default 0x28
+
+endif
+
+endmenu

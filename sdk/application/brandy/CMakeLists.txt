@@ -1,0 +1,7 @@
+#===============================================================================
+# @brief    cmake make file
+# Copyright (c) CompanyNameMagicTag 2022-2022. All rights reserved.
+#===============================================================================
+add_subdirectory_if_exist(brandy_standard)
+add_subdirectory_if_exist(brandy_testsuite)
+add_subdirectory_if_exist(brandy_recovery)

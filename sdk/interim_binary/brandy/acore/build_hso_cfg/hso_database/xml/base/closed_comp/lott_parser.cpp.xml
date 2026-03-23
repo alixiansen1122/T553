@@ -1,0 +1,26 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unsupported BlendMode: %u. @lott_parser.cpp(38),ERROR" ID="0xcba60132" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottTransform failed. @lott_parser.cpp(346),ERROR" ID="0xcba60ad2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottSplitPosition failed. @lott_parser.cpp(358),ERROR" ID="0xcba60b32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottTrimPath failed. @lott_parser.cpp(380),ERROR" ID="0xcba60be2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottStroke failed. @lott_parser.cpp(405),ERROR" ID="0xcba60caa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottGradient failed. @lott_parser.cpp(423),ERROR" ID="0xcba60d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottFill failed. @lott_parser.cpp(447),ERROR" ID="0xcba60dfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottGradient failed. @lott_parser.cpp(461),ERROR" ID="0xcba60e6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottPath failed. @lott_parser.cpp(483),ERROR" ID="0xcba60f1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottRect failed. @lott_parser.cpp(497),ERROR" ID="0xcba60f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottEllipse failed. @lott_parser.cpp(514),ERROR" ID="0xcba61012" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottShapeGroup failed. @lott_parser.cpp(530),ERROR" ID="0xcba61092" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupport shape type: %d @lott_parser.cpp(565),ERROR" ID="0xcba611aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new shapeGroups failed. @lott_parser.cpp(577),ERROR" ID="0xcba6120a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupport shape type: %d @lott_parser.cpp(611),ERROR" ID="0xcba6131a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottShapeGroup failed. @lott_parser.cpp(634),ERROR" ID="0xcba613d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottPaint failed. @lott_parser.cpp(641),ERROR" ID="0xcba6140a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottImageLayer failed. @lott_parser.cpp(697),ERROR" ID="0xcba615ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottNullLayer failed. @lott_parser.cpp(718),ERROR" ID="0xcba61672" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottSolidLayer failed. @lott_parser.cpp(732),ERROR" ID="0xcba616e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottShapeLayer failed. @lott_parser.cpp(751),ERROR" ID="0xcba6177a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottPrecompLayer failed. @lott_parser.cpp(781),ERROR" ID="0xcba6186a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupport layer type:%d @lott_parser.cpp(820),ERROR" ID="0xcba619a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="load file %s failed. @lott_parser.cpp(835),ERROR" ID="0xcba61a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new LottComp failed. @lott_parser.cpp(841),ERROR" ID="0xcba61a4a" />
+			</MSG_LOG>

@@ -1,0 +1,38 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Ability Service wanted element is null @ability_service.cpp(110),ERROR" ID="0xe01e0372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Ability Service wanted bundleName is null @ability_service.cpp(116),ERROR" ID="0xe01e03a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Ability Service AbilitySvcInfo is null @ability_service.cpp(123),ERROR" ID="0xe01e03da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Ability Service returned bundleInfo is not valid @ability_service.cpp(140),ERROR" ID="0xe01e0462" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartAbility @ability_service.cpp(180),INFO" ID="0xe01e05a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartAbility top null. @ability_service.cpp(184),ERROR" ID="0xe01e05c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Change Js app to background. @ability_service.cpp(192),INFO" ID="0xe01e0605" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartAbility Resume app when background. @ability_service.cpp(210),INFO" ID="0xe01e0695" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Js app already started or starting. @ability_service.cpp(216),INFO" ID="0xe01e06c5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Terminate pre js app when js to js @ability_service.cpp(219),INFO" ID="0xe01e06dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="TerminateAbility [%u] @ability_service.cpp(236),INFO" ID="0xe01e0765" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Resume Js app [%u] @ability_service.cpp(251),INFO" ID="0xe01e07dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ForceStopBundle [%u] @ability_service.cpp(270),INFO" ID="0xe01e0875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Launcher does not support force stop. @ability_service.cpp(276),INFO" ID="0xe01e08a5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ForceStop [%u] @ability_service.cpp(319),INFO" ID="0xe01e09fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PreCheckStartAbility path is null. @ability_service.cpp(363),ERROR" ID="0xe01e0b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PreCheckStartAbility current state active. @ability_service.cpp(369),ERROR" ID="0xe01e0b8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CheckResponse CreateAppTask fail @ability_service.cpp(388),ERROR" ID="0xe01e0c22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="calling ability callback failed: null @ability_service.cpp(401),ERROR" ID="0xe01e0c8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="calling ability callback failed: check @ability_service.cpp(406),ERROR" ID="0xe01e0cb2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateAppTask fail: null @ability_service.cpp(415),ERROR" ID="0xe01e0cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateAppTask. @ability_service.cpp(419),INFO" ID="0xe01e0d1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="CreateAppTask fail: ret = %d @ability_service.cpp(432),ERROR" ID="0xe01e0d82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateAppTask Fail to hide launcher @ability_service.cpp(456),INFO" ID="0xe01e0e45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="OnActiveDone [%u] @ability_service.cpp(499),INFO" ID="0xe01e0f9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Active launcher js bg fail @ability_service.cpp(513),ERROR" ID="0xe01e100a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="OnBackgroundDone [%u] @ability_service.cpp(537),INFO" ID="0xe01e10cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="OnBackgroundDone clean launcher record data @ability_service.cpp(559),INFO" ID="0xe01e117d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Js app exit, but has no js app. @ability_service.cpp(567),WARNING" ID="0xe01e11bb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="OnDestroyDone [%u] @ability_service.cpp(572),INFO" ID="0xe01e11e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AbilityService::SchedulerLifecycleDone state: STATE_ACTIVE @ability_service.cpp(698),INFO" ID="0xe01e15d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AbilityService::SchedulerLifecycleDone state: STATE_BACKGROUND @ability_service.cpp(704),INFO" ID="0xe01e1605" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AbilityService::SchedulerLifecycleDone state: STATE_UNINITIALIZED @ability_service.cpp(709),INFO" ID="0xe01e162d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AbilityService::SendGraphicTEEventToJsAbility topRecord is not js!! @ability_service.cpp(751),ERROR" ID="0xe01e177a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AddAbilityOperation failed @ability_service.cpp(809),ERROR" ID="0xe01e194a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="want is nullptr @ability_service.cpp(822),ERROR" ID="0xe01e19b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="RunOperation failed due to error : [%{public}d] @ability_service.cpp(884),ERROR" ID="0xe01e1ba2" />
+			</MSG_LOG>

@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="invalid snapshot version[%{public}d] @js_app_context.cpp(67),ERROR" ID="0xe0f6021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to eval js code cause by empty JavaScript script. @js_app_context.cpp(77),ERROR" ID="0xe0f6026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="empty js file or length is incorrect, eval user code failed @js_app_context.cpp(88),ERROR" ID="0xe0f602c2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="JS mode changed unexpected [%{public}d] @js_app_context.cpp(163),ERROR" ID="0xe0f6051a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to render app cause by render error. @js_app_context.cpp(182),ERROR" ID="0xe0f605b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Nothing to render as it is undefined. @js_app_context.cpp(187),ERROR" ID="0xe0f605da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc buffer for current ability path failed @js_app_context.cpp(232),ERROR" ID="0xe0f60742" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc buffer for current uuid failed @js_app_context.cpp(249),ERROR" ID="0xe0f607ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc buffer for current js path failed @js_app_context.cpp(279),ERROR" ID="0xe0f608ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uri is null. @js_app_context.cpp(312),ERROR" ID="0xe0f609c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uri is empty or too long. @js_app_context.cpp(317),ERROR" ID="0xe0f609ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fail to get resource path. @js_app_context.cpp(323),ERROR" ID="0xe0f60a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fail to get resource path. @js_app_context.cpp(330),ERROR" ID="0xe0f60a52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fail to get resource path. @js_app_context.cpp(335),ERROR" ID="0xe0f60a7a" />
+			</MSG_LOG>

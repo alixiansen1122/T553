@@ -1,0 +1,1 @@
+将SYSVIEW_LiteOS.txt放置在PC端SYSTEMVIEW工具的Description文件夹下。

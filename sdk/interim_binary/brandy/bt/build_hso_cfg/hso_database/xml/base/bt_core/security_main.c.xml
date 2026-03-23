@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg4" NAME="BT run time:%d, BT deep sleep time:%d, light sleep time:%d, BT sleep flag:%d @security_main.c(301),INFO" ID="0xa000096d" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="BT deepsleep cnt:%d, BT light sleep cnt:%d, last veto id:%d, last veto count:%d @security_main.c(304),INFO" ID="0xa0000985" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="PLT 32K freq is %d, cnt is %d, kick cnt is %d. @security_main.c(306),INFO" ID="0xa0000995" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="enter sec_main fuction @security_main.c(401),INFO" ID="0xa0000c8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The chip needs to be replaced. @security_main.c(576),INFO" ID="0xa0001205" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="BT year:0x%x, month:0x%x, day:0x%x, No verification is required. @security_main.c(583),INFO" ID="0xa000123d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The chip does not need to be verified. @security_main.c(610),INFO" ID="0xa0001315" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The chip verification failed.  @security_main.c(618),INFO" ID="0xa0001355" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Security enhancement verification succeeded. @security_main.c(623),INFO" ID="0xa000137d" />
+			</MSG_LOG>

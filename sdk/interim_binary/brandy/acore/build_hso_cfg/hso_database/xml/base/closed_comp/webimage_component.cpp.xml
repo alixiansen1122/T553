@@ -1,0 +1,19 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="ProcessInMemoryBase64: invalid parameters @webimage_component.cpp(86),ERROR" ID="0xe04c02b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ProcessInMemoryBase64: open target file %s failed @webimage_component.cpp(93),ERROR" ID="0xe04c02ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ProcessInMemoryBase64: ace_malloc decoded buffer failed @webimage_component.cpp(100),ERROR" ID="0xe04c0322" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ProcessInMemoryBase64: decode failed at offset %zu (ret: %d) @webimage_component.cpp(128),ERROR" ID="0xe04c0402" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ProcessInMemoryBase64: write failed (written: %zu/%zu) @webimage_component.cpp(138),ERROR" ID="0xe04c0452" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: invalid base64 data or target path @webimage_component.cpp(163),ERROR" ID="0xe04c051a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: base64 data is empty! @webimage_component.cpp(174),ERROR" ID="0xe04c0572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: ProcessInMemoryBase64 fail! @webimage_component.cpp(187),ERROR" ID="0xe04c05da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="SetData: success (target: %s) @webimage_component.cpp(221),INFO" ID="0xe04c06ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: need 3 parameters (base64 data, target filename) or parameters error @webimage_component.cpp(233),ERROR" ID="0xe04c074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: get image component failed @webimage_component.cpp(240),ERROR" ID="0xe04c0782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: data mallod failed @webimage_component.cpp(250),ERROR" ID="0xe04c07d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: invalid base64 data or target path @webimage_component.cpp(261),ERROR" ID="0xe04c082a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="CheckMagicNumber: fopen %s failed (err: %d) @webimage_component.cpp(304),ERROR" ID="0xe04c0982" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: need 1 parameters (base64 data, target filename) or parameters error @webimage_component.cpp(382),ERROR" ID="0xe04c0bf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SetData: get image component failed @webimage_component.cpp(389),ERROR" ID="0xe04c0c2a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Src: ParseImageSrcExt failed @webimage_component.cpp(395),ERROR" ID="0xe04c0c5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to parse image src cause by empty source. @webimage_component.cpp(548),ERROR" ID="0xe04c1122" />
+			</MSG_LOG>

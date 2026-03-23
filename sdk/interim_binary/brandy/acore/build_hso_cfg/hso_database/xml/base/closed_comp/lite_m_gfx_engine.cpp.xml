@@ -1,0 +1,38 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="unsupported BlendMode: %u. @lite_m_gfx_engine.cpp(77),ERROR" ID="0xcb16026a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupported color format: %d @lite_m_gfx_engine.cpp(108),ERROR" ID="0xcb160362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUCap failed! Invalid Capstyle! @lite_m_gfx_engine.cpp(121),ERROR" ID="0xcb1603ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(190),ERROR" ID="0xcb1605f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Fill operation failed. @lite_m_gfx_engine.cpp(224),ERROR" ID="0xcb160702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="handle image src failed. @lite_m_gfx_engine.cpp(351),ERROR" ID="0xcb160afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for path failed. @lite_m_gfx_engine.cpp(380),ERROR" ID="0xcb160be2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Obtain Ellipse Path failed. @lite_m_gfx_engine.cpp(427),ERROR" ID="0xcb160d5a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="font weight %u was not support @lite_m_gfx_engine.cpp(473),ERROR" ID="0xcb160eca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VGUPathAppendData failed. @lite_m_gfx_engine.cpp(515),ERROR" ID="0xcb16101a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VGUPathSetData failed. @lite_m_gfx_engine.cpp(526),ERROR" ID="0xcb161072" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(544),ERROR" ID="0xcb161102" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderPath failed. Sync previous task. @lite_m_gfx_engine.cpp(558),ERROR" ID="0xcb161172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(577),ERROR" ID="0xcb16120a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderPath failed. Sync previous task. @lite_m_gfx_engine.cpp(591),ERROR" ID="0xcb16127a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(604),ERROR" ID="0xcb1612e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderPath failed. Sync previous task. @lite_m_gfx_engine.cpp(633),ERROR" ID="0xcb1613ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(645),ERROR" ID="0xcb16142a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderPath failed. Sync previous task. @lite_m_gfx_engine.cpp(670),ERROR" ID="0xcb1614f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(769),ERROR" ID="0xcb16180a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Convert2VGUBuffer failed. @lite_m_gfx_engine.cpp(795),ERROR" ID="0xcb1618da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderBlur failed! @lite_m_gfx_engine.cpp(812),ERROR" ID="0xcb161962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="RenderBlit failed! @lite_m_gfx_engine.cpp(899),ERROR" ID="0xcb161c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DrawTransform failed. Software can only process uncompressed data. @lite_m_gfx_engine.cpp(934),ERROR" ID="0xcb161d32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for path failed. @lite_m_gfx_engine.cpp(994),ERROR" ID="0xcb161f12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="vguFuncs_ is null! @lite_m_gfx_engine.cpp(1031),ERROR" ID="0xcb16203a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="InitVgu or RenderClearRect is null! @lite_m_gfx_engine.cpp(1035),ERROR" ID="0xcb16205a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VGUPathInit, VGUPathAppendData, VGUPathClear or RenderPath is nullptr! @lite_m_gfx_engine.cpp(1042),ERROR" ID="0xcb162092" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VGUPathInit, VGUPathAppendData, VGUPathClear or RenderPath is nullptr! @lite_m_gfx_engine.cpp(1048),ERROR" ID="0xcb1620c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="InitVgu failed! @lite_m_gfx_engine.cpp(1053),ERROR" ID="0xcb1620ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="vguFuncs_ is null! @lite_m_gfx_engine.cpp(1064),INFO" ID="0xcb162145" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DeinitVgu failed! @lite_m_gfx_engine.cpp(1069),ERROR" ID="0xcb16216a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupported PixelFormat: %d @lite_m_gfx_engine.cpp(1107),ERROR" ID="0xcb16229a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bufferInfo_ is not inited. @lite_m_gfx_engine.cpp(1214),ERROR" ID="0xcb1625f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="set value: %d @lite_m_gfx_engine.cpp(1268),DBG" ID="0xcb1627a6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for path failed. @lite_m_gfx_engine.cpp(1289),ERROR" ID="0xcb16284a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Obtain RoundRect Path failed. @lite_m_gfx_engine.cpp(1347),ERROR" ID="0xcb162a1a" />
+			</MSG_LOG>

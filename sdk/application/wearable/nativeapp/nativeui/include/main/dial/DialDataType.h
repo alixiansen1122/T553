@@ -1,0 +1,185 @@
+/*
+ * Copyright (c) CompanyNameMagicTag 2025. All rights reserved.
+ * Description: DialDataType
+ * Author:
+ * Create: 2025-02-15
+ */
+
+#ifndef DIAL_DATA_TYPE_H
+#define DIAL_DATA_TYPE_H
+
+#include <unordered_map>
+
+namespace OHOS {
+enum class DialDataType : int16_t {
+    // 起始：单个浮点数据，OH标准协议部分，禁止改动，从0开始（包括0，二进制格式为：0000,xxxx,xxxx,xxxx）
+    DATA_TYPE_FLOAT_BASE = 0,
+    CLOCK = 1,
+    CLOCK_HIGH = 2,
+    CLOCK_LOW = 3,
+    CLOCK_RATIO_12H = 4,
+    CLOCK_RATIO_24H = 5,
+    MINUTE_TIME = 6,
+    MINUTE_HIGH = 7,
+    MINUTE_LOW = 8,
+    MINUTE_RATIO = 9,
+    SECOND_TIME = 10,
+    SECOND_HIGH = 11,
+    SECOND_LOW = 12,
+    SECOND_RATIO = 13,
+    AM_PM = 14,
+    HOUR_FORMAT = 16,
+    PREV_HOUR = 17,
+    NEXT_HOUR = 18,
+    CLOCK_ANGLE = 19,
+    MINUTE_ANGLE = 20,
+    SECOND_ANGLE = 21,
+    MILLISECOND_ANGLE = 22,
+    PREV_SECOND = 25,
+    NEXT_SECOND = 26,
+    PREV_2_SECONDS = 27,
+    PREV_MINUTE = 28,
+    NEXT_MINUTE = 29,
+    DUAL_TIMEZONE_CLOCK = 30,
+    DUAL_TIMEZONE_CLOCK_HIGH = 31,
+    DUAL_TIMEZONE_CLOCK_LOW = 32,
+    DUAL_TIMEZONE_CLOCK_RATIO_12H = 33,
+    DUAL_TIMEZONE_CLOCK_RATIO_24H = 34,
+    DUAL_TIMEZONE_MINUTE = 35,
+    DUAL_TIMEZONE_MINUTE_HIGH = 36,
+    DUAL_TIMEZONE_MINUTE_LOW = 37,
+    DUAL_TIMEZONE_MINUTE_RATIO = 38,
+    DUAL_TIMEZONE_AMPM = 41,
+    SUNRISE_SUNSET_IMAGE = 50,
+    SUNRISE_SUNSET_CLOCK_HIGH = 51,
+    SUNRISE_SUNSET_CLOCK_LOW = 52,
+    SUNRISE_SUNSET_MINUTE_HIGH = 53,
+    SUNRISE_SUNSET_MINUTE_LOW = 54,
+    DATE = 70,
+    DATE_HIGH = 71,
+    DATE_LOW = 72,
+    DATE_31_DAY_RATIO = 73,
+    YESTERDAY = 74,
+    YESTERDAY_DATE_HIGH = 75,
+    YESTERDAY_DATE_LOW = 76,
+    TOMORROW = 77,
+    TOMORROW_DATE_HIGH = 78,
+    TOMORROW_DATE_LOW = 79,
+    MONTH_DATA = 80,
+    MONTH = 81,
+    WEEKDAY_DATA = 83,
+    WEEKDAY_RATIO = 84,
+    CHINESE_HOUR = 86,
+    MOON_PHASE = 87,
+    PREV_MONTH = 88,
+    NEXT_MONTH = 89,
+    SOLAR_YEAR = 240,
+    YEAR_ONES = 241,
+    YEAR_TENS = 242,
+    YEAR_HUNDREDS = 243,
+    YEAR_THOUSANDS = 244,
+    LUNAR_MONTH = 90,
+    LUNAR_DATE_HIGH = 91,
+    LUNAR_DATE_LOW = 92,
+    BATTERY = 100,
+    BATTERY_ENUM = 102,
+    BATTERY_STATUS_ENUM = 103,
+    BATTERY_LEVEL = 104,
+    CHARGING_STATUS = 105,
+    STEP_COUNT = 110,
+    STEP_ONES = 111,
+    STEP_TENS = 112,
+    STEP_HUNDREDS = 113,
+    STEP_THOUSANDS = 114,
+    STEP_TENS_OF_THOUSANDS = 115,
+    STEP_GOAL_PROGRESS = 116,
+    STEP_GOAL_PROGRESS_ENUM = 117,
+    CALORIE = 120,
+    CALORIE_RATIO = 121,
+    CALORIE_GOAL_PROGRESS_ENUM = 122,
+    HEART_RATE = 130,
+    MAX_HEART_RATE = 131,
+    MIN_HEART_RATE = 132,
+    HEART_RATE_ZONE = 133,
+    HEART_RATE_RATIO = 134,
+    STRESS_LEVEL = 140,
+    STRESS_RATIO = 141,
+    STRESS_LEVEL_TYPE = 142,
+    MODERATE_HIGH_INTENSITY_TIME = 150,
+    MODERATE_HIGH_INTENSITY_TIME_RATIO = 151,
+    STAND_COUNT = 152,
+    STAND_COUNT_RATIO = 153,
+    MAX_VO2 = 160,
+    MAX_VO2_RATIO = 161,
+    SLEEP_RATIO = 166,
+    SLEEP_GOAL_PROGRESS_ENUM = 167,
+    TEMPERATURE = 170,
+    MAX_TEMPERATURE = 171,
+    MIN_TEMPERATURE = 172,
+    CURRENT_TEMPERATURE_MINUS_1 = 173,
+    CURRENT_TEMPERATURE_PLUS_1 = 174,
+    TEMPERATURE_TYPE = 175,
+    WEATHER_TYPE = 176,
+    TEMPERATURE_RATIO = 177,
+    PRESSURE = 180,
+    PRESSURE_RATIO = 181,
+    AQI = 182,
+    AQI_LEVEL = 183,
+    AQI_RATIO = 184,
+    ALTITUDE_DATA = 191,
+    ALTITUDE_UNIT = 192,
+    ALTITUDE_RATIO = 193,
+    DISTANCE_DATA = 195,
+    DISTANCE_UNIT = 196,
+    DISTANCE_GOAL_PROGRESS = 197,
+    BLE_CONNECTION_STATUS = 210,
+    BT_CONNECTION_STATUS = 211,
+    BLOOD_OXYGEN = 220,
+    SYSTOLIC_BLOOD_PRESSURE = 221,
+    DIASTOLIC_BLOOD_PRESSURE = 222,
+    DUAL_LANGUAGE_SYSTEM = 230,
+    UNREAD_SMS_MSG = 250,
+    UNREAD_WECHAT_MSG = 251,
+    // 结束：单个浮点数据，OH标准协议部分，禁止改动，到4095结束（包括4095）
+
+    // 起始：单个浮点数据，私有可定制部分，从4096开始（包括4096，二进制格式为：0001,xxxx,xxxx,xxxx）
+    ARC_PROGRESS_TEST = 8189,     // arc progree test
+    SWIVEL_GEAR_POSITIVE = 8190, // private data, clockwise
+    SWIVEL_GEAR_NEGATIVE = 8191, // counterclockwise
+    // 结束：单个浮点数据，私有可定制部分，到8191结束（包括8191）
+
+    // 起始：文本数据，OH标准协议部分，禁止改动，从8192开始（包括8192，二进制格式为：0010,xxxx,xxxx,xxxx）
+    DATA_TYPE_TEXT_BASE = 8192,
+    AM_PM_TEXT = 8193,
+    SUNRISE_TEXT = 8210,
+    SUNSET_TEXT = 8211,
+    MOONRISE_TEXT = 8221,
+    MOONSET_TEXT = 8222,
+    DUAL_TIMEZONE_ABBR_TEXT = 8200,
+    DUAL_TIMEZONE_TIME_TEXT = 8201,
+    DUAL_TIMEZONE_AM_PM_TEXT = 8202,
+    MONTH_TEXT = 8230,
+    DATE_TEXT = 8231,
+    WEEKDAY_TEXT = 8232,
+    LUNAR_YEAR = 8240,
+    SLEEP_TEXT = 8250,
+    DISTANCE_TEXT = 8260,
+    TIDE_RISE_TIME_TEXT = 8270,
+    TIDE_FALL_TIME_TEXT = 8271,
+    // 结束：文本数据，OH标准协议部分，禁止改动，到12287结束（包括12287）
+
+    // 文本数据，私有可定制部分，从12288开始（包括12288，二进制格式为：0011,xxxx,xxxx,xxxx）
+    // 文本数据，私有可定制部分，到16383结束（包括16383）
+
+    // 起始：多个浮点数据，OH标准协议部分，禁止改动，从16384开始（包括16384，二进制格式为：0100,xxxx,xxxx,xxxx）
+    DATA_TYPE_MULTI_FLOAT_BASE = 16384,
+    // 结束：多个浮点数据，OH标准协议部分，禁止改动，到20479结束（包括20479）
+
+    // 起始：多个浮点数据，私有可定制部分，从20480开始（包括20480，二进制格式为：0101,xxxx,xxxx,xxxx）
+    // 结束：多个浮点数据，私有可定制部分，到24575结束（包括24575）
+
+    DATA_TYPE_MAX = 0x6000,
+}; // enum class DialDataType
+} // namespace OHOS
+
+#endif // DIAL_DATA_TYPE_H

@@ -1,0 +1,57 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="osal_sem_init error %x @spp_service.c(89),ERROR" ID="0xd82a02ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="osal_sem_down error %x @spp_service.c(113),ERROR" ID="0xd82a038a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="client num reached max limit @spp_service.c(137),ERROR" ID="0xd82a044a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="client malloc fail @spp_service.c(143),ERROR" ID="0xd82a047a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid memcpy fail @spp_service.c(150),ERROR" ID="0xd82a04b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp client %x add success @spp_service.c(161),INFO" ID="0xd82a050d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="uuid=%s @spp_service.c(185),INFO" ID="0xd82a05cd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sleep too long. %d ms. @spp_service.c(252),WARNING" ID="0xd82a07e3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp client %x delete success @spp_service.c(258),INFO" ID="0xd82a0815" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add client fail @spp_service.c(267),ERROR" ID="0xd82a085a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp server %x add success @spp_service.c(297),INFO" ID="0xd82a094d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp server %x add fail @spp_service.c(300),ERROR" ID="0xd82a0962" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sleep too long. %d ms. @spp_service.c(341),WARNING" ID="0xd82a0aab" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unregister spp service ret: %x @spp_service.c(348),WARNING" ID="0xd82a0ae3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp server %x delete success @spp_service.c(359),INFO" ID="0xd82a0b3d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="spp connect connHdl: %x devHdl: %x svcHdl: %x @spp_service.c(364),INFO" ID="0xd82a0b65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="server not exist @spp_service.c(370),WARNING" ID="0xd82a0b93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="client not exist @spp_service.c(377),WARNING" ID="0xd82a0bcb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spp disconnect connHdl: %x @spp_service.c(398),INFO" ID="0xd82a0c75" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="client not exist @spp_service.c(402),WARNING" ID="0xd82a0c93" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server %x disconnected @spp_service.c(414),INFO" ID="0xd82a0cf5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @spp_service.c(439),WARNING" ID="0xd82a0dbb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="params socket_para invalid. @spp_service.c(447),ERROR" ID="0xd82a0dfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid invalid @spp_service.c(452),ERROR" ID="0xd82a0e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="params name len invalid. @spp_service.c(458),ERROR" ID="0xd82a0e52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="exist same uuid client @spp_service.c(465),ERROR" ID="0xd82a0e8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add server fail @spp_service.c(471),ERROR" ID="0xd82a0eba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btsdk_register_spp_service fail @spp_service.c(487),WARNING" ID="0xd82a0f3b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="server %x create success. svc_hdl: %x @spp_service.c(491),INFO" ID="0xd82a0f5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server id %d invalid @spp_service.c(500),ERROR" ID="0xd82a0fa2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server not exist. server id %d @spp_service.c(507),ERROR" ID="0xd82a0fda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server is already waiting to accept. server id %d @spp_service.c(512),ERROR" ID="0xd82a1002" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="client not exist. server id %d @spp_service.c(524),ERROR" ID="0xd82a1062" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server waiting for accept timeout. server id %d @spp_service.c(538),ERROR" ID="0xd82a10d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="server not exist. server id %d @spp_service.c(555),ERROR" ID="0xd82a115a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTSDK_DisconnectConnection fail retCode: %x @spp_service.c(565),ERROR" ID="0xd82a11aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="access_cnt=%d @spp_service.c(571),INFO" ID="0xd82a11dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="socket_type invalid @spp_service.c(583),ERROR" ID="0xd82a123a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="uuid invalid @spp_service.c(588),ERROR" ID="0xd82a1262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="acl not connected @spp_service.c(593),ERROR" ID="0xd82a128a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dev_hdl invalid @spp_service.c(599),ERROR" ID="0xd82a12ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add client fail @spp_service.c(613),INFO" ID="0xd82a132d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="connect spp fail. ret: %x @spp_service.c(622),INFO" ID="0xd82a1375" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTSDK_DisconnectConnection fail retCode: %x @spp_service.c(647),ERROR" ID="0xd82a143a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="spp read data failed @spp_service.c(733),ERROR" ID="0xd82a16ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="client is null. client id %d @spp_service.c(758),ERROR" ID="0xd82a17b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="client not connected. client id %d @spp_service.c(762),ERROR" ID="0xd82a17d2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="connHdl: %x dataLen: %d writeRet: %d writeLen: %d @spp_service.c(777),WARNING" ID="0xd82a184b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hdl 0x%x not exist @spp_service.c(800),WARNING" ID="0xd82a1903" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no recieve function registered @spp_service.c(807),INFO" ID="0xd82a193d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hdl 0x%x not exist @spp_service.c(822),WARNING" ID="0xd82a19b3" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="no match client id for hdl 0x%x, try %d times @spp_service.c(826),INFO" ID="0xd82a19d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTSDK_SPP_EVT_CONNECTED hdl=0x%x @spp_service.c(842),INFO" ID="0xd82a1a55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTSDK_SPP_EVT_DISCONNECTED hdl=0x%x @spp_service.c(846),INFO" ID="0xd82a1a75" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="BTSDK_SPP_EVT_FC_ON hdl=0x%x @spp_service.c(853),INFO" ID="0xd82a1aad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unknown msg hdl=0x%x @spp_service.c(856),WARNING" ID="0xd82a1ac3" />
+			</MSG_LOG>

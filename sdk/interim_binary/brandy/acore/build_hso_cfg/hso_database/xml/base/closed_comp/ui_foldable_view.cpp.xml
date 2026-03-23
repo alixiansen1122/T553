@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="view %p can not be nullptr or added to self! @ui_foldable_view.cpp(49),ERROR" ID="0xcb54018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="can not add view multi times @ui_foldable_view.cpp(53),ERROR" ID="0xcb5401aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="only UITransformGroup support @ui_foldable_view.cpp(57),ERROR" ID="0xcb5401ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="new UITransformGroup failed @ui_foldable_view.cpp(62),ERROR" ID="0xcb5401f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="add failed @ui_foldable_view.cpp(70),ERROR" ID="0xcb540232" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add failed, the number of pages exceeds the limit (%d). @ui_foldable_view.cpp(82),ERROR" ID="0xcb540292" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(86),ERROR" ID="0xcb5402b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PackInputView failed @ui_foldable_view.cpp(91),ERROR" ID="0xcb5402da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="add failed, the number of pages exceeds the limit (%d). @ui_foldable_view.cpp(102),ERROR" ID="0xcb540332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(106),ERROR" ID="0xcb540352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Insert failed, prevView is not belong to this foldable view @ui_foldable_view.cpp(110),ERROR" ID="0xcb540372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PackInputView failed @ui_foldable_view.cpp(119),ERROR" ID="0xcb5403ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove failed, view is nullptr or view is not belong to this foldable view @ui_foldable_view.cpp(130),ERROR" ID="0xcb540412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(134),ERROR" ID="0xcb540432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MoveChild failed, there is less than one child @ui_foldable_view.cpp(195),WARNING" ID="0xcb54061b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MoveChild failed, moveView is equal to prevView @ui_foldable_view.cpp(199),WARNING" ID="0xcb54063b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MoveChild failed, moveView is nullptr or view is not belong to this foldable view @ui_foldable_view.cpp(203),ERROR" ID="0xcb54065a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MoveChild failed, prevView is not belong to this foldable view @ui_foldable_view.cpp(207),ERROR" ID="0xcb54067a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="MoveChild failed, animator is running! @ui_foldable_view.cpp(211),ERROR" ID="0xcb54069a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(591),ERROR" ID="0xcb54127a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="view is nullptr or view is not belong to this foldable view @ui_foldable_view.cpp(612),ERROR" ID="0xcb541322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(617),ERROR" ID="0xcb54134a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupport layout mode %d @ui_foldable_view.cpp(627),ERROR" ID="0xcb54139a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator is running! @ui_foldable_view.cpp(655),ERROR" ID="0xcb54147a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="view is nullptr @ui_foldable_view.cpp(865),ERROR" ID="0xcb541b0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid edit anim type %d @ui_foldable_view.cpp(869),ERROR" ID="0xcb541b2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid edit anim type %d @ui_foldable_view.cpp(891),ERROR" ID="0xcb541bda" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="move child animator only support in flat mode @ui_foldable_view.cpp(933),ERROR" ID="0xcb541d2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unsupport layout mode %d @ui_foldable_view.cpp(986),ERROR" ID="0xcb541ed2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="layout mode %d is not support @ui_foldable_view.cpp(1025),ERROR" ID="0xcb54200a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SWITCH_ADDTAIL_DELHEAD is not support from flat to fold @ui_foldable_view.cpp(1034),ERROR" ID="0xcb542052" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PackInputView failed @ui_foldable_view.cpp(1039),ERROR" ID="0xcb54207a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="SWITCH_ADDHEAD_DELTAIL is not support from fold to flat @ui_foldable_view.cpp(1049),ERROR" ID="0xcb5420ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="PackInputView failed @ui_foldable_view.cpp(1054),ERROR" ID="0xcb5420f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="please set max page num before add! @ui_foldable_view.cpp(1107),ERROR" ID="0xcb54229a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="invalid param width(%d), height(%d)! @ui_foldable_view.cpp(1119),ERROR" ID="0xcb5422fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="scaleGradient(%f) should less than 1 and greater than 0 @ui_foldable_view.cpp(1145),ERROR" ID="0xcb5423ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="minFoldPageOpacity(%u) should less than expandPageOpacity(%u) @ui_foldable_view.cpp(1165),ERROR" ID="0xcb54246a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="layout mode %d is not support @ui_foldable_view.cpp(1238),ERROR" ID="0xcb5426b2" />
+			</MSG_LOG>

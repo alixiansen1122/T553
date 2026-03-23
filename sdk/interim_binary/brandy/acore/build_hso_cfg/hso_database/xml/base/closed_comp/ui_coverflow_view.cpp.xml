@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="add faild, Input parameter error. @ui_coverflow_view.cpp(89),ERROR" ID="0xcb4e02ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Already add an item with the same id. Remove it before adding this. @ui_coverflow_view.cpp(94),ERROR" ID="0xcb4e02f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove faild, Input parameter error. @ui_coverflow_view.cpp(136),ERROR" ID="0xcb4e0442" />
+			</MSG_LOG>

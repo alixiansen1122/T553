@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Init Websocket Client fail! @websocket_module_client.cpp(96),ERROR" ID="0xe0420302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="WebSocketClientConnect fail! @websocket_module_client.cpp(102),ERROR" ID="0xe0420332" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The data size has exceeded the allowed maximum! @websocket_module_client.cpp(123),ERROR" ID="0xe04203da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The last message hasn't finished sending! @websocket_module_client.cpp(128),ERROR" ID="0xe0420402" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for message failed! @websocket_module_client.cpp(134),ERROR" ID="0xe0420432" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The initialization of this send hasn't completed! @websocket_module_client.cpp(149),ERROR" ID="0xe04204aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Input data exceeds initial bufferSize @websocket_module_client.cpp(155),ERROR" ID="0xe04204da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s failed! @websocket_module_client.cpp(161),ERROR" ID="0xe042050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="The initialization of this send hasn't completed! @websocket_module_client.cpp(179),ERROR" ID="0xe042059a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Input data exceeds initial bufferSize @websocket_module_client.cpp(190),ERROR" ID="0xe04205f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s failed! @websocket_module_client.cpp(196),ERROR" ID="0xe0420622" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="WebSocketClientClose fail! @websocket_module_client.cpp(215),ERROR" ID="0xe04206ba" />
+			</MSG_LOG>

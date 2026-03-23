@@ -1,0 +1,124 @@
+/***************************************/
+                目录说明
+/***************************************/
+│  aw883xx.c               /*源文件*/
+│  aw883xx.h               /*源文件*/
+│  aw883xx_base.h          /*源文件*/
+│  aw883xx_calib.c         /*源文件*/
+│  aw883xx_calib.h         /*源文件*/
+│  aw883xx_device.c        /*源文件*/
+│  aw883xx_device.h        /*源文件*/
+│  aw883xx_init.h          /*源文件*/
+│  aw_params.h             /*源文件，需根据实际使用芯片替换*/
+│  aw_profile_process.h    /*源文件*/
+│  example_main.c          /*项目文件修改示例*/
+│  README                  /*移植包目录*/
+│
+├─acf_parse_h              /*配置文件生成工具*/
+│      acf_parse_h.exe
+│      acf_parse_h_guide.docx
+│      acf_parse_h_guide.pdf
+│
+├─config                  /*配置文件，根据平台I2S输出格式和PA数量选择*/
+│  ├─aw88166              /*以产品AW88166配置文件为例说明*/
+│  │  ├─mono
+│  │  │  ├─16bit
+│  │  │  │      aw883xx_acf.bin
+│  │  │  │      aw_params.h       /*单PA，I2S 16bit输出*/
+│  │  │  │
+│  │  │  └─32bit
+│  │  │          aw883xx_acf.bin
+│  │  │          aw_params.h      /*单PA，I2S 32bit输出*/
+│  │  │
+│  │  └─stereo
+│  │      ├─16bit
+│  │      │      aw883xx_acf.bin
+│  │      │      aw_params.h      /*双PA，I2S 16bit输出*/
+│  │      │
+│  │      └─32bit
+│  │              aw883xx_acf.bin
+│  │              aw_params.h     /*双PA，I2S 32bit输出*/
+│  │
+│  ├─aw88394
+│  │  ├─16bit
+│  │  │  ├─mono
+│  │  │  │      aw883xx_acf.bin
+│  │  │  │      aw_params.h
+│  │  │  │
+│  │  │  └─stereo
+│  │  │          aw883xx_acf.bin
+│  │  │          aw_params.h
+│  │  │
+│  │  └─32bit
+│  │      ├─mono
+│  │      │      aw883xx_acf.bin
+│  │      │      aw_params.h
+│  │      │
+│  │      └─stereo
+│  │              aw883xx_acf.bin
+│  │              aw_params.h
+│  │
+│  ├─aw88395
+│  │  ├─16bit
+│  │  │  ├─mono
+│  │  │  │      aw883xx_acf.bin
+│  │  │  │      aw_params.h
+│  │  │  │
+│  │  │  └─stereo
+│  │  │          aw883xx_acf.bin
+│  │  │          aw_params.h
+│  │  │
+│  │  └─32bit
+│  │      ├─mono
+│  │      │      aw883xx_acf.bin
+│  │      │      aw_params.h
+│  │      │
+│  │      └─stereo
+│  │              acf_parse_h.exe
+│  │              aw883xx_acf.bin
+│  │              aw_params.h
+│  │
+│  ├─aw88396
+│  │  ├─i2s_mono_16
+│  │  │      aw883xx_acf.bin
+│  │  │      aw_params.h
+│  │  │
+│  │  └─i2s_mono_32
+│  │          aw883xx_acf.bin
+│  │          aw_params.h
+│  │
+│  └─aw88399
+│      ├─i2s_mono_16
+│      │      aw883xx_acf.bin
+│      │      aw_params.h
+│      │
+│      └─i2s_mono_32
+│              aw883xx_acf.bin
+│              aw_params.h
+│
+├─monitor_files                /*monitor功能文件*/
+│      aw883xx_monitor.c
+│      aw883xx_monitor.h
+│
+├─porting_guide                /*MCU驱动移植文档说明*/
+│
+└─product_init_files           /*产品初始化文件*/
+    ├─aw88166
+    │      aw883xx_pid_2066_init.c
+    │      aw883xx_pid_2066_reg.h
+    │
+    ├─aw88394
+    │      aw883xx_pid_2049_init.c
+    │      aw883xx_pid_2049_reg.h
+    │
+    ├─aw88395
+    │      aw883xx_pid_2049_init.c
+    │      aw883xx_pid_2049_reg.h
+    │
+    ├─aw88396
+    │      aw883xx_pid_2183_init.c
+    │      aw883xx_pid_2183_reg.h
+    │
+    └─aw88399
+            aw883xx_pid_2183_init.c
+            aw883xx_pid_2183_reg.h

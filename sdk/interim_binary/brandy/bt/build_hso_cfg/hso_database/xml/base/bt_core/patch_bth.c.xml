@@ -1,0 +1,12 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="smp_pair_new_patch @patch_bth.c(51),INFO" ID="0x8d54019d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[AVDTP][GET_SEP_FAIL] Can not get sep info @patch_bth.c(156),WARNING" ID="0x8d5404e3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[STACK][RECV_RING_STOP] @patch_bth.c(244),INFO" ID="0x8d5407a5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ATT_GATT] att error rsp opcode:0x%x handle:%d error:0x%x @patch_bth.c(277),ERROR" ID="0x8d5408aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP]PAIRING_REQ_RECV @patch_bth.c(506),ERROR" ID="0x8d540fd2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SMP][LongTermKeyRequest]link-&gt;hcihdl = %u, link-&gt;remote = 0x%x, key = 0x%x @patch_bth.c(863),INFO" ID="0x8d541afd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP][LongTermKeyRequest][No LESC LTK SEND] @patch_bth.c(876),INFO" ID="0x8d541b65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP][LongTermKeyRequest][DIV mismatch, Unpaired] @patch_bth.c(900),INFO" ID="0x8d541c25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP][LongTermKeyRequest][ECDH LTK unavailable, pair!=NULL] @patch_bth.c(913),INFO" ID="0x8d541c8d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP][LongTermKeyRequest][LTK unavailable, pair=NULL] @patch_bth.c(926),INFO" ID="0x8d541cf5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[SMP][LongTermKeyRequest][Send Negative Reply!] @patch_bth.c(943),INFO" ID="0x8d541d7d" />
+			</MSG_LOG>

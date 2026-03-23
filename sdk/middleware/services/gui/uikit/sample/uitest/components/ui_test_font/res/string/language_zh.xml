@@ -1,0 +1,51 @@
+<language
+    id="language"
+    direct="ltf"
+    languageinfo="zh">
+    <lanstr
+        id="STR_IMAGE"
+        value="图片"
+        size="32"
+        direct="rtl"
+		/>
+
+    <lanstr
+        id="STR_PROGRESSBAR"
+        value="进度条"
+        direct="mixed"
+		/>
+
+    <lanstr
+        id="STR_SLIDEUNLOCK"
+        value="滑动解锁"
+		/>
+
+    <lanstr
+        id="STR_LISTBOX"
+        value="列表"
+		/>
+
+    <lanstr
+        id="STR_BUTTON"
+        value="按钮"
+		/>
+
+    <lanstr
+        id="STR_SCROLLVIEW"
+        value="滚动视图"
+		/>
+
+    <lanstr
+        id="STR_SCROLLGRID"
+        value="滚动网格"
+		/>
+
+    <lanstr
+        id="STR_CLOCK"
+        value="时钟"
+		/>
+    <lanstr
+        id="STR_22"
+        value="时钟"
+		/>
+</language>

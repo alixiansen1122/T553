@@ -1,0 +1,3 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="bms starts %s&quot;, result ? &quot;successfully&quot; : &quot;unsuccessfully @bundle_mgr_service.cpp(75),INFO" ID="0xe06a025d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="BundleMgrService::ServiceMessageHandle @bundle_mgr_service.cpp(118),INFO" ID="0xe06a03b5" />
+			</MSG_LOG>

@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="floatItems is nullptr @ui_float_box_view.cpp(41),ERROR" ID="0xcb4c014a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="floatItemsCnt must be in range[%u, %u]. @ui_float_box_view.cpp(46),ERROR" ID="0xcb4c0172" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="floatItems[%u].imgInfo is nullptr! @ui_float_box_view.cpp(54),ERROR" ID="0xcb4c01b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for info.imgInfo failed. @ui_float_box_view.cpp(63),ERROR" ID="0xcb4c01fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="itemSize: %u, or itemSpacing: %u, is 0! @ui_float_box_view.cpp(169),ERROR" ID="0xcb4c054a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ItemSize_ %u + itemSpacing %u &gt; minLength %d / 4.0f @ui_float_box_view.cpp(175),ERROR" ID="0xcb4c057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for contentImg_ failed! @ui_float_box_view.cpp(225),ERROR" ID="0xcb4c070a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="Item Cnt is invalid: %u, should be in range [%u, %u] @ui_float_box_view.cpp(245),ERROR" ID="0xcb4c07aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Param Check failed. @ui_float_box_view.cpp(252),ERROR" ID="0xcb4c07e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ObtainArcPath failed! @ui_float_box_view.cpp(286),ERROR" ID="0xcb4c08f2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Total count of items should be in range [%u, %u]. @ui_float_box_view.cpp(309),ERROR" ID="0xcb4c09aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Speed should be greater than 0! @ui_float_box_view.cpp(497),ERROR" ID="0xcb4c0f8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Item size should be greater than 0! @ui_float_box_view.cpp(553),ERROR" ID="0xcb4c114a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Item spacing should be greater than 0! @ui_float_box_view.cpp(565),ERROR" ID="0xcb4c11aa" />
+			</MSG_LOG>

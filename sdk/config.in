@@ -1,0 +1,12 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) @CompanyNameMagicTag 2022-2022. All rights reserved.
+#===============================================================================
+mainmenu "CFBB Configuration"
+comment "Main menu description, show how to use this configuration system."
+
+menu "Product"
+    comment "Config the product."
+    osource "product/Kconfig"
+endmenu
+

@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="kaleidoscopeInfo_ is not nullptr @kaleidoscope_utils.cpp(49),ERROR" ID="0xcb4a018a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for kaleidoscopeInfo_ failed! @kaleidoscope_utils.cpp(55),ERROR" ID="0xcb4a01ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc for data failed. @kaleidoscope_utils.cpp(68),ERROR" ID="0xcb4a0222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dst-&gt;info.data is nullptr @kaleidoscope_utils.cpp(83),ERROR" ID="0xcb4a029a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="size does not match: src[%u, %u], dst[%u, %u]. @kaleidoscope_utils.cpp(90),ERROR" ID="0xcb4a02d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for sectorPath failed. @kaleidoscope_utils.cpp(105),ERROR" ID="0xcb4a034a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc buffer for imgPath failed. @kaleidoscope_utils.cpp(111),ERROR" ID="0xcb4a037a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for partialInfo_ failed. @kaleidoscope_utils.cpp(129),ERROR" ID="0xcb4a040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Alloc for partial info data failed. @kaleidoscope_utils.cpp(153),ERROR" ID="0xcb4a04ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="src or src-&gt;data is null. @kaleidoscope_utils.cpp(191),ERROR" ID="0xcb4a05fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for imgInfo_ failed. @kaleidoscope_utils.cpp(198),ERROR" ID="0xcb4a0632" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy imgInfo_ failed. @kaleidoscope_utils.cpp(204),ERROR" ID="0xcb4a0662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="InitKaleidoscopeInfo failed. @kaleidoscope_utils.cpp(210),ERROR" ID="0xcb4a0692" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="InitInnerPath failed. @kaleidoscope_utils.cpp(217),ERROR" ID="0xcb4a06ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="InitPartialInfo failed. @kaleidoscope_utils.cpp(225),ERROR" ID="0xcb4a070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ConstructPartial failed. UpdateImageInfoIfNecessary failed. @kaleidoscope_utils.cpp(303),ERROR" ID="0xcb4a097a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="kaleidoscopeInfo_ or partialInfo_ is nullptr. @kaleidoscope_utils.cpp(397),ERROR" ID="0xcb4a0c6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="kaleidoscopeInfo_ or kaleidoscopeInfo_-&gt;info.data is nullptr. @kaleidoscope_utils.cpp(415),ERROR" ID="0xcb4a0cfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ConstructPartial failed. @kaleidoscope_utils.cpp(422),ERROR" ID="0xcb4a0d32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UpdateKaleidoscopeImgInfo failed, because isInternalMem_ is false. @kaleidoscope_utils.cpp(431),ERROR" ID="0xcb4a0d7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UpdateKaleidoscopeImgInfo failed, because addr is nullptr. @kaleidoscope_utils.cpp(436),ERROR" ID="0xcb4a0da2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UpdateKaleidoscopeImgInfo failed, because kaleidoscopeInfo_ is nullptr. @kaleidoscope_utils.cpp(441),ERROR" ID="0xcb4a0dca" />
+			</MSG_LOG>

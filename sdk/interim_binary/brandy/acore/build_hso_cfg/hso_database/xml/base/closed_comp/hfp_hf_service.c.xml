@@ -1,0 +1,88 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="malloc errr @hfp_hf_service.c(104),ERROR" ID="0xd8240342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s errr @hfp_hf_service.c(110),ERROR" ID="0xd8240372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf service init memset error. @hfp_hf_service.c(175),ERROR" ID="0xd824057a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="state: 0x%x g_hfp_hf_ctx_t.sco_hdl: 0x%x @hfp_hf_service.c(218),INFO" ID="0xd82406d5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf handle at command result callback fail. @hfp_hf_service.c(249),ERROR" ID="0xd82407ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="cmd_code: 0x%x, result_code: %u! @hfp_hf_service.c(252),INFO" ID="0xd82407e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dial error code :%d @hfp_hf_service.c(255),ERROR" ID="0xd82407fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hfp hf handle at command result. param %p len %d @hfp_hf_service.c(275),INFO" ID="0xd824089d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc fail. @hfp_hf_service.c(281),ERROR" ID="0xd82408ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail. @hfp_hf_service.c(285),ERROR" ID="0xd82408ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @hfp_hf_service.c(291),ERROR" ID="0xd824091a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="len err: %d! @hfp_hf_service.c(308),ERROR" ID="0xd82409a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="audio conn released. @hfp_hf_service.c(323),INFO" ID="0xd8240a1d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="sco disconnect complete. @hfp_hf_service.c(330),INFO" ID="0xd8240a55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="audio conn fail. @hfp_hf_service.c(338),INFO" ID="0xd8240a95" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="incoming call. inband = %d len = %d  @hfp_hf_service.c(345),INFO" ID="0xd8240acd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="terminate local ringtone. inband = %d len = %d  @hfp_hf_service.c(355),INFO" ID="0xd8240b1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="%d @hfp_hf_service.c(384),INFO" ID="0xd8240c05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="%d @hfp_hf_service.c(393),INFO" ID="0xd8240c4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(403),INFO" ID="0xd8240c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(413),WARNING" ID="0xd8240ceb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(423),INFO" ID="0xd8240d3d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(433),INFO" ID="0xd8240d8d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="name: %s, len: %d @hfp_hf_service.c(447),INFO" ID="0xd8240dfd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(458),INFO" ID="0xd8240e55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME=" @hfp_hf_service.c(468),INFO" ID="0xd8240ea5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="micvol: %d @hfp_hf_service.c(477),INFO" ID="0xd8240eed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="spkvol: %d @hfp_hf_service.c(486),INFO" ID="0xd8240f35" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="type: 0x%x, service: 0x%x, num: %s! @hfp_hf_service.c(500),INFO" ID="0xd8240fa5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="codec: %d @hfp_hf_service.c(510),INFO" ID="0xd8240ff5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf handle call list change fail. @hfp_hf_service.c(517),ERROR" ID="0xd824102a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="[current call] index: %d, incoming: %d, status: %d, multi: %d, number_len: %d, number: %s @hfp_hf_service.c(521),INFO" ID="0xd824104d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no empty space! @hfp_hf_service.c(526),ERROR" ID="0xd8241072" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp_hf_copy_phone_number fail @hfp_hf_service.c(533),ERROR" ID="0xd82410aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hfp hf handle call list result. param %p len %d @hfp_hf_service.c(549),INFO" ID="0xd824112d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc fail. @hfp_hf_service.c(556),ERROR" ID="0xd8241162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail. @hfp_hf_service.c(560),ERROR" ID="0xd8241182" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="send msg fail. %x @hfp_hf_service.c(566),ERROR" ID="0xd82411b2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hfp hf handle receive ring tone. tone %d len %d @hfp_hf_service.c(573),INFO" ID="0xd82411ed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(580),INFO" ID="0xd8241225" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="receive CIEV code : %d @hfp_hf_service.c(587),INFO" ID="0xd824125d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[total status] call: %d, callsetup: %d, callheld: %d @hfp_hf_service.c(590),INFO" ID="0xd8241275" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="btsdk_hfap_3way_calling_handler ret:0x%x @hfp_hf_service.c(605),INFO" ID="0xd82412ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp hf event=0x%x. @hfp_hf_service.c(648),INFO" ID="0xd8241445" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy fail @hfp_hf_service.c(693),ERROR" ID="0xd82415aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf disable device fail, addr is not present. @hfp_hf_service.c(718),ERROR" ID="0xd8241672" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf disable device fail, dev_handl is not present. @hfp_hf_service.c(723),ERROR" ID="0xd824169a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf disable device fail, conn_handl is not present. @hfp_hf_service.c(728),ERROR" ID="0xd82416c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="first report sco disconnect complete. @hfp_hf_service.c(733),INFO" ID="0xd82416ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp hf disable device fail, pan context memset error. @hfp_hf_service.c(739),ERROR" ID="0xd824171a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="hfp hf conn event: %x dev_hdl: %x conn_hdl: %x @hfp_hf_service.c(751),INFO" ID="0xd824177d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ev: 0x%x state: 0x%x @hfp_hf_service.c(764),INFO" ID="0xd82417e5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="g_hfp_hf_ctx_t.sco_hdl: 0x%x @hfp_hf_service.c(776),INFO" ID="0xd8241845" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id: 0x%x @hfp_hf_service.c(799),WARNING" ID="0xd82418fb" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="empty number! @hfp_hf_service.c(809),ERROR" ID="0xd824194a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(813),INFO" ID="0xd824196d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid action_type: %d! @hfp_hf_service.c(822),ERROR" ID="0xd82419b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="call idx=%d @hfp_hf_service.c(827),INFO" ID="0xd82419dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no incoming call right now! @hfp_hf_service.c(829),WARNING" ID="0xd82419eb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(850),INFO" ID="0xd8241a95" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="call idx=%d @hfp_hf_service.c(861),INFO" ID="0xd8241aed" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(871),INFO" ID="0xd8241b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="call idx=%d @hfp_hf_service.c(883),INFO" ID="0xd8241b9d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(894),INFO" ID="0xd8241bf5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(902),INFO" ID="0xd8241c35" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Volume too large %d, change it to 15 @hfp_hf_service.c(911),WARNING" ID="0xd8241c7b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Set speaker volume to %d @hfp_hf_service.c(916),INFO" ID="0xd8241ca5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Set mic volume to %d @hfp_hf_service.c(919),INFO" ID="0xd8241cbd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(931),INFO" ID="0xd8241d1d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="wrong code: %c @hfp_hf_service.c(934),ERROR" ID="0xd8241d32" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(943),INFO" ID="0xd8241d7d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hdl: 0x%x ret: 0x%x @hfp_hf_service.c(951),INFO" ID="0xd8241dbd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="g_hfp_rmt_dev: 0x%x @hfp_hf_service.c(959),INFO" ID="0xd8241dfd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="is_accept=%d ret=0x%x @hfp_hf_service.c(966),INFO" ID="0xd8241e35" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="No device selected @hfp_hf_service.c(975),ERROR" ID="0xd8241e7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp already connected @hfp_hf_service.c(979),WARNING" ID="0xd8241e9b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="g_rmt_dev=0x%x @hfp_hf_service.c(983),INFO" ID="0xd8241ebd" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="finish, hdl:0x%x, result: 0x%x! @hfp_hf_service.c(985),INFO" ID="0xd8241ecd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hfp disconnect start g_hfp_hf_ctx_t.conn_hdl=0x%x @hfp_hf_service.c(993),INFO" ID="0xd8241f0d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp is not connected @hfp_hf_service.c(998),WARNING" ID="0xd8241f33" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="error: 0x%x @hfp_hf_service.c(1004),ERROR" ID="0xd8241f62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hfp disconnect OK @hfp_hf_service.c(1007),INFO" ID="0xd8241f7d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="g_hfp_hf_ctx_t.conn_hdl:0x%x ret:0x%x @hfp_hf_service.c(1019),INFO" ID="0xd8241fdd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="sco already connected sco_hdl:0x%x @hfp_hf_service.c(1021),WARNING" ID="0xd8241feb" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="g_hfp_hf_ctx_t.conn_hdl:0x%x ret:0x%x @hfp_hf_service.c(1033),INFO" ID="0xd824204d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no sco connected @hfp_hf_service.c(1035),WARNING" ID="0xd824205b" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invalid codec: %d @hfp_hf_service.c(1046),ERROR" ID="0xd82420b2" />
+			</MSG_LOG>

@@ -1,0 +1,40 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="Invalid file path: %s @image_cache_manager.cpp(48),ERROR" ID="0xcb240182" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="File(%s) can not open. errno: %d @image_cache_manager.cpp(54),ERROR" ID="0xcb2401b2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ResId is invalid: 0x%x @image_cache_manager.cpp(63),ERROR" ID="0xcb2401fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="DirId can not match: resId: 0x%x, dirId: 0x%x @image_cache_manager.cpp(68),ERROR" ID="0xcb240222" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ResId is out of the range: 0x%x @image_cache_manager.cpp(73),ERROR" ID="0xcb24024a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="FillPath failed! Length of filepath with a null terminator is greater than 64. @image_cache_manager.cpp(85),ERROR" ID="0xcb2402aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="strcpy_s failed. @image_cache_manager.cpp(89),ERROR" ID="0xcb2402ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multiImgInfo is nullptr! @image_cache_manager.cpp(109),ERROR" ID="0xcb24036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc node failed! @image_cache_manager.cpp(119),ERROR" ID="0xcb2403ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="multiImgInfo.info is nullptr @image_cache_manager.cpp(129),ERROR" ID="0xcb24040a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LRU free short term image %s resid: 0x%x @image_cache_manager.cpp(148),DBG" ID="0xcb2404a6" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LRU free long term image %s resid: 0x%x @image_cache_manager.cpp(158),DBG" ID="0xcb2404f6" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc for node failed! @image_cache_manager.cpp(173),ERROR" ID="0xcb24056a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ImageCacheMalloc for img data failed! @image_cache_manager.cpp(181),ERROR" ID="0xcb2405aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="File is not loaded. File: %s. @image_cache_manager.cpp(223),ERROR" ID="0xcb2406fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="MultiImgInfo is nullptr, or resId is invalid. File: %s, ResId: %u. @image_cache_manager.cpp(231),ERROR" ID="0xcb24073a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Node is nullptr. File: %s, ResId: %u. @image_cache_manager.cpp(236),ERROR" ID="0xcb240762" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadSingleRes failed. File: %s, ResId: %u. @image_cache_manager.cpp(253),ERROR" ID="0xcb2407ea" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadOneInMultiRes failed. File: %s, ResId: %u. @image_cache_manager.cpp(259),ERROR" ID="0xcb24081a" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="Update image info failed. Set img data to nullptr. File: %s, FileLen: %u, ResId: %u. @image_cache_manager.cpp(271),ERROR" ID="0xcb24087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(293),ERROR" ID="0xcb24092a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fread info header failed! @image_cache_manager.cpp(311),ERROR" ID="0xcb2409ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadAllImgInfo failed! @image_cache_manager.cpp(340),ERROR" ID="0xcb240aa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadSingleImgInfo failed! node is nullptr or imgIndex is invalid. @image_cache_manager.cpp(348),ERROR" ID="0xcb240ae2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadSingleImgInfo failed! @image_cache_manager.cpp(402),ERROR" ID="0xcb240c92" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="LoadAllInMultiRes failed! Open file failed: %s @image_cache_manager.cpp(410),ERROR" ID="0xcb240cd2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fread bin header failed! @image_cache_manager.cpp(423),ERROR" ID="0xcb240d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LoadAllImgInfo failed! @image_cache_manager.cpp(442),ERROR" ID="0xcb240dd2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="LoadAllInMultiRes failed! file: %s @image_cache_manager.cpp(457),ERROR" ID="0xcb240e4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Res file is already loaded. @image_cache_manager.cpp(465),WARNING" ID="0xcb240e8b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(483),ERROR" ID="0xcb240f1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy info header failed! @image_cache_manager.cpp(487),ERROR" ID="0xcb240f3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy img data failed! @image_cache_manager.cpp(492),ERROR" ID="0xcb240f62" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="LoadOneInMultiRes failed! resId: 0x%x, file: %s @image_cache_manager.cpp(580),ERROR" ID="0xcb241222" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateImageNode failed! @image_cache_manager.cpp(594),ERROR" ID="0xcb241292" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Res file is not loaded: %s @image_cache_manager.cpp(654),ERROR" ID="0xcb241472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Res file is not loaded. @image_cache_manager.cpp(682),ERROR" ID="0xcb241552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Res file is not loaded: %s @image_cache_manager.cpp(712),WARNING" ID="0xcb241643" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Res file is not loaded. @image_cache_manager.cpp(727),WARNING" ID="0xcb2416bb" />
+			</MSG_LOG>

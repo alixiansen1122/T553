@@ -1,0 +1,70 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble gatt upper callback register add on module_id:%02x, event:%02x @sdk_general_gatt.c(113),INFO" ID="0xd86e038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="list node create fail! @sdk_general_gatt.c(116),ERROR" ID="0xd86e03a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="list node create fail! @sdk_general_gatt.c(128),ERROR" ID="0xd86e0402" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble gatt upper callback register new on module_id:%02x, event:%02x @sdk_general_gatt.c(134),INFO" ID="0xd86e0435" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt client event handle tl not found on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(233),INFO" ID="0xd86e074d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt client event handle task not found on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(241),INFO" ID="0xd86e078d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt client event handle table not found on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(248),INFO" ID="0xd86e07c5" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt client event handle table not found task on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(257),INFO" ID="0xd86e080d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Connected]  @sdk_general_gatt.c(403),INFO" ID="0xd86e0c9d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Disconnected]  @sdk_general_gatt.c(405),INFO" ID="0xd86e0cad" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="addr:%02x:**:**:**:%02x:%02x, handle:%02x @sdk_general_gatt.c(411),INFO" ID="0xd86e0cdd" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt le conn event cbk already connected on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(426),INFO" ID="0xd86e0d55" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="list node create fail! @sdk_general_gatt.c(432),ERROR" ID="0xd86e0d82" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] ble gatt le conn event cbk memcpy addr error @sdk_general_gatt.c(440),ERROR" ID="0xd86e0dc2" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt le conn event cbk tl not found on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(451),INFO" ID="0xd86e0e1d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[ACore] ble gatt le conn event cbk tl remove on addr:%02x:**:**:**:%02x:%02x @sdk_general_gatt.c(457),INFO" ID="0xd86e0e4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt create server result bta len error, len = %u @sdk_general_gatt.c(473),ERROR" ID="0xd86e0eca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] mc ble gatt create server result bta memcpy fail:%d,len:%d @sdk_general_gatt.c(481),ERROR" ID="0xd86e0f0a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt create service result bta len error. len = %u @sdk_general_gatt.c(494),ERROR" ID="0xd86e0f72" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt create service result bta memcpy fail: %d @sdk_general_gatt.c(501),ERROR" ID="0xd86e0faa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt start service result bta len error. len = %u @sdk_general_gatt.c(515),ERROR" ID="0xd86e101a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt start service result bta memcpy faile error: %d @sdk_general_gatt.c(522),ERROR" ID="0xd86e1052" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt get gap ui attributes result bta len error. len = %u @sdk_general_gatt.c(535),ERROR" ID="0xd86e10ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt get gap ui attributes result bta memcpy faile error: %d @sdk_general_gatt.c(542),ERROR" ID="0xd86e10f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery service rsp bta len error. len = %u @sdk_general_gatt.c(555),ERROR" ID="0xd86e115a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt discovery service rsp bta discovery_service error @sdk_general_gatt.c(563),ERROR" ID="0xd86e119a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery service complete bta len error. len = %u @sdk_general_gatt.c(576),ERROR" ID="0xd86e1202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt discovery service complete bta discovery_service error @sdk_general_gatt.c(584),ERROR" ID="0xd86e1242" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt add characteristic result bta len error, len = %u @sdk_general_gatt.c(597),ERROR" ID="0xd86e12aa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt add characteristic result bta memcpy fail error: %d @sdk_general_gatt.c(603),ERROR" ID="0xd86e12da" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery include service rsp bta len error. len = %u @sdk_general_gatt.c(616),ERROR" ID="0xd86e1342" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt discovery include service rsp bta discovery_service error @sdk_general_gatt.c(624),ERROR" ID="0xd86e1382" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery characteristics response bta len error. len = %u @sdk_general_gatt.c(637),ERROR" ID="0xd86e13ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore]mc ble gatt discovery characteristics response bta discovery_service error @sdk_general_gatt.c(645),ERROR" ID="0xd86e142a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery characteristics complete bta len error. len = %u @sdk_general_gatt.c(658),ERROR" ID="0xd86e1492" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore]mc ble gatt discovery characteristics complete bta discovery_service error @sdk_general_gatt.c(666),ERROR" ID="0xd86e14d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery descriptor response bta len error. len = %u @sdk_general_gatt.c(679),ERROR" ID="0xd86e153a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt discovery descriptor response bta discovery_service error @sdk_general_gatt.c(687),ERROR" ID="0xd86e157a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt discovery descriptor complete bta len error. len = %u @sdk_general_gatt.c(700),ERROR" ID="0xd86e15e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt discovery descriptor complete bta discovery_service error @sdk_general_gatt.c(707),ERROR" ID="0xd86e161a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt get hid report map response bta finish. result code = %x @sdk_general_gatt.c(719),INFO" ID="0xd86e167d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt get hid report map response bta len error. len = %u @sdk_general_gatt.c(725),INFO" ID="0xd86e16ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt read character complete bta len error. len = %u @sdk_general_gatt.c(740),ERROR" ID="0xd86e1722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt read characterr complete bta read character error @sdk_general_gatt.c(747),ERROR" ID="0xd86e175a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] read service value finish. error code = %x @sdk_general_gatt.c(759),INFO" ID="0xd86e17bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] read service value response len error. len = %u @sdk_general_gatt.c(765),INFO" ID="0xd86e17ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] write service value finish. error code = %x @sdk_general_gatt.c(779),INFO" ID="0xd86e185d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] write service value response len error. len = %u @sdk_general_gatt.c(785),INFO" ID="0xd86e188d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt read descriptor response bta len error. len = %u @sdk_general_gatt.c(800),INFO" ID="0xd86e1905" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt read descriptor response bta error @sdk_general_gatt.c(807),ERROR" ID="0xd86e193a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt character value notification bta len error. len = %u @sdk_general_gatt.c(820),INFO" ID="0xd86e19a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt character value notification bta new fail @sdk_general_gatt.c(828),ERROR" ID="0xd86e19e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt character value notification bta memset fail @sdk_general_gatt.c(835),ERROR" ID="0xd86e1a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt character value notification bta error @sdk_general_gatt.c(843),ERROR" ID="0xd86e1a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt read descriptor response bta error @sdk_general_gatt.c(851),ERROR" ID="0xd86e1a9a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="mc ble gatt character value notification bta handle:0x%x, len:%d @sdk_general_gatt.c(861),INFO" ID="0xd86e1aed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt exchange mtu ind len error. len = %u @sdk_general_gatt.c(873),INFO" ID="0xd86e1b4d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt exchange mtu ind error @sdk_general_gatt.c(877),ERROR" ID="0xd86e1b6a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt handle service evt bta len error. len = %u @sdk_general_gatt.c(889),INFO" ID="0xd86e1bcd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt handle service evt bta new fail @sdk_general_gatt.c(896),ERROR" ID="0xd86e1c02" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt handle service evt bta memset fail @sdk_general_gatt.c(903),ERROR" ID="0xd86e1c3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt handle service evt bta addr error @sdk_general_gatt.c(911),ERROR" ID="0xd86e1c7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] mc ble gatt server read evt bta len error len = %u @sdk_general_gatt.c(924),INFO" ID="0xd86e1ce5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt server read evt bta new fail @sdk_general_gatt.c(930),ERROR" ID="0xd86e1d12" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc ble gatt server read evt bta memset fai @sdk_general_gatt.c(935),ERROR" ID="0xd86e1d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] mc ble gatt server read evt bta addr error @sdk_general_gatt.c(941),ERROR" ID="0xd86e1d6a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[ACore] ble conn general gatt proc:cmdid:0x%02X pay_len:%d. @sdk_general_gatt.c(960),INFO" ID="0xd86e1e05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[ACore] ble conn general gatt proc no handle for command id:0x%02x. @sdk_general_gatt.c(975),INFO" ID="0xd86e1e7d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] bt at cmd set le att mtu param fail, mtu param is null! @sdk_general_gatt.c(1005),ERROR" ID="0xd86e1f6a" />
+			</MSG_LOG>

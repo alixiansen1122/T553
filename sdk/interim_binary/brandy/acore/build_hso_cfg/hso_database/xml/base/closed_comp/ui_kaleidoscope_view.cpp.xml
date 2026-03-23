@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Init KaleidoscopeUtils failed. @ui_kaleidoscope_view.cpp(39),ERROR" ID="0xcb48013a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="buffer is nil @ui_kaleidoscope_view.cpp(49),ERROR" ID="0xcb48018a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Fmt not support: %d @ui_kaleidoscope_view.cpp(58),ERROR" ID="0xcb4801d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Init KaleidoscopeUtils failed. @ui_kaleidoscope_view.cpp(65),ERROR" ID="0xcb48020a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="KaleidoscopeInfo is nullptr! @ui_kaleidoscope_view.cpp(86),ERROR" ID="0xcb4802b2" />
+			</MSG_LOG>

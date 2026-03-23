@@ -1,0 +1,8 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="List Component: process children failed! @list_ext_component.cpp(142),ERROR" ID="0xe0260472" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Initialize list adapter failed. @list_ext_component.cpp(152),ERROR" ID="0xe02604c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="List Component: update ForView failed! @list_ext_component.cpp(176),ERROR" ID="0xe0260582" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Initialize list adapter failed. @list_ext_component.cpp(188),ERROR" ID="0xe02605e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="scrollTo function parameter error @list_ext_component.cpp(203),ERROR" ID="0xe026065a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="List compent: ComputeListLength  item view is null  @list_ext_component.cpp(228),ERROR" ID="0xe0260722" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ListScroll list is nullptr @list_ext_component.cpp(251),ERROR" ID="0xe02607da" />
+			</MSG_LOG>

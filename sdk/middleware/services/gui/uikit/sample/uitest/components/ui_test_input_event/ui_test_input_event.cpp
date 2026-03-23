@@ -1,0 +1,630 @@
+/*
+ * Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2025. All rights reserved.
+ * Description: Lottie
+ * Author: Hisi Graphic Team
+ * Created: 2025-6
+ */
+
+#include "ui_test_input_event.h"
+
+#include "common/screen.h"
+#include "components/root_view.h"
+
+namespace OHOS {
+namespace {
+const int16_t INIT_H = 90;
+const int16_t ITEM_H = 50;
+const int16_t TEXT_H = 29;
+const int16_t TEXT_W = 250;
+const int16_t TEST_VIEW_H = 40;
+const int16_t TEST_VIEW_W = 40;
+const int16_t GAP = 5;
+const int16_t TEST_VIEW_GAP = 80;
+} // namespace
+
+class TestView : public UIView {
+public:
+    TestView() {}
+    virtual ~TestView() {}
+    bool OnLongPressEvent(const LongPressEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("long press!");
+            label_->Invalidate();
+        }
+        return UIView::OnLongPressEvent(event);
+    }
+
+    bool OnDragEvent(const DragEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("drag!");
+            label_->Invalidate();
+        }
+        return UIView::OnDragEvent(event);
+    }
+
+    void SetSentence(const char* sentence)
+    {
+        sentence_ = sentence;
+    }
+
+    bool OnClickEvent(const ClickEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText(sentence_);
+            label_->Invalidate();
+        }
+        return UIView::OnClickEvent(event);
+    }
+
+    bool OnPressEvent(const PressEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("press!");
+            label_->Invalidate();
+        }
+        return UIView::OnPressEvent(event);
+    }
+
+    bool OnReleaseEvent(const ReleaseEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("release!");
+            label_->Invalidate();
+        }
+        return UIView::OnReleaseEvent(event);
+    }
+
+    bool OnCancelEvent(const CancelEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("cancel!");
+            label_->Invalidate();
+        }
+        return UIView::OnCancelEvent(event);
+    }
+
+    void SetLabel(UILabel* label)
+    {
+        label_ = label;
+    }
+
+    void SetLabel2(UILabel* label)
+    {
+        label2_ = label;
+    }
+
+private:
+    UILabel* label_ = nullptr;
+    UILabel* label2_ = nullptr;
+    const char* sentence_ = "click";
+};
+
+class TestUIScrollView : public UIScrollView {
+public:
+    TestUIScrollView() {}
+    virtual ~TestUIScrollView() {}
+    bool OnLongPressEvent(const LongPressEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("long press!");
+            label_->Invalidate();
+        }
+        return UIView::OnLongPressEvent(event);
+    }
+
+    bool OnDragEvent(const DragEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("drag!");
+            label_->Invalidate();
+        }
+        return UIScrollView::OnDragEvent(event);
+    }
+
+    bool OnDragStartEvent(const DragEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("drag start!");
+            label_->Invalidate();
+        }
+        return UIScrollView::OnDragStartEvent(event);
+    }
+
+    bool OnDragEndEvent(const DragEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("drag end!");
+            label_->Invalidate();
+        }
+        return UIScrollView::OnDragEndEvent(event);
+    }
+
+    void SetSentence(const char* sentence)
+    {
+        sentence_ = sentence;
+    }
+
+    bool OnClickEvent(const ClickEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText(sentence_);
+            label_->Invalidate();
+        }
+        return UIView::OnClickEvent(event);
+    }
+
+    bool OnPressEvent(const PressEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("press!");
+            label_->Invalidate();
+        }
+        return UIView::OnPressEvent(event);
+    }
+
+    bool OnReleaseEvent(const ReleaseEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("release!");
+            label_->Invalidate();
+        }
+        return UIView::OnReleaseEvent(event);
+    }
+
+    bool OnCancelEvent(const CancelEvent& event) override
+    {
+        if (label_ != nullptr) {
+            label_->SetText("cancel!");
+            label_->Invalidate();
+        }
+        return UIView::OnCancelEvent(event);
+    }
+
+    void SetLabel(UILabel* label)
+    {
+        label_ = label;
+    }
+
+private:
+    UILabel* label_ = nullptr;
+    const char* sentence_ = "click";
+};
+
+void UITestInputEvent::SetUp()
+{
+    if (container_ == nullptr) {
+        container_ = new UIScrollView();
+        container_->Resize(Screen::GetInstance().GetWidth(), Screen::GetInstance().GetHeight() - BACK_BUTTON_HEIGHT);
+        container_->SetHorizontalScrollState(false);
+    }
+    positionX_ = 48; // 48: position x
+    positionY_ = 0;
+}
+
+void DeleteChildrenAndListener(UIView* view)
+{
+    if (view == nullptr) {
+        return;
+    }
+    while (view != nullptr) {
+        UIView* tempView = view;
+        view = view->GetNextSibling();
+        if (tempView->IsViewGroup()) {
+            DeleteChildrenAndListener(static_cast<UIViewGroup*>(tempView)->GetChildrenHead());
+        }
+        if (tempView->GetParent()) {
+            static_cast<UIViewGroup*>(tempView->GetParent())->Remove(tempView);
+        }
+
+        if (tempView->GetOnClickListener()) {
+            delete tempView->GetOnClickListener();
+        }
+        if (tempView->GetOnDragListener()) {
+            delete tempView->GetOnDragListener();
+        }
+        if (tempView->GetOnLongPressListener()) {
+            delete tempView->GetOnLongPressListener();
+        }
+        if (tempView->GetTouchListener()) {
+            delete tempView->GetTouchListener();
+        }
+
+        delete tempView;
+    }
+}
+
+void UITestInputEvent::TearDown()
+{
+    DeleteChildrenAndListener(container_);
+    container_ = nullptr;
+    RootView::GetInstance()->ClearOnKeyActListener();
+    if (keyListener_ != nullptr) {
+        delete keyListener_;
+        keyListener_ = nullptr;
+    }
+}
+
+const UIView* UITestInputEvent::GetTestView()
+{
+    UIKitPointerInputTestDispatchSimpleEvent001();
+    UIKitPointerInputTestDispatchSimpleEvent002();
+    UIKitPointerInputTestDispatchDragEven001();
+    UIKitPointerInputTestDispatchDragEven002();
+    UIKitPointerInputTestDispatchDragEven003();
+    UIKitPointerInputTestDispatchKeyEvent001();
+    UIKitPointerInputTestDispatchInVisibleEvent001();
+    UIKitPointerInputTestDispatchBubble001();
+    UIKitPointerInputTestDispatchBubble002();
+    UIKitPointerInputTestDispatchBubble003();
+    UIKitPointerInputTestDispatchBubble004();
+    UIKitPointerInputTestDispatchBubble005();
+    UIKitPointerInputTestDispatchBubble006();
+    UIKitPointerInputTestDispatchBubble007();
+    UIKitPointerInputTestDispatchBubble008();
+    UIKitPointerInputTestDispatchBubble009();
+    UIKitPointerInputTestDispatchBubble010();
+    return container_;
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchSimpleEvent001()
+{
+    UILabel* label = new UILabel();
+    container_->Add(label);
+    // 2: half Screen width
+    label->SetPosition(positionX_, positionY_, Screen::GetInstance().GetWidth() / 2, INIT_H);
+    label->SetText("");
+    label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+    positionY_ += (INIT_H + GAP);
+
+    InnerTest("可点击对象事件测试 ", true, false, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchSimpleEvent002()
+{
+    InnerTest("不可点击对象事件测试 ", false, false, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchDragEven001()
+{
+    InnerTest("可点击可拖拽dragparent测试 ", true, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchDragEven002()
+{
+    InnerTest("可点击可拖拽非dragparent测试 ", true, true, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchDragEven003()
+{
+    InnerTest("不可点击可拖拽测试 ", false, true, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble001()
+{
+    positionY_ = 0;
+    UILabel* label = new UILabel();
+    container_->Add(label);
+    // 2: half Screen width
+    label->SetPosition(positionX_, positionY_, Screen::GetInstance().GetWidth() / 2, INIT_H);
+    label->SetText("");
+    label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+    positionY_ += (INIT_H + GAP);
+    InnerBubbleTest("可点击有监听事件不消费冒泡测试 ", true, true, true, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble002()
+{
+    InnerBubbleTest("可点击有监听事件消费冒泡测试 ", true, true, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble003()
+{
+    InnerBubbleTest("可点击无监听事件不消费冒泡测试 ", true, true, false, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble004()
+{
+    InnerBubbleTest("不可点击有监听事件消费冒泡测试 ", false, false, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble005()
+{
+    InnerBubbleDragTest("子父可拖拽有监听事件不消费冒泡测试 ", true, true, true, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble006()
+{
+    InnerBubbleDragTest("子父可拖拽有监听事件消费冒泡测试 ", true, true, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble007()
+{
+    InnerBubbleDragTest("子父可拖拽无监听事件消费冒泡测试 ", true, true, false, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble008()
+{
+    InnerBubbleDragTest("子父不可拖拽有监听事件消费冒泡测试 ", false, false, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble009()
+{
+    InnerBubbleDragTest("子不可拖拽父可拖拽有监听事件消费冒泡测试 ", false, true, true, true);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchBubble010()
+{
+    InnerBubbleDragTest("子不可拖拽父可拖拽有监听事件不消费冒泡测试 ", false, true, true, false);
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchKeyEvent001()
+{
+    if (container_ != nullptr) {
+        UIViewGroup* uiViewGroup = new UIViewGroup();
+        // 2: half of screen width;
+        uiViewGroup->SetPosition(
+            TEXT_DISTANCE_TO_LEFT_SIDE, positionY_,
+            (Screen::GetInstance().GetWidth() / 2 - TEXT_DISTANCE_TO_LEFT_SIDE), // 2: half of screen width;
+            128);                                                                // 128: height
+        container_->Add(uiViewGroup);
+
+        UILabel* label = new UILabel();
+        uiViewGroup->Add(label);
+        // 2: half of screen width;
+        label->SetPosition(0, 0, Screen::GetInstance().GetWidth() / 2, TEXT_H);
+        label->SetText("物理按键事件测试 ");
+        label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        positionY_ += (TEXT_H + GAP);
+        UILabel* label1 = new UILabel();
+        uiViewGroup->Add(label1);
+        label1->SetPosition(0, TEXT_H + GAP, TEXT_W, TEXT_H);
+        label1->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        if (keyListener_ == nullptr) {
+            keyListener_ = new TestKeyInputListener2(label1);
+        }
+        RootView::GetInstance()->SetOnKeyActListener(keyListener_);
+        positionY_ += ITEM_H;
+    }
+}
+
+void UITestInputEvent::UIKitPointerInputTestDispatchInVisibleEvent001()
+{
+    if (container_ != nullptr) {
+        UIViewGroup* uiViewGroup = new UIViewGroup();
+        // 2: half of screen width; 36: decrease x-coordinate; 90: y-coordinate
+        uiViewGroup->SetPosition(TEXT_DISTANCE_TO_LEFT_SIDE, positionY_, 480, 128); // 480: width; 128: height
+        container_->Add(uiViewGroup);
+        UILabel* label = new UILabel();
+        uiViewGroup->Add(label);
+        // 2: half of screen width;
+        label->SetPosition(0, 0, Screen::GetInstance().GetWidth() / 2, TEXT_H);
+        label->SetText("不可见对象事件传递测试 ");
+        label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        positionY_ = 0;
+        positionY_ += (TEXT_H + GAP * 2); // 2: double GAP
+        UIViewGroup* group1 = new UIViewGroup();
+        uiViewGroup->Add(group1);
+        // 20: increase width 20: increase  height
+        group1->SetPosition(positionX_, positionY_, TEST_VIEW_W + 20, TEST_VIEW_H + 20);
+        group1->SetStyle(STYLE_BACKGROUND_COLOR, Color::White().full);
+        group1->SetVisible(false);
+        TestView* testView = new TestView();
+        group1->Add(testView);
+        testView->SetPosition(5, 5, TEST_VIEW_W, TEST_VIEW_H); // 5: position x 5:position y
+        testView->SetStyle(STYLE_BACKGROUND_COLOR, Color::Blue().full);
+        testView->SetTouchable(true);
+        testView->SetSentence("Click From test 0!");
+        UIViewGroup* group2 = new UIViewGroup();
+        uiViewGroup->Add(group2);
+        // 20: increase width 20: increase  height
+        group2->SetPosition(0, positionY_, TEST_VIEW_W + 20, TEST_VIEW_H + 20);
+        group2->SetStyle(STYLE_BACKGROUND_COLOR, Color::White().full);
+        TestView* testView1 = new TestView();
+        group2->Add(testView1);
+        testView1->SetPosition(5, 5, TEST_VIEW_W, TEST_VIEW_H); // 5: position x 5:position y
+        testView1->SetStyle(STYLE_BACKGROUND_COLOR, Color::Red().full);
+        testView1->SetTouchable(true);
+        testView1->SetSentence("Click From test 1!");
+        UILabel* label1 = new UILabel();
+        uiViewGroup->Add(label1);
+        // 50: increase width; 2:double GAP
+        label1->SetPosition(positionX_ + 50, positionY_ + 2 * GAP, TEXT_W, TEXT_H);
+        label1->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        testView->SetLabel(label1);
+        testView1->SetLabel(label1);
+        positionY_ += ITEM_H;
+    }
+}
+
+void UITestInputEvent::InnerTest(const char* title, bool touchable, bool draggable, bool dragParent)
+{
+    if (container_ != nullptr) {
+        UILabel* label = new UILabel();
+        container_->Add(label);
+        // 2: half Screen width
+        label->SetPosition(positionX_, positionY_, Screen::GetInstance().GetWidth() / 2, TEXT_H);
+        label->SetText(title);
+        label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        positionY_ += (TEXT_H + GAP);
+        auto testView = new TestView();
+        container_->Add(testView);
+        testView->SetPosition(positionX_, positionY_, TEST_VIEW_W, TEST_VIEW_H);
+        testView->SetStyle(STYLE_BACKGROUND_COLOR, Color::Blue().full);
+        testView->SetTouchable(touchable);
+        testView->SetDraggable(draggable);
+        testView->SetDragParentInstead(dragParent);
+        UILabel* label1 = new UILabel();
+        container_->Add(label1);
+        label1->SetPosition(positionX_ + TEST_VIEW_GAP, positionY_ + 2 * GAP, TEXT_W, TEXT_H); // 2: double GAP
+        label1->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        testView->SetLabel(label1);
+        positionY_ += ITEM_H;
+    }
+}
+
+void UITestInputEvent::InnerBubbleTest(const char* title,
+                                       bool touchable,
+                                       bool draggable,
+                                       bool hasListener,
+                                       bool isBubble)
+{
+    if (container_ != nullptr) {
+        UILabel* label = new UILabel();
+        container_->Add(label);
+        label->SetPosition((Screen::GetInstance().GetWidth() / 2 + TEXT_DISTANCE_TO_LEFT_SIDE), // 2: half screen width
+                           positionY_,
+                           (Screen::GetInstance().GetWidth() / 2 - TEXT_DISTANCE_TO_LEFT_SIDE), // 2: half screen width
+                           TEXT_H);
+        label->SetText(title);
+        label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        positionY_ += (TEXT_H + GAP);
+
+        OHOS::UIScrollView* parentContainer = new UIScrollView();
+        // 2: half screen width
+        parentContainer->SetPosition(Screen::GetInstance().GetWidth() / 2 + TEXT_DISTANCE_TO_LEFT_SIDE, positionY_,
+                                     Screen::GetInstance().GetWidth() - TEXT_DISTANCE_TO_LEFT_SIDE, ITEM_H);
+        container_->Add(parentContainer);
+        TestView* testView = new TestView();
+        parentContainer->Add(testView);
+        testView->SetPosition(0, 0, TEST_VIEW_W, TEST_VIEW_H);
+        testView->SetStyle(STYLE_BACKGROUND_COLOR, Color::Red().full);
+        testView->SetTouchable(touchable);
+        testView->SetDraggable(draggable);
+        testView->SetDragParentInstead(true);
+        UILabel* label1 = new UILabel();
+        parentContainer->Add(label1);
+        label1->SetPosition(positionX_ + TEST_VIEW_GAP, 2 * GAP, TEXT_W, TEXT_H); // 2: tow gap
+        label1->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        testView->SetLabel(label1);
+
+        UILabel* label2 = new UILabel();
+        parentContainer->Add(label2);
+        label2->SetPosition(positionX_ + 2 * TEST_VIEW_GAP, 2 * GAP, TEXT_W, TEXT_H); // 2: tow gap
+        label2->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        testView->SetLabel2(label2);
+
+        if (hasListener) {
+            UIView::OnClickListener* clickListenerParent =
+                new TestOnClickListener(label2, "l-parent click", isBubble);
+            UIView::OnClickListener* clickListenerChild =
+                new TestOnClickListener(label1, "l-click", isBubble);
+            testView->SetOnClickListener(clickListenerChild);
+            parentContainer->SetOnClickListener(clickListenerParent);
+
+            UIView::OnLongPressListener* longTouchListenerParent =
+                new TestOnLongPressListener(label2, "l-parent long press", isBubble);
+            UIView::OnLongPressListener* longTouchListenerChild =
+                new TestOnLongPressListener(label1, "l-long press", isBubble);
+            testView->SetOnLongPressListener(longTouchListenerChild);
+            parentContainer->SetOnLongPressListener(longTouchListenerParent);
+
+            UIView::OnTouchListener* touchListenerParent = new TestOnTouchListener(
+                label2, "l-parent press", "l-parent release",
+                "l-parent cancel", isBubble);
+            UIView::OnTouchListener* touchListenerChild =
+                new TestOnTouchListener(label1, "l-press", "l-release", "l-cancel", isBubble);
+            testView->SetOnTouchListener(touchListenerChild);
+            parentContainer->SetOnTouchListener(touchListenerParent);
+        }
+
+        positionY_ += ITEM_H;
+    }
+}
+void UITestInputEvent::InitScrollView(UIScrollView* parentScroll, const char* title, bool parentDraggable)
+{
+    int itemH1 = ITEM_H * 2; // 2 times of ITEM_H
+    int itemH2 = itemH1 + ITEM_H;
+    int itemH3 = itemH2 + ITEM_H;
+    int halfScreenWith = Screen::GetInstance().GetWidth() / 2; // 2: half screen width
+    UILabel* label = new UILabel();
+    container_->Add(label);
+    // 2: half screen width
+    label->SetPosition(halfScreenWith + TEXT_DISTANCE_TO_LEFT_SIDE, positionY_,
+        halfScreenWith - TEXT_DISTANCE_TO_LEFT_SIDE, TEXT_H);
+    label->SetText(title);
+    label->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+    positionY_ += (TEXT_H + GAP);
+    parentScroll->SetStyle(STYLE_BACKGROUND_COLOR, Color::Blue().full);
+    parentScroll->SetPosition(halfScreenWith + TEXT_DISTANCE_TO_LEFT_SIDE, positionY_, itemH1, itemH1);
+    parentScroll->SetThrowDrag(parentDraggable);
+    parentScroll->SetDraggable(parentDraggable);
+    container_->Add(parentScroll);
+}
+
+void UITestInputEvent::InnerBubbleDragTest(const char* title,
+                                           bool childDraggable,
+                                           bool parentDraggable,
+                                           bool hasListener,
+                                           bool isBubble)
+{
+    int itemH1 = ITEM_H * 2; // 2 times of ITEM_H
+    int itemH2 = itemH1 + ITEM_H;
+    int itemH3 = itemH2 + ITEM_H;
+    int halfScreenWith = Screen::GetInstance().GetWidth() / 2; // 2: half screen width
+    int offset = 30;                                           // 40 pixel offset
+
+    if (container_ != nullptr) {
+        OHOS::TestUIScrollView* parentScroll = new TestUIScrollView();
+        InitScrollView(parentScroll, title, parentDraggable);
+        
+        OHOS::TestUIScrollView* childScroll = new TestUIScrollView();
+        childScroll->SetStyle(STYLE_BACKGROUND_COLOR, Color::Red().full);
+        childScroll->SetPosition(offset, offset, itemH2, itemH2);
+        childScroll->SetThrowDrag(childDraggable);
+        childScroll->SetDraggable(childDraggable);
+        parentScroll->Add(childScroll);
+
+        UILabelButton* button1 = new UILabelButton();
+        button1->SetStyle(STYLE_BACKGROUND_COLOR, Color::Yellow().full);
+        button1->SetText("button1");
+        button1->SetPosition(offset, offset, itemH3 * 2, itemH3); // 2: tow width
+        childScroll->Add(button1);
+
+        UILabel* label1 = new UILabel();
+        container_->Add(label1);
+        label1->SetPosition(itemH3 + offset + halfScreenWith, positionY_ + 2 * GAP, TEXT_W, TEXT_H); // 2: tow gap
+        label1->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        childScroll->SetLabel(label1);
+
+        UILabel* label2 = new UILabel();
+        container_->Add(label2);
+        label2->SetPosition(itemH3 + offset + halfScreenWith, positionY_ + 6 * GAP, TEXT_W, TEXT_H); // 6: tow gap
+        label2->SetFont(DEFAULT_VECTOR_FONT_FILENAME, FONT_DEFAULT_SIZE);
+        parentScroll->SetLabel(label2);
+
+        if (hasListener) {
+            UIView::OnClickListener* clickListenerParent =
+                new TestOnClickListener(label2, "l-parent click", isBubble);
+            UIView::OnClickListener* clickListenerChild =
+                new TestOnClickListener(label1, "l-click", isBubble);
+            childScroll->SetOnClickListener(clickListenerChild);
+            parentScroll->SetOnClickListener(clickListenerParent);
+
+            UIView::OnLongPressListener* longTouchListenerParent =
+                new TestOnLongPressListener(label2, "l-parent long press", isBubble);
+            UIView::OnLongPressListener* longTouchListenerChild =
+                new TestOnLongPressListener(label1, "l-long press", isBubble);
+            childScroll->SetOnLongPressListener(longTouchListenerChild);
+            parentScroll->SetOnLongPressListener(longTouchListenerParent);
+
+            UIView::OnTouchListener* touchListenerParent = new TestOnTouchListener(
+                label2, "l-parent press", "l-parent release",
+                "l-parent cancel", isBubble);
+            UIView::OnTouchListener* touchListenerChild =
+                new TestOnTouchListener(label1, "l-press", "l-release", "l-cancel", isBubble);
+            childScroll->SetOnTouchListener(touchListenerChild);
+            parentScroll->SetOnTouchListener(touchListenerParent);
+
+            UIView::OnDragListener* dragListenerParent = new TestOnDragListener(
+                label2, "l-dragStart parent", "l-drag parent", "l-dragEnd parent", isBubble);
+            UIView::OnDragListener* dragListenerChild =
+                new TestOnDragListener(label1, "l-dragStart", "l-drag", "l-dragEnd", isBubble);
+            childScroll->SetOnDragListener(dragListenerChild);
+            parentScroll->SetOnDragListener(dragListenerParent);
+        }
+        positionY_ += itemH1;
+    }
+}
+} // namespace OHOS

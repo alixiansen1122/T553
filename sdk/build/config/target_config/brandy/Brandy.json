@@ -1,0 +1,438 @@
+{
+	"chipName": "brandy",
+	"seriesName": "cfbb",
+	"board": "brandy",
+	"compile": {
+	  "custom_build_command": "brandy-target3",
+	  "tool_chain": [
+		"cc_riscv32_musl_fp_win"
+	  ],
+	  "map_path": "./output/brandy/acore/brandy-target3/application.map"
+	},
+	"debug": {
+	  "elf_path": "./output/brandy/acore/brandy-target3/application.elf",
+	  "breakpoints_limitation": "3",
+	  "stop_debug_state": "continue",
+	  "client": [
+		"gdb"
+	  ],
+	  "entry_point": "app_main",
+	  "tool": [
+		"jlink"
+	  ],
+	  "params": [
+		{
+		  "name": "jlink",
+		  "param": {
+			"interface": [
+			  "swd",
+			  "jtag"
+			],
+			"speed": "5000",
+			"port": "3333"
+		  }
+		}
+	  ],
+	  "timeout_list": [
+		"15000",
+		"30000",
+		"60000",
+		"120000",
+		"-1"
+	  ],
+	  "timeout_default": "60000"
+	},
+	"upload": {
+	  "bin_path": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg",
+	  "reset": 1,
+	  "burn_verification": 0,
+	  "protocol": [
+		"serial"
+	  ],
+	  "baudList": ["2400", "4800", "9600", "19200", "38400", "57600", "115200", "230400", "460800",
+	  "500000", "750000", "921600", "2000000"],
+	  "params": [
+		{
+		  "name": "serial",
+		  "param": {
+			"port": "",
+			"baud": "921600",
+			"stop_bit": "0",
+			"parity": "N",
+			"inside_protocol": "3x"
+		  }
+		}
+	  ]
+	},
+	"gui": {
+	  "appDir": "application/wearable/nativeapp",
+	  "simulatorDir": "application/brandy/simulator"
+	},
+	"need_sdk": true,
+	"need_project_path": true,
+	"chip_config": false,
+  	"variabletrace": false,
+	"platform": "cfbb",
+	"project_type": [
+	  {
+		"name": "cfbb",
+		"base_on_sdk": true
+	  }
+	],
+	"analysis": {
+		"elf_path": "./output/brandy/acore/brandy-target3/application.elf",
+		"map_path": "./output/brandy/acore/brandy-target3/application.map",
+		"tool_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+	},
+	"target_default": "brandy-target3",
+	"target": {
+		"Brandy": {
+			"brandy-ssb": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-ssb"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-ssb/ssb.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-ssb/ssb.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-ssb-native-js": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-ssb-native-js"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-ssb-native-js/ssb.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-ssb-native-js/ssb.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-ssb-xts": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-ssb-xts"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-ssb-xts/ssb.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-ssb-xts/ssb.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target1": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target1"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target1/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target1/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target3": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target3"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target3/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target3/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target4": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target4"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target4/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target4/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target5": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target5"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target5/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target5/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-native-js": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-native-js"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-native-js/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-native-js/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-xts": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-xts"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-xts/application.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-xts/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target1-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target1-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target1-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target1-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target3-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target3-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target3-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target3-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target4-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target4-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target4-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target4-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-target5-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-target5-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-target5-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-target5-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip_config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-native-js-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-native-js-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-native-js-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-native-js-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip_config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"brandy-xts-r": {
+				"cmake": {
+					"build": {
+						"build_argv": "brandy-xts-r"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/brandy-xts-r/recovery.elf",
+						"analysis_map_path": "./output/brandy/acore/brandy-xts-r/recovery.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip_config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"testsuite-brandy-sdk": {
+				"cmake": {
+					"build": {
+						"build_argv": "testsuite-brandy-sdk"
+					},
+					"stack analysis": {
+						"analysis_compiler_path": "./tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-win-musl/bin/riscv32"
+					},
+					"image analysis": {
+						"analysis_elf_path": "./output/brandy/acore/testsuite-brandy-sdk/application.elf",
+						"analysis_map_path": "./output/brandy/acore/testsuite-brandy-sdk/application.map"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip_config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"pack_brandy_native_js": {
+				"cmake": {
+					"build": {
+						"build_argv": "pack_brandy_native_js"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			},
+			"pack_brandy_xts": {
+				"cmake": {
+					"build": {
+						"build_argv": "pack_brandy_xts"
+					},
+					"upload": {
+						"upload_partitions": "./tools/pkg/fwpkg/brandy/upload_app.fwpkg"
+					},
+					"chip config": {
+						"board_build.mcu": "brandy"
+					}
+				}
+			}
+		}
+	}
+}

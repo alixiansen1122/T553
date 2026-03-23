@@ -1,0 +1,32 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="VINCENTSS::GtManagerService::Install path = %s @gt_bundle_manager_service.cpp(89),INFO" ID="0xe07402cd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VINCENTSS::GtManagerService::Install 002 @gt_bundle_manager_service.cpp(104),INFO" ID="0xe0740345" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VINCENTSS::GtManagerService::Install 03 @gt_bundle_manager_service.cpp(110),INFO" ID="0xe0740375" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] App is in the updated state @gt_bundle_manager_service.cpp(126),INFO" ID="0xe07403f5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="VINCENTSS::GtManagerService::Install 04 @gt_bundle_manager_service.cpp(128),INFO" ID="0xe0740405" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] Parsed bundleName to be uninstalled is null @gt_bundle_manager_service.cpp(151),ERROR" ID="0xe07404ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] failed to get bundle size because the bundle does not exist! @gt_bundle_manager_service.cpp(219),INFO" ID="0xe07406dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] failed to get code bundle size! @gt_bundle_manager_service.cpp(225),ERROR" ID="0xe074070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] InstallPreBundle uninstallRecord is nullptr! @gt_bundle_manager_service.cpp(289),INFO" ID="0xe074090d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] Pre install file path is invalid @gt_bundle_manager_service.cpp(302),ERROR" ID="0xe0740972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] InstallAllSystemBundle InitAllAppInfo fail, list is nullptr @gt_bundle_manager_service.cpp(318),ERROR" ID="0xe07409f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="VINCENTSS::GtManagerService::ScanPackages = %s @gt_bundle_manager_service.cpp(376),INFO" ID="0xe0740bc5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] ScanSystemApp InitAllAppInfo fail, list is nullptr @gt_bundle_manager_service.cpp(419),ERROR" ID="0xe0740d1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] memset fail when initialize bundle name! @gt_bundle_manager_service.cpp(504),ERROR" ID="0xe0740fc2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] failed to copy bundle name! @gt_bundle_manager_service.cpp(513),ERROR" ID="0xe074100a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] malloc fail when reload third app! @gt_bundle_manager_service.cpp(528),ERROR" ID="0xe0741082" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] strcat fail when reload third app! @gt_bundle_manager_service.cpp(537),ERROR" ID="0xe07410ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] app path is not dir when reload third app! @gt_bundle_manager_service.cpp(547),ERROR" ID="0xe074111a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] app path is not third bundle path! @gt_bundle_manager_service.cpp(553),INFO" ID="0xe074114d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] third bundle reload number is to MAX_THIRD_BUNDLE_NUMBER! @gt_bundle_manager_service.cpp(560),INFO" ID="0xe0741185" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] parse bundle attr fail! @gt_bundle_manager_service.cpp(611),ERROR" ID="0xe074131a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BMS] reload bundle info fail!, isSystemApp is %d @gt_bundle_manager_service.cpp(726),ERROR" ID="0xe07416b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] get installRecord fail when restart! @gt_bundle_manager_service.cpp(782),ERROR" ID="0xe0741872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] TransformJsToBcWhenRestart jsEngineVer_ is nullptr! @gt_bundle_manager_service.cpp(789),ERROR" ID="0xe07418aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] create string object fail when restart! @gt_bundle_manager_service.cpp(797),ERROR" ID="0xe07418ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] add js engine version record fail when restart! @gt_bundle_manager_service.cpp(812),ERROR" ID="0xe0741962" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] refresh js engine version fail when restart! @gt_bundle_manager_service.cpp(820),ERROR" ID="0xe07419a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BMS] transform js to bc, result is %d @gt_bundle_manager_service.cpp(847),INFO" ID="0xe0741a7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[BMS] delete byte code, result is %d @gt_bundle_manager_service.cpp(850),INFO" ID="0xe0741a95" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] add transform result record fail when restart! @gt_bundle_manager_service.cpp(863),ERROR" ID="0xe0741afa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BMS] refresh transform result record fail when restart! @gt_bundle_manager_service.cpp(869),ERROR" ID="0xe0741b2a" />
+			</MSG_LOG>

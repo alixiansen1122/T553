@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="add failed, view is nullptr @ui_slipflow_view.cpp(59),ERROR" ID="0xcb5201da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Add failed, width or height is not same with the first view. @ui_slipflow_view.cpp(67),ERROR" ID="0xcb52021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove faild, Input parameter error. @ui_slipflow_view.cpp(154),ERROR" ID="0xcb5204d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove failed, view is nullptr or view is not belong to slipflow. @ui_slipflow_view.cpp(409),ERROR" ID="0xcb520cca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remove failed, view parent is nullptr @ui_slipflow_view.cpp(415),ERROR" ID="0xcb520cfa" />
+			</MSG_LOG>

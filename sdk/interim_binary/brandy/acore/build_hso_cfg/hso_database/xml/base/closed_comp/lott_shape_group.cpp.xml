@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="UpdatePathInner failed! @lott_shape_group.cpp(165),ERROR" ID="0xcbae052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="cmds_ or datas_ is empty! @lott_shape_group.cpp(347),ERROR" ID="0xcbae0ada" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Memcpy failed! @lott_shape_group.cpp(353),ERROR" ID="0xcbae0b0a" />
+			</MSG_LOG>

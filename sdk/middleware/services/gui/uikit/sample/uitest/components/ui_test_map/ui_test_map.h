@@ -1,0 +1,43 @@
+/*
+ * Copyright (c) 2024 CompanyNameMagicTag.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#ifndef UI_TEST_MAP_H
+#define UI_TEST_MAP_H
+
+#include "ui_test.h"
+#include "components/ui_label_button.h"
+#include "components/ui_map_view.h"
+#include "components/ui_scroll_view.h"
+
+namespace OHOS {
+class UITestMap : public UITest, public UIView::OnClickListener {
+public:
+    UITestMap() {}
+    ~UITestMap() override {}
+    void SetUp() override;
+    void TearDown() override;
+    const UIView* GetTestView() override;
+    bool OnClick(UIView& view, const ClickEvent& event) override;
+
+private:
+    UIScrollView* container_ = nullptr;
+    UILabelButton* scale_ = nullptr;
+    UILabelButton* cache_ = nullptr;
+    UILabelButton* reset_ = nullptr;
+    UIMapView* map_ = nullptr;
+    bool cached_ = false;
+};
+}
+#endif

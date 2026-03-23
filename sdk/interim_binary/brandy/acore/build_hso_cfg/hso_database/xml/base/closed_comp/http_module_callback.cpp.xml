@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="CreateCallback failed! Invalid param! @http_module_callback.cpp(25),ERROR" ID="0xe03a00ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for params Failed! @http_module_callback.cpp(31),ERROR" ID="0xe03a00fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for result failed! @http_module_callback.cpp(42),ERROR" ID="0xe03a0152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to dispatch async work @http_module_callback.cpp(52),ERROR" ID="0xe03a01a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ExecuteCallFunc failed! Invalid param! @http_module_callback.cpp(63),ERROR" ID="0xe03a01fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create arrayBuffer Failed! @http_module_callback.cpp(124),ERROR" ID="0xe03a03e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create typedArray Failed! @http_module_callback.cpp(131),ERROR" ID="0xe03a041a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateSubscription failed! Invalid param! @http_module_callback.cpp(161),ERROR" ID="0xe03a050a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for result failed! @http_module_callback.cpp(173),ERROR" ID="0xe03a056a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Failed to dispatch async work @http_module_callback.cpp(183),ERROR" ID="0xe03a05ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ExecuteSubscription failed! Invalid param! @http_module_callback.cpp(194),ERROR" ID="0xe03a0612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateArrayBuffer Failed! @http_module_callback.cpp(231),ERROR" ID="0xe03a073a" />
+			</MSG_LOG>

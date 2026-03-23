@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="available free size: %d @js_ability.cpp(61),DBG" ID="0xe0f201ee" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Launch only can be triggered once @js_ability.cpp(69),ERROR" ID="0xe0f2022a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid app path @js_ability.cpp(75),ERROR" ID="0xe0f2025a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="invalid bundle name @js_ability.cpp(81),ERROR" ID="0xe0f2028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create JSAbilityRuntime failed @js_ability.cpp(96),ERROR" ID="0xe0f20302" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Must trigger Launch first @js_ability.cpp(114),ERROR" ID="0xe0f20392" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LIFECYCLE: JS Ability will be shown @js_ability.cpp(118),INFO" ID="0xe0f203b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Must trigger Launch first @js_ability.cpp(129),ERROR" ID="0xe0f2040a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LIFECYCLE: JS Ability will be hidden @js_ability.cpp(132),INFO" ID="0xe0f20425" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Must trigger Launch first @js_ability.cpp(143),ERROR" ID="0xe0f2047a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="LIFECYCLE: JS Ability is exiting @js_ability.cpp(148),INFO" ID="0xe0f204a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Must trigger Launch first @js_ability.cpp(174),ERROR" ID="0xe0f20572" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ForceDestroy interface is deprecated as JS engine can not run on other task @js_ability.cpp(190),ERROR" ID="0xe0f205f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="JSAbility::HandleRenderTick js app is not forground @js_ability.cpp(225),ERROR" ID="0xe0f2070a" />
+			</MSG_LOG>

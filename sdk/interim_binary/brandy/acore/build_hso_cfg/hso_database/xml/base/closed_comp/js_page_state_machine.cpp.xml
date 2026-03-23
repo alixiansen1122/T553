@@ -1,0 +1,22 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="error input state:%d @js_page_state_machine.cpp(85),ERROR" ID="0xe14402aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc path memory heap failed. @js_page_state_machine.cpp(119),ERROR" ID="0xe14403ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete $page property failed from global object. @js_page_state_machine.cpp(151),ERROR" ID="0xe14404ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as this app's root path is invalid. @js_page_state_machine.cpp(163),ERROR" ID="0xe144051a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as object is invalid. @js_page_state_machine.cpp(180),ERROR" ID="0xe14405a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as uri is invalid. @js_page_state_machine.cpp(189),ERROR" ID="0xe14405ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as uri is invalid. @js_page_state_machine.cpp(197),ERROR" ID="0xe144062a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as uri is empty. @js_page_state_machine.cpp(204),ERROR" ID="0xe1440662" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as generating js file's path failed. @js_page_state_machine.cpp(214),ERROR" ID="0xe14406b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="statemachine init failed as js file isn't existed. @js_page_state_machine.cpp(223),ERROR" ID="0xe14406fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="error input state:%d @js_page_state_machine.cpp(281),ERROR" ID="0xe14408ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="relocat page JS file failed @js_page_state_machine.cpp(298),ERROR" ID="0xe1440952" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Eval JS file failed @js_page_state_machine.cpp(304),ERROR" ID="0xe1440982" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="JS Heap allocBytes[%d], peakAllocBytes[%d] @js_page_state_machine.cpp(336),DBG" ID="0xe1440a86" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StateMachine::ShowPage @js_page_state_machine.cpp(368),INFO" ID="0xe1440b85" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="showpage: the whole application already in background, do not operate rootview @js_page_state_machine.cpp(370),WARNING" ID="0xe1440b93" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="hidepage: the whole application already in background, do not operate rootview @js_page_state_machine.cpp(385),WARNING" ID="0xe1440c0b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="input parameter is invalid when invoking page life cycle callback. @js_page_state_machine.cpp(402),ERROR" ID="0xe1440c92" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete $page property failed from global object. @js_page_state_machine.cpp(427),ERROR" ID="0xe1440d5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="delete $root property failed from global object. @js_page_state_machine.cpp(436),ERROR" ID="0xe1440da2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[%d] components leaked! @js_page_state_machine.cpp(478),ERROR" ID="0xe1440ef2" />
+			</MSG_LOG>

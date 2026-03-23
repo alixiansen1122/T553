@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Vertical current view is nullptr! @ui_cross_view.cpp(115),DBG" ID="0xcb58039e" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="vBlankIndex_ is invalid: %d, or vBlankView is nullptr @ui_cross_view.cpp(119),DBG" ID="0xcb5803be" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Horizontal current view is nullptr! @ui_cross_view.cpp(150),DBG" ID="0xcb5804b6" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="scale factor %f is not in (0, 1] @ui_cross_view.cpp(340),WARNING" ID="0xcb580aa3" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="horizontal current container is nullptr. @ui_cross_view.cpp(551),ERROR" ID="0xcb58113a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="horizontal current page is nullptr or it is not coverable. @ui_cross_view.cpp(556),ERROR" ID="0xcb581162" />
+			</MSG_LOG>

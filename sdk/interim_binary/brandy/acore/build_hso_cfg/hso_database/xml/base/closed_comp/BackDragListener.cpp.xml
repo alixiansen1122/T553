@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="drag wrong param {%p,%p,%p} @BackDragListener.cpp(30),ERROR" ID="0xb81400f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create backCallback_ failed @BackDragListener.cpp(55),ERROR" ID="0xb81401ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create backAnimator_ failed @BackDragListener.cpp(63),ERROR" ID="0xb81401fa" />
+			</MSG_LOG>

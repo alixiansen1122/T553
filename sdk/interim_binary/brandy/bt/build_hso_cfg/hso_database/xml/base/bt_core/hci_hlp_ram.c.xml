@@ -1,0 +1,4 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[HCI] hci_merged_remote_node! @hci_hlp_ram.c(392),ERROR" ID="0x8ba80c42" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[HCI] remove remote exceed upper limit %d addr:%02x:%02x:xx:xx:xx:%02x! @hci_hlp_ram.c(556),ERROR" ID="0x8ba81162" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[HCI]memcpy_s&#160;error @hci_hlp_ram.c(576),ERROR" ID="0x8ba81202" />
+			</MSG_LOG>

@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="pan service ethernet req memcpy addr error. @stack_pan_if.c(43),ERROR" ID="0xd8e6015a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service ethernet req memcpy ippacket error. @stack_pan_if.c(53),ERROR" ID="0xd8e601aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan net state payload_length invalid. @stack_pan_if.c(67),ERROR" ID="0xd8e6021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_sdk_pan_cbk net_state_cbk is null. @stack_pan_if.c(71),ERROR" ID="0xd8e6023a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan filter result payload_length invalid. @stack_pan_if.c(80),ERROR" ID="0xd8e60282" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_sdk_pan_cbk filter_result_cbk is null. @stack_pan_if.c(84),ERROR" ID="0xd8e602a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="g_sdk_pan_cbk ethernet_cbk is null. @stack_pan_if.c(93),ERROR" ID="0xd8e602ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan register callback error. @stack_pan_if.c(126),ERROR" ID="0xd8e603f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pan service register cbk:A TO B start. @stack_pan_if.c(133),INFO" ID="0xd8e6042d" />
+			</MSG_LOG>

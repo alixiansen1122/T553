@@ -1,0 +1,27 @@
+menu "es8156 Driver"
+
+config SAP_VENDOR_DRIVER_ES8156_SUPPORT
+    bool "es8156 support"
+    default n
+
+if SAP_VENDOR_DRIVER_ES8156_SUPPORT
+
+config SAP_CONTROL_ES8156_IN_ACORE
+    bool "control es8156 via A core"
+    default y
+
+config SAP_CONTROL_ES8156_IN_DSP
+    bool "control es8156 via DSP"
+    default n
+
+config SAP_ES8156_I2C_BUS_ID
+    int "es8156 i2c bus id"
+    default 0
+
+config SAP_ES8156_I2C_ADDR
+    hex "es8156 i2c address"
+    default 0x28
+
+endif
+
+endmenu

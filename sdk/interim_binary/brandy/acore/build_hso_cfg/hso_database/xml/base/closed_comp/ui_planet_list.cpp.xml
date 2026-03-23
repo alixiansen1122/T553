@@ -1,0 +1,13 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Add view failed, view is nullptr. @ui_planet_list.cpp(67),ERROR" ID="0xcbc0021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Add view failed, view is nullptr. @ui_planet_list.cpp(78),ERROR" ID="0xcbc00272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="head children is nulltpr, applist didn`t initialize. @ui_planet_list.cpp(109),ERROR" ID="0xcbc0036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Calculate inertial move position failed. @ui_planet_list.cpp(152),ERROR" ID="0xcbc004c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Calculate auto align position failed. @ui_planet_list.cpp(157),ERROR" ID="0xcbc004ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Image distance and image size has not initialize. @ui_planet_list.cpp(168),ERROR" ID="0xcbc00542" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="An error occured when calculate time difference. @ui_planet_list.cpp(226),ERROR" ID="0xcbc00712" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Calculate auto align position failed. @ui_planet_list.cpp(425),ERROR" ID="0xcbc00d4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AppList has not init. @ui_planet_list.cpp(471),ERROR" ID="0xcbc00eba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Get screen info failed. @ui_planet_list.cpp(477),ERROR" ID="0xcbc00eea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="view is nullptr. @ui_planet_list.cpp(539),ERROR" ID="0xcbc010da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="AppList has not init. @ui_planet_list.cpp(646),ERROR" ID="0xcbc01432" />
+			</MSG_LOG>

@@ -1,0 +1,11 @@
+config CAXX_DEV_NUM
+    int "CAXX device number."
+    range 1 2
+    default 1
+
+if !BOARD_DYNAMIC_ALLOC
+config CAXX_PACKET_BUFF_MAX
+    int "Static buffer size."
+    range 400 6000
+    default 5000
+endif

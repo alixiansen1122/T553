@@ -1,0 +1,58 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="[hifi]codec_id = 0x%08X @core_adec.c(165),ERROR" ID="0x9856052a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]codec_id = 0x%08X @core_adec.c(170),ERROR" ID="0x98560552" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]dev-&gt;codec_id = 0x%08X @core_adec.c(171),ERROR" ID="0x9856055a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_set_packet_decode Failed, Error Code: [0x%08X] @core_adec.c(354),ERROR" ID="0x98560b12" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_set_plc_off_threshold Failed, Error Code: [0x%08X] @core_adec.c(360),ERROR" ID="0x98560b42" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_input_event_callback Failed, Error Code: [0x%08X] @core_adec.c(407),ERROR" ID="0x98560cba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_input_event_callback Failed, Error Code: [0x%08X] @core_adec.c(422),ERROR" ID="0x98560d32" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_input_event_callback Failed, Error Code: [0x%08X] @core_adec.c(432),ERROR" ID="0x98560d82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_adec.c(463),ERROR" ID="0x98560e7a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_release_stream Failed, Error Code: [0x%08X] @core_adec.c(518),ERROR" ID="0x98561032" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_release_stream Failed, Error Code: [0x%08X] @core_adec.c(561),ERROR" ID="0x9856118a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_send_frame Failed, Error Code: [0x%08X] @core_adec.c(640),ERROR" ID="0x98561402" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_output_event_callback Failed, Error Code: [0x%08X] @core_adec.c(683),ERROR" ID="0x9856155a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_get_module Failed, Error Code: [0x%08X] @core_adec.c(855),ERROR" ID="0x98561aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adec = 0x%08X @core_adec.c(856),INFO" ID="0x98561ac5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(972),INFO" ID="0x98561e65" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(975),INFO" ID="0x98561e7d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_init Failed, Error Code: [0x%08X] @core_adec.c(981),ERROR" ID="0x98561eaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(986),INFO" ID="0x98561ed5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(994),INFO" ID="0x98561f15" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(996),INFO" ID="0x98561f25" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1001),INFO" ID="0x98561f4d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_deinit Failed, Error Code: [0x%08X] @core_adec.c(1007),ERROR" ID="0x98561f7a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1013),INFO" ID="0x98561fad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1032),INFO" ID="0x98562045" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_alloc Failed, Error Code: [0x%08X] @core_adec.c(1037),ERROR" ID="0x9856206a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1053),INFO" ID="0x985620ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1063),INFO" ID="0x9856213d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call core_mod_free Failed, Error Code: [0x%08X] @core_adec.c(1072),ERROR" ID="0x98562182" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1076),INFO" ID="0x985621a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1085),INFO" ID="0x985621ed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1119),INFO" ID="0x985622fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1128),INFO" ID="0x98562345" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1142),INFO" ID="0x985623b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1151),INFO" ID="0x985623fd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1162),INFO" ID="0x98562455" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adec_inst-&gt;ibuf_dur_ms = 0x%08X @core_adec.c(1178),INFO" ID="0x985624d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]adec_inst-&gt;obuf_dur_ms = 0x%08X @core_adec.c(1179),INFO" ID="0x985624dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1200),INFO" ID="0x98562585" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]attr-&gt;buf_dur_ms = %d @core_adec.c(1209),ERROR" ID="0x985625ca" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]ret = %d @core_adec.c(1210),ERROR" ID="0x985625d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_open_codec Failed, Error Code: [0x%08X] @core_adec.c(1218),ERROR" ID="0x98562612" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1224),INFO" ID="0x98562645" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1235),INFO" ID="0x9856269d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_inst Failed, Error Code: [0x%08X] @core_adec.c(1267),ERROR" ID="0x9856279a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1269),INFO" ID="0x985627ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call frame_size Failed, Error Code: [0x%08X] @core_adec.c(1280),ERROR" ID="0x98562802" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1285),INFO" ID="0x9856282d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1294),INFO" ID="0x98562875" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1298),INFO" ID="0x98562895" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_get_buffer_info Failed, Error Code: [0x%08X] @core_adec.c(1367),ERROR" ID="0x98562aba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call connector_list_get_buffer_info Failed, Error Code: [0x%08X] @core_adec.c(1374),ERROR" ID="0x98562af2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1387),INFO" ID="0x98562b5d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[hifi]Call adec_get_proc_info Failed, Error Code: [0x%08X] @core_adec.c(1393),ERROR" ID="0x98562b8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1397),INFO" ID="0x98562bad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]enter... @core_adec.c(1405),INFO" ID="0x98562bed" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[hifi]exit... @core_adec.c(1420),INFO" ID="0x98562c65" />
+			</MSG_LOG>

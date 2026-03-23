@@ -1,0 +1,9 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="replace async failed with null input parameter @js_router.cpp(34),ERROR" ID="0xe1460112" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="router is replacing, can not handle the new request @js_router.cpp(46),ERROR" ID="0xe1460172" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc state machine memory heap failed. @js_router.cpp(51),ERROR" ID="0xe146019a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="dispatch replacing request failed @js_router.cpp(67),ERROR" ID="0xe146021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="replace sync failed, new sm should be prepared @js_router.cpp(86),ERROR" ID="0xe14602b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="the whole application is in background, move to HIDE state directly @js_router.cpp(103),DBG" ID="0xe146033e" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no SM when performing show @js_router.cpp(119),ERROR" ID="0xe14603ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no SM when performing background @js_router.cpp(131),ERROR" ID="0xe146041a" />
+			</MSG_LOG>

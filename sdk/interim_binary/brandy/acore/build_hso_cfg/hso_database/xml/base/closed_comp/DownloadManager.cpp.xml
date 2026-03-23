@@ -1,0 +1,31 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: create sync objects failed @DownloadManager.cpp(20),ERROR" ID="0xe05000a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: already running @DownloadManager.cpp(50),WARNING" ID="0xe0500193" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @DownloadManager.cpp(57),ERROR" ID="0xe05001ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: started @DownloadManager.cpp(60),INFO" ID="0xe05001e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Init HttpModuleClient failed! @DownloadManager.cpp(67),ERROR" ID="0xe050021a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateHttpThread failed! @DownloadManager.cpp(74),ERROR" ID="0xe0500252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: already running @DownloadManager.cpp(81),WARNING" ID="0xe050028b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create HttpMessage queue failed! @DownloadManager.cpp(89),ERROR" ID="0xe05002ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: create thread failed @DownloadManager.cpp(103),ERROR" ID="0xe050033a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @DownloadManager.cpp(110),ERROR" ID="0xe0500372" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: isInited @DownloadManager.cpp(113),INFO" ID="0xe050038d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @DownloadManager.cpp(141),ERROR" ID="0xe050046a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: StopHttp @DownloadManager.cpp(149),INFO" ID="0xe05004ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @DownloadManager.cpp(165),ERROR" ID="0xe050052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: Exit @DownloadManager.cpp(168),INFO" ID="0xe0500545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: not running, can't add task @DownloadManager.cpp(173),ERROR" ID="0xe050056a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="DownloadManager: add task, url=%s, queue size=%zu @DownloadManager.cpp(181),INFO" ID="0xe05005ad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: cancel task, task.caller=%x @DownloadManager.cpp(210),INFO" ID="0xe0500695" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: REPEAT task, task.caller=%x @DownloadManager.cpp(214),INFO" ID="0xe05006b5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: task not found or running, task.caller=%x @DownloadManager.cpp(219),WARNING" ID="0xe05006db" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: invalid manager instance @DownloadManager.cpp(233),ERROR" ID="0xe050074a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Get http message queue failed!ret =%d @DownloadManager.cpp(240),ERROR" ID="0xe0500782" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: thread exit @DownloadManager.cpp(263),INFO" ID="0xe050083d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: queue empty, pend... @DownloadManager.cpp(271),INFO" ID="0xe050087d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: task canceled, skip, caller=%p @DownloadManager.cpp(293),INFO" ID="0xe050092d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: start task, url=%s @DownloadManager.cpp(302),INFO" ID="0xe0500975" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: task success, url=%s @DownloadManager.cpp(321),INFO" ID="0xe0500a0d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="DownloadManager: task failed, url=%s, err=%d @DownloadManager.cpp(327),ERROR" ID="0xe0500a3a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="DownloadManager: send task failed, url=%s @DownloadManager.cpp(345),ERROR" ID="0xe0500aca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="DownloadManager: previous task failed, continue to next @DownloadManager.cpp(368),WARNING" ID="0xe0500b83" />
+			</MSG_LOG>

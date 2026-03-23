@@ -1,0 +1,27 @@
+menu "ANC CODEC Driver"
+
+config SAP_VENDOR_DRIVER_ANC_CODEC_SUPPORT
+    bool "ANC CODEC support"
+    default n
+
+if SAP_VENDOR_DRIVER_ANC_CODEC_SUPPORT
+
+config SAP_CONTROL_ANC_CODEC_IN_ACORE
+    bool "control anc codec via A core"
+    default y
+
+config SAP_CONTROL_ANC_CODEC_IN_DSP
+    bool "control anc codec via DSP"
+    default n
+
+config SAP_ANC_CODEC_I2C_BUS_ID
+    int "anc codec i2c bus id"
+    default 0
+
+config SAP_ANC_CODEC_I2C_ADDR
+    hex "anc codec i2c address"
+    default 0x28
+
+endif
+
+endmenu

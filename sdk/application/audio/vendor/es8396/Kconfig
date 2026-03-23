@@ -1,0 +1,27 @@
+menu "es8396 Driver"
+
+config SAP_VENDOR_DRIVER_ES8396_SUPPORT
+    bool "es8396 support"
+    default n
+
+if SAP_VENDOR_DRIVER_ES8396_SUPPORT
+
+config SAP_CONTROL_ES8396_IN_ACORE
+    bool "control es8396 via A core"
+    default y
+
+config SAP_CONTROL_ES8396_IN_DSP
+    bool "control es8396 via DSP"
+    default n
+
+config SAP_ES8396_I2C_BUS_ID
+    int "es8396 i2c bus id"
+    default 0
+
+config SAP_ES8396_I2C_ADDR
+    hex "es8396 i2c address"
+    default 0x28
+
+endif
+
+endmenu

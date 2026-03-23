@@ -1,0 +1,10 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="Slice %d page:%d was not registered @SlicePageFactory.cpp(26),ERROR" ID="0xb81000d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Slice %d has no default page @SlicePageFactory.cpp(37),INFO" ID="0xb810012d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d has default page id %d but no obj @SlicePageFactory.cpp(46),ERROR" ID="0xb8100172" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Can't register using invalid id %d-%d @SlicePageFactory.cpp(55),ERROR" ID="0xb81001ba" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d page:%d has already been registered @SlicePageFactory.cpp(61),ERROR" ID="0xb81001ea" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Slice %d mainPage is replaced @SlicePageFactory.cpp(68),INFO" ID="0xb8100225" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Can't set main page by invalid id %d-%d @SlicePageFactory.cpp(78),ERROR" ID="0xb8100272" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="Slice %d mainPage is replaced @SlicePageFactory.cpp(85),INFO" ID="0xb81002ad" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d page:%d has not been registered, it should be registered first @SlicePageFactory.cpp(90),ERROR" ID="0xb81002d2" />
+			</MSG_LOG>

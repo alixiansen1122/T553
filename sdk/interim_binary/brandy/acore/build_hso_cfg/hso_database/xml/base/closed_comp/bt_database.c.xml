@@ -1,0 +1,27 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt acore get bt addr memcpy err @bt_database.c(63),ERROR" ID="0xd88001fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] bt acore get phone bt addr memcpy err @bt_database.c(72),ERROR" ID="0xd8800242" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config name memcpy err. @bt_database.c(81),ERROR" ID="0xd880028a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config sync global memcpy err. @bt_database.c(89),ERROR" ID="0xd88002ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] data_config write err. @bt_database.c(97),INFO" ID="0xd880030d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[ACore] config sync data memcpy err. @bt_database.c(101),ERROR" ID="0xd880032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore save smp key err! @bt_database.c(116),ERROR" ID="0xd88003a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore save smp key err! @bt_database.c(139),ERROR" ID="0xd880045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_acore_set_product_type err! @bt_database.c(152),ERROR" ID="0xd88004c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore set sys config err! @bt_database.c(165),ERROR" ID="0xd880052a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore set product type err! @bt_database.c(175),ERROR" ID="0xd880057a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys param err! @bt_database.c(186),ERROR" ID="0xd88005d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys read data err! @bt_database.c(195),ERROR" ID="0xd880061a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get smp keys memcpy err! @bt_database.c(205),ERROR" ID="0xd880066a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get product type read data err! @bt_database.c(224),ERROR" ID="0xd8800702" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get system config read data err! @bt_database.c(233),ERROR" ID="0xd880074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get calibration data read data err! @bt_database.c(241),ERROR" ID="0xd880078a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_acore_delete_smp_key malloc ble_key filed @bt_database.c(252),INFO" ID="0xd88007e5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt_acore_delete_smp_key malloc invaild_info filed @bt_database.c(259),INFO" ID="0xd880081d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key read data err! @bt_database.c(271),ERROR" ID="0xd880087a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key write data err! @bt_database.c(277),ERROR" ID="0xd88008aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key memcpy err! @bt_database.c(291),ERROR" ID="0xd880091a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore get bonded device memcpy err! @bt_database.c(315),ERROR" ID="0xd88009da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key read data err! @bt_database.c(332),ERROR" ID="0xd8800a62" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key memcpy err! @bt_database.c(342),ERROR" ID="0xd8800ab2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt acore delete smp key write data err! @bt_database.c(349),ERROR" ID="0xd8800aea" />
+			</MSG_LOG>

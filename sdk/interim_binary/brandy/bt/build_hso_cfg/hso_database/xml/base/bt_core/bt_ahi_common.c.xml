@@ -1,0 +1,5 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="get remote device address failed! dev_hdl = 0x%x @bt_ahi_common.c(92),ERROR" ID="0x8c9e02e2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="btsdk get remote device address failed! dev_hdl = 0x%x @bt_ahi_common.c(109),ERROR" ID="0x8c9e036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="remote device address copy failed! @bt_ahi_common.c(122),ERROR" ID="0x8c9e03d2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="btsrv passkey req ind callback dev_hdl = 0x%x @bt_ahi_common.c(185),INFO" ID="0x8c9e05cd" />
+			</MSG_LOG>

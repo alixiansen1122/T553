@@ -1,0 +1,43 @@
+34        	LOS_TaskDelete             taskId = %u, taskName = %s.
+36        	OsSchedPrioModify          taskId = %u, priority = %u.
+52        	OsQueueCreateInternal      queueId = %u, len = %u, queue = %u, queueMemType = %u.
+53        	LOS_QueueDelete            queueId = %u, queueState = %u, readWriteableCnt = %u.
+56        	OsQueueOperate             queueId = %u,, operateType = %u, readableCnt = %u, writeableCnt = %u, timeout = %u.
+62          LOS_EventInit              %s
+63          LOS_EventDestroy           ret = %u, %s.
+64          LOS_EventRead              uwEventID = %u, eventMask = %u, %s.
+65          OsEventWrite          	   uwEventID = %u, events = %u.
+66          LOS_EventClear             uwEventID = %u, events = %u.
+67          EventCondRead              uwEventID = %u
+68          LOS_EventCondWrite         uwEventID = %u      
+72          LOS_MuxCreate              muxId = %u, %s. 
+73          LOS_MuxDelete              muxHandle = %u, muxStat = %u, muxCount = %u, taskId = %u.
+74          LOS_MuxPend                muxHandle = %u, muxCount = %u, taskId = %u, timeout = %u.
+75          LOS_MuxPost                muxHandle = %u, muxCount = %u, taskId = %u.      
+82          OsSemCreate                semId = %u, type = %u, count = %u.
+83          LOS_SemDelete              semHandle = %u, ret = %u, %s.
+84          LOS_SemPend                semHandle = %u, semCount = %u, timeout = %u.
+85          LOS_SemPost                semHandle = %u, semType = %u, semCount = %u.      
+92          LOS_MemPoolInit            pool = %x.
+94          LOS_MemAlloc			   pool = %x, ptr = %x, size = %u.
+95          LOS_MemFree                pool = %x, ptr = %x.
+96          LOS_MemRealloc	           pool = %x, ptr = %x, size = %u.
+97          LOS_MemAllocAlign          pool = %x, ptr = %x, size = %u, boundary = %u.        
+102         LOS_SwtmrCreate            timerId = %u.
+103         LOS_SwtmrStart             timerId = %u, mode = %u, overrun = %u, interval = %u, expiry = %u.
+104         LOS_SwtmrStop              timerId = %u.
+105         OsSwtmrScan                timerId = %u.   
+106         OsSwtmrDeleteOption        timerId = %u.       
+112         LOS_HwiCreate              hwiNum = %u, hwiPrio = %u, hwiMode = %u, hwiHandler = %u.
+113         LOS_HwiDelete              hwiNum = %u  
+114         LOS_HwiCreate       	   pDevId = %u, ret = %u.
+115         LOS_HwiDelete        	   hwiNum = %u, pDevId = %u, ret = %u.
+116         LOS_HwiTrigger             hwiNum = %u. 
+117         LOS_HwiEnable              hwiNum = %u.
+118         LOS_HwiDisable             hwiNum = %u.
+119         LOS_HwiClear               hwiNum = %u.  
+120         LOS_HwiSetPriority         hwiNum = %u, priority = %u.
+121         OsIntHandle    			   hwiNum = %u.
+122         OsIntHandle       		   hwiNum = %u.
+123         LOS_HwiSetAffinity         hwiNum = %u, cpuMask = %u.
+124         LOS_HwiSendIpi             hwiNum = %u, cpuMask = %u.

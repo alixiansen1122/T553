@@ -1,0 +1,7 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="Get http message queue failed!ret =%d @http_module_client.cpp(74),ERROR" ID="0xe0380252" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid requestId! @http_module_client.cpp(100),ERROR" ID="0xe0380322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create HttpMessage queue failed! @http_module_client.cpp(132),ERROR" ID="0xe0380422" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Malloc memory for HttpThread failed! @http_module_client.cpp(139),ERROR" ID="0xe038045a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create HttpThread failed @http_module_client.cpp(160),ERROR" ID="0xe0380502" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid requestType! @http_module_client.cpp(204),ERROR" ID="0xe0380662" />
+			</MSG_LOG>

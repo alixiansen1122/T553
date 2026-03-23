@@ -1,0 +1,6 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="pageContainer_ is nullptr @SlicePage.cpp(15),ERROR" ID="0xb80c007a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pageContainer_ already exist @SlicePage.cpp(24),ERROR" ID="0xb80c00c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create pageContainer_ failed @SlicePage.cpp(29),ERROR" ID="0xb80c00ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="create BackDragListener failed @SlicePage.cpp(36),ERROR" ID="0xb80c0122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="pageContainer_ was not initialized !!! @SlicePage.cpp(52),ERROR" ID="0xb80c01a2" />
+			</MSG_LOG>

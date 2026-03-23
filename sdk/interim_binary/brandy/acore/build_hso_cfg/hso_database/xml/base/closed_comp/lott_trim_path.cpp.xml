@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="no output data @lott_trim_path.cpp(140),WARNING" ID="0xcbb80463" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="no valid trim path @lott_trim_path.cpp(156),ERROR" ID="0xcbb804e2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="fill trim path failed @lott_trim_path.cpp(163),ERROR" ID="0xcbb8051a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Invalid path %d %d @lott_trim_path.cpp(173),WARNING" ID="0xcbb8056b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="UIMalloc segLen_ failed! @lott_trim_path.cpp(212),ERROR" ID="0xcbb806a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ignore invalid cmd:%d @lott_trim_path.cpp(247),ERROR" ID="0xcbb807ba" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="wrong param {%f, %f, %f} @lott_trim_path.cpp(284),ERROR" ID="0xcbb808e2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="wrong path param %d, %d @lott_trim_path.cpp(320),ERROR" ID="0xcbb80a02" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="wrong path param %d, %d @lott_trim_path.cpp(379),ERROR" ID="0xcbb80bda" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ignore invalid cmd:%d @lott_trim_path.cpp(408),ERROR" ID="0xcbb80cc2" />
+			</MSG_LOG>

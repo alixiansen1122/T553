@@ -1,0 +1,102 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="list node create fail! @local_device_manager.c(129),ERROR" ID="0xd808040a" />
+			<MSG STRUCTURE="diag_log_msg6" NAME="generate addr: ****%02x%02x%02x%02x name: %s sp-ret: %d @local_device_manager.c(255),INFO" ID="0xd80807fd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="local dev info write error! ret 0x%x @local_device_manager.c(280),ERROR" ID="0xd80808c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="deinit bt stack @local_device_manager.c(311),INFO" ID="0xd80809bd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv id is not active, please set param first. @local_device_manager.c(387),ERROR" ID="0xd8080c1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] ble gap conn state change fail. @local_device_manager.c(414),ERROR" ID="0xd8080cf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] ble gap conn addr memcpy fail. @local_device_manager.c(423),ERROR" ID="0xd8080d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble smp can not find connect node by handle @local_device_manager.c(452),ERROR" ID="0xd8080e22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[btsrv][ERROR] ble gap conn addr memcpy fail. @local_device_manager.c(461),ERROR" ID="0xd8080e6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv id is not active, please set param first. @local_device_manager.c(484),ERROR" ID="0xd8080f22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble enable err,B core may be not calibration end and not notify A Core  @local_device_manager.c(510),ERROR" ID="0xd8080ff2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt init err ret = %08x @local_device_manager.c(542),ERROR" ID="0xd80810f2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @local_device_manager.c(628),WARNING" ID="0xd80813a3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled msg id %x @local_device_manager.c(651),WARNING" ID="0xd808145b" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="inquiry complete @local_device_manager.c(659),INFO" ID="0xd808149d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_hdl:0x%08x @local_device_manager.c(666),INFO" ID="0xd80814d5" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_hdl:0x%08x @local_device_manager.c(680),INFO" ID="0xd8081545" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btsrv_connection_request_ind_callback: memecpy error @local_device_manager.c(694),ERROR" ID="0xd80815b2" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="addr:****%02x%02x%02x%02x @local_device_manager.c(699),INFO" ID="0xd80815dd" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="btsrv connection reject notify callback: memecpy error @local_device_manager.c(711),ERROR" ID="0xd808163a" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="addr:****%02x%02x%02x%02x @local_device_manager.c(716),INFO" ID="0xd8081665" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_hdl:0x%08x @local_device_manager.c(726),INFO" ID="0xd80816b5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s errr @local_device_manager.c(741),ERROR" ID="0xd808172a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc errr @local_device_manager.c(755),ERROR" ID="0xd808179a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s errr @local_device_manager.c(761),ERROR" ID="0xd80817ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="malloc errr @local_device_manager.c(790),ERROR" ID="0xd80818b2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="memcpy_s errr @local_device_manager.c(796),ERROR" ID="0xd80818e2" />
+			<MSG STRUCTURE="diag_log_msg8" NAME="conn_hdl: %08x event: %04x role: %x result: %x dev_hdl: %x svc_hdl: %x svc_class: %x duration: %d @local_device_manager.c(810),INFO" ID="0xd8081955" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="received_bytes: %d sent_bytes: %d @local_device_manager.c(815),INFO" ID="0xd808197d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="unhandled service class 0x%x @local_device_manager.c(841),WARNING" ID="0xd8081a4b" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dev_hdl: %08x num_value: %06d @local_device_manager.c(864),INFO" ID="0xd8081b05" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_hdl: 0x%08x @local_device_manager.c(871),INFO" ID="0xd8081b3d" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="dev_hdl: 0x%08x @local_device_manager.c(878),INFO" ID="0xd8081b75" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dev_hdl: %08x num_value: %06d @local_device_manager.c(884),INFO" ID="0xd8081ba5" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="dev_hdl: %08x reason: %x @local_device_manager.c(898),INFO" ID="0xd8081c15" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="white_list_size:%d  @local_device_manager.c(904),INFO" ID="0xd8081c45" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="transmit_power_level:%d  @local_device_manager.c(909),INFO" ID="0xd8081c6d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="register err id: %x ret: %x @local_device_manager.c(941),ERROR" ID="0xd8081d6a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt enable err,B core may be not calibration end and not notify A Core  @local_device_manager.c(981),ERROR" ID="0xd8081eaa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bt_init err ret = %08x @local_device_manager.c(1008),ERROR" ID="0xd8081f82" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="buff is't long enough, need length:%d. @local_device_manager.c(1115),ERROR" ID="0xd80822da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="get local name memcpy fail. @local_device_manager.c(1119),ERROR" ID="0xd80822fa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="name: %s, length: %d @local_device_manager.c(1128),INFO" ID="0xd8082345" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="failed: bt not enabled @local_device_manager.c(1143),INFO" ID="0xd80823bd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="local name null or length not match, len: %d @local_device_manager.c(1147),INFO" ID="0xd80823dd" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="returns error ret: %x @local_device_manager.c(1153),WARNING" ID="0xd808240b" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="set result name: &quot;%s&quot; name_len: %d get_re: %x @local_device_manager.c(1159),INFO" ID="0xd808243d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gap_remove_all_pairs fail @local_device_manager.c(1219),ERROR" ID="0xd808261a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="gap ble remove all pairs fail @local_device_manager.c(1225),ERROR" ID="0xd808264a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="diable_bt_ret(errcode_t): %x @local_device_manager.c(1232),INFO" ID="0xd8082685" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="disable_ble_ret(errcode_t): %x @local_device_manager.c(1237),INFO" ID="0xd80826ad" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="set discovery data pointer is null. @local_device_manager.c(1268),ERROR" ID="0xd80827a2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_id(%d) advertising, please stop first. @local_device_manager.c(1286),ERROR" ID="0xd8082832" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv data alloc faild, length:%d @local_device_manager.c(1299),ERROR" ID="0xd808289a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap_ble_set_adv_data adv data memcpy_s fail @local_device_manager.c(1303),ERROR" ID="0xd80828ba" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="scan rsp data alloc faild, length:%d @local_device_manager.c(1312),ERROR" ID="0xd8082902" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap_ble_set_adv_data scan rsp data memcpy_s fail @local_device_manager.c(1316),ERROR" ID="0xd8082922" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] invalid interval param. @local_device_manager.c(1349),ERROR" ID="0xd8082a2a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv_id(%d) advertising, please stop first. @local_device_manager.c(1361),ERROR" ID="0xd8082a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap ble set adv param memcpy_s fail @local_device_manager.c(1373),ERROR" ID="0xd8082aea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap ble set adv param memcpy_s fail @local_device_manager.c(1387),ERROR" ID="0xd8082b5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap set sec param error param NULL @local_device_manager.c(1409),ERROR" ID="0xd8082c0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap set sec param error param NULL @local_device_manager.c(1414),ERROR" ID="0xd8082c32" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt has page scanning enabled. @local_device_manager.c(1438),ERROR" ID="0xd8082cf2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="bt has an ACL connection. @local_device_manager.c(1444),ERROR" ID="0xd8082d22" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[CTKD] please set ble secure connection enable,current_sc=%d. @local_device_manager.c(1461),ERROR" ID="0xd8082daa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[BT] flow limit range is [3072-51200] bytes. @local_device_manager.c(1479),ERROR" ID="0xd8082e3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap set adv data memcpy_s fail @local_device_manager.c(1498),ERROR" ID="0xd8082ed2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap set scan rsp data memcpy_s fail @local_device_manager.c(1505),ERROR" ID="0xd8082f0a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] btsrv_gap_set_adv_param memcpy_s fail @local_device_manager.c(1524),ERROR" ID="0xd8082fa2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="[Error] gap set adv param memcpy_s fail @local_device_manager.c(1529),ERROR" ID="0xd8082fca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap ext adv rpt malloc fail @local_device_manager.c(1567),ERROR" ID="0xd80830fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap ext adv rpt memcpy fail @local_device_manager.c(1572),ERROR" ID="0xd8083122" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap ext adv rpt memcpy fail @local_device_manager.c(1578),ERROR" ID="0xd8083152" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap ext adv rpt malloc fail @local_device_manager.c(1589),ERROR" ID="0xd80831aa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap ext adv rpt memcpy fail @local_device_manager.c(1594),ERROR" ID="0xd80831d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap adv set terminated cbk param error @local_device_manager.c(1614),ERROR" ID="0xd8083272" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble enable cbk param error @local_device_manager.c(1625),ERROR" ID="0xd80832ca" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble read remote rssi cbk param error @local_device_manager.c(1636),ERROR" ID="0xd8083322" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble conn param update cbk param error @local_device_manager.c(1652),ERROR" ID="0xd80833a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble gap conn param malloc fail @local_device_manager.c(1666),ERROR" ID="0xd8083412" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble conn param update cbk interval:%x, latency:%x, timeout:%x @local_device_manager.c(1673),INFO" ID="0xd808344d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv id is not active, please set param first. @local_device_manager.c(1707),ERROR" ID="0xd808355a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="adv id(%d) is discoverying, please stop first. @local_device_manager.c(1711),ERROR" ID="0xd808357a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv param alloc fail @local_device_manager.c(1720),ERROR" ID="0xd80835c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="adv id is not active, please set param first. @local_device_manager.c(1753),ERROR" ID="0xd80836ca" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="no advertising in progress or advertising for adv_id(%d). No advertising for adv_id(%d). @local_device_manager.c(1759),ERROR" ID="0xd80836fa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="mc sdk ble stop adv atb failed  @local_device_manager.c(1765),ERROR" ID="0xd808372a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="scanning in process, please stop first. @local_device_manager.c(1799),ERROR" ID="0xd808383a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="scanning already stopped. @local_device_manager.c(1832),ERROR" ID="0xd8083942" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble stop extern scan ret: %#x @local_device_manager.c(1836),INFO" ID="0xd8083965" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble set phy node == NULL @local_device_manager.c(1859),ERROR" ID="0xd8083a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble set phy memcpy fail @local_device_manager.c(1864),ERROR" ID="0xd8083a42" />
+			<MSG STRUCTURE="diag_log_msg5" NAME="ble general set phy hdl:%x all:%x rx:%x tx:%x op:%x. @local_device_manager.c(1872),INFO" ID="0xd8083a85" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble set phy ret: %#x @local_device_manager.c(1875),ERROR" ID="0xd8083a9a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble set data length node == NULL @local_device_manager.c(1896),ERROR" ID="0xd8083b42" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="ble set data length memcpy fail @local_device_manager.c(1902),ERROR" ID="0xd8083b72" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="ble general set len hdl:%x maxoct:%x maxtime:%x @local_device_manager.c(1909),INFO" ID="0xd8083bad" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="ble set len ret: %#x @local_device_manager.c(1912),ERROR" ID="0xd8083bc2" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="bts sert log type levle:%x @local_device_manager.c(1930),INFO" ID="0xd8083c55" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="g_bts_feature_bitmap bt_auto_reconnect_closed:%d. @local_device_manager.c(1951),ERROR" ID="0xd8083cfa" />
+			</MSG_LOG>

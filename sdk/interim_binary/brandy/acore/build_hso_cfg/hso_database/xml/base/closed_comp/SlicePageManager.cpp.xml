@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg2" NAME="Slice %d stop page %d @SlicePageManager.cpp(65),INFO" ID="0xb812020d" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="can't change page duing another switching @SlicePageManager.cpp(88),ERROR" ID="0xb81202c2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="ChangeSlicePage %d in slice %d @SlicePageManager.cpp(93),INFO" ID="0xb81202ed" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="page:%d was not been registered @SlicePageManager.cpp(95),ERROR" ID="0xb81202fa" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="invlid transition type %d @SlicePageManager.cpp(101),ERROR" ID="0xb812032a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="StartSwitchAnimator failed because nextPage_ is nullptr @SlicePageManager.cpp(130),ERROR" ID="0xb8120412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animatorCallback_ new failed @SlicePageManager.cpp(136),ERROR" ID="0xb8120442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="animator_ new failed @SlicePageManager.cpp(143),ERROR" ID="0xb812047a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d start page %d @SlicePageManager.cpp(177),INFO" ID="0xb812058d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d resume page %d @SlicePageManager.cpp(210),INFO" ID="0xb8120695" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d pause page %d @SlicePageManager.cpp(227),INFO" ID="0xb812071d" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="Slice %d stop page %d @SlicePageManager.cpp(244),INFO" ID="0xb81207a5" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="No page in back queue @SlicePageManager.cpp(257),ERROR" ID="0xb812080a" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="pageId %d is not in back queue @SlicePageManager.cpp(281),ERROR" ID="0xb81208ca" />
+			</MSG_LOG>

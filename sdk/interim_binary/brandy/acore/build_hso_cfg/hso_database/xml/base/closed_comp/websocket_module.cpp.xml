@@ -1,0 +1,23 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="The number of HTTP and Websocket clients has exceeded the limit: %d @websocket_module.cpp(37),ERROR" ID="0xe04e012a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create WsModuleClient failed! @websocket_module.cpp(43),ERROR" ID="0xe04e015a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(77),ERROR" ID="0xe04e026a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(83),ERROR" ID="0xe04e029a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(130),ERROR" ID="0xe04e0412" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(136),ERROR" ID="0xe04e0442" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(180),ERROR" ID="0xe04e05a2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(187),ERROR" ID="0xe04e05da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(202),ERROR" ID="0xe04e0652" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(208),ERROR" ID="0xe04e0682" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(233),ERROR" ID="0xe04e074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(239),ERROR" ID="0xe04e077a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(264),ERROR" ID="0xe04e0842" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(270),ERROR" ID="0xe04e0872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(296),ERROR" ID="0xe04e0942" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(302),ERROR" ID="0xe04e0972" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(323),ERROR" ID="0xe04e0a1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(329),ERROR" ID="0xe04e0a4a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This event is invalid @websocket_module.cpp(337),ERROR" ID="0xe04e0a8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @websocket_module.cpp(356),ERROR" ID="0xe04e0b22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This wsClient is invalid @websocket_module.cpp(362),ERROR" ID="0xe04e0b52" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This event is invalid @websocket_module.cpp(370),ERROR" ID="0xe04e0b92" />
+			</MSG_LOG>

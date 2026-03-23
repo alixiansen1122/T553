@@ -1,0 +1,15 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg3" NAME="[BTH][QOS]default flow limit max=%u line_high=%u line_low=%u @sdk_hlp.c(77),ERROR" ID="0x8b7a026a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]overflow ipc:%u fsm_tx:%u. @sdk_hlp.c(116),ERROR" ID="0x8b7a03a2" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]overflow hci_rx:%u hci_qos:%u. @sdk_hlp.c(117),ERROR" ID="0x8b7a03aa" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]warning ipc:%u fsm_tx:%u. @sdk_hlp.c(129),ERROR" ID="0x8b7a040a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]warning hci_rx:%u hci_qos:%u. @sdk_hlp.c(130),ERROR" ID="0x8b7a0412" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]release ipc:%u fsm_tx:%u. @sdk_hlp.c(141),ERROR" ID="0x8b7a046a" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[BTH][QOS]release hci_rx:%u hci_qos:%u. @sdk_hlp.c(142),ERROR" ID="0x8b7a0472" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SDK][GAP] CTKD BR link key report, addr=0x%02x:**:**:**:0x%02x:0x%02x @sdk_hlp.c(918),WARNING" ID="0x8b7a1cb3" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="[SDK][GAP] paired phone exist, dev_handle=0x%x @sdk_hlp.c(925),WARNING" ID="0x8b7a1ceb" />
+			<MSG STRUCTURE="diag_log_msg1" NAME="hlp_link_key_req_cbk no source addr:0x%x @sdk_hlp.c(1024),INFO" ID="0x8b7a2005" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="hlp_connection_ev_cbk_dis_conn hdl:0x%x status:%d @sdk_hlp.c(2179),INFO" ID="0x8b7a441d" />
+			<MSG STRUCTURE="diag_log_msg3" NAME="[SDK] connect event cbk connected: %d, reason: %d link_type:%d! @sdk_hlp.c(2201),ERROR" ID="0x8b7a44ca" />
+			<MSG STRUCTURE="diag_log_msg4" NAME="[SDK] connect event cbk cap:%d addr:%02x******%02x%02x @sdk_hlp.c(2216),ERROR" ID="0x8b7a4542" />
+			<MSG STRUCTURE="diag_log_msg2" NAME="[SDK] connect event cbk status:%d dev_hdl:0x%x @sdk_hlp.c(2219),ERROR" ID="0x8b7a455a" />
+			</MSG_LOG>

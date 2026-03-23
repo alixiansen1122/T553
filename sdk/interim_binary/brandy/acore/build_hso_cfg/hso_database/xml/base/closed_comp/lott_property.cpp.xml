@@ -1,0 +1,11 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg0" NAME="Create floatFrame failed! @lott_property.cpp(35),ERROR" ID="0xcb9a011a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create integerFrame failed! @lott_property.cpp(106),ERROR" ID="0xcb9a0352" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create colorFrame failed! @lott_property.cpp(177),ERROR" ID="0xcb9a058a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create vectorFrame failed! @lott_property.cpp(253),ERROR" ID="0xcb9a07ea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create colorStopsFrame failed! @lott_property.cpp(324),ERROR" ID="0xcb9a0a22" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create positionFrame failed! @lott_property.cpp(423),ERROR" ID="0xcb9a0d3a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create pathDataFrame failed! @lott_property.cpp(567),ERROR" ID="0xcb9a11ba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="update LottPathDataProp value failed. @lott_property.cpp(588),ERROR" ID="0xcb9a1262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Different numbers of points in consecutive frames. @lott_property.cpp(620),ERROR" ID="0xcb9a1362" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="update LottPathDataProp value failed. @lott_property.cpp(645),ERROR" ID="0xcb9a142a" />
+			</MSG_LOG>

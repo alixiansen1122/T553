@@ -1,0 +1,29 @@
+<MSG_LOG><MSG STRUCTURE="diag_log_msg1" NAME="The number of HTTP and Websocket clients has exceeded the limit:%d @http_module.cpp(58),ERROR" ID="0xe05401d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Create HttpModuleClient failed! @http_module.cpp(64),ERROR" ID="0xe0540202" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Init HttpModuleClient failed! @http_module.cpp(70),ERROR" ID="0xe0540232" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="CreateHttpThread failed! @http_module.cpp(76),ERROR" ID="0xe0540262" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(109),ERROR" ID="0xe054036a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(115),ERROR" ID="0xe054039a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @http_module.cpp(154),ERROR" ID="0xe05404d2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(164),ERROR" ID="0xe0540522" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(170),ERROR" ID="0xe0540552" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @http_module.cpp(209),ERROR" ID="0xe054068a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(219),ERROR" ID="0xe05406da" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(225),ERROR" ID="0xe054070a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Get file full path failed! @http_module.cpp(233),ERROR" ID="0xe054074a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @http_module.cpp(270),ERROR" ID="0xe0540872" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(280),ERROR" ID="0xe05408c2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(286),ERROR" ID="0xe05408f2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Get file full path failed! @http_module.cpp(294),ERROR" ID="0xe0540932" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="HttpMessagePut failed! @http_module.cpp(331),ERROR" ID="0xe0540a5a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(341),ERROR" ID="0xe0540aaa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(347),ERROR" ID="0xe0540ada" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This event is invalid @http_module.cpp(355),ERROR" ID="0xe0540b1a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(369),ERROR" ID="0xe0540b8a" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(375),ERROR" ID="0xe0540bba" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This event is invalid @http_module.cpp(383),ERROR" ID="0xe0540bfa" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="Invalid Param! @http_module.cpp(398),ERROR" ID="0xe0540c72" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(404),ERROR" ID="0xe0540ca2" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This event is invalid @http_module.cpp(413),ERROR" ID="0xe0540cea" />
+			<MSG STRUCTURE="diag_log_msg0" NAME="This request is invalid @http_module.cpp(434),ERROR" ID="0xe0540d92" />
+			</MSG_LOG>
