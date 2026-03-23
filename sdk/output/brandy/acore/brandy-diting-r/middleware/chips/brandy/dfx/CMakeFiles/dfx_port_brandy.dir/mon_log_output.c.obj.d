@@ -1,0 +1,32 @@
+middleware/chips/brandy/dfx/CMakeFiles/dfx_port_brandy.dir/mon_log_output.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/mon_log_output.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/log/include/log_module_id.h \
+  /work/shishimao/T553_code/software/code/sdk/include/middleware/utils/diag_log.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/soc_diag_log.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/diag/include/diag_oam_log.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_bt.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_bth.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_gpu.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_gui.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_pf.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_dsp.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_app.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/log_def_media.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/diag/include/diag_msg.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/diag/include/diag_common.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/dfx_feature_config.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/zdiag_config.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/diag/include/diag_channel.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/dfx/write_interface/include/dfx_write_interface.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/include/dfx_resource_id.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/time/osal_timer.h \
+  /work/shishimao/T553_code/software/code/sdk/include/common_def.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/dfx/mon_log_output.h

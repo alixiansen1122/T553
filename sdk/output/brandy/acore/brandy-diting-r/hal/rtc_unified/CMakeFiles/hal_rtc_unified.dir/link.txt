@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_rtc_unified.a CMakeFiles/hal_rtc_unified.dir/hal_rtc.c.obj CMakeFiles/hal_rtc_unified.dir/v100/hal_rtc_v100.c.obj CMakeFiles/hal_rtc_unified.dir/v100/hal_rtc_v100_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_rtc_unified.a

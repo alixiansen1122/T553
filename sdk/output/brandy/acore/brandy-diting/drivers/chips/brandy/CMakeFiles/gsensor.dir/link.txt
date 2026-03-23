@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libgsensor.a CMakeFiles/gsensor.dir/gsensor_lis2doc/gsensor_queue.c.obj CMakeFiles/gsensor.dir/gsensor_lis2doc/gsensor.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libgsensor.a

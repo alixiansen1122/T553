@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_efuse_v100.a CMakeFiles/hal_efuse_v100.dir/hal_efuse.c.obj CMakeFiles/hal_efuse_v100.dir/v100/hal_efuse_v100.c.obj CMakeFiles/hal_efuse_v100.dir/v100/hal_efuse_v100_reg_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_efuse_v100.a

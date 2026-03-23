@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/middleware/utils/build_version/private/build_version.c

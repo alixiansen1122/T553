@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/partition/partition_porting.c

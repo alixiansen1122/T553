@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/pmp/hal_pmp.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/pmp/v70/hal_pmp_riscv70.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/pmp/v70/hal_pmp_riscv70_regs_op.c

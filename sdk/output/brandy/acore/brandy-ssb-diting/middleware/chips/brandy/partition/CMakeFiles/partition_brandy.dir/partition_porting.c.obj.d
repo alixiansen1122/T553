@@ -1,0 +1,11 @@
+middleware/chips/brandy/partition/CMakeFiles/partition_brandy.dir/partition_porting.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/partition/partition_porting.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/include/middleware/utils/partition.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/partition/include/partition_resource_id.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/partition/partition_porting.h

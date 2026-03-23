@@ -1,0 +1,30 @@
+services/gpu/CMakeFiles/gpu.dir/api/openvg/egl/src/egl_mutex.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/openvg/egl/src/egl_mutex.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/srv_tiot_host/tiot_driver/product_porting/brandy_hiditing/tiot_autoconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/openvg/egl/inc/egl_mutex.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/soc_osal.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_list.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/atomic/osal_atomic.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/debug/osal_debug.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/interrupt/osal_interrupt.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/lock/osal_mutex.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_task.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/event/osal_event.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/msgqueue/osal_msgqueue.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_addr.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_barrier.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_cache.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_completion.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/device/osal_device.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_wait.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/fileops/osal_fileops.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/math/osal_math.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/proc/osal_proc.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/semaphore/osal_semaphore.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/lock/osal_spinlock.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/string/osal_string.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/time/osal_timer.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_workqueue.h

@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libmtd_com.a CMakeFiles/mtd_com.dir/common/src/common.c.obj CMakeFiles/mtd_com.dir/common/src/mtd_list.c.obj CMakeFiles/mtd_com.dir/common/src/mtdblock.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libmtd_com.a

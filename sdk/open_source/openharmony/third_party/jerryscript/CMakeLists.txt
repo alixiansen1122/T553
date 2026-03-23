@@ -1,0 +1,298 @@
+set(COMPONENT_NAME "jerryscript")
+
+set(PUBLIC_HEADER
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ext
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/include
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jmem
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jrt
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/lit
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/include
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/include/jerryscript-ext
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/include
+#    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-libm/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/api
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/ecma/base
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/jmem
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/jrt
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-core/lit
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/jerry-ext/include/jerryscript-ext
+)
+
+set(PRIVATE_HEADER
+    ${ROOT_DIR}/application/wearable/ohos_deps
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/debugger
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jcontext
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/regexp
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/arg
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handle-scope
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ext
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jmem
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jrt
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/lit
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/include/jerryscript-ext
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-libm/include
+)
+
+if("JS_ENABLE" IN_LIST DEFINES)
+
+set(SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api/jerry-debugger-transport.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api/jerry-debugger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api/jerry-snapshot.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/api/jerry.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/debugger/debugger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-alloc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-gc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-collection.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-conversion.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-errol.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-external-pointers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-number.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-string.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers-value.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-helpers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-init-finalize.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-lcache.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-literal-storage.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-module.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/base/ecma-property-hashmap.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-array-iterator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-array-prototype-unscopables.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-boolean-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-boolean.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-dataview-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-dataview.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-date-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-date.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-error-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-error.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-evalerror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-evalerror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-function-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-function.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-generator-function.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-generator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-generator.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-global.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-error.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-json.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-helpers-sort.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-helpers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-intrinsic.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-iterator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-json.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-map-iterator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-map-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-map.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-math.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-number-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-number.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-object-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-promise-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-promise.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-reflect.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-regexp-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-regexp.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-set-iterator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-set-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-set.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-string-iterator-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-string-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-string.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-symbol-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-symbol.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-type-error-thrower.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-typeerror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-typeerror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-urierror-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-urierror.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-weakmap-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-weakmap.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-weakset-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtin-weakset.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/ecma-builtins.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-helpers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray-prototype.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-array-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-arraybuffer-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-boolean-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-comparison.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-container-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-conversion.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-dataview-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-eval.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-exceptions.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-function-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-get-put-value.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-iterator-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-jobqueue.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-lex-env.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-number-arithmetic.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-number-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-objects-arguments.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-objects-general.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-objects.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-promise-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-proxy-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-reference.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-regexp-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-string-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-symbol-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ecma/operations/ecma-typedarray-object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ext/ext-utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ext/heapdump.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/ext/tracker.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jcontext/jcontext.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jmem/jmem-allocator.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jmem/jmem-heap.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jmem/jmem-poolman.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/jrt/jrt-fatals.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/lit/lit-char-helpers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/lit/lit-magic-strings.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/lit/lit-strings.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/byte-code.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/common.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-lexer.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-expr.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-mem.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-module.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-statm.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-tagged-template-literal.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser-util.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-parser.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-scanner-ops.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-scanner-util.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/js/js-scanner.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/regexp/re-bytecode.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/regexp/re-compiler.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/parser/regexp/re-parser.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/opcodes-ecma-arithmetics.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/opcodes-ecma-bitwise.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/opcodes-ecma-relational-equality.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/opcodes.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/vm-stack.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/vm-utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-core/vm/vm.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/arg/arg-js-iterator-helper.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/arg/arg-transform-functions.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/arg/arg.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-common.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-rp.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-serial.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-sha1.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-tcp.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/debugger/debugger-ws.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handle-scope/handle-scope-allocator.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handle-scope/handle-scope.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handler/handler-assert.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handler/handler-gc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handler/handler-print.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handler/handler-register.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/handler/handler-resource-name.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-ext/module/module.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-date.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-debugger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-external-context.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-fatal.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-io.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/jerry-port/default/default-module.c
+)
+endif()
+
+set(COMPONENT_PUBLIC_CCFLAGS
+)
+
+set(COMPONENT_CCFLAGS
+    -Wno-error
+    -Wno-unused-parameter
+    -fno-exceptions
+    -fno-unwind-tables
+    -fno-asynchronous-unwind-tables
+    -Wno-undef
+    -Wno-bitwise-op-parentheses
+    -Wno-shift-op-parentheses
+    -nostdlibinc
+    -nostdinc
+    -nostdlib
+    -Wno-error=unused-function
+)
+
+set(WHOLE_LINK
+    true
+)
+
+set(MAIN_COMPONENT
+    false
+)
+
+set(AUTO_ADD_PATH
+    false
+)
+
+set(PUBLIC_DEFINES
+)
+
+set(PRIVATE_DEFINES
+    JERRY_GLOBAL_HEAP_SIZE=576
+    JERRY_ERROR_MESSAGES=1
+    JERRY_LINE_INFO=1
+    JERRY_FUNCTION_NAME
+    JERRY_FUNCTION_BACKTRACE
+    JERRY_STACK_LIMIT=0
+)
+
+install_sdk_by_sh("${CMAKE_CURRENT_SOURCE_DIR}/include" "*")
+
+build_component()

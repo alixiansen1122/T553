@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc ../../../../../../../../lib/libcsysdeps.a CMakeFiles/csysdeps.dir/memcpy.S.obj CMakeFiles/csysdeps.dir/memset.S.obj CMakeFiles/csysdeps.dir/setjmp.S.obj CMakeFiles/csysdeps.dir/strcmp.S.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib ../../../../../../../../lib/libcsysdeps.a

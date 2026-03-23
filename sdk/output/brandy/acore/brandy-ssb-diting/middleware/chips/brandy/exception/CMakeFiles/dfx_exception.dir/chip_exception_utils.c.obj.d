@@ -1,0 +1,25 @@
+middleware/chips/brandy/exception/CMakeFiles/dfx_exception.dir/chip_exception_utils.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/exception/chip_exception_utils.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/exception/chip_exception_utils.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/stdio.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/features.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/reboot/hal_reboot.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_io.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/sys/stat.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/stat.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/fcntl.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/fcntl.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/unistd.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/posix.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/platform_core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product_evb4_standard.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_definition.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_definitions.h

@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libx_dpal.a CMakeFiles/x_dpal.dir/device/src/dpal_devicebase.c.obj CMakeFiles/x_dpal.dir/device/src/dpal_driverbase.c.obj CMakeFiles/x_dpal.dir/src/dpal.c.obj CMakeFiles/x_dpal.dir/src/dpal_driver.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libx_dpal.a

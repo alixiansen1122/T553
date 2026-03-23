@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_cnr_test.c.obj"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_cnr_test.c.obj.d"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_custom_api.c.obj"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_custom_api.c.obj.d"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_mode_test.c.obj"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_mode_test.c.obj.d"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_nmea_process.c.obj"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_nmea_process.c.obj.d"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_service.c.obj"
+  "CMakeFiles/sk_service.dir/gnss_service/gnss_service.c.obj.d"
+  "CMakeFiles/sk_service.dir/location_service/location_service.c.obj"
+  "CMakeFiles/sk_service.dir/location_service/location_service.c.obj.d"
+  "CMakeFiles/sk_service.dir/modem_cmd/modem_cmd.c.obj"
+  "CMakeFiles/sk_service.dir/modem_cmd/modem_cmd.c.obj.d"
+  "CMakeFiles/sk_service.dir/modem_service/modem_ctrl.c.obj"
+  "CMakeFiles/sk_service.dir/modem_service/modem_ctrl.c.obj.d"
+  "CMakeFiles/sk_service.dir/net_service/http_api.c.obj"
+  "CMakeFiles/sk_service.dir/net_service/http_api.c.obj.d"
+  "CMakeFiles/sk_service.dir/net_service/net_data_process.c.obj"
+  "CMakeFiles/sk_service.dir/net_service/net_data_process.c.obj.d"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_connect.c.obj"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_connect.c.obj.d"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_debug_info.c.obj"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_debug_info.c.obj.d"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_web_service.c.obj"
+  "CMakeFiles/sk_service.dir/net_service/paqichong_web_service.c.obj.d"
+  "CMakeFiles/sk_service.dir/nv_service/dev_storage.c.obj"
+  "CMakeFiles/sk_service.dir/nv_service/dev_storage.c.obj.d"
+  "CMakeFiles/sk_service.dir/paqichong/paqichong_data_process.c.obj"
+  "CMakeFiles/sk_service.dir/paqichong/paqichong_data_process.c.obj.d"
+  "CMakeFiles/sk_service.dir/sk_audio/sk_audio.c.obj"
+  "CMakeFiles/sk_service.dir/sk_audio/sk_audio.c.obj.d"
+  "CMakeFiles/sk_service.dir/sk_ota/sk_ota.c.obj"
+  "CMakeFiles/sk_service.dir/sk_ota/sk_ota.c.obj.d"
+  "libsk_service.a"
+  "libsk_service.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/sk_service.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

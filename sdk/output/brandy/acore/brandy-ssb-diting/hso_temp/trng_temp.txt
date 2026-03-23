@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/drivers/drivers/driver/security/trng/drv_trng.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/driver/security/trng/trng.c

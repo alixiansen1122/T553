@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_uart.a CMakeFiles/hal_uart.dir/hal_uart.c.obj CMakeFiles/hal_uart.dir/v120/hal_uart_v120.c.obj CMakeFiles/hal_uart.dir/v120/hal_uart_v120_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_uart.a

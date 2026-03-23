@@ -1,0 +1,7 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) @CompanyNameMagicTag 2022-2022. All rights reserved.
+#===============================================================================
+config FILE_BY_ARRAY
+    bool "Use array file."
+    default n

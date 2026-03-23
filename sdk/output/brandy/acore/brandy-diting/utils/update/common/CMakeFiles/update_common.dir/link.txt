@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libupdate_common.a CMakeFiles/update_common.dir/upg_alloc.c.obj CMakeFiles/update_common.dir/upg_common.c.obj CMakeFiles/update_common.dir/upg_debug.c.obj CMakeFiles/update_common.dir/upg_verify.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libupdate_common.a

@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_km.a CMakeFiles/hal_km.dir/hal_key_deriv.c.obj CMakeFiles/hal_km.dir/hal_key_deriv_v2.c.obj CMakeFiles/hal_km.dir/hal_key_deriv_v2_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_km.a

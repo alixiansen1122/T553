@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc ../../../../../../lib/media/evb_standard/libaudio_decrypt.a CMakeFiles/audio_decrypt.dir/src/decrypt_data.c.obj CMakeFiles/audio_decrypt.dir/src/audio_decrypt.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib ../../../../../../lib/media/evb_standard/libaudio_decrypt.a

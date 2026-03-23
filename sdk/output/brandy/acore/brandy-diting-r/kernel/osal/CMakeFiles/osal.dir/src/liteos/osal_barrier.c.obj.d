@@ -1,0 +1,23 @@
+kernel/osal/CMakeFiles/osal.dir/src/liteos/osal_barrier.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/src/liteos/osal_barrier.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/compat/linux/include/asm/barrier.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_hw.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/arch/riscv/include/arch/cpu.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_typedef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_builddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_toolchain.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/arch/riscv/include/arch/cache.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/arch/riscv/include/arch/barrier.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_config.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/targets/brandy_app/include/asm/memmap_config.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/targets/brandy_app/include/soc/clock.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/targets/brandy_app/include/asm/platform.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/targets/brandy_app/include/asm/register_config.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/targets/brandy_app/include/soc/timer.h

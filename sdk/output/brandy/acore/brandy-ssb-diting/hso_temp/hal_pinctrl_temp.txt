@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/pinmux/common/hal_pinctrl.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/pinmux/brandy/hal_pinctrl_brandy.c

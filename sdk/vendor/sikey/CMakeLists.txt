@@ -1,0 +1,2 @@
+add_subdirectory_if_exist(drivers)
+add_subdirectory_if_exist(service)

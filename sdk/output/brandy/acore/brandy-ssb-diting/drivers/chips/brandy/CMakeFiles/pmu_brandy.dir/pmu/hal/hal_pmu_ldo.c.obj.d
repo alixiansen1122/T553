@@ -1,0 +1,29 @@
+drivers/chips/brandy/CMakeFiles/pmu_brandy.dir/pmu/hal/hal_pmu_ldo.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/hal/hal_pmu_ldo.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/hal/hal_pmu_ldo.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_definitions.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_io.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/soc_osal.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_list.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/atomic/osal_atomic.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/debug/osal_debug.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/interrupt/osal_interrupt.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/lock/osal_mutex.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_task.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/event/osal_event.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/msgqueue/osal_msgqueue.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/reg_config/hal_reg_config.h \
+  /work/shishimao/T553_code/software/code/sdk/include/driver/tcxo.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/platform_core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product_evb4_standard.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_definition.h

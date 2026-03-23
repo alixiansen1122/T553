@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_adapt.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_adapt.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_sdv3.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_sdv3.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_subr.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmc_subr.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmcsd.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/mmcsd.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/sdio_func.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/sdio_func.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/sdio_ops.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/core/sdio_ops.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/host/sdhci/sdhci.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/host/sdhci/sdhci.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/host/sdhci/sdhci_init.c.obj"
+  "CMakeFiles/drv_mmc.dir/__/__/__/__/open_source/freebsd/liteos/drivers/mmc/host/sdhci/sdhci_init.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/core/block.c.obj"
+  "CMakeFiles/drv_mmc.dir/core/block.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/core/sdio.c.obj"
+  "CMakeFiles/drv_mmc.dir/core/sdio.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/host/hci.c.obj"
+  "CMakeFiles/drv_mmc.dir/host/hci.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/adma2.c.obj"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/adma2.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/brandy/mmc_sdhci.c.obj"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/brandy/mmc_sdhci.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/sdhci_runstop.c.obj"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/sdhci_runstop.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/tune/sdhci_tune.c.obj"
+  "CMakeFiles/drv_mmc.dir/host/sdhci/tune/sdhci_tune.c.obj.d"
+  "CMakeFiles/drv_mmc.dir/mmc_init.c.obj"
+  "CMakeFiles/drv_mmc.dir/mmc_init.c.obj.d"
+  "libdrv_mmc.a"
+  "libdrv_mmc.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/drv_mmc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

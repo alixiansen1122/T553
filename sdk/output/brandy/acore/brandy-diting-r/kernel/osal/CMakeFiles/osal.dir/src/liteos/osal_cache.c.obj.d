@@ -1,0 +1,37 @@
+kernel/osal/CMakeFiles/osal.dir/src/liteos/osal_cache.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/src/liteos/osal_cache.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/arch/riscv/include/arch/cache.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_typedef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_builddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/kernel/include/los_toolchain.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/soc_osal.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_list.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/osal_errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/atomic/osal_atomic.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/debug/osal_debug.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/interrupt/osal_interrupt.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/lock/osal_mutex.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_task.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/event/osal_event.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/msgqueue/osal_msgqueue.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_addr.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_barrier.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/memory/osal_cache.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_completion.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/device/osal_device.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_wait.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/fileops/osal_fileops.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/math/osal_math.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/proc/osal_proc.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/semaphore/osal_semaphore.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/lock/osal_spinlock.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/string/osal_string.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/time/osal_timer.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/osal/include/schedule/osal_workqueue.h

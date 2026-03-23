@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc ../../../../../../lib/media/evb_standard/liteos/plugin_muxer_raw/libplugin_muxer_raw.a CMakeFiles/plugin_muxer_raw.dir/raw_muxer.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib ../../../../../../lib/media/evb_standard/liteos/plugin_muxer_raw/libplugin_muxer_raw.a

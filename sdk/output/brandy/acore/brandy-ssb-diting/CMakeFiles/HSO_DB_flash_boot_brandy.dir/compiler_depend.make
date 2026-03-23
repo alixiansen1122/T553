@@ -1,0 +1,2 @@
+# Empty custom commands generated dependencies file for HSO_DB_flash_boot_brandy.
+# This may be replaced when dependencies are built.

@@ -1,0 +1,1027 @@
+Consolidate compiler generated dependencies of target flash_boot_brandy
+Consolidate compiler generated dependencies of target osal
+Consolidate compiler generated dependencies of target rtc_unified
+Consolidate compiler generated dependencies of target uart
+Consolidate compiler generated dependencies of target efuse
+Consolidate compiler generated dependencies of target psram
+Consolidate compiler generated dependencies of target gpio
+Consolidate compiler generated dependencies of target pmp
+Consolidate compiler generated dependencies of target hal_ipc_old
+Consolidate compiler generated dependencies of target boot_ulp
+Consolidate compiler generated dependencies of target non_os
+Consolidate compiler generated dependencies of target spi
+Consolidate compiler generated dependencies of target hal_lpc
+Consolidate compiler generated dependencies of target hal_otp
+Consolidate compiler generated dependencies of target hal_mips
+Consolidate compiler generated dependencies of target otp
+Consolidate compiler generated dependencies of target pke
+Consolidate compiler generated dependencies of target flash
+Consolidate compiler generated dependencies of target hal_cpu_trace
+Consolidate compiler generated dependencies of target hal_pinctrl
+Consolidate compiler generated dependencies of target qspi
+Consolidate compiler generated dependencies of target boot_emmc
+Consolidate compiler generated dependencies of target systick
+Consolidate compiler generated dependencies of target watchdog
+Consolidate compiler generated dependencies of target pinctrl
+Consolidate compiler generated dependencies of target trng
+Consolidate compiler generated dependencies of target cpu_trace
+Consolidate compiler generated dependencies of target lpc
+Consolidate compiler generated dependencies of target hal_pmp
+Consolidate compiler generated dependencies of target irmalloc
+Consolidate compiler generated dependencies of target boot_nandflash
+Consolidate compiler generated dependencies of target ipc_old
+Consolidate compiler generated dependencies of target hal_cipher
+Consolidate compiler generated dependencies of target hal_sectors
+Consolidate compiler generated dependencies of target memory_core
+Consolidate compiler generated dependencies of target hash
+Consolidate compiler generated dependencies of target km
+Consolidate compiler generated dependencies of target hal_gpio_v100
+Consolidate compiler generated dependencies of target hal_reg_config
+Consolidate compiler generated dependencies of target cipher
+Consolidate compiler generated dependencies of target hal_qspi
+Consolidate compiler generated dependencies of target hal_cpu_core
+Consolidate compiler generated dependencies of target hal_l2ram
+Consolidate compiler generated dependencies of target hal_reboot
+Consolidate compiler generated dependencies of target libboundscheck
+Consolidate compiler generated dependencies of target tcxo
+[  0%] Built target rtc_unified
+[  1%] Built target psram
+[  1%] Built target non_os
+[  1%] Built target uart
+[  2%] Built target efuse
+[  3%] Built target osal
+[  3%] Built target spi
+[  5%] Built target pmp
+[  7%] Built target boot_ulp
+[  7%] Built target gpio
+[  9%] Built target otp
+[  9%] Built target lpc
+[  9%] Built target flash
+[  9%] Built target pinctrl
+[ 10%] Built target cpu_trace
+[ 11%] Built target boot_nandflash
+[ 12%] Built target ipc_old
+[ 12%] Built target trng
+[ 12%] Built target qspi
+[ 14%] Built target systick
+[ 15%] Built target memory_core
+Consolidate compiler generated dependencies of target drv_timer
+[ 16%] Built target pke
+[ 19%] Built target hal_cpu_trace
+[ 19%] Built target watchdog
+[ 20%] Built target hal_lpc
+[ 20%] Built target hal_mips
+[ 20%] Built target hal_ipc_old
+[ 23%] Built target hal_gpio_v100
+[ 23%] Built target hal_otp
+[ 23%] Built target hal_pinctrl
+[ 25%] Built target km
+[ 27%] Built target cipher
+[ 27%] Built target hal_cpu_core
+[ 27%] Built target hal_l2ram
+[ 28%] Built target hal_pmp
+[ 35%] Built target hash
+[ 35%] Built target hal_sectors
+[ 35%] Built target drv_timer
+[ 35%] Built target boot_emmc
+[ 35%] Built target hal_reg_config
+[ 35%] Built target hal_qspi
+[ 35%] Built target irmalloc
+[ 35%] Built target flash_boot_brandy
+[ 40%] Built target tcxo
+[ 38%] Built target hal_cipher
+[ 41%] Built target hal_reboot
+[ 44%] Built target libboundscheck
+Consolidate compiler generated dependencies of target hal_pke
+Consolidate compiler generated dependencies of target watchdog_port
+Consolidate compiler generated dependencies of target hal_spi
+[ 46%] Built target hal_pke
+Consolidate compiler generated dependencies of target partition_brandy
+Consolidate compiler generated dependencies of target hal_tcxo
+Consolidate compiler generated dependencies of target hal_hash
+Consolidate compiler generated dependencies of target flash_porting
+Consolidate compiler generated dependencies of target hal_km
+Consolidate compiler generated dependencies of target hal_rtc_unified
+[ 46%] Built target watchdog_port
+Consolidate compiler generated dependencies of target pke_port
+Consolidate compiler generated dependencies of target ulp_aon
+Consolidate compiler generated dependencies of target hal_watchdog
+[ 48%] Built target hal_spi
+Consolidate compiler generated dependencies of target codeloader_ssb
+Consolidate compiler generated dependencies of target tcxo_port
+Consolidate compiler generated dependencies of target trng_port
+[ 49%] Built target hal_tcxo
+Consolidate compiler generated dependencies of target hash_port
+Consolidate compiler generated dependencies of target hal_uart
+Consolidate compiler generated dependencies of target connectivity_ssb
+[ 49%] Built target flash_porting
+Consolidate compiler generated dependencies of target app_version
+[ 51%] Built target partition_brandy
+[ 51%] Built target pke_port
+[ 53%] Built target hal_hash
+[ 54%] Built target hal_km
+Consolidate compiler generated dependencies of target chip_brandy
+[ 54%] Built target hal_rtc_unified
+[ 54%] Built target ulp_aon
+[ 55%] Built target hal_watchdog
+Consolidate compiler generated dependencies of target reboot
+Consolidate compiler generated dependencies of target efuse_porting
+Consolidate compiler generated dependencies of target hal_xip
+Consolidate compiler generated dependencies of target xip_port
+Consolidate compiler generated dependencies of target gpio_port
+Consolidate compiler generated dependencies of target hal_efuse_v100
+Consolidate compiler generated dependencies of target dfx_preserve
+Consolidate compiler generated dependencies of target cipher_port
+[ 55%] Built target codeloader_ssb
+[ 55%] Built target tcxo_port
+[ 55%] Built target hash_port
+Consolidate compiler generated dependencies of target systick_port
+[ 57%] Built target trng_port
+Consolidate compiler generated dependencies of target bootloader
+Consolidate compiler generated dependencies of target partition
+Consolidate compiler generated dependencies of target timer_port
+Consolidate compiler generated dependencies of target pmu_brandy
+[ 58%] Built target hal_uart
+Consolidate compiler generated dependencies of target uart_port
+[ 59%] Built target app_version
+Consolidate compiler generated dependencies of target hal_systick
+Consolidate compiler generated dependencies of target hal_timer
+Consolidate compiler generated dependencies of target dfx_panic
+Consolidate compiler generated dependencies of target cpu_utils
+Consolidate compiler generated dependencies of target build_version
+[ 61%] Built target connectivity_ssb
+Consolidate compiler generated dependencies of target port_pinctrl
+[ 63%] Built target chip_brandy
+Consolidate compiler generated dependencies of target pmp_port
+Consolidate compiler generated dependencies of target error_code
+[ 64%] Built target reboot
+Consolidate compiler generated dependencies of target spi_porting
+Consolidate compiler generated dependencies of target dfx_exception
+Consolidate compiler generated dependencies of target lib_utils
+Consolidate compiler generated dependencies of target rtc_unified_port
+Consolidate compiler generated dependencies of target km_port
+[ 64%] Built target efuse_porting
+[ 66%] Built target hal_xip
+Consolidate compiler generated dependencies of target hal_trng
+[ 67%] Built target xip_port
+Consolidate compiler generated dependencies of target algorithm
+Consolidate compiler generated dependencies of target brandy_clocks
+[ 68%] Built target hal_efuse_v100
+[ 68%] Built target gpio_port
+[ 68%] Built target cipher_port
+[ 70%] Built target dfx_preserve
+[ 70%] Built target systick_port
+Consolidate compiler generated dependencies of target sec_boot
+[ 72%] Built target uart_port
+[ 72%] Built target hal_timer
+[ 74%] Built target hal_systick
+[ 75%] Built target timer_port
+[ 76%] Built target dfx_panic
+[ 76%] Built target partition
+[ 77%] Built target cpu_utils
+[ 79%] Built target pmu_brandy
+[ 80%] Built target build_version
+[ 80%] Built target port_pinctrl
+[ 81%] Built target dfx_exception
+[ 83%] Built target rtc_unified_port
+[ 84%] Built target lib_utils
+[ 84%] Built target error_code
+Consolidate compiler generated dependencies of target codeloader
+[ 84%] Built target pmp_port
+[ 85%] Built target spi_porting
+[ 87%] Built target km_port
+[ 88%] Built target algorithm
+[ 89%] Built target hal_trng
+[ 94%] Built target brandy_clocks
+[ 94%] Built target bootloader
+[ 96%] Built target sec_boot
+[100%] Built target codeloader
+[100%] Generating NV_SRC
+Consolidate compiler generated dependencies of target ssb
+[100%] Built target ssb
+[100%] post_build:gen bin file
+[100%] Built target GENERAT_BIN
+[100%] add ssb length and sha256 info into ssb.bin
+[100%] Built target GENERAT_LST
+[100%] Built target ADD_SHA_TO_SSB
+[100%] Built target nv_config_brandy
+Consolidate compiler generated dependencies of target init
+Consolidate compiler generated dependencies of target i2c
+Consolidate compiler generated dependencies of target qspi
+Consolidate compiler generated dependencies of target interrupt
+Consolidate compiler generated dependencies of target flash
+Consolidate compiler generated dependencies of target memory_core
+Consolidate compiler generated dependencies of target gpio
+Consolidate compiler generated dependencies of target non_os
+Consolidate compiler generated dependencies of target psram
+Consolidate compiler generated dependencies of target cpup
+Consolidate compiler generated dependencies of target tcxo
+Consolidate compiler generated dependencies of target csysdeps
+Consolidate compiler generated dependencies of target driverbase
+Consolidate compiler generated dependencies of target mipi_tx
+Consolidate compiler generated dependencies of target otp
+Consolidate compiler generated dependencies of target drv_timer
+Consolidate compiler generated dependencies of target dma
+Consolidate compiler generated dependencies of target targets
+[  0%] Built target qspi
+Consolidate compiler generated dependencies of target km
+Consolidate compiler generated dependencies of target cpu_trace
+[  0%] Built target memory_core
+[  0%] Built target non_os
+Consolidate compiler generated dependencies of target lzma_21.07
+Consolidate compiler generated dependencies of target ipc_old
+Consolidate compiler generated dependencies of target riscv
+[  1%] Built target tcxo
+Consolidate compiler generated dependencies of target pke
+Consolidate compiler generated dependencies of target cmsis
+[  1%] Built target csysdeps
+Consolidate compiler generated dependencies of target lpc
+Consolidate compiler generated dependencies of target x_dpal
+[  1%] Built target dma
+[  1%] Built target otp
+Consolidate compiler generated dependencies of target brandy_app_recovery
+Consolidate compiler generated dependencies of target lcd
+Consolidate compiler generated dependencies of target nand_flash
+Consolidate compiler generated dependencies of target linux
+Consolidate compiler generated dependencies of target systick
+Consolidate compiler generated dependencies of target spi
+Consolidate compiler generated dependencies of target trng
+Consolidate compiler generated dependencies of target rtc_unified
+Consolidate compiler generated dependencies of target ulp_aon
+Consolidate compiler generated dependencies of target uart
+Consolidate compiler generated dependencies of target dynload
+Consolidate compiler generated dependencies of target qspi_display
+Consolidate compiler generated dependencies of target hash
+Consolidate compiler generated dependencies of target watchdog
+Consolidate compiler generated dependencies of target button
+Consolidate compiler generated dependencies of target pinctrl
+Consolidate compiler generated dependencies of target pmp
+[  2%] Built target spi
+Consolidate compiler generated dependencies of target cipher
+[  2%] Built target ulp_aon
+[  3%] Built target flash
+[  3%] Built target interrupt
+[  3%] Built target init
+[  3%] Built target gpio
+[  3%] Built target psram
+[  3%] Built target i2c
+[  3%] Built target driverbase
+Consolidate compiler generated dependencies of target touch
+[  3%] Built target mipi_tx
+[  3%] Built target cpup
+[  4%] Built target drv_timer
+[  5%] Built target km
+[  6%] Built target cpu_trace
+[  6%] Built target targets
+Consolidate compiler generated dependencies of target mtd_com
+[  6%] Built target riscv
+[  6%] Built target ipc_old
+[  6%] Built target lzma_21.07
+[  6%] Built target cmsis
+[  7%] Built target x_dpal
+[  7%] Built target pke
+[  7%] Built target linux
+[  7%] Built target lpc
+[  7%] Built target brandy_app_recovery
+[  7%] Built target lcd
+[  7%] Built target trng
+[  7%] Built target nand_flash
+[  7%] Built target uart
+[  7%] Built target rtc_unified
+[  7%] Built target systick
+[  7%] Built target dynload
+[  7%] Built target watchdog
+Consolidate compiler generated dependencies of target sec
+[  7%] Built target qspi_display
+[  8%] Built target cipher
+[  8%] Built target pmp
+Consolidate compiler generated dependencies of target posix
+[  8%] Built target hash
+[  8%] Built target button
+[  9%] Built target mtd_com
+[  9%] Built target touch
+[ 10%] Built target pinctrl
+Consolidate compiler generated dependencies of target osal
+Consolidate compiler generated dependencies of target base
+Consolidate compiler generated dependencies of target hal_cpu_core
+Consolidate compiler generated dependencies of target efuse
+[ 10%] Built target hal_cpu_core
+Consolidate compiler generated dependencies of target hal_l2ram
+Consolidate compiler generated dependencies of target hal_lpc
+Consolidate compiler generated dependencies of target hal_otp
+[ 13%] Built target osal
+[ 13%] Built target efuse
+[ 15%] Built target sec
+Consolidate compiler generated dependencies of target hal_ipc_old
+Consolidate compiler generated dependencies of target drv_mmc
+Consolidate compiler generated dependencies of target hal_pmp
+Consolidate compiler generated dependencies of target hal_km
+[ 17%] Built target posix
+[ 17%] Built target hal_l2ram
+Consolidate compiler generated dependencies of target hal_cpu_trace
+Consolidate compiler generated dependencies of target hal_spi
+[ 17%] Built target hal_lpc
+[ 19%] Built target hal_otp
+[ 19%] Built target base
+Consolidate compiler generated dependencies of target hal_reg_config
+Consolidate compiler generated dependencies of target hal_rtc_unified
+Consolidate compiler generated dependencies of target hal_reboot
+Consolidate compiler generated dependencies of target hal_dma_v100
+[ 20%] Built target hal_ipc_old
+Consolidate compiler generated dependencies of target hal_mipi
+[ 20%] Built target hal_pmp
+Consolidate compiler generated dependencies of target hal_qspi
+Consolidate compiler generated dependencies of target hal_pinctrl
+Consolidate compiler generated dependencies of target hal_i2c
+Consolidate compiler generated dependencies of target hal_trng
+[ 20%] Built target hal_km
+Consolidate compiler generated dependencies of target hal_gpio_v100
+[ 20%] Built target hal_cpu_trace
+[ 20%] Built target hal_spi
+Consolidate compiler generated dependencies of target hal_cipher
+[ 20%] Built target hal_reboot
+[ 21%] Built target drv_mmc
+[ 20%] Built target hal_dma_v100
+[ 22%] Built target hal_reg_config
+Consolidate compiler generated dependencies of target hal_watchdog
+[ 22%] Built target hal_mipi
+Consolidate compiler generated dependencies of target trng_port
+[ 22%] Built target hal_rtc_unified
+Consolidate compiler generated dependencies of target hal_tcxo
+[ 22%] Built target hal_qspi
+[ 23%] Built target hal_gpio_v100
+Consolidate compiler generated dependencies of target hal_pke
+[ 25%] Built target hal_pinctrl
+[ 25%] Built target hal_i2c
+Consolidate compiler generated dependencies of target hal_systick
+[ 25%] Built target hal_trng
+Consolidate compiler generated dependencies of target hal_sectors
+[ 26%] Built target hal_watchdog
+[ 26%] Built target hal_cipher
+Consolidate compiler generated dependencies of target hal_hash
+Consolidate compiler generated dependencies of target hal_efuse_v100
+Consolidate compiler generated dependencies of target hal_xip
+[ 27%] Built target trng_port
+Consolidate compiler generated dependencies of target hal_timer
+[ 27%] Built target hal_tcxo
+Consolidate compiler generated dependencies of target hal_uart
+[ 27%] Built target hal_pke
+Consolidate compiler generated dependencies of target timer_port
+Consolidate compiler generated dependencies of target efuse_porting
+[ 27%] Built target hal_sectors
+[ 28%] Built target hal_systick
+[ 28%] Built target hal_efuse_v100
+[ 28%] Built target hal_hash
+[ 28%] Built target hal_timer
+[ 28%] Built target hal_xip
+[ 28%] Built target efuse_porting
+[ 29%] Built target hal_uart
+Consolidate compiler generated dependencies of target cipher_port
+[ 29%] Built target timer_port
+Consolidate compiler generated dependencies of target hash_port
+Consolidate compiler generated dependencies of target pke_port
+[ 29%] Built target cipher_port
+Consolidate compiler generated dependencies of target liteos_port
+[ 30%] Built target hash_port
+Consolidate compiler generated dependencies of target km_port
+Consolidate compiler generated dependencies of target xip_port
+[ 30%] Built target pke_port
+Consolidate compiler generated dependencies of target tcxo_port
+Consolidate compiler generated dependencies of target button_port
+Consolidate compiler generated dependencies of target watchdog_port
+Consolidate compiler generated dependencies of target reboot
+Consolidate compiler generated dependencies of target chip_brandy
+Consolidate compiler generated dependencies of target cpu_utils
+[ 30%] Built target km_port
+[ 31%] Built target xip_port
+Consolidate compiler generated dependencies of target pmp_port
+[ 31%] Built target tcxo_port
+[ 31%] Built target liteos_port
+Consolidate compiler generated dependencies of target port_pinctrl
+Consolidate compiler generated dependencies of target flash_porting
+Consolidate compiler generated dependencies of target i2c_porting
+Consolidate compiler generated dependencies of target systick_port
+[ 31%] Built target watchdog_port
+Consolidate compiler generated dependencies of target soc_log
+[ 31%] Built target button_port
+Consolidate compiler generated dependencies of target dfx_update
+Consolidate compiler generated dependencies of target rtc_unified_port
+Consolidate compiler generated dependencies of target uart_port
+[ 31%] Built target cpu_utils
+[ 31%] Built target chip_brandy
+[ 31%] Built target pmp_port
+[ 32%] Built target reboot
+[ 32%] Built target port_pinctrl
+Consolidate compiler generated dependencies of target gpio_port
+Consolidate compiler generated dependencies of target dma_port
+Consolidate compiler generated dependencies of target update_common_brandy
+[ 32%] Built target flash_porting
+Consolidate compiler generated dependencies of target partition_brandy
+[ 32%] Built target systick_port
+[ 32%] Built target soc_log
+[ 32%] Built target i2c_porting
+[ 32%] Built target uart_port
+Consolidate compiler generated dependencies of target brandy_clocks
+Consolidate compiler generated dependencies of target dfx_file_operation
+[ 33%] Built target rtc_unified_port
+Consolidate compiler generated dependencies of target cpu_load
+[ 33%] Built target partition_brandy
+[ 33%] Built target dma_port
+[ 33%] Built target gpio_port
+[ 33%] Built target dfx_update
+Consolidate compiler generated dependencies of target app_version
+[ 33%] Built target update_common_brandy
+Consolidate compiler generated dependencies of target build_version
+Consolidate compiler generated dependencies of target spi_porting
+[ 33%] Built target dfx_file_operation
+[ 33%] Built target cpu_load
+Consolidate compiler generated dependencies of target dfx_exception
+[ 34%] Built target brandy_clocks
+Consolidate compiler generated dependencies of target partition
+Consolidate compiler generated dependencies of target x_disk
+Consolidate compiler generated dependencies of target algorithm
+[ 34%] Built target spi_porting
+Consolidate compiler generated dependencies of target pm_brandy
+[ 34%] Built target dfx_exception
+[ 34%] Built target partition
+[ 34%] Built target x_disk
+[ 35%] Built target algorithm
+Consolidate compiler generated dependencies of target pm_service
+[ 36%] Built target pm_brandy
+Consolidate compiler generated dependencies of target pmu_brandy
+[ 36%] Built target pm_service
+Consolidate compiler generated dependencies of target dfx_preserve
+[ 36%] Built target build_version
+[ 36%] Built target app_version
+Consolidate compiler generated dependencies of target dfx_panic
+Consolidate compiler generated dependencies of target connectivity
+Consolidate compiler generated dependencies of target log_file
+[ 38%] Built target pmu_brandy
+[ 39%] Built target dfx_preserve
+Consolidate compiler generated dependencies of target dfx_port_brandy
+[ 39%] Built target dfx_panic
+[ 39%] Built target connectivity
+[ 40%] Built target log_file
+[ 40%] Generating NV_SRC
+Consolidate compiler generated dependencies of target lib_utils
+[ 41%] Built target lib_utils
+[ 41%] Built target dfx_port_brandy
+Consolidate compiler generated dependencies of target update_common
+Consolidate compiler generated dependencies of target update_local
+[ 41%] Built target update_common
+[ 42%] Built target update_local
+Consolidate compiler generated dependencies of target x_fat
+Consolidate compiler generated dependencies of target diag_dfx_cmd
+[ 42%] Built target x_fat
+[ 43%] Built target diag_dfx_cmd
+Consolidate compiler generated dependencies of target dfx_log
+Consolidate compiler generated dependencies of target gpu
+[ 43%] Built target nv_config_brandy
+[ 45%] Built target dfx_log
+Consolidate compiler generated dependencies of target dfx_diag
+[ 47%] Built target gpu
+[ 51%] Built target dfx_diag
+Consolidate compiler generated dependencies of target m
+Consolidate compiler generated dependencies of target mbedtls
+Consolidate compiler generated dependencies of target x_vfs
+[ 68%] Built target m
+[ 76%] Built target mbedtls
+[ 81%] Built target x_vfs
+Consolidate compiler generated dependencies of target c
+[100%] Built target c
+Consolidate compiler generated dependencies of target recovery
+[100%] Built target recovery
+[100%] post_build:gen bin file
+[100%] Built target GENERAT_LST
+[100%] Built target GENERAT_BIN
+Consolidate compiler generated dependencies of target gnss_at_service
+Consolidate compiler generated dependencies of target volte_at_service
+Consolidate compiler generated dependencies of target non_os
+Consolidate compiler generated dependencies of target interrupt
+[  0%] Built target gnss_at_service
+[  0%] Built target non_os
+Consolidate compiler generated dependencies of target cpu_trace
+Consolidate compiler generated dependencies of target audio_vendor
+Consolidate compiler generated dependencies of target cmsis
+Consolidate compiler generated dependencies of target init
+[  0%] Built target interrupt
+Consolidate compiler generated dependencies of target media_at_service
+Consolidate compiler generated dependencies of target audio_at_service
+[  0%] Built target cpu_trace
+Consolidate compiler generated dependencies of target ohos_startup
+Consolidate compiler generated dependencies of target adc
+[  0%] Built target cmsis
+Consolidate compiler generated dependencies of target driverbase
+Consolidate compiler generated dependencies of target x_dpal
+[  0%] Built target init
+Consolidate compiler generated dependencies of target csysdeps
+Consolidate compiler generated dependencies of target bt_manager_at_service
+[  1%] Built target audio_at_service
+Consolidate compiler generated dependencies of target targets
+[  1%] Built target media_at_service
+[  1%] Built target x_dpal
+[  1%] Built target csysdeps
+[  1%] Built target ohos_startup
+[  1%] Built target driverbase
+Consolidate compiler generated dependencies of target cpup
+Consolidate compiler generated dependencies of target riscv
+Consolidate compiler generated dependencies of target dma
+[  1%] Built target adc
+Consolidate compiler generated dependencies of target dynload
+[  1%] Built target bt_manager_at_service
+[  2%] Built target targets
+Consolidate compiler generated dependencies of target ogg
+[  2%] Built target cpup
+Consolidate compiler generated dependencies of target app_at_service
+[  2%] Built target dma
+Consolidate compiler generated dependencies of target linux
+[  2%] Built target riscv
+[  2%] Built target audio_vendor
+[  3%] Built target dynload
+[  4%] Built target ogg
+[  4%] Built target linux
+Consolidate compiler generated dependencies of target brandy_app_standard
+Consolidate compiler generated dependencies of target posix
+Consolidate compiler generated dependencies of target mem_monitor
+Consolidate compiler generated dependencies of target i2c
+[  5%] Built target posix
+Consolidate compiler generated dependencies of target systick
+[  5%] Built target volte_at_service
+Consolidate compiler generated dependencies of target gpio
+Consolidate compiler generated dependencies of target psram
+[  5%] Built target mem_monitor
+[  6%] Built target brandy_app_standard
+[  7%] Building C object application/wstp/at_service/app/CMakeFiles/app_at_service.dir/app_at_process.c.obj
+Consolidate compiler generated dependencies of target drv_timer
+[  7%] Built target i2c
+Consolidate compiler generated dependencies of target memory_core
+[  7%] Built target systick
+Consolidate compiler generated dependencies of target qspi
+Consolidate compiler generated dependencies of target tcxo
+[  8%] Built target psram
+[  8%] Built target gpio
+Consolidate compiler generated dependencies of target pke
+Consolidate compiler generated dependencies of target flash
+Consolidate compiler generated dependencies of target otp
+[  8%] Built target drv_timer
+Consolidate compiler generated dependencies of target trng
+Consolidate compiler generated dependencies of target pwm
+Consolidate compiler generated dependencies of target gnss_at_samples
+[  8%] Built target qspi
+[  8%] Built target memory_core
+[  8%] Built target otp
+Consolidate compiler generated dependencies of target qspi_display
+[  8%] Built target tcxo
+[  8%] Built target flash
+Consolidate compiler generated dependencies of target efuse
+Consolidate compiler generated dependencies of target ulp_aon
+[  8%] Built target pke
+Consolidate compiler generated dependencies of target hash
+Consolidate compiler generated dependencies of target calendar
+Consolidate compiler generated dependencies of target uart
+Consolidate compiler generated dependencies of target spi
+[  9%] Built target trng
+Consolidate compiler generated dependencies of target watchdog
+[  9%] Built target pwm
+Consolidate compiler generated dependencies of target rtc_unified
+Consolidate compiler generated dependencies of target cipher
+Consolidate compiler generated dependencies of target pmp
+Consolidate compiler generated dependencies of target osal
+Consolidate compiler generated dependencies of target mipi_tx
+[  9%] Built target efuse
+[  9%] Built target gnss_at_samples
+Consolidate compiler generated dependencies of target pinctrl
+Consolidate compiler generated dependencies of target mtd_com
+[  9%] Built target ulp_aon
+[  9%] Built target qspi_display
+[ 10%] Built target uart
+[ 10%] Built target hash
+[ 12%] Built target rtc_unified
+Consolidate compiler generated dependencies of target ipc_old
+[ 12%] Built target spi
+[ 12%] Built target watchdog
+Consolidate compiler generated dependencies of target km
+[ 12%] Built target calendar
+[ 13%] Built target mipi_tx
+[ 13%] Built target cipher
+[ 14%] Built target pmp
+[ 14%] Built target pinctrl
+[ 14%] Built target mtd_com
+[ 15%] Built target ipc_old
+[ 15%] Built target km
+Consolidate compiler generated dependencies of target lpc
+Consolidate compiler generated dependencies of target lcd
+[ 16%] Built target osal
+Consolidate compiler generated dependencies of target nand_flash
+Consolidate compiler generated dependencies of target hal_adc
+Consolidate compiler generated dependencies of target hal_cpu_core
+Consolidate compiler generated dependencies of target button
+[ 16%] Built target lpc
+Consolidate compiler generated dependencies of target touch
+[ 16%] Built target lcd
+[ 16%] Built target hal_adc
+[ 16%] Built target hal_cpu_core
+[ 16%] Built target button
+[ 17%] Built target nand_flash
+Consolidate compiler generated dependencies of target hal_reg_config
+[ 17%] Built target touch
+[ 17%] Built target hal_reg_config
+Consolidate compiler generated dependencies of target hal_pwm
+Consolidate compiler generated dependencies of target hal_cipher
+Consolidate compiler generated dependencies of target sk_service
+[ 17%] Built target hal_pwm
+Consolidate compiler generated dependencies of target base
+[ 18%] Built target hal_cipher
+Consolidate compiler generated dependencies of target hal_dma_v100
+Consolidate compiler generated dependencies of target sec
+[ 18%] Built target hal_dma_v100
+[ 18%] Building C object vendor/sikey/service/CMakeFiles/sk_service.dir/net_service/net_data_process.c.obj
+[ 19%] Built target base
+Consolidate compiler generated dependencies of target drv_hitls
+Consolidate compiler generated dependencies of target audio_sample
+Consolidate compiler generated dependencies of target hal_ipc_old
+[ 20%] Built target sec
+Consolidate compiler generated dependencies of target hal_cpu_trace
+Consolidate compiler generated dependencies of target hal_otp
+Consolidate compiler generated dependencies of target hal_efuse_v100
+Consolidate compiler generated dependencies of target audio_core
+[ 20%] Built target hal_ipc_old
+Consolidate compiler generated dependencies of target hal_calendar
+Consolidate compiler generated dependencies of target hal_watchdog
+[ 20%] Built target hal_cpu_trace
+Consolidate compiler generated dependencies of target hal_hash
+Consolidate compiler generated dependencies of target hal_mem_monitor
+Consolidate compiler generated dependencies of target hal_l2ram
+Consolidate compiler generated dependencies of target hal_qspi
+Consolidate compiler generated dependencies of target hal_gpio_v100
+[ 21%] Built target drv_hitls
+[ 23%] Built target hal_otp
+Consolidate compiler generated dependencies of target hal_km
+[ 23%] Built target hal_efuse_v100
+Consolidate compiler generated dependencies of target hal_sectors
+Consolidate compiler generated dependencies of target hal_mipi
+Consolidate compiler generated dependencies of target hal_pinctrl
+Consolidate compiler generated dependencies of target hal_lpc
+Consolidate compiler generated dependencies of target hal_reboot
+Consolidate compiler generated dependencies of target hal_uart
+Consolidate compiler generated dependencies of target hal_pmp
+[ 23%] Built target hal_calendar
+[ 23%] Built target hal_hash
+[ 23%] Built target hal_l2ram
+[ 23%] Built target hal_mem_monitor
+Consolidate compiler generated dependencies of target hal_spi
+[ 23%] Built target hal_qspi
+[ 23%] Built target audio_core
+Consolidate compiler generated dependencies of target drv_mmc
+Consolidate compiler generated dependencies of target hal_rtc_unified
+Consolidate compiler generated dependencies of target hal_trng
+[ 23%] Built target hal_gpio_v100
+[ 23%] Built target hal_watchdog
+Consolidate compiler generated dependencies of target hal_pke
+[ 23%] Built target hal_km
+Consolidate compiler generated dependencies of target gpio_port
+[ 23%] Built target hal_sectors
+[ 23%] Built target hal_pinctrl
+[ 23%] Built target hal_mipi
+Consolidate compiler generated dependencies of target pke_port
+[ 23%] Built target hal_lpc
+[ 23%] Built target hal_pmp
+[ 24%] Built target audio_sample
+[ 25%] Built target hal_reboot
+[ 25%] Built target hal_spi
+Consolidate compiler generated dependencies of target hal_xip
+Consolidate compiler generated dependencies of target gsensor
+[ 25%] Built target hal_uart
+[ 25%] Built target hal_trng
+Consolidate compiler generated dependencies of target adc_port
+Consolidate compiler generated dependencies of target audio_api
+Consolidate compiler generated dependencies of target liteos_port
+[ 25%] Built target hal_pke
+Consolidate compiler generated dependencies of target hash_port
+[ 25%] Built target hal_rtc_unified
+[ 26%] Built target drv_mmc
+Consolidate compiler generated dependencies of target cipher_port
+[ 26%] Built target pke_port
+Consolidate compiler generated dependencies of target pwm_port
+[ 27%] Built target gpio_port
+Consolidate compiler generated dependencies of target chip_brandy
+[ 27%] Built target hal_xip
+[ 27%] Built target gsensor
+Consolidate compiler generated dependencies of target hal_tcxo
+[ 27%] Built target liteos_port
+[ 27%] Built target adc_port
+[ 27%] Built target cipher_port
+[ 27%] Built target hash_port
+Consolidate compiler generated dependencies of target km_port
+[ 27%] Built target pwm_port
+[ 28%] Built target audio_api
+[ 28%] Built target chip_brandy
+Consolidate compiler generated dependencies of target efuse_porting
+[ 29%] Built target hal_tcxo
+Consolidate compiler generated dependencies of target timer_port
+Consolidate compiler generated dependencies of target tcxo_port
+Consolidate compiler generated dependencies of target trng_port
+Consolidate compiler generated dependencies of target hal_timer
+[ 29%] Built target km_port
+Consolidate compiler generated dependencies of target hal_i2c
+Consolidate compiler generated dependencies of target mqtt
+Consolidate compiler generated dependencies of target hal_systick
+Consolidate compiler generated dependencies of target systick_port
+Consolidate compiler generated dependencies of target pmp_port
+[ 29%] Built target efuse_porting
+Consolidate compiler generated dependencies of target i2c_porting
+[ 29%] Built target tcxo_port
+Consolidate compiler generated dependencies of target calendar_port
+Consolidate compiler generated dependencies of target xip_port
+[ 29%] Built target trng_port
+[ 29%] Built target timer_port
+Consolidate compiler generated dependencies of target uart_port
+[ 29%] Built target hal_systick
+[ 29%] Built target hal_timer
+[ 29%] Built target systick_port
+[ 30%] Built target hal_i2c
+Consolidate compiler generated dependencies of target port_pinctrl
+[ 30%] Built target pmp_port
+[ 30%] Built target calendar_port
+[ 31%] Built target xip_port
+[ 31%] Built target i2c_porting
+Consolidate compiler generated dependencies of target flash_porting
+[ 31%] Built target uart_port
+[ 32%] Built target mqtt
+[ 32%] Built target port_pinctrl
+[ 32%] Built target flash_porting
+Consolidate compiler generated dependencies of target watchdog_port
+[ 32%] Built target watchdog_port
+Consolidate compiler generated dependencies of target spi_porting
+Consolidate compiler generated dependencies of target update_storage_brandy
+Consolidate compiler generated dependencies of target dma_port
+Consolidate compiler generated dependencies of target mem_monitor_port
+Consolidate compiler generated dependencies of target audio_modem_port
+Consolidate compiler generated dependencies of target audio_bluetooth_port
+Consolidate compiler generated dependencies of target brandy_clocks
+[ 32%] Built target spi_porting
+Consolidate compiler generated dependencies of target audio_hw
+Consolidate compiler generated dependencies of target gnss_brandy
+Consolidate compiler generated dependencies of target audio_primary_port
+Consolidate compiler generated dependencies of target rtc_unified_port
+Consolidate compiler generated dependencies of target audio_capture
+Consolidate compiler generated dependencies of target button_port
+[ 32%] Built target update_storage_brandy
+[ 32%] Built target dma_port
+Consolidate compiler generated dependencies of target media_hal_common
+Consolidate compiler generated dependencies of target audio_utils
+[ 34%] Built target mem_monitor_port
+Consolidate compiler generated dependencies of target partition_brandy
+[ 34%] Built target audio_bluetooth_port
+Consolidate compiler generated dependencies of target audio_stream
+[ 34%] Built target audio_hw
+[ 34%] Built target audio_modem_port
+[ 34%] Built target rtc_unified_port
+Consolidate compiler generated dependencies of target update_common_brandy
+[ 34%] Built target button_port
+Consolidate compiler generated dependencies of target pmu_brandy
+[ 34%] Built target audio_primary_port
+[ 34%] Built target gnss_brandy
+[ 34%] Built target brandy_clocks
+[ 35%] Built target audio_utils
+Consolidate compiler generated dependencies of target nv_brandy
+[ 35%] Built target audio_capture
+[ 35%] Built target partition_brandy
+[ 35%] Built target media_hal_common
+Consolidate compiler generated dependencies of target plugin_muxer_raw
+Consolidate compiler generated dependencies of target dtcf_manager
+[ 35%] Built target update_common_brandy
+[ 35%] Built target audio_stream
+Consolidate compiler generated dependencies of target audio_decrypt
+[ 35%] Built target pmu_brandy
+Consolidate compiler generated dependencies of target pm_service
+Consolidate compiler generated dependencies of target audio_port_common
+[ 35%] Built target nv_brandy
+Consolidate compiler generated dependencies of target dtcf
+Consolidate compiler generated dependencies of target audio_recorder
+[ 35%] Built target plugin_muxer_raw
+[ 35%] Built target dtcf_manager
+[ 35%] Built target audio_port_common
+Consolidate compiler generated dependencies of target camera_codec_hw
+[ 35%] Built target dtcf
+[ 36%] Built target audio_decrypt
+[ 36%] Built target pm_service
+Consolidate compiler generated dependencies of target app_version
+[ 36%] Built target camera_codec_hw
+Consolidate compiler generated dependencies of target build_version
+Consolidate compiler generated dependencies of target plugin_muxer_wav
+[ 36%] Built target app_version
+Consolidate compiler generated dependencies of target codec_plugin_vdec
+[ 36%] Built target build_version
+Consolidate compiler generated dependencies of target dfx_preserve
+Consolidate compiler generated dependencies of target audio_probe
+[ 37%] Built target plugin_muxer_wav
+Consolidate compiler generated dependencies of target log_file
+Consolidate compiler generated dependencies of target gpu_proc
+[ 38%] Built target codec_plugin_vdec
+Consolidate compiler generated dependencies of target soc_log
+Consolidate compiler generated dependencies of target dfx_update
+Consolidate compiler generated dependencies of target connectivity
+Consolidate compiler generated dependencies of target dfx_port_brandy
+[ 39%] Built target audio_probe
+[ 39%] Built target dfx_preserve
+[ 39%] Built target audio_recorder
+Consolidate compiler generated dependencies of target codec_hw
+Consolidate compiler generated dependencies of target audio_dump
+Consolidate compiler generated dependencies of target esim
+[ 39%] Built target log_file
+[ 39%] Built target gpu_proc
+Consolidate compiler generated dependencies of target algorithm
+[ 39%] Built target dfx_update
+[ 39%] Built target soc_log
+Consolidate compiler generated dependencies of target reboot
+[ 39%] Built target connectivity
+Consolidate compiler generated dependencies of target cpu_load
+[ 40%] Built target audio_dump
+Consolidate compiler generated dependencies of target cpu_utils
+[ 40%] Built target dfx_port_brandy
+[ 40%] Built target codec_hw
+Consolidate compiler generated dependencies of target at_cmd
+[ 40%] Built target cpu_load
+[ 40%] Built target esim
+Consolidate compiler generated dependencies of target dfx_file_operation
+[ 40%] Built target reboot
+Consolidate compiler generated dependencies of target dfx_nv
+Consolidate compiler generated dependencies of target update_storage
+[ 40%] Built target algorithm
+[ 40%] Built target cpu_utils
+[ 40%] Built target at_cmd
+Consolidate compiler generated dependencies of target audio_service
+[ 40%] Built target dfx_file_operation
+[ 41%] Built target dfx_nv
+[ 41%] Built target update_storage
+Consolidate compiler generated dependencies of target x_disk
+Consolidate compiler generated dependencies of target pm_brandy
+[ 41%] Install hal_release ...
+[ 41%] Generating NV_SRC
+[ 41%] Built target audio_service
+Consolidate compiler generated dependencies of target partition
+Consolidate compiler generated dependencies of target audio_drv
+[ 41%] Built target x_disk
+Consolidate compiler generated dependencies of target dfx_exception
+[ 41%] Built target partition
+[ 41%] Built target pm_brandy
+Consolidate compiler generated dependencies of target media_common
+Consolidate compiler generated dependencies of target lzma_21.07
+[ 41%] Built target dfx_exception
+Consolidate compiler generated dependencies of target cjson_static
+Consolidate compiler generated dependencies of target lib_utils
+Consolidate compiler generated dependencies of target bt_host_audio_manager_wrapper
+Consolidate compiler generated dependencies of target plugin_demuxer_ogg
+Consolidate compiler generated dependencies of target plugin_demuxer_raw
+[ 42%] Built target media_common
+[ 42%] Built target lzma_21.07
+[ 42%] Built target cjson_static
+[ 43%] Built target audio_drv
+[ 45%] Built target lib_utils
+Consolidate compiler generated dependencies of target format_hw
+[ 45%] Built target bt_host_audio_manager_wrapper
+Consolidate compiler generated dependencies of target update_common
+[ 45%] Built target plugin_demuxer_raw
+Consolidate compiler generated dependencies of target audio_manager
+Consolidate compiler generated dependencies of target audio_proc
+[ 45%] Built target plugin_demuxer_ogg
+[ 46%] Built target format_hw
+Consolidate compiler generated dependencies of target update_local
+[ 46%] Built target update_common
+Consolidate compiler generated dependencies of target cipher_static
+Consolidate compiler generated dependencies of target x_fat
+Consolidate compiler generated dependencies of target dfx_panic
+[ 46%] Built target audio_proc
+[ 46%] Built target audio_manager
+[ 47%] Built target update_local
+Consolidate compiler generated dependencies of target media_sample_wrapper
+[ 47%] Built target dfx_panic
+[ 48%] Built target x_fat
+Consolidate compiler generated dependencies of target player
+[ 48%] Built target cipher_static
+Consolidate compiler generated dependencies of target hdi_camera_intf
+Consolidate compiler generated dependencies of target nv
+[ 48%] Built target nv_config_brandy
+[ 48%] Built target media_sample_wrapper
+[ 48%] Built target hdi_camera_intf
+[ 49%] Built target player
+[ 49%] Built target nv
+Consolidate compiler generated dependencies of target diag_dfx_cmd
+Consolidate compiler generated dependencies of target skdriver
+Consolidate compiler generated dependencies of target dfx_log
+[ 50%] Built target diag_dfx_cmd
+[ 51%] Built target skdriver
+[ 52%] Built target dfx_log
+Consolidate compiler generated dependencies of target tiot_driver
+[ 53%] Built target tiot_driver
+Consolidate compiler generated dependencies of target dfx_diag
+Consolidate compiler generated dependencies of target mbedtls
+[ 56%] Built target dfx_diag
+Consolidate compiler generated dependencies of target bt_host_brandy_sample
+[ 58%] Built target bt_host_brandy_sample
+Consolidate compiler generated dependencies of target m
+[ 63%] Built target mbedtls
+[ 63%] Built target hal_release
+Consolidate compiler generated dependencies of target gpu
+Consolidate compiler generated dependencies of target lwip
+[ 75%] Built target m
+[ 79%] Built target gpu
+Consolidate compiler generated dependencies of target c
+Consolidate compiler generated dependencies of target x_vfs
+[ 82%] Built target lwip
+[ 85%] Built target x_vfs
+[ 98%] Built target c
+/work/shishimao/T553_code/software/code/sdk/vendor/sikey/service/net_service/net_data_process.c:72:23: warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+for (int i = 0; i < sizeof(types) / sizeof(types[0]); i++)
+~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/shishimao/T553_code/software/code/sdk/application/wstp/at_service/app/app_at_process.c:325:34: warning: passing 'const void *' to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+at_cmd_send_abt_result_to_bt((const void *)s, str_len);
+^~~~~~~~~~~~~~~
+/work/shishimao/T553_code/software/code/sdk/middleware/utils/at/wstp_at/inc/at_cmd_api.h:102:44: note: passing argument to parameter 'result' here
+void at_cmd_send_abt_result_to_bt(uint8_t *result, uint32_t result_len);
+^
+/work/shishimao/T553_code/software/code/sdk/application/wstp/at_service/app/app_at_process.c:4358:31: warning: incompatible function pointer types passing 'int32_t (unsigned char *, unsigned long, unsigned char **, unsigned long *)' (aka 'int (unsigned char *, unsigned long, unsigned char **, unsigned long *)') to parameter of type 'ApduTransmitRecv' (aka 'int (*)(unsigned char *, unsigned long long, unsigned char **, unsigned long long *)') [-Wincompatible-function-pointer-types]
+res = api_seInterfaceInit(esim_apdu_transmit_recv, esim_waitfor_ready);
+^~~~~~~~~~~~~~~~~~~~~~~
+/work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/esim/include/base.h:71:42: note: passing argument to parameter 'apduTransmitRecv' here
+int api_seInterfaceInit(ApduTransmitRecv apduTransmitRecv,WaitForReady waitForReady);
+^
+/work/shishimao/T553_code/software/code/sdk/application/wstp/at_service/app/app_at_process.c:5328:27: warning: incompatible function pointer types initializing 'app_process_func' (aka 'unsigned int (*)(unsigned char *, unsigned int)') with an expression of type 'void (void)' [-Wincompatible-function-pointer-types]
+{ SHUT_DOWN_DEVICE,   shut_down_device},
+^~~~~~~~~~~~~~~~
+/work/shishimao/T553_code/software/code/sdk/application/wstp/at_service/app/app_at_process.c:2900:17: warning: unused function 'scrambing_code_read_write' [-Wunused-function]
+static uint32_t scrambing_code_read_write(uint8_t *para, uint32_t para_len)
+^
+1 warning generated.
+[ 98%] Linking C static library libsk_service.a
+[100%] Built target sk_service
+4 warnings generated.
+[100%] Linking C static library libapp_at_service.a
+[100%] Built target app_at_service
+Consolidate compiler generated dependencies of target application
+[100%] Linking CXX executable application.elf
+Generating /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/linker/standard/acore.prelds -> /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting/linker.lds
+Memory region         Used Size  Region Size  %age Used
+BOOTUP_RAM:         392 B        436 B     89.91%
+BOOTUP_LOAD:         392 B        436 B     89.91%
+FLASH_VERSION:          88 B         88 B    100.00%
+FLASH_PROGRAM:     3971532 B    8388084 B     47.35%
+PSRAM_APP_CODE:          0 GB       960 KB      0.00%
+PSRAM_APP_DATA:      152552 B         1 MB     14.55%
+PSRAM_HEAP:          0 GB      5974 KB      0.00%
+L2M_GPU_PROGRAM:          0 GB       128 KB      0.00%
+L2M_DSP_PROGRAM:          0 GB         0 GB
+ITCM:      148548 B     196172 B     75.72%
+DTCM:      245552 B       448 KB     53.53%
+IPC_SHARE_MEM:       18528 B      18528 B    100.00%
+PRESERVE_SHARE_MEM:         252 B        252 B    100.00%
+SYSTEM_PM:          44 B        192 B     22.92%
+SYSTEM_STATUS:          24 B        192 B     12.50%
+CPUTRACE_RAM:        8184 B       8184 B    100.00%
+[100%] Built target application
+[100%] post_build:gen bin file
+[100%] Built target GENERAT_LST
+[100%] Built target GENERAT_BIN
+['/usr/bin/python3', '/work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/mkyaffs2tool.py']
+
+
+mkyaffs2image: image building tool for YAFFS2 built Aug 27 2025
+File [/work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/file_tmp.bin] is cread
+Processing directory /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user into image file /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/file_tmp.bin
+Object 257, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/paqichong is a directory
+Object 258, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/paqichong/model.bin is a file, 18 data chunks written
+Object 259, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring is a directory
+Object 260, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_4.ogg is a file, 33 data chunks written
+Object 261, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_1.ogg is a file, 27 data chunks written
+Object 262, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_10.ogg is a file, 17 data chunks written
+Object 263, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_3.ogg is a file, 41 data chunks written
+Object 264, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_8.ogg is a file, 19 data chunks written
+Object 265, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_2.ogg is a file, 16 data chunks written
+Object 266, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_7.ogg is a file, 27 data chunks written
+Object 267, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_5.ogg is a file, 25 data chunks written
+Object 268, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_9.ogg is a file, 19 data chunks written
+Object 269, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/ring/bell_6.ogg is a file, 20 data chunks written
+Object 270, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/gnss is a directory
+Object 271, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/gnss/firmware is a directory
+Object 272, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/gnss/firmware/gnss_config.bin is a file, 8 data chunks written
+Object 273, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/xgnss is a directory
+Object 274, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/xgnss/test.dat is a file, 0 data chunks written
+Object 275, /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user/test4.txt is a file, 1 data chunks written
+Operation complete.
+38 objects in 6 directories
+296 NAND pages
+/work/shishimao/T553_code/software/code/sdk/tools/bin/platform_tool/mkyaffs2image/mkyaffs2image /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/fs/user /work/shishimao/T553_code/software/code/sdk/build/config/target_config/brandy/mk_fs_image/file_tmp.bin 1 2
+make yaffs image file over!
+['/usr/bin/python3', '/work/shishimao/T553_code/software/code/sdk/tools/pkg/packet.py', 'brandy', 'brandy-diting', '0x1000000', 'False']
+
+
+Parameter error
+Build params success!
+build nv bin success!!
+ssb_path:  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/ssb.bin
+['/work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/ssb.bin', '/work/shishimao/T553_code/software/code/sdk/output/brandy/partition_table.bin', '/work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting/application.bin', '/work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/recovery.bin', '/work/shishimao/T553_code/software/code/sdk/tools/pkg/bin/brandy/bt.bin', '/work/shishimao/T553_code/software/code/sdk/tools/pkg/bin/brandy/dsp/ultra/dsp_main.bin', '/work/shishimao/T553_code/software/code/sdk/tools/pkg/bin/brandy/dsp/ultra/dsp_overlay.bin', '/work/shishimao/T553_code/software/code/sdk/output/brandy/nv_bin/brandy_all_nv.bin', '/work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting/file.bin']
+[1879048192, 1879371776, 1882718208, 1891106816, 1879638016, 1880096768, 1880883200, 1892155392, 4294967295]
+[131072, 4096, 8388608, 1048576, 458752, 786432, 1835008, 16384, 4294967295]
+[108932, 1024, 3972056, 222948, 386872, 353032, 1479052, 4096, 625152]
+[0, 100, 18, 100, 20, 22, 26, 100, 101]

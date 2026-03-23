@@ -1,0 +1,24 @@
+middleware/chips/brandy/pm/CMakeFiles/pm_brandy.dir/pm_adapt/pm_config.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/pm/pm_adapt/pm_config.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/pm/pm_adapt/pm_config.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_io.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/pm/include/pm_definition.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/drivers/shared/clocks_types.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_definition.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_definitions.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/drivers/acore/clocks_switch_priv.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/drivers/acore/pmu_cmu.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/platform_core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product_evb4_standard.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/hal/hal_pmu_cmu.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/pm/pm_adapt/pm_control.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/hal/hal_pmu_ldo.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h

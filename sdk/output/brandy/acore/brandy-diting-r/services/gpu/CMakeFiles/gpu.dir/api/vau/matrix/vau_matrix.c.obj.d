@@ -1,0 +1,31 @@
+services/gpu/CMakeFiles/gpu.dir/api/vau/matrix/vau_matrix.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/vau/matrix/vau_matrix.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/vau/matrix/vau_matrix.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/drivers/gpu/soc_vau_type.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/native/td_base.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/native/td_type.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/native/soc_errno.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/drivers/gpu/soc_gfx_type.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/math.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/features.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/drivers/gpu/soc_vau_api.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/vau/debug/vau_debug.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdio.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/platform/libsec/include/securec.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/platform/libsec/include/securectype.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/string.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/strings.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdlib.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/malloc.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/alloca.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdarg.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/generic/bits/errno.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/services/gpu/api/rm/rm/inc/vau_math.h

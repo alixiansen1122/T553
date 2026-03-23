@@ -1,0 +1,18 @@
+drivers/chips/brandy/CMakeFiles/brandy_clocks.dir/clocks_core/hal/hal_32k_clock.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/hal/hal_32k_clock.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/hal/hal_32k_clock.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/platform_core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product_evb4_standard.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_definition.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_definitions.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_io.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/include/driver/tcxo.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h

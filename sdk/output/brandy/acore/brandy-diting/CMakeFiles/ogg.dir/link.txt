@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libogg.a CMakeFiles/ogg.dir/open_source/libogg/libogg-1.3.5/src/bitwise.c.obj CMakeFiles/ogg.dir/open_source/libogg/libogg-1.3.5/src/framing.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libogg.a

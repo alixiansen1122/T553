@@ -1,0 +1,9 @@
+{
+	"api_version":	0,
+	"manufacturer_id":	0,
+	"system_type":	"mini",
+	"syscap":	{
+		"os":	["SystemCapability.Developtools.Syscap", "SystemCapability.Security.Cipher", "SystemCapability.Security.Huks.Core", "SystemCapability.Security.Huks.Extension"],
+		"private":	[]
+	}
+}

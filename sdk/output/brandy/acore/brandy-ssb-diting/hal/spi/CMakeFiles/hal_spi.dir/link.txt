@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_spi.a CMakeFiles/hal_spi.dir/hal_spi.c.obj CMakeFiles/hal_spi.dir/v100/hal_spi_v100.c.obj CMakeFiles/hal_spi.dir/v100/hal_spi_v100_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_spi.a

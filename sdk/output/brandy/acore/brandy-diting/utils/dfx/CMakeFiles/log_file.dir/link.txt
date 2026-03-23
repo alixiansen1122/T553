@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc liblog_file.a CMakeFiles/log_file.dir/log_file/log_file.c.obj CMakeFiles/log_file.dir/log_file/log_file_file.c.obj CMakeFiles/log_file.dir/log_file/log_file_flash.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib liblog_file.a

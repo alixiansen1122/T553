@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_adc.a CMakeFiles/hal_adc.dir/hal_adc.c.obj CMakeFiles/hal_adc.dir/v151/hal_adc_v151.c.obj CMakeFiles/hal_adc.dir/v151/hal_adc_v151_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_adc.a

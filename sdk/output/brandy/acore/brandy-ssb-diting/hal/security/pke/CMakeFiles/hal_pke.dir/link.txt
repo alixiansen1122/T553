@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_pke.a CMakeFiles/hal_pke.dir/hal_rsa.c.obj CMakeFiles/hal_pke.dir/hal_rsa_v1.c.obj CMakeFiles/hal_pke.dir/hal_rsa_v1_regs_op.c.obj CMakeFiles/hal_pke.dir/hal_rsa_v2.c.obj CMakeFiles/hal_pke.dir/hal_rsa_v2_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_pke.a

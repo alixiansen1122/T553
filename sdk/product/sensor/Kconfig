@@ -1,0 +1,49 @@
+config ENABLE_SENSOR
+    bool "Enable sensor"
+    default n
+    help
+      Select this option to enable gsensor.
+
+config SENSOR_I2C_BUS_ID
+    int "i2c bus id"
+    default 2
+    range 0 3
+    depends on ENABLE_SENSOR
+    help
+      Select this option to choose i2c bus id.
+
+config SENSOR_I2C_BAUDRATE
+    int "i2c baudrate"
+    default 400000
+    depends on ENABLE_SENSOR
+    help
+      Select this option to choose i2c baudrate.
+
+config SENSOR_I2C_MASTER_ADDR
+    int "i2c master addr"
+    default 0
+    depends on ENABLE_SENSOR
+    help
+      Select this option to set i2c master addr.
+
+config ENABLE_GSENSOR
+    bool "Enable gsensor"
+    default n
+    depends on ENABLE_SENSOR
+    help
+      Select this option to enable gsensor.
+
+config ENABLE_GSENSOR_LIS2DOC
+    bool "Enable gsensor lis2doc"
+    default n
+    depends on ENABLE_GSENSOR
+    help
+      Select this option to enable gsensor lis2doc.
+
+config GSENSOR_I2C_SLAVE_ADDR
+    hex "i2c slave addr"
+    default 0x19
+    depends on ENABLE_GSENSOR_LIS2DOC
+    help
+      Select this option to set i2c slave addr.
+

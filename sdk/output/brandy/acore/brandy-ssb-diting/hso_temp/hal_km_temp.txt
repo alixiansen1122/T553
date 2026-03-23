@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/security/km/hal_key_deriv.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/security/km/hal_key_deriv_v2.c,/work/shishimao/T553_code/software/code/sdk/drivers/drivers/hal/security/km/hal_key_deriv_v2_regs_op.c

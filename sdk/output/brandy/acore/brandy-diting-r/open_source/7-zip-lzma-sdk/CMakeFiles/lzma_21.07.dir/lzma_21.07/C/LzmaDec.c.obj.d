@@ -1,0 +1,15 @@
+open_source/7-zip-lzma-sdk/CMakeFiles/lzma_21.07.dir/lzma_21.07/C/LzmaDec.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/open_source/7-zip-lzma-sdk/lzma_21.07/C/LzmaDec.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/open_source/7-zip-lzma-sdk/lzma_21.07/C/Precomp.h \
+  /work/shishimao/T553_code/software/code/sdk/open_source/7-zip-lzma-sdk/lzma_21.07/C/Compiler.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/string.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/features.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/strings.h \
+  /work/shishimao/T553_code/software/code/sdk/open_source/7-zip-lzma-sdk/lzma_21.07/C/LzmaDec.h \
+  /work/shishimao/T553_code/software/code/sdk/open_source/7-zip-lzma-sdk/lzma_21.07/C/7zTypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/generic/bits/errno.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stddef.h

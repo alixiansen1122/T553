@@ -1,0 +1,35 @@
+drivers/chips/brandy/CMakeFiles/brandy_clocks.dir/clocks/drivers/acore/clocks_config_priv.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks/drivers/acore/clocks_config_priv.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-ssb-diting/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks/drivers/acore/clocks_config_priv.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/drivers/shared/clocks_types.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/../riscv32-elf/include/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_definition.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_definitions.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks_core/drivers/acore/clocks_switch_priv.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/drivers/acore/pmu_cmu.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/chip_io.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stddef.h \
+  /work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/lib/clang/12.0.1/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/platform_core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/product/product_evb4_standard.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/pmu/hal/hal_pmu_cmu.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks/hal/hal_clocks_app.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks/hal/hal_clocks.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/core.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/include/chip_core_irq.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/std_def.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/common_headers/platform_types.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/arch/include/interrupt.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/porting/arch/riscv/arch_port.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/memory_config.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/memory_config_common.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/psram.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/psram_16.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/flash_16M.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/boards/brandy_evb/memory_config/include/ssb_config_common.h \
+  /work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/clocks/hal/hal_clocks_app_priv.h

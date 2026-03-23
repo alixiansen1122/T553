@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_pmp.a CMakeFiles/hal_pmp.dir/hal_pmp.c.obj CMakeFiles/hal_pmp.dir/v70/hal_pmp_riscv70.c.obj CMakeFiles/hal_pmp.dir/v70/hal_pmp_riscv70_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_pmp.a

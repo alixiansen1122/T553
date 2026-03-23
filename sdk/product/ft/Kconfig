@@ -1,0 +1,6 @@
+config FT_DITING
+    bool
+    prompt "Enable FT Diting Feature"
+    default n
+    help
+        This option enables the FT Diting feature.

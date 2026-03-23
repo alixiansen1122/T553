@@ -1,0 +1,77 @@
+config PRODUCT_CHOOSE
+    bool "Enable Product Choose"
+    default n
+    help
+      Select this option to enable product choose.
+
+if PRODUCT_CHOOSE
+
+choice
+    prompt "Product Evb Choose"
+    default PRODUCT_EVB_DITING
+    help
+      Select the Product type.
+
+config PRODUCT_EVB_GNSS
+    bool "Product Evb Gnss"
+    help
+      Select this option for Product Evb Gnss.
+
+config PRODUCT_EVB_VOLTE
+    bool "Product Evb Volte"
+    help
+      Select this option for Product Evb Volte.
+
+config PRODUCT_EVB_NFC
+    bool "Product Evb Nfc"
+    select GNSS_HSUART
+    select LOWPOWER_GNSS_INIT
+    select AUDIO_NOT_CTRL_I2C_INIT
+    select TIOT_NOT_CTRL_I2C_INIT
+    help
+      Select this option for Product Evb Nfc.
+
+config PRODUCT_EVB_DITING
+    bool "Product Evb DiTing"
+    select GNSS_HSUART
+    select LOWPOWER_GNSS_INIT
+    select AUDIO_NOT_CTRL_I2C_INIT
+    select TIOT_NOT_CTRL_I2C_INIT
+    help
+      Select this option for Product Evb DiTing.
+
+endchoice
+
+endif # PRODUCT_CHOOSE
+
+config GNSS_HSUART
+    bool "Enable GNSS HSUART"
+    default n
+    help
+      Select this option to enable GNSS HSUART.
+
+config LOWPOWER_GNSS_INIT
+    bool "Low Power GNSS Initialization"
+    default n
+    help
+      This option enables low power initialization for GNSS.
+
+config NANDFLASH_CS
+    int "NANDFLASH CS Number"
+    default 1
+    range 1 2
+    depends on PRODUCT_EVB_DITING
+    help
+      Select the NANDFLASH chip select number (1 or 2).
+
+config AUDIO_NOT_CTRL_I2C_INIT
+    bool "Audio Not Control I2C Init"
+    default n
+    help
+      Select this option to disable I2C initialization for audio.
+
+config TIOT_NOT_CTRL_I2C_INIT
+    bool "TIOT Not Control I2C Init"
+    default n
+    help
+      Select this option to disable I2C initialization for TIOT.

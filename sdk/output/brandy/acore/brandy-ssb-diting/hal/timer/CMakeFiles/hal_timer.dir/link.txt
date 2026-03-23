@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_timer.a CMakeFiles/hal_timer.dir/hal_drv_timer.c.obj CMakeFiles/hal_timer.dir/v100/hal_timer_v100.c.obj CMakeFiles/hal_timer.dir/v100/hal_timer_v100_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_timer.a

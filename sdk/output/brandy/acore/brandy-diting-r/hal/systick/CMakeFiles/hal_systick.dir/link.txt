@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_systick.a CMakeFiles/hal_systick.dir/hal_systick.c.obj CMakeFiles/hal_systick.dir/v150/hal_systick_v150.c.obj CMakeFiles/hal_systick.dir/v150/hal_systick_v150_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_systick.a

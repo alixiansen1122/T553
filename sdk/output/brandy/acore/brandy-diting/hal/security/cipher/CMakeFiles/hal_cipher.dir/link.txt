@@ -1,0 +1,2 @@
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ar qc libhal_cipher.a CMakeFiles/hal_cipher.dir/hal_aes.c.obj CMakeFiles/hal_cipher.dir/hal_aes_v2.c.obj CMakeFiles/hal_cipher.dir/hal_aes_v2_regs_op.c.obj
+/work/shishimao/T553_code/software/code/sdk/tools/bin/compiler/linx/linx_170/linx-llvm-binary-debug/linx-llvm-binary-release-musl/bin/riscv32/riscv32-linux-musl-ranlib libhal_cipher.a

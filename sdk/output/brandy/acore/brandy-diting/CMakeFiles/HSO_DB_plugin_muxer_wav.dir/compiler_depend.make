@@ -1,0 +1,2 @@
+# Empty custom commands generated dependencies file for HSO_DB_plugin_muxer_wav.
+# This may be replaced when dependencies are built.

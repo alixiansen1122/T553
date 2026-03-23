@@ -1,0 +1,1 @@
+####/work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/porting/security/km/keyslot_porting.c,/work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/porting/security/km/klad_porting.c,/work/shishimao/T553_code/software/code/sdk/drivers/chips/brandy/porting/security/km/key_deriv_porting.c

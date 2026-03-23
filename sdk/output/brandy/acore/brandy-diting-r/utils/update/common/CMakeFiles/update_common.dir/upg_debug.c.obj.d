@@ -1,0 +1,19 @@
+utils/update/common/CMakeFiles/update_common.dir/upg_debug.c.obj: \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/update/common/upg_debug.c \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/mconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/output/brandy/acore/brandy-diting-r/kernel/liteos/liteos_v207.1.0/menuconfig/include/menuconfig.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/update/common/../include/upg_config.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/update/inner_include/upg_default_config.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/update/inner_include/upg_common.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+  /work/shishimao/T553_code/software/code/sdk/kernel/liteos/liteos_v207.1.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+  /work/shishimao/T553_code/software/code/sdk/include/errcode.h \
+  /work/shishimao/T553_code/software/code/sdk/include/common_def.h \
+  /work/shishimao/T553_code/software/code/sdk/include/middleware/utils/partition.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/partition/include/partition_resource_id.h \
+  /work/shishimao/T553_code/software/code/sdk/include/middleware/utils/upg.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/chips/brandy/update/common/../include/upg_definitions_porting.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/update/inner_include/upg_definitions.h \
+  /work/shishimao/T553_code/software/code/sdk/middleware/utils/update/inner_include/upg_debug.h

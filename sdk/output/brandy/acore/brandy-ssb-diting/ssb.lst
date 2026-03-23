@@ -1,0 +1,1469 @@
+
+ssb.elf:     file format elf32-littleriscv
+ssb.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00010000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00010000 paddr 0x00010000 align 2**12
+         filesz 0x000000b8 memsz 0x000000b8 flags r-x
+    LOAD off    0x0000115c vaddr 0x0001015c paddr 0x0001015c align 2**12
+         filesz 0x00000058 memsz 0x00000058 flags r--
+    LOAD off    0x000011b4 vaddr 0x000101b4 paddr 0x000101b4 align 2**12
+         filesz 0x00000008 memsz 0x00000008 flags r--
+    LOAD off    0x000011d0 vaddr 0x000101d0 paddr 0x000101d0 align 2**12
+         filesz 0x00017c78 memsz 0x00017c78 flags r-x
+    LOAD off    0x00019800 vaddr 0x20002800 paddr 0x00027e48 align 2**12
+         filesz 0x00002b1c memsz 0x00002b1c flags rw-
+    LOAD off    0x00000340 vaddr 0x20005340 paddr 0x0002a964 align 2**12
+         filesz 0x00000000 memsz 0x000109c8 flags rw-
+    LOAD off    0x00000000 vaddr 0x20000000 paddr 0x20000000 align 2**12
+         filesz 0x00000000 memsz 0x00002800 flags rw-
+    LOAD off    0x000006d4 vaddr 0x2006f6d4 paddr 0x2006f6d4 align 2**12
+         filesz 0x00000000 memsz 0x00000004 flags rw-
+    LOAD off    0x00000800 vaddr 0x2006f800 paddr 0x2006f800 align 2**12
+         filesz 0x00000000 memsz 0x00000400 flags rw-
+    LOAD off    0x00000c00 vaddr 0x2006fc00 paddr 0x2006fc00 align 2**12
+         filesz 0x00000000 memsz 0x00000200 flags rw-
+    LOAD off    0x00000e00 vaddr 0x2006fe00 paddr 0x2006fe00 align 2**12
+         filesz 0x00000000 memsz 0x00000200 flags rw-
+    LOAD off    0x00000860 vaddr 0x87004860 paddr 0x87004860 align 2**12
+         filesz 0x00000000 memsz 0x000000fc flags rw-
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**4
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 startup       000000b8  00010000  00010000  00001000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .flash_version 00000058  0001015c  0001015c  0000115c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .change_id    00000008  000101b4  000101b4  000011b4  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .text         00017c78  000101d0  000101d0  000011d0  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .stacks       00002800  20000000  20000000  0001d000  2**4
+                  ALLOC
+  5 .ramtext      00000000  00027e48  00027e48  0001c31c  2**0
+                  CONTENTS
+  6 .data         00002b08  20002800  00027e48  00019800  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 .sys_status   00000014  20005308  0002a950  0001c308  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .bss          000109c8  20005340  0002a964  0001c340  2**6
+                  ALLOC
+  9 .heap         00000000  20015d08  20015d08  0001c31c  2**0
+                  CONTENTS
+ 10 .sys_clocks   00000004  2006f6d4  2006f6d4  0001c6d4  2**0
+                  ALLOC
+ 11 .rsa_public_key_mem 00000400  2006f800  2006f800  0001c800  2**0
+                  ALLOC
+ 12 .rsa_signature_mem 00000200  2006fc00  2006fc00  0001cc00  2**0
+                  ALLOC
+ 13 .rsa_result_mem 00000200  2006fe00  2006fe00  0001ce00  2**0
+                  ALLOC
+ 14 .preserve     000000fc  87004860  87004860  0001c860  2**2
+                  ALLOC
+ 15 .debug_loc    000202bf  00000000  00000000  0001c31c  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_abbrev 0000f0cc  00000000  00000000  0003c5db  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 17 .debug_info   00052b29  00000000  00000000  0004b6a7  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 18 .debug_ranges 00004a40  00000000  00000000  0009e1d0  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 19 .debug_str    00027481  00000000  00000000  000a2c10  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 20 .comment      00000039  00000000  00000000  000ca091  2**0
+                  CONTENTS, READONLY
+ 21 .riscv.attributes 00001e97  00000000  00000000  000ca0ca  2**0
+                  CONTENTS, READONLY
+ 22 .debug_line   00039ee0  00000000  00000000  000cbf61  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 23 .debug_frame  0000c068  00000000  00000000  00105e44  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00010000 l    d  startup	00000000 startup
+0001015c l    d  .flash_version	00000000 .flash_version
+000101b4 l    d  .change_id	00000000 .change_id
+000101d0 l    d  .text	00000000 .text
+20000000 l    d  .stacks	00000000 .stacks
+00027e48 l    d  .ramtext	00000000 .ramtext
+20002800 l    d  .data	00000000 .data
+20005308 l    d  .sys_status	00000000 .sys_status
+20005340 l    d  .bss	00000000 .bss
+20015d08 l    d  .heap	00000000 .heap
+2006f6d4 l    d  .sys_clocks	00000000 .sys_clocks
+2006f800 l    d  .rsa_public_key_mem	00000000 .rsa_public_key_mem
+2006fc00 l    d  .rsa_signature_mem	00000000 .rsa_signature_mem
+2006fe00 l    d  .rsa_result_mem	00000000 .rsa_result_mem
+87004860 l    d  .preserve	00000000 .preserve
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 startup.s.obj
+00010004 l       startup	00000000 _start
+00010060 l       startup	00000000 end_set_stack_loop
+00010054 l       startup	00000000 set_stack_loop
+00010080 l       startup	00000000 end_clear_bss_loop
+00010074 l       startup	00000000 clear_bss_loop
+000100b4 l       startup	00000000 end_set_data_loop
+0001009c l       startup	00000000 set_data_loop
+00000000 l    df *ABS*	00000000 build_version.c
+00010160 l     O .flash_version	00000054 g_build_version_information
+000101b4 l     O .change_id	00000008 g_build_version_id
+00000000 l    df *ABS*	00000000 vectors.s.obj
+00000fc2 l       *ABS*	00000000 ccause
+00000fff l       *ABS*	00000000 MCAUSE_MASK_INT_NUM
+00000fff l       *ABS*	00000000 NMI_EXCP_CODE
+00010a04 l       .text	00000000 exc_syscall
+00010a06 l       .text	00000000 handle_syscall
+000249d0 l       .text	00000000 excp_vect_table
+00024a18 l       .text	00000000 excp_vect_table_end
+000107a8 l       .text	00000000 default_local_interrupt_handler
+000103a0 l       .text	00000000 default_interrupt0_handler
+0001044c l       .text	00000000 default_interrupt1_handler
+000104f8 l       .text	00000000 default_interrupt2_handler
+000105a4 l       .text	00000000 default_interrupt3_handler
+00010650 l       .text	00000000 default_interrupt4_handler
+000106fc l       .text	00000000 default_interrupt5_handler
+00000000 l    df *ABS*	00000000 vectors.c
+0001cf14 l     F .text	00000006 isr_not_implemented
+00000000 l    df *ABS*	00000000 udivdi3.c
+00000000 l    df *ABS*	00000000 umoddi3.c
+00000000 l    df *ABS*	00000000 addtf3.c
+00000000 l    df *ABS*	00000000 comparetf2.c
+00000000 l    df *ABS*	00000000 extenddftf2.c
+00000000 l    df *ABS*	00000000 fixtfsi.c
+00000000 l    df *ABS*	00000000 fixunstfsi.c
+00000000 l    df *ABS*	00000000 floatsitf.c
+00000000 l    df *ABS*	00000000 floatunsitf.c
+00000000 l    df *ABS*	00000000 multf3.c
+00000000 l    df *ABS*	00000000 subtf3.c
+00000000 l    df *ABS*	00000000 ashlti3.c
+00000000 l    df *ABS*	00000000 fp_mode.c
+00000000 l    df *ABS*	00000000 lshrti3.c
+00000000 l    df *ABS*	00000000 nandflash_ds35x1g.c
+000129ce l     F .text	000000c2 mc_ds35x1g_init
+00012a90 l     F .text	00000022 mc_ds35x1g_check_id
+20005340 l     O .bss	00000010 g_qspi_data
+00012ab2 l     F .text	00000042 mc_ds35x1g_read_page
+00000000 l    df *ABS*	00000000 nandflash_config.c
+20002844 l     O .data	00001080 nand_write_and_check.rbuf
+00000000 l    df *ABS*	00000000 hal_nandflash.c
+20015c48 l     O .bss	00000001 is_nandflash_working
+00000000 l    df *ABS*	00000000 nandflash_qspi.c
+00000000 l    df *ABS*	00000000 nandflash.c
+00000000 l    df *ABS*	00000000 boot_ulp.c
+00013b7e l     F .text	0000002c uapi_ulp_systick_get_count
+00013d9c l     F .text	00000070 uapi_enable_alarm
+00013e0c l     F .text	0000008a uapi_sys_shipmode
+200052b0 l     O .data	00000004 g_clock_ulp_ssb
+00000000 l    df *ABS*	00000000 main.c
+000253d4 l     O .text	00000048 g_flash_need_set_qe
+000149a4 l     F .text	0000009c jump_to_cimage
+200038c4 l     O .data	0000002a g_winbond_w25qxx_set_qe_cmd
+200038ee l     O .data	0000002a g_dosilicon_fm25m64_set_qe_cmd
+20003918 l     O .data	0000002a g_winbond_en25sx128a_set_qe_cmd
+20003942 l     O .data	0000002a g_xtx_xt25q128d_set_qe_cmd
+00000000 l    df *ABS*	00000000 non_os_utils.c
+20015c50 l     O .bss	00000008 g_driver_init_bits
+20015c58 l     O .bss	00000002 g_nmi_raw_en_status
+20015c5a l     O .bss	00000002 g_nmi_raw_interrupt_status
+20007450 l     O .bss	00000002 g_non_os_critical_nesting
+20007454 l     O .bss	00000004 g_cs_stat_handler
+20007458 l     O .bss	00000004 g_cs_record_handler
+2000745c l     O .bss	00000004 g_lock_stat
+00000000 l    df *ABS*	00000000 chip_mem.c
+20007460 l     O .bss	00000294 g_ast_mem_pool
+00025680 l     O .text	00000030 g_ast_local_cfg_table
+00014fe2 l     F .text	0000003a conn_mem_ctrl_blk_alloc
+00014f7e l     F .text	00000064 conn_mem_get_pst_mem
+200076f4 l     O .bss	00000004 g_mem_base
+200076f8 l     O .bss	00000004 g_mem_max_size
+200076fc l     O .bss	00000004 g_mem_curr_pos
+00000000 l    df *ABS*	00000000 irmalloc.c
+0001504c l     F .text	0000001e irmalloc_internal
+00000000 l    df *ABS*	00000000 pal_non_os_interface.c
+00000000 l    df *ABS*	00000000 cpu_trace.c
+00000000 l    df *ABS*	00000000 flash.c
+000256b0 l     O .text	0000032c g_flash_device_parameter
+000153a2 l     F .text	0000001e flash_get_xip_enabled
+000153c0 l     F .text	00000026 flash_exit_xip_mode
+000153e6 l     F .text	00000026 flash_enter_xip_mode
+00015766 l     F .text	00000052 flash_parameter_check
+00015ff4 l     F .text	0000021a flash_write_enable
+000157b8 l     F .text	00000030 flash_write_word_by_once
+000157e8 l     F .text	00000026 trans_complete_wait_timeout
+0001620e l     F .text	0000006c flash_spi_write_config
+000166d8 l     F .text	00000118 flash_status_check_func
+000259dc l     O .text	0000000c g_winbond_flash_manufact_id
+000259e8 l     O .text	0000000c g_flash_need_cmd_unique_id
+000259f4 l     O .text	00000038 g_xip_use_cmd_mode
+00016e9e l     F .text	000000a0 uapi_flash_send_cmd
+2000396c l     O .data	0000001c g_mxic_mx25rxx_enter_qspi_mode_cmd
+20003988 l     O .data	00000024 g_mxic_mx25rxx_config
+200039ac l     O .data	0000000e g_mxic_mx25uxx_enter_qspi_mode_cmd
+200039bc l     O .data	00000024 g_mxic_mx25uxx_config
+200039e0 l     O .data	0000002a g_winbond_w25qxx_enter_qspi_mode_cmd
+20003a0c l     O .data	00000024 g_winbond_w25qxx_config
+20003a30 l     O .data	0000003f g_winbond_w25q256_enter_qspi_mode_cmd
+20003a70 l     O .data	00000024 g_winbond_w25q256_config
+20003a94 l     O .data	00000031 g_micro_mt25qu128_enter_qspi_mode_cmd
+20003ac5 l     O .data	0000001c g_micro_mt25qu128_enter_xip_mode_cmd
+20003ae4 l     O .data	00000024 g_micro_mt25qu128_config
+20003b08 l     O .data	0000003f g_micro_mt25qu256_enter_qspi_mode_cmd
+20003b47 l     O .data	00000023 g_micro_mt25qu256_enter_xip_mode_cmd
+20003b6c l     O .data	00000024 g_micro_mt25qu256_config
+20003b90 l     O .data	0000001c g_gigadevice_gd25wq64_enter_qspi_mode_cmd
+20003bac l     O .data	00000024 g_gigadevice_gd25wq64_config
+20003bd0 l     O .data	00000024 g_gigadevice_gd25le64_config
+20003bf4 l     O .data	00000023 g_gigadevice_gd25lq128_enter_qspi_mode_cmd
+20003c18 l     O .data	00000024 g_gigadevice_gd25lx_config
+20003c3c l     O .data	00000038 g_gigadevice_gd25lq256_enter_qspi_mode_cmd
+20003c74 l     O .data	00000024 g_gigadevice_gd25lq256_config
+20003c98 l     O .data	00000023 g_dosilicon_fm25m64_enter_qspi_mode_cmd
+20003cbc l     O .data	00000024 g_dosilicon_fm25m64_config
+20003ce0 l     O .data	00000023 g_gigadevice_gd25lq32d_enter_qspi_mode_cmd
+20003d04 l     O .data	00000024 g_dosilicon_fm25m4aa_config
+20003d28 l     O .data	0000002a g_puya_p25q32lc_enter_qspi_mode_cmd
+20003d54 l     O .data	00000024 g_puya_p25q32lc_config
+20003d78 l     O .data	00000023 g_adesto_at25sl128a_enter_qspi_mode_cmd
+20003d9c l     O .data	00000024 g_adesto_at25sl128a_config
+20003dc0 l     O .data	0000001c g_mxic_mx25u32_enter_qspi_mode_cmd
+20003ddc l     O .data	00000024 g_mxic_mx25u32_config
+20003e00 l     O .data	0000001c g_mxic_en25sxxa_enter_qspi_mode_cmd
+20003e1c l     O .data	00000024 g_mxic_en25sxxa_config
+20003e40 l     O .data	00000023 g_dosilicon_ds25m4ab_enter_qspi_mode_cmd
+20003e64 l     O .data	00000024 g_dosilicon_ds25m4ab_config
+20003e88 l     O .data	00000023 g_xtx_xt25qxxd_enter_qspi_mode_cmd
+20003eac l     O .data	00000024 g_xtx_xt25qxxd_config
+00000000 l    df *ABS*	00000000 gpio.c
+20015c5c l     O .bss	00000001 g_gpio_inited
+20015c60 l     O .bss	00000004 g_hal_funcs
+00000000 l    df *ABS*	00000000 ipc_irq.c
+00000000 l    df *ABS*	00000000 ipc.c
+20007754 l     O .bss	00000124 g_ipc_handlers
+20007878 l     O .bss	00000004 g_ipc_idle_callback_handlers
+2000787c l     O .bss	00000004 ipc_send_message.id
+20007880 l     O .bss	00000004 ipc_receive_message.count
+20007884 l     O .bss	00000004 g_ipc_ssend_default_timeout
+20007888 l     O .bss	00000004 g_ipc_to_bcore_continuous_fail_nums
+2000788c l     O .bss	00000064 g_ipc_mailboxes
+00000000 l    df *ABS*	00000000 lpc_core.c
+200078f0 l     O .bss	00000050 g_lpc_fsm_callback_handlers
+20007940 l     O .bss	00000004 g_lpc_sys_deepsleep_vetos
+20007944 l     O .bss	00000020 g_lpc_sys_sleep_vetos
+00000000 l    df *ABS*	00000000 memory_core.c
+20007964 l     O .bss	00000078 g_memory_maps
+00000000 l    df *ABS*	00000000 otp.c
+00000000 l    df *ABS*	00000000 pinctrl.c
+00000000 l    df *ABS*	00000000 psram_drv.c
+0001745a l     F .text	00000026 opi_pinmux
+0001769e l     F .text	00000096 uapi_opi_open
+20003ed0 l     O .data	0000001c g_psram_ap_x16_cmd
+00017734 l     F .text	00000058 uapi_opi_trans_wait
+00025a40 l     O .text	00000048 g_psram_device_parm
+00017a60 l     F .text	0000008a psram_exit_sleep_device_ap_x16
+20003eec l     O .data	00000018 g_psram_parm_ap_x16
+200052b4 l     O .data	00000008 g_xip_parm_ap_x16
+20003f04 l     O .data	0000001c g_psram_winbon_x8_cmd
+200052bc l     O .data	00000008 g_psram_parm_winbon_x8
+20003f20 l     O .data	00000018 g_xip_parm_winbon_x8
+200052c4 l     O .data	00000008 g_psram_parm_ap_x8
+200052cc l     O .data	00000008 g_xip_parm_ap_x8
+200079dd l     O .bss	00000001 g_opi_sleeped
+200079de l     O .bss	00000001 g_psram_sleeped
+200079e0 l     O .bss	00000004 opi_pm_storage_value.0
+200079e4 l     O .bss	00000004 opi_pm_storage_value.1
+200079e8 l     O .bss	00000004 opi_pm_storage_value.2
+200079ec l     O .bss	00000004 opi_pm_storage_value.3
+200079f0 l     O .bss	00000004 opi_pm_storage_value.4
+00000000 l    df *ABS*	00000000 qspi.c
+00000000 l    df *ABS*	00000000 drv_hash.c
+00017f2c l     F .text	00000020 release_hash_handle
+00017f4c l     F .text	0000005e sha_cal_start
+00017faa l     F .text	00000040 sha_cal_with_timeout
+00025b0c l     O .text	00000020 g_sha256_def_iv_data
+20015c64 l     O .bss	00000004 g_align_handle
+20015c68 l     O .bss	00000004 g_handles
+00000000 l    df *ABS*	00000000 hash.c
+00000000 l    df *ABS*	00000000 sha256.c
+00000000 l    df *ABS*	00000000 drv_pke.c
+00018172 l     F .text	000000e8 rsa_exp_mod
+00000000 l    df *ABS*	00000000 pke.c
+00000000 l    df *ABS*	00000000 spi.c
+000183e2 l     F .text	0000004a spi_param_check_write
+00018504 l     F .text	00000076 spi_param_check
+0001846c l     F .text	00000056 spi_param_check_read
+20007a1c l     O .bss	00000007 g_spi_is_initialised
+00000000 l    df *ABS*	00000000 systick.c
+20015c6c l     O .bss	00000001 g_systick_hw_inited
+20015c70 l     O .bss	00000004 g_hal_funcs
+00000000 l    df *ABS*	00000000 tcxo.c
+0001871c l     F .text	00000030 uapi_tcxo_delay_count
+20015c74 l     O .bss	00000001 g_tcxo_inited
+20015c78 l     O .bss	00000004 g_hal_funcs
+00000000 l    df *ABS*	00000000 uart.c
+20007a24 l     O .bss	00000098 g_uart_tx_state_array
+00018886 l     F .text	000002a4 uart_evt_callback
+00018dbe l     F .text	000000ba uart_error_isr
+20007abc l     O .bss	00000002 g_uart_pin_configed
+20007ac0 l     O .bss	00000008 g_uart_rx_state
+20007ac8 l     O .bss	00000008 g_uart_pin_config_array
+20007ad0 l     O .bss	00000008 g_uart_tx_state
+20007ad8 l     O .bss	00000038 g_uart_rx_state_array
+00000000 l    df *ABS*	00000000 watchdog.c
+20015c7c l     O .bss	00000001 g_watchdog_inited
+20015c7d l     O .bss	00000001 g_watchdog_enabled
+20015c80 l     O .bss	00000004 g_hal_funcs
+00000000 l    df *ABS*	00000000 hal_cpu_trace.c
+00018f7a l     F .text	00000072 hal_cpu_trace_lock_trigger
+00025b4c l     O .text	00000038 g_trace_value
+00018fec l     F .text	0000003a hal_cpu_trace_clear_lock_trigger
+00000000 l    df *ABS*	00000000 hal_gpio.c
+00000000 l    df *ABS*	00000000 hal_gpio_v100.c
+20007b24 l     O .bss	00000044 g_gpio_context
+20007b68 l     O .bss	00000428 g_hal_gpio_context
+0001926e l     F .text	00000050 hal_gpio_is_interrupt_asserted
+000192be l     F .text	0000005e hal_gpio_v100_ctrl_clear_interrupt
+0001932a l     F .text	00000026 hal_gpio_get_channel_pin
+00019350 l     F .text	00000072 hal_gpio_clear_interrupt
+20003f38 l     O .data	00000028 g_hal_gpio_v100_funcs
+000193c2 l     F .text	00000052 hal_gpio_v100_init
+00019414 l     F .text	00000040 hal_gpio_v100_deinit
+00019454 l     F .text	000000ec hal_gpio_v100_setdir
+000198f6 l     F .text	00000058 hal_gpio_disable_interrupt
+00019540 l     F .text	00000052 hal_gpio_v100_getdir
+00019592 l     F .text	00000016 hal_gpio_v100_ctrl
+00025b8c l     O .text	00000018 g_hal_gpio_ctrl_func_array
+000195a8 l     F .text	00000092 hal_gpio_v100_output
+0001963a l     F .text	00000052 hal_gpio_v100_get_output_val
+0001968c l     F .text	0000005e hal_gpio_v100_input
+000196ea l     F .text	000001ae hal_gpio_v100_register
+000199d8 l     F .text	000000ba hal_gpio_v100_ctrl_enable_interrupt
+00019898 l     F .text	0000005e hal_gpio_v100_unregister
+0001994e l     F .text	0000008a hal_gpio_v100_ctrl_toggle
+00019a92 l     F .text	0000003c hal_gpio_v100_ctrl_disable_interrupt
+00000000 l    df *ABS*	00000000 hal_ipc.c
+00000000 l    df *ABS*	00000000 hal_otp.c
+00000000 l    df *ABS*	00000000 hal_pinctrl.c
+00000000 l    df *ABS*	00000000 hal_pinctrl_brandy.c
+20003f84 l     O .data	00000020 g_hal_pin_brandy_funcs
+00019dea l     F .text	0000007a hal_pin_brandy_set_mode
+0001a048 l     F .text	0000002e hal_pin_brandy_get_aon_mode_addr
+00019e64 l     F .text	0000006a hal_pin_brandy_get_mode
+00019ece l     F .text	0000003e hal_pin_brandy_set_ds
+0001a076 l     F .text	0000002e hal_pin_brandy_get_aon_ds_addr
+00019f0c l     F .text	00000026 hal_pin_brandy_get_ds
+00019f32 l     F .text	0000007a hal_pin_brandy_set_pull
+0001a0a4 l     F .text	0000002e hal_pin_brandy_get_pull_addr
+00019fac l     F .text	0000003c hal_pin_brandy_get_pull
+00019fe8 l     F .text	0000003e hal_pin_brandy_set_ie
+0001a026 l     F .text	00000022 hal_pin_brandy_get_ie
+00025ba4 l     O .text	00000048 g_pin_mode_map
+00025bec l     O .text	00000060 g_pin_ds_map
+00025c4c l     O .text	00000060 g_pin_pull_map
+00000000 l    df *ABS*	00000000 hal_qspi.c
+00000000 l    df *ABS*	00000000 hal_reboot.c
+20015c8c l     O .bss	00000002 g_reset_cause
+00000000 l    df *ABS*	00000000 hal_reg_config.c
+00000000 l    df *ABS*	00000000 hal_sha.c
+20015c90 l     O .bss	00000004 g_hal_sha_funcs
+00000000 l    df *ABS*	00000000 hal_sha_v2.c
+20015c94 l     O .bss	00000004 g_hal_sha_callback
+20003fb0 l     O .data	00000010 g_hal_sha_v2_funcs
+0001a3cc l     F .text	00000028 hal_sha_init
+0001a3f4 l     F .text	00000018 hal_sha_deinit
+0001a40c l     F .text	0000008a hal_sha_start
+0001a496 l     F .text	00000010 hal_sha_finish
+00000000 l    df *ABS*	00000000 hal_sha_v2_regs_op.c
+00000000 l    df *ABS*	00000000 hal_rsa.c
+00000000 l    df *ABS*	00000000 hal_rsa_v2.c
+20015ca0 l     O .bss	00000004 g_hal_rsa_callback
+20003fc0 l     O .data	00000010 g_hal_rsa_v2_funcs
+0001a532 l     F .text	0000001a hal_rsa_v2_init
+0001a54c l     F .text	0000000c hal_rsa_v2_deinit
+0001a558 l     F .text	0000005c hal_rsa_v2_start
+00000000 l    df *ABS*	00000000 hal_rsa_v2_regs_op.c
+00000000 l    df *ABS*	00000000 hal_spi.c
+00000000 l    df *ABS*	00000000 hal_spi_v100.c
+20003fd0 l     O .data	00000018 g_hal_spi_v100_funcs
+0001a66a l     F .text	00000248 hal_spi_init
+0001ac18 l     F .text	0000004e hal_spi_init_config_spi_frame_format
+0001ac66 l     F .text	00000040 hal_spi_init_config_freq
+0001aca6 l     F .text	00000094 hal_spi_config_qspi
+20007fd4 l     O .bss	00000150 g_hal_spi_attrs
+0001a8b2 l     F .text	0000001c hal_spi_deinit
+0001a8ce l     F .text	000000fa hal_spi_write
+0001a9c8 l     F .text	000000da hal_spi_read
+0001ad3a l     F .text	00000048 hal_spi_pack_data_outof_fifo
+0001aaa2 l     F .text	00000160 hal_spi_writeread
+0001ac02 l     F .text	00000016 hal_spi_ctrl
+00025d44 l     O .text	00000018 g_hal_spi_ctrl_func_array
+0001ad82 l     F .text	00000140 hal_spi_ctrl_set_attr
+0001aec2 l     F .text	0000002e hal_spi_ctrl_get_attr
+0001aef0 l     F .text	00000064 hal_spi_ctrl_set_extra_attr
+0001af54 l     F .text	0000002e hal_spi_ctrl_get_extra_attr
+0001af82 l     F .text	00000066 hal_spi_ctrl_select_slave
+0001afe8 l     F .text	00000034 hal_spi_ctrl_check_fifo_busy
+20008124 l     O .bss	00000004 g_hal_spi_callback
+20008128 l     O .bss	00000070 g_hal_spi_extra_attrs
+00000000 l    df *ABS*	00000000 hal_spi_v100_regs_op.c
+00000000 l    df *ABS*	00000000 hal_systick.c
+00000000 l    df *ABS*	00000000 hal_systick_v150.c
+20003fe8 l     O .data	0000000c g_hal_systick_v150_funcs
+0001b06c l     F .text	00000008 hal_systick_v150_init
+0001b074 l     F .text	00000008 hal_systick_v150_deinit
+0001b07c l     F .text	00000016 hal_systick_v150_ctrl
+00025d5c l     O .text	0000000c g_hal_systick_ctrl_func_array
+0001b092 l     F .text	00000014 hal_systick_v150_ctrl_count_clear
+0001b0a6 l     F .text	0000001c hal_systick_v150_ctrl_count_cleared
+0001b0c2 l     F .text	00000010 hal_systick_v150_ctrl_count_get
+00000000 l    df *ABS*	00000000 hal_systick_v150_regs_op.c
+00000000 l    df *ABS*	00000000 hal_tcxo.c
+00000000 l    df *ABS*	00000000 hal_tcxo_v150.c
+20003ff4 l     O .data	0000000c g_hal_tcxo_v150_funcs
+0001b14a l     F .text	0000002e hal_tcxo_v150_init
+0001b178 l     F .text	0000000a hal_tcxo_v150_deinit
+0001b182 l     F .text	00000028 hal_tcxo_v150_get
+00000000 l    df *ABS*	00000000 hal_tcxo_v150_regs_op.c
+00000000 l    df *ABS*	00000000 hal_uart.c
+00000000 l    df *ABS*	00000000 hal_uart_v120.c
+20004000 l     O .data	00000018 g_hal_uart_v120_funcs
+0001b3fe l     F .text	00000176 hal_uart_v120_init
+0001b6e0 l     F .text	00000062 hal_uart_v120_set_baud_rate
+0001b742 l     F .text	00000060 hal_uart_v120_set_parity
+0001b574 l     F .text	00000056 hal_uart_v120_deinit
+0001b5ca l     F .text	00000030 hal_uart_v120_ctrl
+00025d68 l     O .text	00000054 g_hal_uart_ctrl_func_array
+0001b5fa l     F .text	0000002c hal_uart_v120_write
+0001b626 l     F .text	0000003e hal_uart_v120_read
+0001b664 l     F .text	0000007c hal_uart_v120_dma_config
+0001b7a2 l     F .text	0000009c hal_uart_v120_ctrl_set_attr
+0001b83e l     F .text	00000040 hal_uart_v120_ctrl_get_attr
+0001b87e l     F .text	0000002a hal_uart_v120_ctrl_en_tx_int
+0001b8a8 l     F .text	0000002a hal_uart_v120_ctrl_en_rx_int
+0001b8d2 l     F .text	0000002a hal_uart_v120_ctrl_en_idle_int
+0001b8fc l     F .text	0000002a hal_uart_v120_ctrl_en_parity_err_int
+0001b926 l     F .text	0000002a hal_uart_v120_ctrl_en_frame_err_int
+0001b950 l     F .text	0000001e hal_uart_v120_ctrl_check_tx_fifo_full
+0001b96e l     F .text	0000001e hal_uart_v120_ctrl_check_tx_fifo_empty
+0001b98c l     F .text	00000028 hal_uart_v120_ctrl_check_rx_fifo_emp
+0001b9b4 l     F .text	0000004c hal_uart_v120_ctrl_set_rxfifo_int_level
+0001ba00 l     F .text	0000003c hal_uart_v120_ctrl_set_txfifo_int_level
+0001ba3c l     F .text	00000028 hal_uart_v120_ctrl_check_uart_busy
+0001ba64 l     F .text	0000003c hal_uart_v120_ctrl_get_rxfifo_passnum
+0001baa0 l     F .text	0000002e hal_uart_v120_get_uart_rxfifo_threshold
+20008198 l     O .bss	00000002 g_hal_uart_v120_inited_array
+2000819c l     O .bss	00000008 g_hal_uart_callback
+200081a4 l     O .bss	00000008 g_hal_uart_rx_fifo_level
+200081ac l     O .bss	00000010 g_hal_uart_attr_array
+00000000 l    df *ABS*	00000000 hal_uart_v120_regs_op.c
+0001baee l     F .text	0000005e hal_uart_int_addr_get
+00000000 l    df *ABS*	00000000 hal_watchdog.c
+00000000 l    df *ABS*	00000000 hal_watchdog_v100.c
+20015cd0 l     O .bss	00000004 g_hal_watchdog_callback
+20004018 l     O .data	00000024 g_hal_watchdog_v100_funcs
+0001bbd4 l     F .text	0000000a hal_watchdog_v100_init
+0001bbde l     F .text	0000000a hal_watchdog_v100_deinit
+0001bbe8 l     F .text	0000006c hal_watchdog_v100_set_attr
+20015cd4 l     O .bss	00000004 g_timeout
+0001bc54 l     F .text	0000000a hal_watchdog_v100_get_attr
+0001bc5e l     F .text	0000004c hal_watchdog_v100_enable
+0001bcaa l     F .text	00000012 hal_watchdog_v100_disable
+0001bcbc l     F .text	00000016 hal_watchdog_v100_kick
+0001bcd2 l     F .text	00000020 hal_watchdog_v100_get_left_time
+0001bcf2 l     F .text	0000000a hal_register_watchdog_v100_callback
+00000000 l    df *ABS*	00000000 hal_xip.c
+0001bcfc l     F .text	00000006 hal_xip_auto
+20015cd8 l     O .bss	00000002 g_xip_mode
+00000000 l    df *ABS*	00000000 hal_xip_v150_regs_op.c
+00000000 l    df *ABS*	00000000 gpio_porting.c
+00000000 l    df *ABS*	00000000 sha_porting.c
+00000000 l    df *ABS*	00000000 rsa_porting.c
+00000000 l    df *ABS*	00000000 uart_porting.c
+20004064 l     O .data	00000048 g_uart_config
+20008dc0 l     O .bss	00000400 print_str.s
+00000000 l    df *ABS*	00000000 systick_porting.c
+00000000 l    df *ABS*	00000000 tcxo_porting.c
+200052e8 l     O .data	00000004 g_tcxo_ticks_per_usec
+00000000 l    df *ABS*	00000000 watchdog_porting.c
+200052f0 l     O .data	00000004 g_watchdog_config
+00000000 l    df *ABS*	00000000 pinctrl_porting_brandy.c
+00025de8 l     O .text	00000084 g_pio_pins_avaliable_mode
+00000000 l    df *ABS*	00000000 xip_porting.c
+00000000 l    df *ABS*	00000000 spi_porting.c
+00025e94 l     O .text	0000001c g_spi_max_slave_select
+00000000 l    df *ABS*	00000000 flash_porting.c
+00025eb0 l     O .text	00000054 g_flash_porting_config
+0001cbe0 l     F .text	00000038 flash_1_power_off
+0001cc18 l     F .text	00000042 flash_1_power_on
+200052f8 l     O .data	00000001 g_bt_power_on
+20015ce4 l     O .bss	00000004 g_flash_size
+200052f9 l     O .data	00000001 g_flash1_power_on
+200040c8 l     O .data	00000004 g_flash_bus_clk
+200040cc l     O .data	00000004 g_flash_enter_qspi_freq_mhz
+200040d0 l     O .data	00000004 g_flash_exit_xip_freq_mhz
+200040d4 l     O .data	00000004 g_flash_enter_xip_freq_mhz
+00000000 l    df *ABS*	00000000 interrupt.c
+00000000 l    df *ABS*	00000000 interrupt_handler.c
+00000000 l    df *ABS*	00000000 clocks_config_priv.c
+20004139 l     O .data	0000001e g_ssb_clk_cfg
+00000000 l    df *ABS*	00000000 clocks.c
+00000000 l    df *ABS*	00000000 hal_clocks_app.c
+00000000 l    df *ABS*	00000000 hal_clocks_app_priv.c
+00025f60 l     O .text	0000003c g_ccrg_modules_reg_map
+00000000 l    df *ABS*	00000000 hal_clocks_glb.c
+00000000 l    df *ABS*	00000000 hal_clocks.c
+00000000 l    df *ABS*	00000000 clocks_core.c
+00000000 l    df *ABS*	00000000 clocks_switch_priv.c
+00000000 l    df *ABS*	00000000 clocks_switch.c
+00000000 l    df *ABS*	00000000 clock_calibration.c
+200052fc l     O .data	00000004 g_clock_32k
+00000000 l    df *ABS*	00000000 clocks_core_common.c
+00000000 l    df *ABS*	00000000 hal_32k_clock.c
+00000000 l    df *ABS*	00000000 pmu_cmu.c
+20015ced l     O .bss	00000001 pmu_cmu_pll_step.first_cfg_pll_vld
+00000000 l    df *ABS*	00000000 pmu_interrupt.c
+00000000 l    df *ABS*	00000000 pmu_pg.c
+00000000 l    df *ABS*	00000000 pmu_vdd.c
+20005308 l     O .sys_status	00000014 g_pmu_vdd1p0_st
+00000000 l    df *ABS*	00000000 pmu.c
+00000000 l    df *ABS*	00000000 hal_pmu_cmu.c
+00000000 l    df *ABS*	00000000 hal_pmu_interrupt.c
+00000000 l    df *ABS*	00000000 hal_pmu_ldo.c
+00000000 l    df *ABS*	00000000 hal_pmu_pg.c
+0001dd6a l     F .text	00000028 hal_pmu1_dig_pg_common_reg_get
+00025ff4 l     O .text	00000044 g_pmu1_dig_pg_regs
+00000000 l    df *ABS*	00000000 hal_pmu_vdd.c
+00000000 l    df *ABS*	00000000 exception_riscv.c
+2000923e l     O .bss	00000002 g_exc_nmi_store.0
+20009240 l     O .bss	00000002 g_exc_nmi_store.1
+20009242 l     O .bss	00000002 g_exc_nmi_store.2
+20009244 l     O .bss	00000004 g_exception_dump_callback
+00000000 l    df *ABS*	00000000 exception_dump.c
+00000000 l    df *ABS*	00000000 partition_porting.c
+2000925c l     O .bss	00000000 g_image_path
+00000000 l    df *ABS*	00000000 sha256.c
+000267b4 l     O .text	00000100 g_k
+0001e9fc l     F .text	00000044 burn_stack
+000268b4 l     O .text	00000040 g_padding
+00000000 l    df *ABS*	00000000 application_version.c
+2000925c l     O .bss	00000001 g_ssb_table_valid
+20009260 l     O .bss	00000028 g_application_to_ssb_table
+00000000 l    df *ABS*	00000000 bootloader_configuration.c
+20015cef l     O .bss	00000001 bootloader_rom_specific_config.cf
+20015cf0 l     O .bss	00000001 g_bootloader_configuration_flags
+20015cf1 l     O .bss	00000001 g_bootloader_configuration_flags_1
+00000000 l    df *ABS*	00000000 bootloader_utils.c
+00000000 l    df *ABS*	00000000 codeloader.c
+0001ecbe l     F .text	00000024 codeloader_main_rx_data_callback
+0001ece2 l     F .text	0000005a codeloader_main_tx_data_callback
+0001ee32 l     F .text	000000c8 codeloader_main_rx_data_handler
+2000e38c l     O .bss	00000001 g_codeloader_main_state
+2000e38d l     O .bss	00000001 g_codeloader_security_core_updated
+2000e38e l     O .bss	00000001 g_codeloader_main_there_is_data_to_process
+2000e390 l     O .bss	00000008 g_codeloader_main_rx_buffer
+2000e398 l     O .bss	00000008 g_codeloader_main_received_buffer_to_process
+00000000 l    df *ABS*	00000000 codeloader_command_processor_utils.c
+00000000 l    df *ABS*	00000000 codeloader_configuration.c
+00000000 l    df *ABS*	00000000 codeloader_execute_command_authentication_commands.c
+000268f4 l     O .text	0000001c g_image_sign_addr
+00000000 l    df *ABS*	00000000 codeloader_execute_command_control_commands.c
+20015cf4 l     O .bss	00000001 g_control_command_uart_message_recieved
+20015cf8 l     O .bss	00000004 g_control_command_uart_speed
+00000000 l    df *ABS*	00000000 codeloader_execute_command_flash_writing_commands.c
+0001faa8 l     F .text	00000068 extract_flash_write
+20004157 l     O .data	00001080 codeloader_execute_command_nandflash_writing_buffer.nand_buf
+2000e3a0 l     O .bss	00004000 g_puya_sha256
+200123a0 l     O .bss	00000001 g_codeloader_data_save_position.0
+200123a4 l     O .bss	00000004 g_codeloader_flash_writing_commands_location
+200123a8 l     O .bss	00000004 g_codeloader_flash_writing_commands_max_location
+200123ac l     O .bss	00000004 codeloader_execute_command_nandflash_writing_buffer.nand_pos
+200123b0 l     O .bss	00000004 g_codeloader_data_save_position.1
+200123b4 l     O .bss	00000004 g_codeloader_data_save_position.2
+00000000 l    df *ABS*	00000000 codeloader_execute_command_memory_commands.c
+00020120 l     F .text	00000046 codeloader_command_set_core_region
+00000000 l    df *ABS*	00000000 codeloader_line_layer.c
+00000000 l    df *ABS*	00000000 codeloader_locking.c
+20015cfc l     O .bss	00000001 g_codeloader_perm_state
+00000000 l    df *ABS*	00000000 codeloader_message_layer.c
+20015cfd l     O .bss	00000001 g_codeloader_message_layer_message_number
+00000000 l    df *ABS*	00000000 codeloader_uart.c
+000204c8 l     F .text	00000034 codeloader_uart_write_immediately_char
+200133bc l     O .bss	00002203 g_codeloader_tx_uart_buffer
+000205ae l     F .text	000000a8 codeloader_uart_callback
+200155c0 l     O .bss	00000001 g_codeloader_uart_internal_buffer
+200155c1 l     O .bss	00000001 g_codeloader_uart_reception_enabled
+200155c2 l     O .bss	00000001 codeloader_uart_callback_check_end.escaped_flag
+200155c4 l     O .bss	00000004 g_cl_uart_ex_rx_buffer
+200155c8 l     O .bss	00000004 g_codeloader_uart_external_rx_buffer_size
+200155cc l     O .bss	00000004 g_codeloader_uart_received_data_callback
+200155d0 l     O .bss	00000004 g_codeloader_uart_sent_data_callback
+200155d4 l     O .bss	00000004 g_codeloader_uart_last_data_sent.0
+200155d8 l     O .bss	00000004 g_codeloader_uart_last_data_sent.1
+00000000 l    df *ABS*	00000000 codeloader_efuse.c
+00000000 l    df *ABS*	00000000 codeloader_command_layer.c
+00026a3c l     O .text	000000c0 g_codeloader_command_layer_command_execution_functions
+00000000 l    df *ABS*	00000000 cpu_utils.c
+00000000 l    df *ABS*	00000000 non_os_reboot.c
+00000000 l    df *ABS*	00000000 panic.c
+200155dc l     O .bss	00000001 g_already_panicking
+200155e0 l     O .bss	00000004 g_panic_dump_callback
+200155e4 l     O .bss	00000004 g_panic_cpu_trace_pc
+200155e8 l     O .bss	00000004 g_panic_cpu_trace_lr
+200155ec l     O .bss	00000004 g_panic_cpu_trace_sp
+00000000 l    df *ABS*	00000000 panic_rom.c
+20005300 l     O .data	00000004 g_panic_deal
+00000000 l    df *ABS*	00000000 preserve.c
+200155f0 l     O .bss	000000fc g_preserve_data_lib_ram
+00000000 l    df *ABS*	00000000 error_code.c
+20015d00 l     O .bss	00000004 g_error_code
+00000000 l    df *ABS*	00000000 lib_timeout.c
+00000000 l    df *ABS*	00000000 partition.c
+200156ec l     O .bss	00000150 g_partition_info
+00000000 l    df *ABS*	00000000 sec_boot_fota.c
+00000000 l    df *ABS*	00000000 sec_boot_image_sign_validate.c
+00000000 l    df *ABS*	00000000 sec_boot_public.c
+2006f800 l     O .rsa_public_key_mem	00000400 g_rsa_pubkey
+2006fc00 l     O .rsa_signature_mem	00000200 g_rsa_sign
+2006fe00 l     O .rsa_result_mem	00000200 g_rsa_result
+20015d04 l     O .bss	00000001 sec_boot_mode_get.cf
+20015d05 l     O .bss	00000001 sec_boot_mode_get.double_cf
+20015d06 l     O .bss	00000001 sec_boot_disable_pkcs1_alg_get.cf
+20015d07 l     O .bss	00000001 sec_boot_disable_pkcs1_alg_get.double_cf
+00000000 l    df *ABS*	00000000 memcpy_s.c
+00021566 l     F .text	00000078 SecMemcpyError
+00000000 l    df *ABS*	00000000 memset_s.c
+00000000 l    df *ABS*	00000000 secureprintoutput_a.c
+00027238 l     O .text	00000014 g_itoaUpperDigits
+0002724c l     O .text	00000151 SecDecodeState.stateTable
+0002739d l     O .text	00000014 g_itoaLowerDigits
+200051d8 l     O .data	00000008 SecDecodeTypeSchar.strNullString
+200051e0 l     O .data	00000008 SecNumberCompatZero.strNullPointer
+200051e8 l     O .data	00000020 SecDecodeTypeSwchar.wStrNullString
+00000000 l    df *ABS*	00000000 vsprintf_s.c
+00000000 l    df *ABS*	00000000 __stack_chk_fail.c
+00000000 l    df *ABS*	00000000 syscall_ret.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+00022518 l     F .text	0000171a printf_core
+00023c32 l     F .text	00000018 out
+00023c4a l     F .text	00000058 getint
+000274ea l     O .text	000001d0 states
+00023ca2 l     F .text	000000f4 pop_arg
+000276ba l     O .text	00000010 xdigits
+00023e12 l     F .text	0000009c pad
+00023d96 l     F .text	0000007c fmt_u
+00000000 l    df *ABS*	00000000 memcmp.c
+00000000 l    df *ABS*	00000000 memcpy.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 strnlen.c
+00000000 l    df *ABS*	00000000 close.c
+00024394 l     F .text	00000002 dummy
+00000000 l    df *ABS*	00000000 lseek.c
+00000000 l    df *ABS*	00000000 __errno_location.c
+00000000 l    df *ABS*	00000000 strerror.c
+000276ca l     O .text	00000059 errid
+00027723 l     O .text	0000071f errmsg
+00000000 l    df *ABS*	00000000 __lctrans.c
+0002440c l     F .text	00000002 dummy
+00000000 l    df *ABS*	00000000 __fpclassifyl.c
+00000000 l    df *ABS*	00000000 __signbitl.c
+00000000 l    df *ABS*	00000000 frexpl.c
+00000000 l    df *ABS*	00000000 wctomb.c
+00000000 l    df *ABS*	00000000 __lockfile.c
+00000000 l    df *ABS*	00000000 __stdio_close.c
+00000000 l    df *ABS*	00000000 __stdio_seek.c
+00000000 l    df *ABS*	00000000 __stdout_write.c
+00000000 l    df *ABS*	00000000 __towrite.c
+00000000 l    df *ABS*	00000000 fwrite.c
+00000000 l    df *ABS*	00000000 memchr.c
+00000000 l    df *ABS*	00000000 wcrtomb.c
+00000000 l    df *ABS*	00000000 __stdio_write.c
+00000000 l    df *ABS*	00000000 hal_sectors.c
+00000000 l    df *ABS*	00000000 interrupt_adapter.c
+00000000 l    df *ABS*	00000000 stdout.c
+20015840 l     O .bss	00000408 buf
+00000000 l    df *ABS*	00000000 
+20005298 l     O .data	00000000 _GLOBAL_OFFSET_TABLE_
+0001c2da g     F .text	0000000c irq_uart0_handler
+0001cb6e g     F .text	00000008 flash_config_get_kv_pages
+00022370  w    F .text	00000006 .hidden __stack_chk_fail_local
+00018654 g     F .text	00000040 uapi_tcxo_init
+00011e04 g     F .text	000000b0 __floatunsitf
+0001cf14  w    F .text	00000006 usb_handler
+0001e41a g     F .text	00000028 do_hard_fault
+200081c0 g     O .bss	00000400 g_rsa_key_mem
+000170c6 g     F .text	00000030 lpc_work_state_callback
+0001b266 g     F .text	00000026 hal_uart_unregister_funcs
+00017214 g     F .text	0000005e otp_read_buffer
+0001cf14  w    F .text	00000006 pmu_cmu_interrupt_handler
+00018efa g     F .text	00000042 uapi_watchdog_enable
+0001d800 g     F .text	00000074 pmu_cmu_pll_deinit
+0001c956 g     F .text	00000022 hal_opi_rx_fifo_is_not_empty
+0001e716 g     F .text	00000006 write_trace
+0001cd96 g     F .text	0000003a interrupt1_handler
+0001c3ea g     F .text	0000000e tcxo_port_register_hal_funcs
+00014be8 g     F .text	0000000e non_os_get_nmi_mask_status
+000132f4 g     F .text	00000062 read_buffer_single_line_width_32
+0001d4a2 g     F .text	0000003c clocks_pll_add_vote
+0001cd5c g     F .text	0000003a interrupt0_handler
+200079dc g     O .bss	00000001 g_psram_device
+000150cc g     F .text	0000000c osal_irq_clear
+20015d08 g       *ABS*	00000000 g_intheap_begin
+0001a0fe g     F .text	00000016 hal_qspi_write_data
+00013452 g     F .text	00000094 nand_driver_init
+00012802 g     F .text	000000dc __ashlti3
+00020fdc g     F .text	000000b4 uapi_partition_get_info
+0001bd28 g     F .text	000001aa hal_xip_enable
+000119e2 g     F .text	000000dc __eqtf2
+0001d49a g     F .text	00000008 clocks_get_pll_frequency
+00022398 g     F .text	0000004a printf
+0001e262 g     F .text	00000028 do_trap_load_misaligned
+20005aa8 g       .data	00000000 __global_pointer$
+00021304 g     F .text	000001b6 sec_boot_rsa_pss_verify
+000202de g     F .text	00000020 codeloader_message_layer_get_output_buffer
+0001efac g     F .text	00000064 codeloader_configuration_permanent_lock_permissions
+00010f86 g     F .text	00000928 __addtf3
+00017272 g     F .text	00000088 otp_write_byte
+0001cc5a g     F .text	00000016 int_set_irq_func
+0001eb72 g     F .text	00000018 set_ssb_to_application_image_vaild
+0001db5c g     F .text	0000001c hal_pmu2_cmu_pll_fbdiv_manual_set
+0001ee28 g     F .text	0000000a codeloader_main_get_state
+0001e3ca g     F .text	00000028 do_load_page_fault
+00017142 g     F .text	00000008 memory_write_back_all_core_maps
+0002162c g     F .text	00000d08 SecVsnprintfImpl
+0001805c g     F .text	0000000a uapi_drv_cipher_hash_finish
+000209de g     F .text	000000f8 panic_deal
+00010860 g       .text	00000000 global_interrupt_unlock
+20001400 g       .stacks	00000000 __stack_top__
+0001eefa g     F .text	00000014 codeloader_main_set_state
+00012af4 g     F .text	0000000e get_nand_flash
+0001580e g     F .text	000001ec uapi_flash_write_data_without_align
+0001368a g     F .text	00000058 mc_flash_write_sr
+00020aee g     F .text	0000000c panic_register_deal_callback
+00022376 g     F .text	00000022 .hidden __syscall_ret
+20007f9c g     O .bss	0000001c g_hal_spis_regs
+00011d40 g     F .text	000000c4 __floatsitf
+0001e1c2 g     F .text	00000028 do_trap_unknown
+00019baa g     F .text	00000030 hal_otp_refresh_read
+000209c4 g     F .text	0000000a reboot_chip
+00012e96 g     F .text	00000092 read_sr
+0001ce0a g     F .text	0000003a interrupt3_handler
+0001d638 g     F .text	0000002c calibration_get_clock_frq
+0001fb10 g     F .text	000000be codeloader_command_processor_validate_checksum
+0001ef1a g     F .text	00000006 codeloader_error_log_record
+00024402 g     F .text	0000000a strerror
+000245b4 g     F .text	00000062 .hidden __stdout_write
+0001d94c g     F .text	00000046 pmu_sleep_handler
+0001cfc2 g     F .text	00000016 hal_clocks_ccrg_module_ch_enable
+0001c6cc g     F .text	00000034 hal_opi_set_trans_mode
+0001bed2 g     F .text	00000062 hal_xip_disable
+0001c2e6 g     F .text	0000000c irq_uart1_handler
+00020274 g     F .text	00000040 codeloader_update_permissions
+0001cf14  w    F .text	00000006 b_wdt_handler
+0001f010 g     F .text	00000006 codeloader_configuration_temporary_lock_permissions
+00002b04 g       *ABS*	00000000 __data_size__
+00015044 g     F .text	00000008 irmalloc
+000150fc g     F .text	0000000a osal_isb
+0001cf14  w    F .text	00000006 i2c_2_handler
+00020242 g     F .text	00000032 codeloader_check_permissions
+2001583c g     O .bss	00000004 __stack_chk_guard
+00013356 g     F .text	00000078 read_buffer_single_line_width_8
+00012fdc g     F .text	00000136 program_load
+0001df78 g     F .text	0000001c hal_pmu_vdd0p8_set_nor_voltage
+00018b2a g     F .text	00000076 uapi_uart_deinit
+000182d6 g     F .text	0000000a uapi_drv_cipher_pke_exp_mod
+0001dfb4 g     F .text	0000002a hal_pmu_vdd0p8_vset_ack_get
+0001dc4e g     F .text	00000034 hal_pmu_lpm_wakeup_action_all_enable
+0001540c g     F .text	00000036 uapi_flash_is_processing
+20015cee g     O .bss	00000001 g_pmu_0p8_vget
+0001d240 g     F .text	0000004c hal_clocks_glb_clken_config
+00019150 g     F .text	0000000a hal_gpio_get_funcs
+0001c73e g     F .text	0000002e hal_opi_set_inst_len
+0001cf14  w    F .text	00000006 pmu_32k_cali_handler
+0001a3be g     F .text	0000000e hal_sha_v2_get_funcs
+00016f64 g     F .text	0000003e uapi_gpio_set_dir
+0001d478 g     F .text	00000022 clocks_src_sel_type_translation
+00012c92 g     F .text	00000084 read_id
+0001feb8 g     F .text	000000ac codeloader_command_processor_erase_core
+0001cf14  w    F .text	00000006 hal_timer_isr
+0001c2c2 g     F .text	00000018 uart_port_unregister_irq
+0001b03a g     F .text	0000001a hal_systick_register_funcs
+000128e6 g     F .text	000000e8 __lshrti3
+0001e738 g     F .text	0000005c sha256_init
+200052f4 g     O .data	00000004 g_xip_base_addr
+0001db9c g     F .text	00000016 hal_pmu2_cmu_pll_frac_manual_get
+20015ce1 g     O .bss	00000001 g_uart1_rx_buffer
+0001f2e2 g     F .text	0000011c codeloader_command_processor_read_version_info
+0001506a g     F .text	0000000e irfree
+00020524 g     F .text	0000008a codeloader_uart_default_init
+0001cf14  w    F .text	00000006 pwm_4_handler
+000171a6 g     F .text	0000001c otp_init
+0002455e g     F .text	00000036 .hidden __unlockfile
+0001b118 g     F .text	0000001a hal_tcxo_register_funcs
+0001de76 g     F .text	00000034 hal_pmu1_dig_pg_xip_mem_retention_en
+0001cf14  w    F .text	00000006 qspi0_2cs_handler
+20015c9c g     O .bss	00000004 g_hal_rsa_funcs
+0002128a g     F .text	0000000e sec_boot_global_rsa_pubkey_addr_get
+0001c410 g     F .text	00000006 watchdog_port_register_irq
+00012d98 g     F .text	00000082 program_execute
+20002400 g       .stacks	00000000 __irq_stack_top__
+0002440e g     F .text	00000004 .hidden __lctrans
+000171de g     F .text	00000036 otp_read_byte
+000248a8 g     F .text	0000011e .hidden __stdio_write
+0001a5d0 g     F .text	0000000a hal_rsa_v2_regs_deinit
+0001c1f0 g     F .text	00000018 rsa_port_set_soft_reset
+0001cf14  w    F .text	00000006 pwm_2_handler
+0001f016 g     F .text	000000b6 codeloader_command_processor_add_signature
+0001b28c g     F .text	0000001c hal_uart_get_funcs
+00024412 g     F .text	0000004a __fpclassifyl
+0001a612 g     F .text	0000002e hal_spi_register_funcs
+00024616 g     F .text	00000036 .hidden __towrite
+0001de20 g     F .text	00000016 hal_pmu1_dig_pg_l2m_dsp_ret1_en
+0001cd06 g     F .text	00000056 int_setup
+0001ccbe g     F .text	00000024 int_clear_pending_irq
+00015106 g     F .text	0000000e cpu_trace_disable
+0001f7e4 g     F .text	00000008 codeloader_command_processor_set_kv_key
+0001d32a g     F .text	00000048 hal_clocks_set_aon_bus_div
+0001db8a g     F .text	00000012 hal_pmu2_cmu_pll_frac_manual_set
+0002042a g     F .text	0000002c codeloader_message_layer_form_nack_message
+0001ceb8 g     F .text	0000004e local_interrupt_handler
+20015cb0 g     O .bss	00000004 g_hal_tcxo_funcs
+0001ff64 g     F .text	0000004e codeloader_command_processor_set_permanent_lock
+00023ece g     F .text	00000372 memcpy
+0001a4f0 g     F .text	0000000a hal_rsa_get_funcs
+0001c33c g     F .text	00000076 print_str
+00017e26 g     F .text	00000106 drv_hash_final
+000135a2 g     F .text	0000005a qspi_read_width_32
+0001bff4 g     F .text	00000038 gpio_context_adapter
+00013baa g     F .text	000001f2 uapi_ulp_systick_self_verification
+00012baa g     F .text	0000002a nand_oob_check
+00018694 g     F .text	00000034 uapi_tcxo_get_count
+00020ca0 g     F .text	0000000e set_update_reset_cause_on_boot
+0001bfae g     F .text	0000002c gpio_port_register_irq
+00014bb0 g     F .text	00000038 non_os_nmi_config
+0001f236 g     F .text	00000016 codeloader_command_processor_exit
+0001cf14  w    F .text	00000006 pwm_0_handler
+0001874c g     F .text	00000022 uapi_tcxo_delay_us
+00013524 g     F .text	00000012 is_trans_busy
+0001c1ba g     F .text	0000000a rsa_port_unregister_hal_funcs
+000186c8 g     F .text	00000024 uapi_tcxo_get_ms
+0001502c g     F .text	00000018 irmalloc_new_pool
+0001d8f4 g     F .text	00000058 pmu_wakeup_handler
+00019db8 g     F .text	0000001a hal_pin_register_funcs
+0001c1c4 g     F .text	0000000a rsa_port_get_funcs
+0001842c g     F .text	00000040 uapi_spi_master_read
+0001ddc2 g     F .text	00000014 hal_pmu1_dig_pg_l2m_gmmu_pwr_en
+0001ebc2 g     F .text	0000005a bootloader_configuration_init
+0001d0ca g     F .text	000000f8 hal_mcu_group_clock_switch
+0001eb0e g     F .text	00000064 create_ssb_to_application_table
+0001c142 g     F .text	0000006a rsa_set_attr
+0002023a g     F .text	00000008 codeloader_lock_read
+000170f6 g     F .text	0000002e lpc_get_sleep_veto
+00013548 g     F .text	0000005a qspi_read_width_8
+000118ae g     F .text	00000134 __letf2
+0001c3ce g     F .text	0000000e systick_port_register_hal_funcs
+0001d690 g     F .text	0000003a hal_32k_clock_calibration_enable
+0001c0be g     F .text	0000000e sha_get_endian
+000134e6 g     F .text	0000000c nand_qspi_disable
+00016422 g     F .text	00000130 uapi_flash_sector_erase
+0001ca70 g     F .text	00000008 flash_porting_power_off
+000180a2 g     F .text	00000046 uapi_drv_cipher_sha256_update
+0001ec1c g     F .text	0000003a bootloader_configuration_ssb_sha256_set
+0001dd1c g     F .text	00000018 hal_pmu_manual_select_control
+00015442 g     F .text	00000324 uapi_flash_write_data
+0001c552 g     F .text	0000002a spi_porting_get_device_mode
+0001dbcc g     F .text	0000002e hal_pmu2_cmu_pll_post_div_set
+0001bba0 g     F .text	0000001c hal_watchdog_regs_init
+0002097c g     F .text	00000016 cpu_utils_reset_chip_with_log
+0001857a g     F .text	00000032 uapi_systick_init
+2000403c g     O .data	00000014 g_gpio_base_addrs
+0001d28c g     F .text	0000001a hal_clocks_is_dual_channel_module
+0001c084 g     F .text	00000026 gpio_ulp_clock_switch_to_pclk
+0001716a g     F .text	0000001e mem_update_cached_core_ram_region
+00025d40 g     O .text	00000004 g_hal_sectors_flash_region_pages
+00013536 g     F .text	00000012 is_fifo_full
+00020166 g     F .text	00000044 codeloader_line_layer_process_input_message
+0002453e g     F .text	00000008 wctomb
+0001e2da g     F .text	00000028 do_trap_store_fault
+0001c880 g     F .text	00000024 hal_opi_write_data
+0001e3a2 g     F .text	00000028 do_insn_page_fault
+0001d0b0 g     F .text	0000001a hal_clocks_pll_module_clken
+0001f750 g     F .text	00000024 codeloader_command_processor_erase_nv_config
+0001511e g     F .text	00000138 uapi_flash_init
+0001c862 g     F .text	0000001e hal_opi_read_data
+00020746 g     F .text	000000c2 codeloader_efuse_set_byte
+0001e442 g     F .text	00000028 do_lockup
+00019cda g     F .text	0000000a hal_otp_get_region
+00020cfe g     F .text	00000028 set_cpu_utils_reset_cause
+0001e2b2 g     F .text	00000028 do_trap_store_misaligned
+0001bd02 g     F .text	00000008 hal_xip_init
+0001de36 g     F .text	0000001e hal_pmu1_dig_pg_l2m_dsp_pwr_ack_get
+20015c84 g     O .bss	00000004 g_hal_gpios_funcs
+0001c934 g     F .text	00000022 hal_opi_tx_fifo_is_empty
+0001c978 g     F .text	00000020 hal_opi_is_busy
+000245ae g     F .text	00000006 .hidden __stdio_seek
+20007700 g     O .bss	00000054 g_flash_config
+20015ca8 g     O .bss	00000004 g_hal_systicks_funcs
+0001e28a g     F .text	00000028 do_trap_load_fault
+00027e48 g       .text	00000000 __program_size__
+0001c0cc g     F .text	00000006 sha_port_clean_cache
+0001bb7c g     F .text	0000001a hal_watchdog_register_funcs
+000133ce g     F .text	00000084 mark_bad_block
+00020972 g     F .text	0000000a cpu_utils_set_system_status_by_cause
+20002800 g       .stacks	00000000 g_system_stack_end
+000134fe g     F .text	0000000c nand_qspi_ctlr1_cfg
+0001c57c g     F .text	00000030 hal_opi_reset_config
+00012b5a g     F .text	00000050 erase_block
+00024546 g     F .text	00000018 .hidden __lockfile
+0001c8a4 g     F .text	00000030 hal_opi_select_slave
+00018be2 g     F .text	000000d2 uapi_uart_register_rx_callback
+0001778c g     F .text	0000011c uapi_psram_read_reg
+0001ec6e g     F .text	0000000c build_version_get_info
+20015c98 g     O .bss	00000004 g_sha_v2_regs
+0001c0f4 g     F .text	0000000a sha_get_base_addr
+000243b2  w    F .text	00000008 .hidden ___errno_location
+00010cf0 g     F .text	00000296 __umoddi3
+00024396  w    F .text	0000001c lseek
+00017c3e g     F .text	000001e8 drv_hash_update
+00018e78 g     F .text	00000052 uapi_watchdog_init
+00014ec8 g     F .text	000000b6 conn_mem_free_enhanced
+200052ac g     O .data	00000004 g_calendar_reg
+0001f740 g     F .text	00000010 codeloader_command_processor_end_flashing
+0001f16c g     F .text	000000ca codeloader_command_processor_set_uart_speed
+20015cb8 g     O .bss	00000008 g_hal_uarts_regs
+0001bb96 g     F .text	0000000a hal_watchdog_get_funcs
+000201c2 g     F .text	00000030 codeloader_line_layer_send
+000139ba g     F .text	000000ec mc_flash_mark_bad_block
+0001b238 g     F .text	0000002e hal_uart_register_funcs
+0001cf14  w    F .text	00000006 spi_m_s_1_handler
+0001d546 g     F .text	000000a8 system_ccrg_clock_config
+0001e46a g     F .text	00000018 default_handler
+0001cf14  w    F .text	00000006 sec_int_handler
+0001cf14  w    F .text	00000006 spi_m_handler
+00010a52 g     F .text	0000029e __udivdi3
+00016e0a g     F .text	00000094 uapi_flash_read_id
+00016552 g     F .text	00000186 uapi_flash_send_cmd_exe
+0001cf1a g     F .text	0000000c isr_get_ramexceptiontable_addr
+0001c0e0 g     F .text	0000000a sha_port_unregister_hal_funcs
+0001d6fa g     F .text	0000006a pmu_cmu_init
+0001e794 g     F .text	00000268 SHA256Update
+200091c2 g     O .bss	0000001e g_pll_used_vote
+00022370 g     F .text	00000006 __stack_chk_fail
+20015cdc g     O .bss	00000004 g_xip_regs
+0001f7ba g     F .text	0000002a codeloader_command_processor_erase_flash_above_ssb
+0001c23a g     F .text	0000000a uart_port_get_clock_value
+0001ef4a g     F .text	00000062 codeloader_configuration_get_permissions
+0001ca9c g     F .text	0000000c flash_porting_wait_exit_xip_mode
+00011abe g     F .text	00000074 __unordtf2
+00015096 g     F .text	0000000c osal_irq_lock
+20000000 g       .stacks	00000000 g_system_stack_begin
+00013ece g     F .text	0000006e board_poweron
+0001c9e6 g     F .text	0000000a spi_porting_lock
+20002800 g       .stacks	00000000 __excp_stack_top__
+00017b52 g     F .text	000000ec drv_hash_start
+200091e0 g     O .bss	0000001e g_current_clocks
+20004050 g     O .data	00000014 irq_num
+0001ca38 g     F .text	0000001c flash_porting_set_exit_xip_clk_div
+00010200 g       .text	00000000 trap_excp
+0001cf14  w    F .text	00000006 mcu_pclr_lock_handler
+00024370 g     F .text	00000024 strnlen
+00020cae g     F .text	00000050 set_cpu_utils_system_boot_magic
+0001bf9a g     F .text	00000014 gpio_porting_base_addr_get
+0001c7c4 g     F .text	00000030 hal_opi_set_received_data_num
+00020d58 g     F .text	00000034 set_exception_info_riscv
+200123b8 g     O .bss	00001001 g_codeloader_read_data_buf
+20015cc0 g     O .bss	00000008 g_hal_uarts_funcs
+0001c402 g     F .text	0000000e watchdog_port_register_hal_funcs
+0001cf14  w    F .text	00000006 qdec_handler
+0002440c  w    F .text	00000002 .hidden __lctrans_impl
+000206ea g     F .text	00000028 codeloader_uart_get_tx_buffer
+200091c0 g     O .bss	00000002 g_pll_used_vote_count
+0001dacc g     F .text	00000024 hal_cmu_dbg_config_control
+00014c0c g     F .text	00000208 conn_mem_init_pool
+0001ce7e g     F .text	0000003a interrupt5_handler
+20003f78 g     O .data	0000000c g_otp_region_ctl_address
+0001d992 g     F .text	00000096 pmu1_dig_pg_sub_power_on
+0001a12c g     F .text	00000016 hal_qspi_disable
+0001f406 g     F .text	000000ce codeloader_command_processor_start_flashing
+0001c28a g     F .text	00000038 uart_port_register_irq
+00010000 g       startup	00000000 Reset_Handler
+00020f58 g     F .text	00000084 uapi_partition_init
+000202fe g     F .text	00000032 codeloader_message_layer_form_reply
+000136ec g     F .text	0000008a mc_flash_busy_wait
+20015c88 g     O .bss	00000004 g_hal_pins_funcs
+0001de0a g     F .text	00000016 hal_pmu1_dig_pg_l2m_dsp_pwr_en
+0001c478 g     F .text	00000022 xip_error_interrupt_enable
+0001b1d6 g     F .text	0000001e hal_tcxo_reg_count_get
+0001cf14  w    F .text	00000006 eh2h_brg_int_handler
+0001c0fe g     F .text	00000018 sha_port_set_clk_en
+0001df1c g     F .text	0000005c hal_pmu_vdd_enable
+00020712 g     F .text	00000014 codeloader_uart_enable_reception
+00020b1a  w    F .text	00000006 watchdog_porting_pmu_reboot
+0001860c g     F .text	00000022 uapi_systick_get_ms
+20006450 g     O .bss	00001000 g_flash_contents
+20007f98 g     O .bss	00000004 g_pmu_check_reg_bit
+0001a364 g     F .text	0000002c hal_reg_config_bit
+00020dc2 g     F .text	0000002c set_exception_stack_frame
+0001a19c g     F .text	00000014 hal_reboot_set_ulp_aon_no_poweroff_flag
+0001c818 g     F .text	00000032 hal_opi_ddr_en
+000214ba g     F .text	00000056 sec_boot_mode_get
+0001cf14  w    F .text	00000006 hal_rtc_timer_isr
+0001d5ee g     F .text	0000004a clocks_get_module_frequency
+0001c8d4 g     F .text	00000028 hal_opi_disable
+000243ba  w    F .text	00000048 strerror_l
+0001dbb2 g     F .text	0000001a hal_pmu2_cmu_pll_lock_check
+0001c9bc g     F .text	0000002a hal_opi_dma_control
+00018ba0 g     F .text	00000042 uapi_uart_set_attr
+0001c700 g     F .text	0000003e hal_opi_set_freq
+200052d4 g     O .data	00000004 g_hal_sectors_ram_heap_size
+0001a3aa g     F .text	0000000a hal_sha_unregister_funcs
+00011c9c g     F .text	00000056 __fixtfsi
+20015cec g     O .bss	00000001 g_pll_used
+0001cf14  w    F .text	00000006 mem_sub_monitor_handler
+0001b224 g     F .text	00000014 hal_uart_regs_deinit
+00017aea g     F .text	00000068 qspi_recv_data_by_byte
+0001915a g     F .text	0000000e gpio_context_get
+0001dc82 g     F .text	0000001a hal_pmu_lpm_wakeup_get_all_status
+0001c508 g     F .text	00000014 spi_porting_max_slave_select_get
+000210ba g     F .text	00000056 sec_boot_verify_standard_image
+0002066a g     F .text	00000080 codeloader_uart_change_baud
+20015c4c g     O .bss	00000004 g_psram_exist
+0001c1ce g     F .text	0000000a rsa_get_base_addr
+20015ce8 g     O .bss	00000004 g_interrupt_running
+00021510 g     F .text	00000056 memcpy_s
+0001cb64 g     F .text	0000000a flash_get_page
+0001cf14  w    F .text	00000006 spi_m_s_0_handler
+00015114 g     F .text	0000000a cpu_trace_get_locked_regs
+000215de g     F .text	0000004e memset_s
+20005304 g       .data	00000000 __data_end__
+0001c1d8 g     F .text	00000018 rsa_port_set_clk_en
+000212a6 g     F .text	0000005e sec_boot_rsa_exp_mod
+00014ab2 g     F .text	00000068 non_os_exit_critical
+0001a170 g     F .text	00000016 hal_qspi_ctlr0_cfg
+0001d39e g     F .text	00000074 clocks_ssb_clk_init
+000173a4 g     F .text	0000000a uapi_pin_init
+0001caa8 g     F .text	00000040 flash_config_save_info
+00014b9e g     F .text	00000012 non_os_is_aon_flag_initialised
+000204fc g     F .text	00000028 codeloader_uart_get_last_message
+000182e0 g     F .text	0000005a uapi_spi_init
+200052a8 g     O .data	00000004 g_nandflash_init
+0001d518 g     F .text	00000014 clock_switch_pre_handler_register
+0001c460 g     F .text	0000000e pin_port_register_hal_funcs
+00024716 g     F .text	000000a4 memchr
+00014bf6 g     F .text	00000016 non_os_get_nmi_raw_status
+00017fea g     F .text	00000038 uapi_drv_cipher_hash_start
+00011cf2 g     F .text	0000004e __fixunstfsi
+20015d08 g       .bss	00000000 __bss_end__
+0001a4c2 g     F .text	0000000a hal_sha_v2_regs_deinit
+200052d8 g     O .data	00000004 g_hal_sectors_ram_heap_start
+20002800 g     O .data	00000044 g_ds35x1g_driver
+0001db78 g     F .text	00000012 hal_pmu2_cmu_pll_fbdiv_manual_get
+00012b02 g     F .text	00000058 nandflash_qspi_init
+0001d412 g     F .text	0000001c clocks_pll_veto_type_translation
+0001a3b4 g     F .text	0000000a hal_sha_get_funcs
+0001876e g     F .text	00000118 uapi_uart_init
+00018066 g     F .text	0000003c uapi_drv_cipher_sha256_start
+0001cf14  w    F .text	00000006 irq_uartl2_handler
+00014b4a g     F .text	00000054 non_os_set_driver_initalised
+0001a4cc g     F .text	0000001a hal_rsa_register_funcs
+0001a1be g     F .text	00000014 hal_reboot_set_first_power_on_flag
+0001a65c g     F .text	0000000e hal_spi_v100_funcs_get
+00012f28 g     F .text	00000062 write_sr
+0001d6ca g     F .text	0000000e hal_32k_clock_calibration_cycle_config
+0001a186 g     F .text	00000016 hal_qspi_ctlr1_cfg
+20015cac g     O .bss	00000004 g_systick_regs
+0001e726 g     F .text	00000012 partition_get_path_map
+0001c434 g     F .text	00000014 watchdog_turnoff_clk
+0001c3dc g     F .text	0000000e tcxo_porting_base_addr_get
+0001b1aa g     F .text	00000022 hal_tcxo_v150_regs_init
+0001cf14  w    F .text	00000006 spi3_m_s_handler
+0001cb5a g     F .text	0000000a flash_config_get_start_addr
+00010854 g       .text	00000000 global_interrupt_lock
+0001ef0e g     F .text	0000000c codeloader_set_security_core_updated
+0001ec56 g     F .text	0000000c bootloader_utils_get_rom_version
+000119e2 g     F .text	000000dc __netf2
+0001bb4c g     F .text	00000030 hal_uart_int_set
+20009288 g     O .bss	00005102 codeloader_rx_buffer_container
+0001a4fa g     F .text	0000002a hal_rsa_v2_is_finish
+0001a142 g     F .text	00000018 hal_qspi_slave_enable
+20003fa4 g     O .data	0000000c g_hal_qspi_base
+000150e2 g     F .text	0000000a osal_irq_disable
+000180f2 g     F .text	00000080 uapi_drv_cipher_sha256
+20007b10 g     O .bss	00000014 g_gpios_regs
+0001ffb2 g     F .text	0000004e codeloader_command_processor_set_temporal_lock
+20015cb4 g     O .bss	00000004 g_tcxo_regs
+00019176 g     F .text	000000f8 hal_gpio_irq_handler
+0001e23a g     F .text	00000028 do_trap_insn_illegal
+0001cf4a g     F .text	0000001c clocks_system_init
+0001c21c g     F .text	00000014 uart_port_register_hal_funcs
+0001f25c g     F .text	00000086 codeloader_command_processor_reset
+0001d372 g     F .text	0000002c hal_clocks_config_bit
+0001b13c g     F .text	0000000e hal_tcxo_v150_funcs_get
+00019136 g     F .text	0000001a hal_gpio_register_funcs
+0001cf14  w    F .text	00000006 bt_int1_handler
+0001d6d8 g     F .text	00000022 hal_32k_clock_get_detect_result
+000159fa g     F .text	0000031a uapi_flash_read_data
+0001dee0 g     F .text	0000003c hal_pmu_simo_buck_init
+0001a640 g     F .text	0000001c hal_spi_get_funcs
+0001c208 g     F .text	00000014 uart_porting_base_addr_get
+0001f146 g     F .text	00000026 codeloader_command_processor_set_uart_speed_set
+00015256 g     F .text	0000014c uapi_flash_read_status
+0001c244 g     F .text	00000046 uart_port_config_pinmux
+20005208 g     O .data	00000090 .hidden __stdout_FILE
+00019b2a g     F .text	00000040 hal_ipc_interrupt_core
+00012c6e g     F .text	00000024 cs_pulldown
+0001b054 g     F .text	0000000a hal_systick_get_funcs
+0001cf06 g     F .text	0000000e interrupt_number_get
+00027e48 g       *ABS*	00000000 __data_load__
+0001cf26 g     F .text	00000016 clocks_pll_cfg_get
+0001c3ba g     F .text	00000006 uart_porting_unlock
+0001a1d2 g     F .text	00000014 hal_reboot_clear_first_power_on_flag
+000150ec g     F .text	00000006 osal_irq_free
+0001cf14  w    F .text	00000006 b_sub_monitor_handler
+000135fc g     F .text	00000032 qspi_busy_wait
+00020afa g     F .text	00000020 panic
+0001f0e0 g     F .text	00000066 codeloader_command_processor_get_permissions
+00020232 g     F .text	00000008 codeloader_unlocked_check
+0001086c g       .text	00000000 global_interrupt_restore
+00011b32 g     F .text	0000016a __extenddftf2
+000185ac g     F .text	00000060 uapi_systick_get_count
+0001c9f0 g     F .text	0000000c spi_porting_unlock
+0001cdd0 g     F .text	0000003a interrupt2_handler
+0001eb8a g     F .text	00000038 get_ssb_application_table
+0001a4e6 g     F .text	0000000a hal_rsa_unregister_funcs
+0001b01c g     F .text	0000001e hal_spi_v100_int_set_reg
+200052e0 g     O .data	00000004 g_sha_base_addr
+0001c1ac g     F .text	0000000e rsa_port_register_hal_funcs
+0001d764 g     F .text	0000009c pmu_cmu_pll_reinit
+0001cf14  w    F .text	00000006 pwm_3_handler
+0001b05e g     F .text	0000000e hal_systick_v150_funcs_get
+0001dc16 g     F .text	00000016 hal_pmu_lpm_mcpu_allow_to_sleep
+00019dd2 g     F .text	0000000a hal_pin_get_funcs
+0001f5ca g     F .text	00000176 codeloader_command_processor_send_data
+00010880 g     O .text	00000184 g_ram_exception_table
+0001e71c g     F .text	0000000a partition_get_addr
+00023eae g     F .text	00000020 memcmp
+00016cda g     F .text	00000130 uapi_flash_switch_to_qspi_init
+20005aa8 g       .data	00000000 _gp_
+20009200 g     O .bss	0000003c g_clock_sw_pre_handler
+20009248 g     O .bss	00000014 g_exc_info
+0001cf14  w    F .text	00000006 i2c_0_handler
+00016f3e g     F .text	00000026 uapi_gpio_init
+0001c416 g     F .text	0000001e watchdog_turnon_clk
+0001d062 g     F .text	0000004e hal_clocks_xip_cache_div_config
+0001c2fe g     F .text	00000022 sw_debug_uart_init
+00020330 g     F .text	000000fa codeloader_message_layer_send_init_message
+00019168 g     F .text	0000000e hal_gpio_context_get
+0001c0aa g     F .text	00000014 sha_set_endian
+200089c0 g     O .bss	00000400 g_rsa_output_mem
+0001e302 g     F .text	00000028 do_trap_ecall_u
+0001f3fe g     F .text	00000008 codeloader_command_processor_is_running_from_bootloader_ram
+00015078 g     F .text	00000014 oal_int_delete
+0001a1b0 g     F .text	0000000e hal_reboot_get_ulp_aon_no_poweroff_flag
+000109c8 g       *ABS*	00000000 __bss_size__
+00020738 g     F .text	0000000e codeloader_uart_wait_to_finish_transmission
+0001c2f2 g     F .text	0000000c sw_debug_uart_deinit
+0001ddec g     F .text	0000001e hal_pmu1_dig_pg_l2m_gmmu_pwr_ack_get
+0001cf14  w    F .text	00000006 pwm_1_handler
+20007f90 g     O .bss	00000004 g_pmu_check_reg
+00019ddc g     F .text	0000000e hal_pin_brandy_funcs_get
+200052dc g     O .data	00000004 g_hal_sectors_flash_region_end
+00013b74 g     F .text	0000000a set_trans_type
+0001dcbe g     F .text	0000001c hal_pmu_lpm_sleep_get_all_status
+0002464c g     F .text	000000ca .hidden __fwritex
+0001c230 g     F .text	0000000a uart_port_unregister_hal_funcs
+0001627a g     F .text	000001a8 uapi_flash_block_erase
+0001cf14  w    F .text	00000006 pwm_5_handler
+0001dda6 g     F .text	0000001c hal_pmu1_dig_pg_common_pwr_ack_get
+0001c8fc g     F .text	00000038 hal_opi_enable
+0001bf34 g     F .text	00000022 hal_xip_is_enable
+0001833a g     F .text	00000028 uapi_spi_set_attr
+00012e1a g     F .text	0000007c block_erase
+0001e352 g     F .text	00000028 do_trap_ecall_m
+0001c7f4 g     F .text	00000024 hal_opi_set_tx_fifo_threshold
+0001a296 g     F .text	0000000a hal_reboot_get_reset_reason
+0001f0cc g     F .text	00000014 control_command_uart_message_recieved_set
+00018d5e g     F .text	00000060 uapi_uart_has_pending_transmissions
+0001d2a6 g     F .text	00000084 hal_clocks_sub_normal_sel_cfg
+0001d45a g     F .text	0000001e clocks_pll_power_off
+0001a524 g     F .text	0000000e hal_rsa_v2_get_funcs
+0001c0d2 g     F .text	0000000e sha_port_register_hal_funcs
+00020b20 g     F .text	00000180 system_boot_status_init
+0001e212 g     F .text	00000028 do_trap_insn_fault
+0001dcda g     F .text	0000002a hal_pmu_lpm_sleep_action_all_enable
+0001de54 g     F .text	00000022 hal_pmu1_dig_pg_xip_mem_pwr_en
+00024240 g     F .text	000000c2 memset
+000168a8 g     F .text	0000029c uapi_flash_switch_to_xip_mode
+000167f0 g     F .text	00000086 uapi_flash_config_cmd_at_xip_mode
+0001825a g     F .text	0000007c uapi_drv_pke_exp_mod
+00013f3c g     F .text	00000a68 main
+0001bfe6 g     F .text	0000000e gpio_port_register_hal_funcs
+0001c5ac g     F .text	00000038 hal_opi_set_frame_size
+00024a20 g       .text	00000000 trap_entry
+0001cf14  w    F .text	00000006 eflash_handler
+0001cf14  w    F .text	00000006 irq_dma_handler
+000131ae g     F .text	00000146 read_buffer
+00020f00 g     F .text	00000058 lib_timeout_check_timeout_periodic
+00014b1a g     F .text	00000030 non_os_is_driver_initialised
+0001bace g     F .text	00000020 hal_uart_int_get
+00020656 g     F .text	00000014 codeloader_uart_deinit
+20002800 g       .data	00000000 __data_begin__
+0001d4de g     F .text	0000003a clocks_pll_remove_vote
+200079f4 g     O .bss	00000024 g_qspi_curr_state
+00017036 g     F .text	00000090 ipc_receive_message
+00027e48 g       .ramtext	00000000 __ramtext_end__
+0001e37a g     F .text	00000028 do_trap_break
+0001b1cc g     F .text	0000000a hal_tcxo_v150_regs_deinit
+0001d664 g     F .text	0000002c uart_get_clock_value
+0001714a g     F .text	00000020 memory_update_cached_core_code_region
+00020808 g     F .text	0000016a codeloader_command_layer_process_input_message
+0001c4f4 g     F .text	00000014 spi_porting_base_addr_get
+0001752e g     F .text	00000082 uapi_psram_init
+0002445c g     F .text	00000006 __signbitl
+0001ddd6 g     F .text	00000016 hal_pmu1_dig_pg_l2m_gmmu_ret1_en
+00016ff0 g     F .text	00000046 ipc_check_idle
+0001a4a6 g     F .text	0000001c hal_sha_v2_regs_init
+00024394  w    F .text	00000002 .hidden __aio_close
+0001cf14  w    F .text	00000006 i2c_1_handler
+00024396 g     F .text	0000001c .hidden __lseek
+0001cce2 g     F .text	00000024 int_set_priority
+0001cf14  w    F .text	00000006 reserve_handler
+000150f2 g     F .text	0000000a osal_dsb
+00018f68 g     F .text	00000012 hal_cpu_trace_disable
+00014a40 g     F .text	00000072 non_os_enter_critical
+0001ed3c g     F .text	00000022 codeloader_deinit
+0001931c g     F .text	0000000e hal_gpio_v100_funcs_get
+00012bd4 g     F .text	0000009a nand_write_and_check
+0001cb76 g     F .text	0000006a flash_read_unique_id
+20003f60 g     O .data	0000000c g_otp_region_read_address
+2000923c g     O .bss	00000001 g_is_repeat_exc
+0001decc g     F .text	00000014 hal_pmu1_dig_pg_bram_pwr_en
+0001b3f0 g     F .text	0000000e hal_uart_v120_funcs_get
+0001c044 g     F .text	00000040 gpio_ulp_int_en
+200040ac g     O .data	0000001c g_spi_base_addrs
+20015ca4 g     O .bss	00000004 g_rsa_v2_regs
+0001bcfc  w    F .text	00000006 hal_xip_auto_cg
+00011eb4 g     F .text	000008f8 __multf3
+20003f6c g     O .data	0000000c g_otp_region_write_address
+000136e2 g     F .text	0000000a mc_flash_write_cmd
+0001ca86 g     F .text	0000000a flash_porting_spi_lock
+0001c46e g     F .text	0000000a xip_porting_base_addr_get
+00017124 g     F .text	0000001e memory_get_cached_core_map
+0001362e g     F .text	0000005c mc_flash_read_sr
+0001a5b4 g     F .text	0000001c hal_rsa_v2_regs_init
+20007a18 g     O .bss	00000004 g_hal_funcs
+0001cae8 g     F .text	0000003a flash_config_get_end
+0001cf3c g     F .text	0000000e clocks_ssb_clk_cfg_get
+0001cf14  w    F .text	00000006 spi4_s_handler
+00016fa2 g     F .text	0000003a uapi_gpio_set_val
+0001838a g     F .text	00000058 uapi_spi_master_write
+00020d26 g     F .text	00000032 set_last_panic
+00019bda g     F .text	0000001a hal_otp_deinit
+0001c320 g     F .text	0000001c sw_debug_uart_reset_baund
+0001a5da g     F .text	00000038 hal_spi_regs_init
+0001dd34 g     F .text	00000020 hal_pmu_intldo1_set_voltage
+0001390c g     F .text	000000ae mc_flash_erase_block
+000209ce g     F .text	00000010 panic_init
+0001a0d2 g     F .text	00000016 hal_qspi_get_rx_fifo_num
+00017480 g     F .text	000000ae uapi_psram_reset
+0001f774 g     F .text	00000046 codeloader_command_processor_erase_ssb
+00015d14 g     F .text	0000021a uapi_flash_read_data_without_align
+0001b132 g     F .text	0000000a hal_tcxo_get_funcs
+000201f2 g     F .text	00000040 codeloader_lock_init
+20015ce0 g     O .bss	00000001 g_uart0_rx_buffer
+00012d16 g     F .text	00000082 read_cell_array
+0001862e g     F .text	00000026 uapi_systick_get_us
+00013aa6 g     F .text	000000ce mc_flash_check_bad_block
+0001a390 g     F .text	0000001a hal_sha_register_funcs
+0001dc2c g     F .text	00000022 hal_pmu_lpm_wakeup_all_status_clear
+0001f930 g     F .text	00000178 codeloader_command_processor_set_bin_sha_data
+0001bf56 g     F .text	00000026 hal_xip_set_cur_mode
+00020ad6 g     F .text	00000018 panic_wait_forever
+00019bf4 g     F .text	0000005a hal_otp_flush_write
+0001fbce g     F .text	00000202 codeloader_command_processor_set_memory_config
+0001c79a g     F .text	0000002a hal_opi_cmd_trans_mode
+0001dd04 g     F .text	00000018 hal_pmu_manual_config_control
+000172fa g     F .text	000000aa otp_write_buffer
+0001f7ec g     F .text	00000144 codeloader_command_processor_set_bin_head_info
+00013518 g     F .text	0000000c nand_qspi_write_data
+000127ac g     F .text	00000056 __subtf3
+200085c0 g     O .bss	00000400 g_rsa_input_mem
+000178a8 g     F .text	00000172 uapi_psram_enter_xip
+00012f8a g     F .text	00000052 write_cmd
+0001c5e4 g     F .text	000000e8 hal_opi_set_frame_format
+00013844 g     F .text	000000c8 mc_flash_write_page
+0001f24c g     F .text	00000010 codeloader_command_processor_nack
+20005bd0 g     O .bss	00000880 nand_read_buf
+0001cc98 g     F .text	00000026 int_disable_irq
+0001dc9c g     F .text	00000022 hal_pmu_lpm_sleep_all_status_clear
+0001c76c g     F .text	0000002e hal_opi_set_addr_len
+000171c2 g     F .text	0000001c otp_deinit
+0005a2f8 g       .heap	00000000 g_intheap_size
+200052e4 g     O .data	00000004 g_rsa_v2_reg
+20005350 g     O .bss	00000880 nand_write_buf
+0001501c g     F .text	00000010 irmalloc_init_default
+00019ace g     F .text	0000005c hal_ipc_interrupt_security
+0001ec7a g     F .text	00000044 codeloader_init
+20015cc8 g     O .bss	00000004 g_hal_watchdogs_funcs
+0001f4d4 g     F .text	000000f6 codeloader_command_processor_start_download_package
+200052ec g     O .data	00000004 g_watchdog_base_addr
+0001bf8e g     F .text	0000000c hal_xip_v150_regs_init
+000128de g     F .text	00000004 __fe_getround
+00018eca g     F .text	00000030 uapi_watchdog_disable
+0001c49a g     F .text	0000005a spi_port_register_hal_funcs
+000150d8 g     F .text	0000000a osal_irq_enable
+0001c84a g     F .text	00000018 hal_opi_disable_slave
+0001a15a g     F .text	00000016 hal_qspi_slave_disable
+0001d874 g     F .text	00000080 pmu_cmu_get_pll_clock_value
+00015f2e g     F .text	000000c6 uapi_flash_chip_erase
+0001ca80 g     F .text	00000006 flash_porting_spi_lock_create
+00016fdc g     F .text	00000014 bt_int0_handler
+20005340 g       .bss	00000000 __bss_begin__
+0001dd92 g     F .text	00000014 hal_pmu1_dig_pg_common_pwr_en
+0001c3b2 g     F .text	00000008 uart_porting_lock
+20007f94 g     O .bss	00000004 g_pmu_check_reg_value
+0001ca78 g     F .text	00000008 flash_porting_power_on
+00010240 g       .text	00000000 trap_vector
+0001ca54 g     F .text	0000001c flash_porting_set_enter_xip_clk_div
+0001cf14  w    F .text	00000006 irq_shareram_monitor_handler
+00019ce4 g     F .text	0000003e hal_otp_write_operation
+00020dee g     F .text	000000f2 show_reboot_info
+0001e32a g     F .text	00000028 do_trap_ecall_s
+0001ce44 g     F .text	0000003a interrupt4_handler
+00024594 g     F .text	0000001a .hidden __stdio_close
+0001cf14  w    F .text	00000006 key_scan_handler
+000201aa g     F .text	00000018 codeloader_line_layer_get_output_buffer
+0001cf14  w    F .text	00000006 irq_tsensor_handler
+0001c3c0 g     F .text	0000000e systick_porting_base_addr_get
+000180e8 g     F .text	0000000a uapi_drv_cipher_sha256_finish
+0001c9fc g     F .text	00000020 flash_porting_get_config
+00016b44 g     F .text	00000182 uapi_flash_exit_from_xip_mode
+00021298 g     F .text	0000000e sec_boot_global_rsa_sign_addr_get
+000202b4 g     F .text	0000002a codeloader_message_layer_process_input_message
+0001e3f2 g     F .text	00000028 do_store_page_fault
+0001e482 g     F .text	00000018 nmi_handler
+00025de0 g     O .text	00000008 g_uart_base_addrs
+20007fb8 g     O .bss	0000001c g_hal_spis_funcs
+87004860 g     O .preserve	000000fc g_preserve_data_lib
+000175b0 g     F .text	000000ee uapi_psram_write_reg
+0001da96 g     F .text	00000036 pmu_init
+000243b2 g     F .text	00000008 __errno_location
+0001ca90 g     F .text	0000000c flash_porting_spi_unlock
+00017a1a g     F .text	00000046 uapi_psram_exit_sleep
+000243ba g     F .text	00000048 __strerror_l
+00019b6a g     F .text	00000022 hal_ipc_interrupt_clear_core
+0001740c g     F .text	0000004e uapi_pin_set_ds
+000134f2 g     F .text	0000000c nand_qspi_ctlr0_cfg
+0001cf14  w    F .text	00000006 irq_sdma_handler
+0001dfde g     F .text	00000020 hal_pmu_vdd0p8_vset_ack_clr
+0001b0d2 g     F .text	0000000e hal_systick_v150_regs_init
+0001dbfa g     F .text	0000001c hal_pmu2_cmu_pll_post_div_get
+0001d42e g     F .text	0000002c clocks_pll_power_on
+00018cb4 g     F .text	000000aa uapi_uart_write
+0001ef40 g     F .text	0000000a codeloader_command_processor_utils_cimage_is_valid
+0001bf7c g     F .text	00000012 hal_xip_get_cur_mode
+00024462 g     F .text	000000dc frexpl
+0001db38 g     F .text	00000024 hal_pmu_cmu_core_pll_cfg_control
+0001a1e6 g     F .text	00000072 hal_reboot_hard_wdg_timeout
+0001ef20 g     F .text	00000020 cl_cmd_proc_utils_cons_gen_out_msg
+0001b2a8 g     F .text	00000148 hal_uart_irq_handler
+00019c94 g     F .text	00000046 hal_otp_write_byte
+00020ee0 g     F .text	00000020 error_code_set
+0001e49a g     F .text	0000027c exc_info_display
+0001b0e0 g     F .text	0000000a hal_systick_v150_regs_deinit
+0001c51c g     F .text	00000036 spi_porting_set_device_mode
+0001508c g     F .text	0000000a osal_irq_restore
+200040d8 g     O .data	00000061 g_aucIntPri
+0001ea40 g     F .text	000000ce sha256_final
+0001c02c g     F .text	00000018 gpio_hal_context_adapter
+0001cf66 g     F .text	0000001a hal_clocks_ccrg_xo_dll2_clk_en
+0001350a g     F .text	0000000e nand_qspi_enable
+0001a258 g     F .text	0000003e hal_reboot_chip
+0001daf0 g     F .text	00000024 hal_cmu_manual_single_config
+0001c998 g     F .text	00000024 hal_opi_set_dma_rx_data_level
+0001ec62 g     F .text	0000000c bootloader_utils_get_ssb_version
+0001cf14  w    F .text	00000006 qspi1_2cs_handler
+00002800 g       *ABS*	00000000 g_system_stack_size
+000150c0 g     F .text	0000000c osal_irq_set_priority
+0001cfd8 g     F .text	0000008a hal_clocks_ccrg_module_config
+00010000 g       startup	00000000 __CODE_START__
+00024302 g     F .text	0000006e strlen
+00024396  w    F .text	0000001c lseek64
+0001c12e g     F .text	00000014 rsa_set_endian
+00018362 g     F .text	00000028 uapi_spi_set_extra_attr
+0001ca1c g     F .text	0000001c flash_porting_set_enter_qspi_clk_div
+0001b1f4 g     F .text	00000030 hal_uart_regs_init
+00021110 g     F .text	0000017a sec_boot_image_sign_verify
+0001dd54 g     F .text	00000016 hal_pmu1_dig_pg_common_iso_en
+00014e14 g     F .text	000000b4 conn_mem_alloc_enhanced
+0001bbc6 g     F .text	0000000e hal_watchdog_v100_funcs_get
+0001a2a0 g     F .text	000000c4 hal_reg_status_check_timeout
+00021090 g     F .text	0000002a sec_boot_verify_recovery_image
+000186ec g     F .text	00000030 uapi_tcxo_delay_ms
+0001bfda g     F .text	0000000c irq_gpio_handler
+00019026 g     F .text	000000da hal_cpu_trace_get_locked_regs
+0001c448 g     F .text	00000018 pin_check_mode_is_valid
+0001e1ea g     F .text	00000028 do_trap_insn_misaligned
+00019c4e g     F .text	00000046 hal_otp_read_byte
+0001d1c2 g     F .text	0000007e hal_clocks_ccrg_reg_get
+00016876 g     F .text	00000032 uapi_flash_get_info
+0001b0ea g     F .text	0000002e hal_systick_reg_count_get
+00019d22 g     F .text	00000096 hal_otp_write_buffer_operation
+0001dffe g     F .text	000001c4 do_hard_fault_handler
+0001bd0a g     F .text	0000001e hal_xip_clear_tag
+00002800 g       *ABS*	00000000 g_stack_system
+0001ed5e g     F .text	000000ca codeloader_main_loop
+00013112 g     F .text	0000009c write_by_cpu_single_line
+0001bbbc g     F .text	0000000a hal_watchdog_regs_deinit
+0001cc70 g     F .text	00000028 int_enable_irq
+20015c49 g     O .bss	00000001 g_trans_type
+00022334 g     F .text	0000003c vsprintf_s
+00020000 g     F .text	00000120 codeloader_command_processor_read_data
+00016cc6 g     F .text	00000014 uapi_flash_switch_to_cache_mode
+0001c0ea g     F .text	0000000a sha_port_get_funcs
+0001fdd0 g     F .text	000000e8 codeloader_processor_set_flash_limits_v2
+0001a114 g     F .text	00000018 hal_qspi_enable
+00020456 g     F .text	00000072 codeloader_uart_write
+00017188 g     F .text	0000001e memory_update_cached_core_otp_region
+00013e96 g     F .text	00000038 software_delay_us
+0001deaa g     F .text	00000022 hal_pmu1_dig_pg_xip_mem_pwr_ack_get
+0001da28 g     F .text	00000056 pmu_vdd1p0_request_switch
+000247ba g     F .text	000000ee wcrtomb
+00013776 g     F .text	000000ce mc_flash_read_page
+0001c116 g     F .text	00000018 sha_port_set_soft_reset
+00019120 g     F .text	00000016 hal_gpio_regs_deinit
+00019100 g     F .text	00000020 hal_gpio_regs_init
+0001d52c g     F .text	0000001a opi_pre_handler
+00018f3c g     F .text	0000002c uapi_watchdog_kick
+00020726 g     F .text	00000012 codeloader_uart_disble_reception
+000184c2 g     F .text	00000042 uapi_spi_master_writeread
+0001a0e8 g     F .text	00000016 hal_qspi_read_data
+000128e2 g     F .text	00000004 __fe_raise_inexact
+0001cf80 g     F .text	00000042 hal_clocks_ccrg_mcu_bus_div_set
+000223e2 g     F .text	00000136 vfprintf
+00020d8c g     F .text	00000036 set_exception_info
+0001db14 g     F .text	00000024 hal_pmu_analog_status_grm_interrupt_enable
+000173ae g     F .text	0000005e uapi_pin_set_mode
+000150a2 g     F .text	0000001e osal_irq_request
+20015ccc g     O .bss	00000004 g_watchdog_regs
+00019b8c g     F .text	0000001e hal_otp_init
+00018022 g     F .text	0000003a uapi_drv_cipher_hash_update
+0001df94 g     F .text	00000020 hal_pmu_vdd0p8_vset_requset
+0001cb22 g     F .text	00000038 flash_config_get_pages
+0001c3f8 g     F .text	0000000a tcxo_porting_ticks_per_usec_get
+0001da7e g     F .text	00000018 pmu_vdd0p8_power_vset
+00020992 g     F .text	00000032 cpu_utils_core_images_to_cores
+
+

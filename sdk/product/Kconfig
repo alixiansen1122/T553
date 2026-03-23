@@ -1,0 +1,35 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) @CompanyNameMagicTag 2022-2022. All rights reserved.
+#===============================================================================
+source "product/board/Kconfig"
+source "product/ft/Kconfig"
+source "product/tiot/Kconfig"
+source "product/sensor/Kconfig"
+
+config NORFLASH_SIZE
+    int
+    prompt "NOR Flash Density (MB)"
+    default 8
+    range 4 16
+    help
+        This option allows you to configure the NOR Flash density in megabytes.
+        acceptable values are 4 MB、8 MB and 16 MB.
+        The default value is 8 MB.
+
+config LOAD_FROM_FS
+    bool "Load from File System"
+    default n
+    depends on NORFLASH_SIZE = 8
+    help
+        This option enables loading data from the file system only if NORFLASH_SIZE is set to 8.
+
+config PSRAM_DENSITY_MB
+    int
+    prompt "PSRAM Density (MB)"
+    default 32
+    range 16 32
+    help
+        This option allows you to configure the PSRAM density in megabytes.
+        You can select either 16 MB or 32 MB.
+        The default value is 32 MB.
