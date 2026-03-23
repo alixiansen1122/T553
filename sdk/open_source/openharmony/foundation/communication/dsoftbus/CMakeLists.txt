@@ -1,0 +1,327 @@
+set(COMPONENT_NAME "dsoftbus")
+
+set(PUBLIC_HEADER
+)
+
+set(PRIVATE_HEADER
+    ${ROOT_DIR}/open_source/openharmony/hiviewdfx/hilog/lite/interfaces/native/kits/hilog_lite
+    ${ROOT_DIR}/open_source/openharmony/utils/native/lite/include
+    ${ROOT_DIR}/open_source/openharmony/base/security/huks/interfaces/innerkits/huks_standard/main/include
+    ${ROOT_DIR}/open_source/openharmony/base/security/deviceauth/interfaces/innerkits
+    ${ROOT_DIR}/open_source/openharmony/base/security/deviceauth/services/common/inc
+    ${ROOT_DIR}/open_source/openharmony/base/security/deviceauth/hals/inc/common
+    ${ROOT_DIR}/open_source/openharmony/third_party/cJSON
+
+    #adapter
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/default_config/spec_config
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/include/OS_adapter_define/linux
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/wifi/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/hdi/include
+
+    #components
+    ${CMAKE_CURRENT_SOURCE_DIR}/components/nstackx/nstackx_congestion/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/components/nstackx/nstackx_util/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/components/nstackx/nstackx_core/dfile/interface
+
+    #core
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/adapter/bus_center/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/security/permission/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/frame/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/frame/mini/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/service/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/authentication/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/authentication/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/decision_db/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/local_ledger/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/heartbeat/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_qos/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/time_sync/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/ipc/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/monitor/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/manager
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/p2p/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/p2p/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/br/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/tcp/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/qos/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/ipc/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/session/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/auth/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/interface
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/dispatcher/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/softbus_ble/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/share_ble/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/coap/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ipc/include
+
+    #interfaces
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/kits
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/kits/bus_center
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/kits/discovery
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/kits/transport
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/kits/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/interfaces/inner_kits/transport
+
+    #sdk
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/ipc/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/session/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/file/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/qos/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/auth/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/stream/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/manager/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/ipc/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/service/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/ipc/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/service/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/frame/common/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/frame/mini/include
+)
+
+set(SOURCES
+    #adapter
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/dfx/softbus_adapter_hisysevent_mini.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_file.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_mem.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/kernel/liteos_m/softbus_adapter_timer.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/kernel/posix/softbus_adapter_socket.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/kernel/posix/softbus_adapter_thread.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/log/softbus_adapter_log.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/mbedtls/softbus_adapter_crypto.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/range/softbus_adapter_range.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/default_config/spec_config/softbus_config_adapter.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/driver/lnn_driver_monitor_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/driver/lnn_driver_request_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/network/lnn_linkwatch_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/network/lnn_bt_monitor.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/network/lnn_netlink_monitor_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/network/lnn_lwip_monitor_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/bus_center/platform/lnn_product_monitor_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_gatt.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_gatt_client.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/ble/softbus_adapter_ble_gatt_server.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/common/adapter_bt_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/bluetooth/common/softbus_adapter_bt_common.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/wifi/common/softbus_wifi_api_adapter_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/adapter/common/net/hdi/common/softbus_adapter_wlan_extend_virtual.c
+
+    #core
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/utils/softbus_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/json_utils/softbus_json_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/bitmap/softbus_bitmap.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/log/softbus_log.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/message_handler/message_handler.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/queue/softbus_queue.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/network/softbus_network_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/softbus_property/softbus_feature_config.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/security/permission/mini/softbus_permission.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/security/sequence_verification/softbus_sequence_verification.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_bus_center.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_common.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_connreporter.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_discreporter.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_transreporter.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_trans_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_buscenter_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_disc_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_conn_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hidumper_adapter/softbus_hidumper_interface_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/common/dfx/hisysevent_adapter/softbus_hisysevt_nstack_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/adapter/bus_center/src/bus_center_adapter.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/authentication/src/virtual/auth_meta_manager_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/authentication/src/virtual/auth_interface_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/authentication/src/virtual/auth_tcp_connection_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/src/softbus_base_listener.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/src/softbus_datahead_transform.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/src/softbus_socket.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/src/softbus_tcp_socket.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/common/src/softbus_thread_pool.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src/softbus_ble_connection.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src/softbus_ble_gatt_client.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src/softbus_ble_gatt_server.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/p2p/interface/p2plink_interface_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src/softbus_ble_queue.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/ble/src/softbus_ble_trans_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/br/src/br_connection_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/manager/softbus_conn_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/connection/tcp/src/softbus_tcp_connect_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/dispatcher/src/disc_ble_dispatcher.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/softbus_ble/src/disc_ble_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/softbus_ble/src/disc_ble.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/coap/src/disc_coap_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ipc/mini/disc_client_proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/manager/src/disc_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/manager/src/softbus_disc_server.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/discovery/ble/share_ble/src/disc_share_ble_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/ipc/mini/lnn_bus_center_ipc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_discovery_interface.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_discovery_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/disc_mgr/src/lnn_coap_discovery_impl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_manager/src/lnn_lane.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/common/src/lnn_lane_hub_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_manager/src/lnn_lane_score_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/heartbeat/src/lnn_heartbeat_ctrl_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/time_sync/src/lnn_time_sync_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/time_sync/src/lnn_time_sync_impl_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/lane_hub/lane_qos/lnn_lane_qos_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_connection_fsm.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_net_builder.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_node_weight.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_p2p_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_sync_info_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_topo_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_network_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_devicename_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_ip_network_impl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_network_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_physical_subnet_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_builder/src/lnn_fast_offline_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_buscenter/src/lnn_bt_network_impl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_device_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_huks_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_net_capability.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_net_ledger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/common/src/lnn_node_info.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/local_ledger/src/lnn_local_net_ledger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/src/lnn_distributed_net_ledger.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/distributed_ledger/src/lnn_meta_node_ledger_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/lnn/net_ledger/decision_db/src/lnn_decision_db_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/service/src/bus_center_event.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/service/src/bus_center_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_async_callback_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_connection_addr_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_file_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_ipc_utils.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_map.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_network_id.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/utils/src/lnn_state_machine.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/bus_center/monitor/src/lnn_event_monitor.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/common/src/softbus_message_open_channel.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/common/src/trans_pending_pkt.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/ipc/mini/trans_client_proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/session/src/trans_session_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/session/src/trans_session_service.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/auth/src/trans_auth_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/auth/src/trans_auth_message.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_channel_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_channel_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_lane_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/manager/src/trans_link_listener.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_channel_limit.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/common/src/trans_lane_pending_ctl.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_control.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_listener.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_message.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_network.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_session.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/proxy/src/softbus_proxychannel_transceiver.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_listener.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_message.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_wifi.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_sessionconn.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_json.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/tcp_direct/src/trans_tcp_direct_p2p_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/src/trans_udp_channel_manager_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/src/trans_udp_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/udp_negotiation/src/trans_udp_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/transmission/trans_channel/qos/softbus_qos_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/frame/common/src/softbus_server_frame.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/core/frame/mini/src/softbus_server_stub.c
+
+    #sdk
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/ipc/mini/bus_center_server_proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/manager/src/client_bus_center_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/bus_center/service/src/client_bus_center.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/ipc/mini/disc_server_proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/manager/src/client_disc_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/discovery/service/src/client_disc_service.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/frame/common/src/softbus_client_event_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/frame/common/src/softbus_client_frame_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/frame/mini/src/softbus_client_stub.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/ipc/mini/trans_server_proxy.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/session/src/client_trans_message_service.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/session/src/client_trans_session_service.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/auth/src/client_trans_auth_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/manager/src/client_trans_channel_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/manager/src/client_trans_channel_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_proxy_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_pending.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_proxy_file_common.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/proxy/src/client_trans_proxy_file_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/qos/src/client_qos_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_callback.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_listener.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_manager.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/tcp_direct/src/client_trans_tcp_direct_message.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/stream/src/client_trans_stream_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/common/src/client_trans_udp_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/file/src/client_trans_file_virtual.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/sdk/transmission/trans_channel/udp/file/src/client_trans_file_schema_virtual.c
+)
+
+set(COMPONENT_PUBLIC_CCFLAGS
+)
+
+set(COMPONENT_CCFLAGS
+    -Wno-error
+)
+
+set(WHOLE_LINK
+    true
+)
+
+set(MAIN_COMPONENT
+    false
+)
+
+set(PRIVATE_DEFINES
+    "-DDEFAULT_STORAGE_PATH=\"/user/data\""
+    SUPPORT_BLE_ADAPTER
+)
+
+set(PUBLIC_DEFINES
+)
+
+build_component()

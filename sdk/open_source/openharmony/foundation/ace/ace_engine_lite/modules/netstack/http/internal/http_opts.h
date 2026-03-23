@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
+ */
+
+#ifndef HTTP_OPTS_H
+#define HTTP_OPTS_H
+
+#ifndef HTTPCLIENT_AUTHB_SIZE
+#define HTTPCLIENT_AUTHB_SIZE     128
+#endif
+
+#ifndef HTTPCLIENT_CHUNK_SIZE
+#define HTTPCLIENT_CHUNK_SIZE     (2048) // 1024
+#endif
+
+#ifndef HTTPCLIENT_SEND_BUF_SIZE
+#define HTTPCLIENT_SEND_BUF_SIZE  2048 // 512
+#endif
+
+#ifndef HTTPCLIENT_MAX_HOST_LEN
+#define HTTPCLIENT_MAX_HOST_LEN   128
+#endif
+
+#ifndef HTTPCLIENT_MAX_URL_LEN
+#define HTTPCLIENT_MAX_URL_LEN    1024 // 512
+#endif
+
+#ifndef HTTPCLIENT_MAX_FILE_DATA_LEN
+#define HTTPCLIENT_MAX_FILE_DATA_LEN 2048
+#endif
+
+#ifndef HTTPCLIENT_MAX_RECV_WAIT_MS
+#define HTTPCLIENT_MAX_RECV_WAIT_MS 5000
+#endif
+
+#ifndef HTTP_PORT
+#define HTTP_PORT   80
+#endif
+
+#ifndef HTTPS_PORT
+#define HTTPS_PORT  443
+#endif
+
+#endif /* HTTP_OPTS_H */

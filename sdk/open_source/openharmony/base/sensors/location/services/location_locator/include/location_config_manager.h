@@ -1,0 +1,123 @@
+/*
+ * Copyright (C) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#ifndef OHOS_LOCATION_CONFIG_MANAGER_H
+#define OHOS_LOCATION_CONFIG_MANAGER_H
+
+#include <atomic>
+#include <string>
+#include "location_thread.h"
+#include "constant_definition.h"
+#ifdef NOTIFICATION_ENABLE
+#include "want.h"
+#endif
+
+namespace OHOS {
+namespace Location {
+class LocationConfigManager {
+public:
+    ~LocationConfigManager();
+    static LocationConfigManager* GetInstance();
+
+    /*
+     * @Description Init the LocationConfigManager object
+     *
+     * @return int - init result, when 0 means success, other means some fails happened
+     */
+    int Init();
+
+    /*
+     * @Description Get current location switch state
+     *
+     * @return int - the location switch state, open/close
+     */
+    int GetLocationSwitchState();
+
+    /*
+     * @Description set location switch state
+     *
+     * @param state - the location switch state
+     * @return int - 0 success
+     */
+    int SetLocationSwitchState(int state);
+
+    bool IsExistFile(const std::string& filename);
+    bool CreateFile(const std::string& filename, const std::string& filedata);
+
+    std::string GetPrivacyTypeConfigPath(const int type);
+    LocationErrCode GetPrivacyTypeState(const int type, bool& isConfirmed);
+    LocationErrCode SetPrivacyTypeState(const int type, bool isConfirmed);
+#ifdef NOTIFICATION_ENABLE
+    void OpenPrivacyDialog();
+    void ConnectExtensionAbility(const AAFwk::Want &want, const std::string &commandStr);
+    std::string GenerateStartCommand();
+#endif
+
+    int GetCachePrivacyType();
+    bool SetCachePrivacyType(int value);
+
+    /*
+     * @Description get nlp service name
+     *
+     * @param name - service name
+     * @return bool - true success
+     */
+    bool GetNlpServiceName(std::string& name);
+
+    /*
+     * @Description get nlp ability name
+     *
+     * @param name - ability name
+     * @return bool - true success
+     */
+    bool GetNlpAbilityName(std::string& name);
+
+    /*
+     * @Description get  supl mode
+     *
+     * @return int - supl mode
+     */
+    int GetSuplMode();
+
+    /*
+     * @Description get agnss server address
+     *
+     * @param name - agnss server address
+     * @return bool - true success
+     */
+    bool GetAgnssServerAddr(std::string& name);
+
+    /*
+     * @Description get agnss server port
+     *
+     * @return int - agnss server port
+     */
+    int GetAgnssServerPort();
+private:
+    LocationConfigManager();
+    std::string GetLocationSwitchConfigPath();
+
+    bool GetStringParameter(const std::string& type, std::string& value);
+    int GetIntParameter(const std::string& type);
+private:
+    int GetParameter(const char *key, const char *def, char *value, uint32_t len);
+    int SetParameter(const char *key, const char *value);
+    std::atomic<int> mPrivacyTypeState[3];
+    std::atomic<int> mLocationSwitchState;         /* location switch state */
+    MutexId mutex_ = nullptr;
+};
+}  // namespace Location
+}  // namespace OHOS
+#endif
