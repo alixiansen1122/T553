@@ -1,0 +1,107 @@
+#ifndef MQTT_SERVICE_CONFIG_H
+#define MQTT_SERVICE_CONFIG_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define MQTT_SERVICE_STRINGIFY_INNER(x) #x
+#define MQTT_SERVICE_STRINGIFY(x) MQTT_SERVICE_STRINGIFY_INNER(x)
+
+#ifndef MQTT_SERVICE_ENDPOINT_HOST
+#define MQTT_SERVICE_ENDPOINT_HOST "a22c61qs2gexvg-ats.iot.us-west-1.amazonaws.com"
+#endif
+
+#ifndef MQTT_SERVICE_ENDPOINT_PORT
+#define MQTT_SERVICE_ENDPOINT_PORT 8883
+#endif
+
+#ifndef MQTT_SERVICE_BROKER_URI
+#define MQTT_SERVICE_BROKER_URI \
+    "ssl://" MQTT_SERVICE_ENDPOINT_HOST ":" MQTT_SERVICE_STRINGIFY(MQTT_SERVICE_ENDPOINT_PORT)
+#endif
+
+#ifndef MQTT_SERVICE_ROOT_CA_FILE
+#define MQTT_SERVICE_ROOT_CA_FILE "/user/mqtt/rootca.pem"
+#endif
+
+#ifndef MQTT_SERVICE_CLIENT_CRT_FILE
+#define MQTT_SERVICE_CLIENT_CRT_FILE "/user/mqtt/client.crt"
+#endif
+
+#ifndef MQTT_SERVICE_CLIENT_KEY_FILE
+#define MQTT_SERVICE_CLIENT_KEY_FILE "/user/mqtt/client.key"
+#endif
+
+#ifndef MQTT_SERVICE_USE_T_TOPIC_PREFIX
+#define MQTT_SERVICE_USE_T_TOPIC_PREFIX 1
+#endif
+
+#ifndef MQTT_SERVICE_KEEPALIVE_SEC
+#define MQTT_SERVICE_KEEPALIVE_SEC 60
+#endif
+
+#ifndef MQTT_SERVICE_CONNECT_DELAY_MS
+#define MQTT_SERVICE_CONNECT_DELAY_MS 5000
+#endif
+
+#ifndef MQTT_SERVICE_RETRY_DELAY_MS
+#define MQTT_SERVICE_RETRY_DELAY_MS 5000
+#endif
+
+#ifndef MQTT_SERVICE_BACKOFF_INITIAL_MS
+#define MQTT_SERVICE_BACKOFF_INITIAL_MS 5000
+#endif
+
+#ifndef MQTT_SERVICE_BACKOFF_MAX_MS
+#define MQTT_SERVICE_BACKOFF_MAX_MS 60000
+#endif
+
+#ifndef MQTT_SERVICE_BACKOFF_MULTIPLIER
+#define MQTT_SERVICE_BACKOFF_MULTIPLIER 2
+#endif
+
+#ifndef MQTT_SERVICE_PUBLISH_QUEUE_LEN
+#define MQTT_SERVICE_PUBLISH_QUEUE_LEN 8
+#endif
+
+#ifndef MQTT_SERVICE_PAYLOAD_MAX_LEN
+#define MQTT_SERVICE_PAYLOAD_MAX_LEN 1024
+#endif
+
+#ifndef MQTT_SERVICE_SUFFIX_MAX_LEN
+#define MQTT_SERVICE_SUFFIX_MAX_LEN 16
+#endif
+
+#ifndef MQTT_SERVICE_TOPIC_MAX_LEN
+#define MQTT_SERVICE_TOPIC_MAX_LEN 96
+#endif
+
+#ifndef MQTT_SERVICE_QOS_TIMEOUT_MS
+#define MQTT_SERVICE_QOS_TIMEOUT_MS 10000
+#endif
+
+#ifndef MQTT_SERVICE_SUBSCRIBE_QOS
+#define MQTT_SERVICE_SUBSCRIBE_QOS 1
+#endif
+
+#ifndef MQTT_SERVICE_ENABLE_ALPN
+#define MQTT_SERVICE_ENABLE_ALPN 0
+#endif
+
+#if MQTT_SERVICE_ENABLE_ALPN
+static const unsigned char g_mqtt_service_alpn[] = {
+    14, 'x', '-', 'a', 'm', 'z', 'n', '-', 'm', 'q', 't', 't', '-', 'c', 'a'
+};
+#define MQTT_SERVICE_ALPN_PTR g_mqtt_service_alpn
+#define MQTT_SERVICE_ALPN_LEN ((unsigned int)sizeof(g_mqtt_service_alpn))
+#else
+#define MQTT_SERVICE_ALPN_PTR NULL
+#define MQTT_SERVICE_ALPN_LEN 0U
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* MQTT_SERVICE_CONFIG_H */

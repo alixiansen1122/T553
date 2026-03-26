@@ -41,6 +41,7 @@ set(PRIVATE_HEADER
     ${ROOT_DIR}/include/driver
     ${ROOT_DIR}/vendor/sikey/service/paqichong
     ${ROOT_DIR}/middleware/chips/brandy/nv/nv_config/include
+    ${ROOT_DIR}/application/wearable/service/mqtt_service
 )
 
 

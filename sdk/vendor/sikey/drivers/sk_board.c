@@ -21,6 +21,7 @@
 #include "led/rgb_led.h"
 #include "sk_audio.h"
 #include "modem_cmd.h"
+#include "mqtt_service.h"
 
 uint32_t device_state = 0;
 
@@ -109,5 +110,6 @@ int sk_board_init(void)
     //paqichong_tack_init();
     // sk_audio_task_init();
     modem_callback_init();
+    mqtt_service_init();
     return ret;
 }
