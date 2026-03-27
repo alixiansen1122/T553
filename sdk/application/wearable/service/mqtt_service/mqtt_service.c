@@ -65,16 +65,11 @@ static bool mqtt_service_is_ready_imei(const char *imei)
 
 static bool mqtt_service_load_imei(void)
 {
-    int ret;
-
+    /* TODO: Replace with real IMEI from NV after device provisioning */
     (void)memset(g_device_imei, 0, sizeof(g_device_imei));
-    ret = watch_storage_get(STORAGE_IMEI, g_device_imei, IMEI_LEN);
+    strncpy(g_device_imei, "867245076128001", IMEI_LEN);
     g_device_imei[IMEI_LEN] = '\0';
-    if (ret != 0 || !mqtt_service_is_ready_imei(g_device_imei)) {
-        printf("[MQTT] IMEI unavailable, retry later. ret=%d\n", ret);
-        (void)memset(g_device_imei, 0, sizeof(g_device_imei));
-        return false;
-    }
+    printf("[MQTT] Using IMEI: %s\n", g_device_imei);
     return true;
 }
 
@@ -94,18 +89,22 @@ static bool mqtt_service_file_exists(const char *path)
     return true;
 }
 
-static bool mqtt_service_cert_files_ready(void)
+static bool mqtt_service_cert_files_ready(char *crt_path, size_t crt_len,
+                                           char *key_path, size_t key_len)
 {
+    (void)snprintf(crt_path, crt_len, MQTT_SERVICE_CLIENT_CRT_FILE, g_device_imei);
+    (void)snprintf(key_path, key_len, MQTT_SERVICE_CLIENT_KEY_FILE, g_device_imei);
+
     if (!mqtt_service_file_exists(MQTT_SERVICE_ROOT_CA_FILE)) {
         printf("[MQTT] Missing CA file: %s\n", MQTT_SERVICE_ROOT_CA_FILE);
         return false;
     }
-    if (!mqtt_service_file_exists(MQTT_SERVICE_CLIENT_CRT_FILE)) {
-        printf("[MQTT] Missing client cert: %s\n", MQTT_SERVICE_CLIENT_CRT_FILE);
+    if (!mqtt_service_file_exists(crt_path)) {
+        printf("[MQTT] Missing client cert: %s\n", crt_path);
         return false;
     }
-    if (!mqtt_service_file_exists(MQTT_SERVICE_CLIENT_KEY_FILE)) {
-        printf("[MQTT] Missing client key: %s\n", MQTT_SERVICE_CLIENT_KEY_FILE);
+    if (!mqtt_service_file_exists(key_path)) {
+        printf("[MQTT] Missing client key: %s\n", key_path);
         return false;
     }
     return true;
@@ -241,12 +240,15 @@ static int mqtt_connect_internal(void)
     MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
     MQTTClient_SSLOptions ssl_opts = MQTTClient_SSLOptions_initializer;
     char cmd_topic[MQTT_SERVICE_TOPIC_MAX_LEN];
+    char crt_path[MQTT_SERVICE_TOPIC_MAX_LEN];
+    char key_path[MQTT_SERVICE_TOPIC_MAX_LEN];
     int rc;
 
     if (g_mqtt_client == NULL) {
         return MQTTCLIENT_FAILURE;
     }
-    if (!mqtt_service_cert_files_ready()) {
+    if (!mqtt_service_cert_files_ready(crt_path, sizeof(crt_path),
+                                       key_path, sizeof(key_path))) {
         return MQTTCLIENT_FAILURE;
     }
 
@@ -257,8 +259,8 @@ static int mqtt_connect_internal(void)
     conn_opts.MQTTVersion = MQTTVERSION_3_1_1;
 
     ssl_opts.trustStore = MQTT_SERVICE_ROOT_CA_FILE;
-    ssl_opts.keyStore = MQTT_SERVICE_CLIENT_CRT_FILE;
-    ssl_opts.privateKey = MQTT_SERVICE_CLIENT_KEY_FILE;
+    ssl_opts.keyStore = crt_path;
+    ssl_opts.privateKey = key_path;
     ssl_opts.enableServerCertAuth = 1;
     ssl_opts.sslVersion = MQTT_SSL_VERSION_TLS_1_2;
 #if MQTT_SERVICE_ENABLE_ALPN

@@ -22,15 +22,15 @@ extern "C" {
 #endif
 
 #ifndef MQTT_SERVICE_ROOT_CA_FILE
-#define MQTT_SERVICE_ROOT_CA_FILE "/user/mqtt/rootca.pem"
+#define MQTT_SERVICE_ROOT_CA_FILE "/mqtt/rootca.pem"
 #endif
 
 #ifndef MQTT_SERVICE_CLIENT_CRT_FILE
-#define MQTT_SERVICE_CLIENT_CRT_FILE "/user/mqtt/client.crt"
+#define MQTT_SERVICE_CLIENT_CRT_FILE "/mqtt/%s/client.crt"
 #endif
 
 #ifndef MQTT_SERVICE_CLIENT_KEY_FILE
-#define MQTT_SERVICE_CLIENT_KEY_FILE "/user/mqtt/client.key"
+#define MQTT_SERVICE_CLIENT_KEY_FILE "/mqtt/%s/client.key"
 #endif
 
 #ifndef MQTT_SERVICE_USE_T_TOPIC_PREFIX
