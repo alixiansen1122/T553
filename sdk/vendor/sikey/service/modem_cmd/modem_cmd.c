@@ -1158,10 +1158,8 @@ void modem_info_init(void)
 {
     watch_storage_get(STORAGE_FAC_FLAG, &g_facflag, sizeof(uint8_t));
     printf("modem_info_init,g_facflag:%d\n",g_facflag);
-    if(g_facflag == 1)
+    // if(g_facflag == 1)  /* bypassed: device NV not provisioned, always activate modem */
     {
-        cfun0_state();
-        osDelay(500);
         close_head_compress();
         osDelay(500);
         cfun1_state();

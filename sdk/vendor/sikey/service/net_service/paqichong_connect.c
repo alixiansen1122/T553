@@ -95,8 +95,8 @@ static void connect_timer_handler(unsigned long data)
 int32_t start_connect_paqichong(void)
 {
     int ret = 0;
-    if(g_facflag == 0)
-       return 0;
+    // if(g_facflag == 0)
+    //    return 0;
     /* 添加定时任务 */
     timer_connect_ref.handler = connect_timer_handler;
     timer_connect_ref.interval = 10 * 1000;

@@ -468,10 +468,10 @@ static int paqichong_init_hardware_and_task(void)
 {
     int ret = 0;
      PAQICHONG_PRINT("paqichong_init_hardware_and_task\n");
-     if(g_facflag == 0)
-     {
-        return 0;
-     }
+    //  if(g_facflag == 0)
+    //  {
+    //     return 0;
+    //  }
     /* gesture predict timer */
     paqichong_measure_timer.handler = paqichong_start_measure_timer_handler;
     paqichong_measure_timer.interval = 1000*25;
