@@ -24,6 +24,26 @@ from param_packet import gen_flash_part_bin
 from nv_binary import nv_begin
 
 # brandy packet
+def build_brandy_lfs_image(pack_style_str):
+    ''' generate LittleFS file.bin from lfs_root/ into the target output dir '''
+    chip_dir = os.path.join(SDK_DIR, "build", "config", "target_config", "brandy")
+    lfs_script = os.path.join(chip_dir, "mk_littlefs_image", "generate_lfs_image.py")
+    lfs_root   = os.path.join(chip_dir, "mk_littlefs_image", "lfs_root")
+    output_dir = os.path.join(SDK_DIR, "output", "brandy", "acore", pack_style_str)
+    file_bin   = os.path.join(output_dir, "file.bin")
+
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
+
+    print("====== Generating LittleFS image ======")
+    import subprocess
+    ret = subprocess.call([sys.executable, lfs_script, lfs_root, file_bin])
+    if ret != 0:
+        print("ERROR: LittleFS image generation failed!")
+        sys.exit(1)
+    print("file.bin -> %s" % file_bin)
+
+
 def build_brandy_other_bin(pack_style_str, flash_size, no_dsp):
     ''' build brandy partition and nv '''
     chip_dir = os.path.join(SDK_DIR, "build", "config", "target_config", "brandy")
@@ -287,6 +307,7 @@ def make_all_in_one_packet_4M(pack_style_str):
 def make_all_in_one_packet(pack_style_str, flash_size, no_dsp):
     # make all in one packet
     build_brandy_other_bin(pack_style_str, flash_size, no_dsp)
+    build_brandy_lfs_image(pack_style_str)   # generate file.bin from lfs_root/
     if flash_size == "0x1000000":
         make_all_in_one_packet_16M(pack_style_str)
     elif flash_size == "0x400000":

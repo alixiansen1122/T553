@@ -43,6 +43,7 @@ set(PRIVATE_HEADER
     ${CMAKE_SOURCE_DIR}/vendor/sikey/service/gnss_service
     ${CMAKE_SOURCE_DIR}/vendor/sikey/service/paqichong
     ${CMAKE_SOURCE_DIR}/vendor/sikey/service/location_service
+    ${CMAKE_SOURCE_DIR}/application/wearable/service/mqtt_service
 )
 
 set(PUBLIC_HEADER

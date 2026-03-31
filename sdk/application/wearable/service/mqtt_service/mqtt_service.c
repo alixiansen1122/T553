@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "modem_ctrl.h"
 
 #define IMEI_LEN WATCH_IMEI_LEN
 
@@ -35,6 +36,17 @@ static volatile mqtt_connection_state_t g_mqtt_state = MQTT_CONN_STATE_INIT;
 static volatile bool g_mqtt_stop = false;
 static uint32_t g_backoff_ms = MQTT_SERVICE_BACKOFF_INITIAL_MS;
 static osSemaphoreId_t g_mqtt_exit_sem = NULL;
+
+/* Cert buffers preloaded at init (WEAR_LITEOS_ADAPT needs in-memory los_* fields).
+ * cert_string / key_string are defined in MQTTClient.h under WEAR_LITEOS_ADAPT guard.
+ * IDE lint may warn here if run without platform macros; actual build is fine. */
+static unsigned char g_ca_buf[4096];
+static unsigned char g_crt_buf[4096];
+static unsigned char g_key_buf[4096];
+static cert_string   g_ca_str;   /* NOLINT: requires WEAR_LITEOS_ADAPT */
+static cert_string   g_crt_str;  /* NOLINT: requires WEAR_LITEOS_ADAPT */
+static key_string    g_key_str;  /* NOLINT: requires WEAR_LITEOS_ADAPT */
+static bool          g_certs_loaded = false;
 
 static int messageArrived(void *context, char *topicName, int topicLen, MQTTClient_message *message);
 static void connectionLost(void *context, char *cause);
@@ -92,8 +104,8 @@ static bool mqtt_service_file_exists(const char *path)
 static bool mqtt_service_cert_files_ready(char *crt_path, size_t crt_len,
                                            char *key_path, size_t key_len)
 {
-    (void)snprintf(crt_path, crt_len, MQTT_SERVICE_CLIENT_CRT_FILE, g_device_imei);
-    (void)snprintf(key_path, key_len, MQTT_SERVICE_CLIENT_KEY_FILE, g_device_imei);
+    (void)snprintf(crt_path, crt_len, MQTT_SERVICE_CLIENT_CRT_FILE, g_device_imei, g_device_imei);
+    (void)snprintf(key_path, key_len, MQTT_SERVICE_CLIENT_KEY_FILE, g_device_imei, g_device_imei);
 
     if (!mqtt_service_file_exists(MQTT_SERVICE_ROOT_CA_FILE)) {
         printf("[MQTT] Missing CA file: %s\n", MQTT_SERVICE_ROOT_CA_FILE);
@@ -235,20 +247,68 @@ static void deliveryComplete(void *context, MQTTClient_deliveryToken dt)
     printf("[MQTT] Message delivery complete, token: %d\n", dt);
 }
 
+/* Load all three PEM cert files into memory once at startup.
+ * WEAR_LITEOS_ADAPT: Paho SSL ignores file-path fields; must use los_* buffers. */
+static bool mqtt_service_load_certs(void)
+{
+    char crt_path[MQTT_SERVICE_TOPIC_MAX_LEN];
+    char key_path[MQTT_SERVICE_TOPIC_MAX_LEN];
+    FILE *fp;
+    size_t n;
+
+    if (!mqtt_service_cert_files_ready(crt_path, sizeof(crt_path),
+                                       key_path, sizeof(key_path))) {
+        printf("[MQTT] Cert files not ready\n");
+        return false;
+    }
+
+    /* CA */
+    fp = fopen(MQTT_SERVICE_ROOT_CA_FILE, "rb");
+    if (fp == NULL) { printf("[MQTT] Failed to open CA\n"); return false; }
+    n = fread(g_ca_buf, 1, sizeof(g_ca_buf) - 1, fp); fclose(fp);
+    g_ca_buf[n] = '\0'; g_ca_str.body = g_ca_buf; g_ca_str.size = n + 1;
+    printf("[MQTT] CA loaded: %u bytes\n", (unsigned)n);
+
+    /* Client cert */
+    fp = fopen(crt_path, "rb");
+    if (fp == NULL) { printf("[MQTT] Failed to open cert: %s\n", crt_path); return false; }
+    n = fread(g_crt_buf, 1, sizeof(g_crt_buf) - 1, fp); fclose(fp);
+    g_crt_buf[n] = '\0'; g_crt_str.body = g_crt_buf; g_crt_str.size = n + 1;
+    printf("[MQTT] Cert loaded: %u bytes\n", (unsigned)n);
+
+    /* Private key */
+    fp = fopen(key_path, "rb");
+    if (fp == NULL) { printf("[MQTT] Failed to open key: %s\n", key_path); return false; }
+    n = fread(g_key_buf, 1, sizeof(g_key_buf) - 1, fp); fclose(fp);
+    g_key_buf[n] = '\0'; g_key_str.body = g_key_buf; g_key_str.size = n + 1;
+    printf("[MQTT] Key loaded: %u bytes\n", (unsigned)n);
+
+    g_certs_loaded = true;
+    return true;
+}
+
 static int mqtt_connect_internal(void)
 {
     MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
     MQTTClient_SSLOptions ssl_opts = MQTTClient_SSLOptions_initializer;
     char cmd_topic[MQTT_SERVICE_TOPIC_MAX_LEN];
-    char crt_path[MQTT_SERVICE_TOPIC_MAX_LEN];
-    char key_path[MQTT_SERVICE_TOPIC_MAX_LEN];
     int rc;
 
     if (g_mqtt_client == NULL) {
         return MQTTCLIENT_FAILURE;
     }
-    if (!mqtt_service_cert_files_ready(crt_path, sizeof(crt_path),
-                                       key_path, sizeof(key_path))) {
+
+    /* Wait for modem registration + IPv4 before attempting DNS/TCP connect */
+    extern uint8_t modem_get_reg_status(void);
+    extern uint8_t g_ipv4_status;
+    if (!modem_get_reg_status() || !g_ipv4_status) {
+        printf("[MQTT] Network not ready (reg=%d ipv4=%d), retry later\n",
+               modem_get_reg_status(), g_ipv4_status);
+        return MQTTCLIENT_FAILURE;
+    }
+
+    if (!g_certs_loaded) {
+        printf("[MQTT] Certs not loaded, cannot connect\n");
         return MQTTCLIENT_FAILURE;
     }
 
@@ -258,9 +318,10 @@ static int mqtt_connect_internal(void)
     conn_opts.cleansession = 1;
     conn_opts.MQTTVersion = MQTTVERSION_3_1_1;
 
-    ssl_opts.trustStore = MQTT_SERVICE_ROOT_CA_FILE;
-    ssl_opts.keyStore = crt_path;
-    ssl_opts.privateKey = key_path;
+    /* WEAR_LITEOS_ADAPT: use los_* in-memory buffers, file-path fields are ignored */
+    ssl_opts.los_trustStore = &g_ca_str;
+    ssl_opts.los_keyStore   = &g_crt_str;
+    ssl_opts.los_privateKey = &g_key_str;
     ssl_opts.enableServerCertAuth = 1;
     ssl_opts.sslVersion = MQTT_SSL_VERSION_TLS_1_2;
 #if MQTT_SERVICE_ENABLE_ALPN
@@ -449,6 +510,13 @@ void mqtt_service_init(void)
     }
 
     printf("[MQTT] mqtt_service_init()\n");
+
+    /* Preload certs from LittleFS into RAM once (requires IMEI to build cert path) */
+    if (!mqtt_service_load_imei()) {
+        printf("[MQTT] Failed to load IMEI\n");
+        return;
+    }
+    (void)mqtt_service_load_certs();  /* Non-fatal: retried in connect if needed */
 
     queue_attr.name = "mqtt_pub_q";
     g_publish_queue = osMessageQueueNew(MQTT_SERVICE_PUBLISH_QUEUE_LEN,

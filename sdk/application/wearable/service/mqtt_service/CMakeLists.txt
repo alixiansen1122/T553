@@ -11,6 +11,7 @@ set(PRIVATE_HEADER
     ${ROOT_DIR}/vendor/sikey/service/nv_service
     ${ROOT_DIR}/open_source/openharmony/utils/native/lite/include
     ${ROOT_DIR}/open_source/openharmony/kernel/liteos_m/kal/cmsis
+    ${ROOT_DIR}/vendor/sikey/service/modem_service
 )
 
 set(SOURCES

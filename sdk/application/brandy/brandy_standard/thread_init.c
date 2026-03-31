@@ -102,6 +102,7 @@
 #include "sk_ota.h"
 #include "dev_storage.h"
 #include "http_api.h"
+#include "mqtt_service.h"
 
 #define EMMC_BASE_ADDR              0x52062000
 
@@ -465,5 +466,6 @@ static void sikey_main(void)
     paqichong_tack_init();
     start_connect_paqichong();
     chg_detect_init();
+    mqtt_service_init();  /* Start MQTT after paqichong activates modem */
 }
 
