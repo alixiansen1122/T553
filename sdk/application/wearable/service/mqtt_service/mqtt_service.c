@@ -34,7 +34,7 @@ static osThreadId_t g_mqtt_task_id = NULL;
 static osMessageQueueId_t g_publish_queue = NULL;
 static volatile mqtt_connection_state_t g_mqtt_state = MQTT_CONN_STATE_INIT;
 static volatile bool g_mqtt_stop = false;
-static uint32_t g_backoff_ms = MQTT_SERVICE_BACKOFF_INITIAL_MS;
+static volatile uint32_t g_backoff_ms = MQTT_SERVICE_BACKOFF_INITIAL_MS;
 static osSemaphoreId_t g_mqtt_exit_sem = NULL;
 
 /* Cert buffers preloaded at init (WEAR_LITEOS_ADAPT needs in-memory los_* fields).
@@ -77,10 +77,22 @@ static bool mqtt_service_is_ready_imei(const char *imei)
 
 static bool mqtt_service_load_imei(void)
 {
-    /* TODO: Replace with real IMEI from NV after device provisioning */
+    int ret;
     (void)memset(g_device_imei, 0, sizeof(g_device_imei));
-    strncpy(g_device_imei, "867245076128001", IMEI_LEN);
+
+    ret = watch_storage_get(STORAGE_IMEI, g_device_imei, IMEI_LEN);
+    if (ret != 0 || strlen(g_device_imei) == 0) {
+        printf("[MQTT] ERROR: Failed to read IMEI from NV storage\n");
+        return false;
+    }
+    
     g_device_imei[IMEI_LEN] = '\0';
+
+    if (!mqtt_service_is_valid_imei(g_device_imei)) {
+        printf("[MQTT] ERROR: Invalid IMEI characters in NV storage: %s\n", g_device_imei);
+        return false;
+    }
+
     printf("[MQTT] Using IMEI: %s\n", g_device_imei);
     return true;
 }
@@ -265,21 +277,30 @@ static bool mqtt_service_load_certs(void)
     /* CA */
     fp = fopen(MQTT_SERVICE_ROOT_CA_FILE, "rb");
     if (fp == NULL) { printf("[MQTT] Failed to open CA\n"); return false; }
-    n = fread(g_ca_buf, 1, sizeof(g_ca_buf) - 1, fp); fclose(fp);
+    n = fread(g_ca_buf, 1, sizeof(g_ca_buf) - 1, fp);
+    (void)fclose(fp);
+    if (n == 0) { printf("[MQTT] CA file empty or read failed\n"); return false; }
+    if (n == sizeof(g_ca_buf) - 1) { printf("[MQTT] WARNING: CA may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_ca_buf) - 1)); }
     g_ca_buf[n] = '\0'; g_ca_str.body = g_ca_buf; g_ca_str.size = n + 1;
     printf("[MQTT] CA loaded: %u bytes\n", (unsigned)n);
 
     /* Client cert */
     fp = fopen(crt_path, "rb");
     if (fp == NULL) { printf("[MQTT] Failed to open cert: %s\n", crt_path); return false; }
-    n = fread(g_crt_buf, 1, sizeof(g_crt_buf) - 1, fp); fclose(fp);
+    n = fread(g_crt_buf, 1, sizeof(g_crt_buf) - 1, fp);
+    (void)fclose(fp);
+    if (n == 0) { printf("[MQTT] Cert file empty or read failed\n"); return false; }
+    if (n == sizeof(g_crt_buf) - 1) { printf("[MQTT] WARNING: Cert may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_crt_buf) - 1)); }
     g_crt_buf[n] = '\0'; g_crt_str.body = g_crt_buf; g_crt_str.size = n + 1;
     printf("[MQTT] Cert loaded: %u bytes\n", (unsigned)n);
 
     /* Private key */
     fp = fopen(key_path, "rb");
     if (fp == NULL) { printf("[MQTT] Failed to open key: %s\n", key_path); return false; }
-    n = fread(g_key_buf, 1, sizeof(g_key_buf) - 1, fp); fclose(fp);
+    n = fread(g_key_buf, 1, sizeof(g_key_buf) - 1, fp);
+    (void)fclose(fp);
+    if (n == 0) { printf("[MQTT] Key file empty or read failed\n"); return false; }
+    if (n == sizeof(g_key_buf) - 1) { printf("[MQTT] WARNING: Key may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_key_buf) - 1)); }
     g_key_buf[n] = '\0'; g_key_str.body = g_key_buf; g_key_str.size = n + 1;
     printf("[MQTT] Key loaded: %u bytes\n", (unsigned)n);
 
@@ -308,8 +329,11 @@ static int mqtt_connect_internal(void)
     }
 
     if (!g_certs_loaded) {
-        printf("[MQTT] Certs not loaded, cannot connect\n");
-        return MQTTCLIENT_FAILURE;
+        printf("[MQTT] Certs not loaded, retrying load...\n");
+        if (!mqtt_service_load_certs()) {
+            printf("[MQTT] Cert reload failed, cannot connect\n");
+            return MQTTCLIENT_FAILURE;
+        }
     }
 
     g_mqtt_state = MQTT_CONN_STATE_CONNECTING;
@@ -323,6 +347,7 @@ static int mqtt_connect_internal(void)
     ssl_opts.los_keyStore   = &g_crt_str;
     ssl_opts.los_privateKey = &g_key_str;
     ssl_opts.enableServerCertAuth = 1;
+    ssl_opts.verify = 1;
     ssl_opts.sslVersion = MQTT_SSL_VERSION_TLS_1_2;
 #if MQTT_SERVICE_ENABLE_ALPN
     ssl_opts.protos = MQTT_SERVICE_ALPN_PTR;
@@ -414,10 +439,11 @@ static void mqtt_backoff_reset(void)
 
 static void mqtt_backoff_next(void)
 {
-    g_backoff_ms *= MQTT_SERVICE_BACKOFF_MULTIPLIER;
-    if (g_backoff_ms > MQTT_SERVICE_BACKOFF_MAX_MS) {
-        g_backoff_ms = MQTT_SERVICE_BACKOFF_MAX_MS;
+    uint32_t next = g_backoff_ms * MQTT_SERVICE_BACKOFF_MULTIPLIER;
+    if (next > MQTT_SERVICE_BACKOFF_MAX_MS) {
+        next = MQTT_SERVICE_BACKOFF_MAX_MS;
     }
+    g_backoff_ms = next;
 }
 
 static void mqtt_task_drain_queue(void)
@@ -516,7 +542,7 @@ void mqtt_service_init(void)
         printf("[MQTT] Failed to load IMEI\n");
         return;
     }
-    (void)mqtt_service_load_certs();  /* Non-fatal: retried in connect if needed */
+    (void)mqtt_service_load_certs();  /* Non-fatal: retried in mqtt_connect_internal */
 
     queue_attr.name = "mqtt_pub_q";
     g_publish_queue = osMessageQueueNew(MQTT_SERVICE_PUBLISH_QUEUE_LEN,
@@ -605,6 +631,8 @@ void mqtt_service_register_msg_callback(mqtt_msg_callback_t cb)
 void mqtt_service_deinit(void)
 {
     osSemaphoreAttr_t sem_attr = {0};
+    osStatus_t sem_status;
+    bool task_exited = false;
 
     if (g_mqtt_task_id == NULL) {
         return;
@@ -620,12 +648,18 @@ void mqtt_service_deinit(void)
 
     // Wait for the task to signal exit (timeout 30s as TLS teardown may be slow)
     if (g_mqtt_exit_sem != NULL) {
-        (void)osSemaphoreAcquire(g_mqtt_exit_sem, 30000);
+        sem_status = osSemaphoreAcquire(g_mqtt_exit_sem, 30000);
         (void)osSemaphoreDelete(g_mqtt_exit_sem);
         g_mqtt_exit_sem = NULL;
+        task_exited = (sem_status == osOK);
     } else {
         // Fallback if semaphore creation fails
         osDelay(3000);
+    }
+
+    if (!task_exited) {
+        printf("[MQTT] ERROR: task did not exit within timeout, refusing cleanup to avoid double-init\n");
+        return;
     }
 
     if (g_publish_queue != NULL) {
