@@ -4,7 +4,7 @@
 #include "gnss_service.h"
 #include "cJSON.h"
 #include "net_data_process.h"
-
+#include "mqtt_event.h"
 location_context_t location_cntx = {0};
 
 char signal_info_buf[64] = {0};
@@ -327,6 +327,7 @@ static void location_msg_task(void *para)
                 snprintf(gnss_info_buf, 64, "%f,%f,%d", gps_lng, gps_lat, radius);
                 pthread_mutex_unlock(&gnss_info_buf_mutex);
                 gnss_is_fixed = 0;
+                mqtt_event_gnss_fix(gps_lat, gps_lng);
                 //LOCATION_SERVICE_PRINT("[location_service]gnss info mutex end\n");
             }
             break;

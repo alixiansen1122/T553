@@ -29,6 +29,7 @@
 #include "timer.h"
 #include "dev_storage.h"
 #include "lsm6dsow_api.h"
+#include "mqtt_activity.h"
 // Adjust these according to your model's actual dimensions
 #define NUM_LAYERS 1
 #define INPUT_DIM 6
@@ -355,16 +356,25 @@ static int  paqichong_task_entry(void *data)
                     uapi_rtc_stop(g_imu_timer);
             }
 
-        pred_now = paqichong_process_prediction(cnt,acc_sensor_data,gyro_sensor_data);
+        pred_now = paqichong_process_prediction(cnt, acc_sensor_data, gyro_sensor_data);
         osal_mutex_unlock(&sensor_data_mutex);
         PAQICHONG_PRINT("pred_now is %lld, pred_last is %lld\n", pred_now, pred_last);
+
+        /* Feed posture data into MQTT activity accumulator (every sample) */
+        mqtt_activity_on_posture(pred_now, get_utc_time());
+
         if (pred_now != pred_last) {
             pred_last = pred_now;
             PAQICHONG_PRINT("Prediction changed: %lld cnt is %d\n", pred_now, cnt);
-            ws_report_real_time_action(pred_now,cnt);
+            ws_report_real_time_action(pred_now, cnt);
         }
         else {
             ws_record_action(pred_now, cnt);
+        }
+
+        /* Publish /a every ~5 minutes (90ms * 3300 ≈ 297s) */
+        if (cnt % 3300u == 0u) {
+            mqtt_activity_publish(false);
         }
 
 

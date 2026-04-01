@@ -23,6 +23,10 @@ set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/location_service/location_service.c
     ${CMAKE_CURRENT_SOURCE_DIR}/nv_service/dev_storage.c
     ${CMAKE_CURRENT_SOURCE_DIR}/sk_ota/sk_ota.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_service.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_cmd_handler.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_event.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_activity.c
 )
 
 
@@ -37,6 +41,7 @@ set(PUBLIC_HEADER
     ${CMAKE_CURRENT_SOURCE_DIR}/gnss_service
     ${CMAKE_CURRENT_SOURCE_DIR}/nv_service
     ${CMAKE_CURRENT_SOURCE_DIR}/sk_ota
+    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service
 
 )
 
@@ -52,6 +57,8 @@ set(PRIVATE_HEADER
     ${CMAKE_SOURCE_DIR}/application/wstp/at_service/app
     ${CMAKE_SOURCE_DIR}/vendor/sikey/drivers
     ${CMAKE_SOURCE_DIR}/vendor/sikey/drivers/gsensor/LSM6DSOW
+    ${CMAKE_SOURCE_DIR}/open_source/mqtt/src
+    ${CMAKE_SOURCE_DIR}/open_source/openharmony/kernel/liteos_m/kal/cmsis
 
 )
 
@@ -70,6 +77,7 @@ set(COMPONENT_PUBLIC_CCFLAGS
 set(COMPONENT_CCFLAGS
     -std=c11
     -Wno-error
+    -Wno-missing-field-initializers
 )
 
 set(WHOLE_LINK
