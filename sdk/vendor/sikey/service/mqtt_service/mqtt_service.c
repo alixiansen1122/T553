@@ -2,7 +2,6 @@
 #include "mqtt_service_config.h"
 #include "mqtt_cmd_handler.h"
 #include "mqtt_event.h"
-#include "mqtt_activity.h"
 #include "MQTTClient.h"
 #include "dev_storage.h"
 #include "cmsis_os2.h"
@@ -53,6 +52,7 @@ static int messageArrived(void *context, char *topicName, int topicLen, MQTTClie
 static void connectionLost(void *context, char *cause);
 static void deliveryComplete(void *context, MQTTClient_deliveryToken dt);
 static void mqtt_backoff_reset(void);
+static void mqtt_backoff_next(void);
 
 static bool mqtt_service_is_valid_qos(int qos)
 {
@@ -135,7 +135,7 @@ static bool mqtt_service_cert_files_ready(char *crt_path, size_t crt_len,
     return true;
 }
 
-// Topic building helper.
+/* Topic building helper. */
 static int build_topic(char *topic_buf, size_t buf_len, const char *suffix)
 {
     int written;
@@ -203,7 +203,7 @@ static void mqtt_service_mark_disconnected(void)
     g_mqtt_state = MQTT_CONN_STATE_DISCONNECTED;
 }
 
-// Callbacks for Paho MQTT
+/* Callbacks for Paho MQTT */
 static int messageArrived(void *context, char *topicName, int topicLen, MQTTClient_message *message)
 {
     char cmd_topic[MQTT_SERVICE_TOPIC_MAX_LEN];
@@ -231,14 +231,21 @@ static int messageArrived(void *context, char *topicName, int topicLen, MQTTClie
 
     printf("[MQTT] Message arrived on topic: %s\n", topic_copy);
 
-    // Dispatch to generic message callback (all topics)
-    if (g_msg_callback != NULL) {
-        g_msg_callback(topic_copy, message->payload, message->payloadlen);
+    /* Dispatch to generic message callback (all topics)
+     * CR-002 fix: snapshot volatile pointer to avoid TOCTOU race with deinit */
+    {
+        mqtt_msg_callback_t msg_cb = g_msg_callback;
+        if (msg_cb != NULL) {
+            msg_cb(topic_copy, message->payload, message->payloadlen);
+        }
     }
 
-    // Dispatch to cmd-specific callback
-    if (g_cmd_callback != NULL && mqtt_service_topic_equals(topicName, topicLen, cmd_topic)) {
-        g_cmd_callback(topic_copy, message->payload, message->payloadlen);
+    /* Dispatch to cmd-specific callback */
+    {
+        mqtt_msg_callback_t cmd_cb = g_cmd_callback;
+        if (cmd_cb != NULL && mqtt_service_topic_equals(topicName, topicLen, cmd_topic)) {
+            cmd_cb(topic_copy, message->payload, message->payloadlen);
+        }
     }
 
     MQTTClient_freeMessage(&message);
@@ -277,32 +284,65 @@ static bool mqtt_service_load_certs(void)
 
     /* CA */
     fp = fopen(MQTT_SERVICE_ROOT_CA_FILE, "rb");
-    if (fp == NULL) { printf("[MQTT] Failed to open CA\n"); return false; }
+    if (fp == NULL) {
+        printf("[MQTT] Failed to open CA\n");
+        return false;
+    }
     n = fread(g_ca_buf, 1, sizeof(g_ca_buf) - 1, fp);
     (void)fclose(fp);
-    if (n == 0) { printf("[MQTT] CA file empty or read failed\n"); return false; }
-    if (n == sizeof(g_ca_buf) - 1) { printf("[MQTT] WARNING: CA may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_ca_buf) - 1)); }
-    g_ca_buf[n] = '\0'; g_ca_str.body = g_ca_buf; g_ca_str.size = n + 1;
+    if (n == 0) {
+        printf("[MQTT] CA file empty or read failed\n");
+        return false;
+    }
+    if (n == sizeof(g_ca_buf) - 1) {
+        printf("[MQTT] WARNING: CA may be truncated (>%u bytes)\n",
+               (unsigned)(sizeof(g_ca_buf) - 1));
+    }
+    g_ca_buf[n] = '\0';
+    g_ca_str.body = g_ca_buf;
+    g_ca_str.size = n + 1;
     printf("[MQTT] CA loaded: %u bytes\n", (unsigned)n);
 
     /* Client cert */
     fp = fopen(crt_path, "rb");
-    if (fp == NULL) { printf("[MQTT] Failed to open cert: %s\n", crt_path); return false; }
+    if (fp == NULL) {
+        printf("[MQTT] Failed to open cert: %s\n", crt_path);
+        return false;
+    }
     n = fread(g_crt_buf, 1, sizeof(g_crt_buf) - 1, fp);
     (void)fclose(fp);
-    if (n == 0) { printf("[MQTT] Cert file empty or read failed\n"); return false; }
-    if (n == sizeof(g_crt_buf) - 1) { printf("[MQTT] WARNING: Cert may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_crt_buf) - 1)); }
-    g_crt_buf[n] = '\0'; g_crt_str.body = g_crt_buf; g_crt_str.size = n + 1;
+    if (n == 0) {
+        printf("[MQTT] Cert file empty or read failed\n");
+        return false;
+    }
+    if (n == sizeof(g_crt_buf) - 1) {
+        printf("[MQTT] WARNING: Cert may be truncated (>%u bytes)\n",
+               (unsigned)(sizeof(g_crt_buf) - 1));
+    }
+    g_crt_buf[n] = '\0';
+    g_crt_str.body = g_crt_buf;
+    g_crt_str.size = n + 1;
     printf("[MQTT] Cert loaded: %u bytes\n", (unsigned)n);
 
     /* Private key */
     fp = fopen(key_path, "rb");
-    if (fp == NULL) { printf("[MQTT] Failed to open key: %s\n", key_path); return false; }
+    if (fp == NULL) {
+        printf("[MQTT] Failed to open key: %s\n", key_path);
+        return false;
+    }
     n = fread(g_key_buf, 1, sizeof(g_key_buf) - 1, fp);
     (void)fclose(fp);
-    if (n == 0) { printf("[MQTT] Key file empty or read failed\n"); return false; }
-    if (n == sizeof(g_key_buf) - 1) { printf("[MQTT] WARNING: Key may be truncated (>%u bytes)\n", (unsigned)(sizeof(g_key_buf) - 1)); }
-    g_key_buf[n] = '\0'; g_key_str.body = g_key_buf; g_key_str.size = n + 1;
+    if (n == 0) {
+        printf("[MQTT] Key file empty or read failed\n");
+        return false;
+    }
+    if (n == sizeof(g_key_buf) - 1) {
+        printf("[MQTT] WARNING: Key may be truncated (>%u bytes)\n",
+               (unsigned)(sizeof(g_key_buf) - 1));
+    }
+    g_key_buf[n] = '\0';
+    g_key_str.body = g_key_buf;
+    g_key_str.size = n + 1;
     printf("[MQTT] Key loaded: %u bytes\n", (unsigned)n);
 
     g_certs_loaded = true;
@@ -508,7 +548,7 @@ static void mqtt_task(void *argument)
         }
     }
 
-    // Graceful shutdown: drain remaining queued messages
+    /* Graceful shutdown: drain remaining queued messages */
     mqtt_task_drain_queue();
 
     if (g_mqtt_client != NULL) {
@@ -520,7 +560,7 @@ static void mqtt_task(void *argument)
     g_mqtt_state = MQTT_CONN_STATE_INIT;
     printf("[MQTT] Task stopped\n");
 
-    // Signal deinit that we have exited
+    /* Signal deinit that we have exited */
     if (g_mqtt_exit_sem != NULL) {
         (void)osSemaphoreRelease(g_mqtt_exit_sem);
     }
@@ -650,20 +690,20 @@ void mqtt_service_deinit(void)
 
     printf("[MQTT] mqtt_service_deinit()\n");
 
-    // Create exit semaphore for synchronization
+    /* Create exit semaphore for synchronization */
     sem_attr.name = "mqtt_exit";
     g_mqtt_exit_sem = osSemaphoreNew(1, 0, &sem_attr);
 
     g_mqtt_stop = true;
 
-    // Wait for the task to signal exit (timeout 30s as TLS teardown may be slow)
+    /* Wait for the task to signal exit (timeout 30s as TLS teardown may be slow) */
     if (g_mqtt_exit_sem != NULL) {
         sem_status = osSemaphoreAcquire(g_mqtt_exit_sem, 30000);
         (void)osSemaphoreDelete(g_mqtt_exit_sem);
         g_mqtt_exit_sem = NULL;
         task_exited = (sem_status == osOK);
     } else {
-        // Fallback if semaphore creation fails
+        /* Fallback if semaphore creation fails */
         osDelay(3000);
     }
 
@@ -681,5 +721,6 @@ void mqtt_service_deinit(void)
     g_mqtt_stop = false;
     g_cmd_callback = NULL;
     g_msg_callback = NULL;
+    g_certs_loaded = false;   /* P1 fix: force cert reload on next init (OTA) */
     mqtt_backoff_reset();
 }
