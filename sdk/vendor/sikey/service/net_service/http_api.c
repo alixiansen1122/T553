@@ -28,6 +28,7 @@ static char rsp_buf[RSP_BUF_SIZE] = {0};
 osThreadId_t http_task_id;
 unsigned long http_msgqueue_id;
 static unsigned char g_download_file_state = 0;
+bool g_ota_skip_crc = false;
 /**
  * 上传六轴数据文件
  */
@@ -872,6 +873,15 @@ int ota_file_crc_check(char *saved_file_path, uint8_t other_type)
     char buffer[4096] = {0};
     size_t bytes;
     uint8_t crc = 0x00;
+
+    /* MQTT DFU path: protocol has no CRC field, skip download CRC check.
+     * The firmware package has internal bootloader verification. */
+    if (g_ota_skip_crc) {
+        printf("ota_file_crc_check: skipped (MQTT DFU mode)\n");
+        g_ota_skip_crc = false;
+        return 0;
+    }
+
     FILE *src = fopen(saved_file_path, "rb");
     if (!src)
     {

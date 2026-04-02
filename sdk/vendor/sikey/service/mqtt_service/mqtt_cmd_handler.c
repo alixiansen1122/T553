@@ -17,8 +17,9 @@
  *                sec.format,
  *                f/f0/f1/fe/fe0/fe1/fl/fa/fd (fence),
  *                k/k0/k1/kl/ka/kd/ke0/ke1/kc (beacon),
- *                ap/ap.update/ap.exec_by_idx/ap.exec_custom (alert)
- *   Stub (e:-99): dfu, epo.*, gnss.nmea.upload, debug.*, log.cat,
+ *                ap/ap.update/ap.exec_by_idx/ap.exec_custom (alert),
+ *                dfu (FOTA via HTTP download + sk_ota)
+ *   Stub (e:-99): epo.*, gnss.nmea.upload, debug.*, log.cat,
  *                  audio.hash, debug.sensor_rt
  */
 
@@ -32,6 +33,7 @@
 #include "sk_audio.h"
 #include "cJSON.h"
 #include "cmsis_os2.h"
+#include "sk_ota.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,6 +50,15 @@ extern uint8_t  g_ipv4_status;                        /* lwip_volte_adapter.c */
 extern uint8_t  g_chargestatus;                       /* sh366102.c           */
 extern uint32_t mcu_os_sys_reset(uint8_t *para, uint32_t para_len);
 extern bool     gnss_is_fixed;                        /* gnss_nmea_process.c  */
+
+/* http_api module — forward declarations to avoid pulling in app_at_process.h.
+ * http_event_type_t is an enum (ABI-compatible with int in C). */
+extern bool g_ota_skip_crc;
+extern unsigned char get_download_file_state(void);
+extern int http_send_data_to_server(void *data, size_t length,
+                                     int type, uint8_t other_type);
+#define MQTT_HTTP_DOWNLOAD_OTA  0   /* == HTTP_DOWNlOAD_OTA */
+#define MQTT_TYPE_DOWN_MODEM    1   /* == TYPE_DOWN_MODEM   */
 
 /* ------------------------------------------------------------------ */
 /*  Constants                                                           */
@@ -551,6 +562,136 @@ static void cmd_sec_format(const char *cmd, cJSON *root, char *resp, int resp_sz
     (void)root;
     /* TODO: implement LittleFS format */
     printf("[MQTT CMD] sec.format requested\n");
+    (void)snprintf(resp, (size_t)resp_sz,
+                   "{\"c\":\"%s\",\"r\":0}", cmd);
+}
+
+/* ================================================================== */
+/*  DFU — remote firmware update via HTTP download + sk_ota             */
+/* ================================================================== */
+
+static volatile bool g_dfu_in_progress = false;
+
+/*
+ * OTA completion callback — publishes result to /r topic.
+ * Protocol: {"r":"dfu","p":"100%","ts":UTC} on success
+ *           {"r":"dfu","p":"failed","e":CODE,"ts":UTC} on failure
+ */
+static void dfu_ota_callback(sk_ota_result_e result, int detail)
+{
+    char buf[128];
+    unsigned long long ts = (unsigned long long)time(NULL);
+
+    if (result == SK_OTA_RESULT_OK) {
+        (void)snprintf(buf, sizeof(buf),
+                       "{\"r\":\"dfu\",\"p\":\"100%%\",\"ts\":%llu}", ts);
+    } else {
+        (void)snprintf(buf, sizeof(buf),
+                       "{\"r\":\"dfu\",\"p\":\"failed\","
+                       "\"e\":%d,\"ts\":%llu}",
+                       (int)result, ts);
+    }
+    (void)mqtt_service_publish(MQTT_TOPIC_SUFFIX_RESP, buf, (int)strlen(buf), 0);
+    g_dfu_in_progress = false;
+    printf("[MQTT CMD] DFU OTA callback: result=%d detail=%d\n",
+           (int)result, detail);
+}
+
+/*
+ * dfu: start remote firmware update (async)
+ *
+ * Protocol v1.0.3:
+ *   cmd:  {"c":"dfu","p":{"host":"http://...","file":"xxx.bin","device_type":"9160"}}
+ *   rsp:  {"c":"dfu","r":0}
+ *   progress (on /r, every 5%): {"r":"dfu","p":"5%","ts":UTC}
+ *
+ * Flow: parse params → construct URL → queue HTTP download → sk_ota_start_update_async
+ */
+static void cmd_dfu(const char *cmd, cJSON *root, char *resp, int resp_sz)
+{
+    cJSON *p = cJSON_GetObjectItemCaseSensitive(root, "p");
+    cJSON *host_item;
+    cJSON *file_item;
+    cJSON *dtype_item;
+    char url_buf[512];
+    char data_buf[768];
+    const char *save_path;
+    uint8_t other_type;
+    size_t url_len;
+    size_t path_len;
+
+    if (!cJSON_IsObject(p)) {
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-1}", cmd);
+        return;
+    }
+
+    host_item  = cJSON_GetObjectItemCaseSensitive(p, "host");
+    file_item  = cJSON_GetObjectItemCaseSensitive(p, "file");
+    dtype_item = cJSON_GetObjectItemCaseSensitive(p, "device_type");
+
+    if (!cJSON_IsString(host_item) || !cJSON_IsString(file_item)) {
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-2}", cmd);
+        return;
+    }
+
+    /* Reject if already running */
+    if (g_dfu_in_progress || get_download_file_state() == 1) {
+        printf("[MQTT CMD] dfu: rejected, OTA already in progress\n");
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-3}", cmd);
+        return;
+    }
+
+    /* Construct full URL: host/file */
+    (void)snprintf(url_buf, sizeof(url_buf), "%s/%s",
+                   host_item->valuestring, file_item->valuestring);
+
+    /* Determine update type from device_type */
+    if (cJSON_IsString(dtype_item) &&
+        strcmp(dtype_item->valuestring, "9160") == 0) {
+        save_path  = "/update/Hi2131EV100.fwpkg.bin";
+        other_type = MQTT_TYPE_DOWN_MODEM;
+    } else {
+        /* 52840 OTA is not yet supported per protocol v1.0.3 */
+        printf("[MQTT CMD] dfu: unsupported device_type\n");
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-4}", cmd);
+        return;
+    }
+
+    /* Register OTA result callback */
+    sk_ota_register_callback(dfu_ota_callback);
+
+    /* Skip CRC check: MQTT DFU protocol has no CRC field.
+     * The firmware package has internal bootloader verification. */
+    g_ota_skip_crc = true;
+
+    /* Construct "url;file_path" data for http_send_data_to_server */
+    url_len  = strlen(url_buf);
+    path_len = strlen(save_path);
+    if (url_len + path_len + 2 > sizeof(data_buf)) {
+        g_ota_skip_crc = false;
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-5}", cmd);
+        return;
+    }
+    (void)snprintf(data_buf, sizeof(data_buf), "%s;%s", url_buf, save_path);
+
+    /* Queue to HTTP task for async download + OTA */
+    if (http_send_data_to_server(data_buf, url_len + path_len + 2,
+                                 MQTT_HTTP_DOWNLOAD_OTA, other_type) != 0) {
+        g_ota_skip_crc = false;
+        printf("[MQTT CMD] dfu: failed to queue HTTP download\n");
+        (void)snprintf(resp, (size_t)resp_sz,
+                       "{\"c\":\"%s\",\"e\":-6}", cmd);
+        return;
+    }
+
+    g_dfu_in_progress = true;
+    printf("[MQTT CMD] DFU started: %s -> %s type=%u\n",
+           url_buf, save_path, (unsigned)other_type);
     (void)snprintf(resp, (size_t)resp_sz,
                    "{\"c\":\"%s\",\"r\":0}", cmd);
 }
@@ -1396,6 +1537,9 @@ static const mqtt_cmd_entry_t g_cmd_table[] = {
     /* --- Directory / Format --- */
     { "dir",                cmd_dir            },
     { "sec.format",         cmd_sec_format     },
+
+    /* --- DFU (FOTA) --- */
+    { "dfu",                cmd_dfu            },
 
     /* --- Settings --- */
     { "settings.get",       cmd_settings_get   },

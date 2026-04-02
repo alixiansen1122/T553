@@ -58,6 +58,7 @@ int http_upload_log(const char *file_path);
 extern bool model_replacing;
 extern uint8_t g_remote_crc_modem;
 extern uint8_t g_remote_crc_host;
+extern bool g_ota_skip_crc;
 
 #define HTTP_PRINT(s, ...)       factory_test_print(FT_RETURN_SUCC, s, ##__VA_ARGS__)
 #endif
