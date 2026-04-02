@@ -29,7 +29,7 @@
 #include "timer.h"
 #include "dev_storage.h"
 #include "lsm6dsow_api.h"
-#include "mqtt_activity.h"
+#include "mqtt_event.h"
 // Adjust these according to your model's actual dimensions
 #define NUM_LAYERS 1
 #define INPUT_DIM 6

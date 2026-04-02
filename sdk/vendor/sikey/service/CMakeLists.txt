@@ -26,7 +26,6 @@ set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_service.c
     ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_cmd_handler.c
     ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_event.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/mqtt_service/mqtt_activity.c
 )
 
 
